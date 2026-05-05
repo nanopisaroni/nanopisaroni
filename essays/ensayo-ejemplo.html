@@ -1,65 +1,131 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html>
+<!doctype html>
+<html lang="es">
 <head>
-  <title>Bienvenido</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <style type="text/css">
-    body { background: #ffffff; color: #000000; margin: 8px; }
-    a:link { color: #000099; }
-    a:visited { color: #464646; }
-    .nav a { display: block; margin-bottom: 7px; text-decoration: none; }
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bienvenido - Leandro Pisaroni</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #fff;
+      --text: #1a1a1a;
+      --link: #2a5db0;
+      --visited: #555;
+      --rule: #e6e6e6;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--link);
+    }
+
+    a:visited {
+      color: var(--visited);
+    }
+
+    .site {
+      width: min(100% - 40px, 650px);
+      margin: 0 auto;
+      padding: 32px 0 56px;
+    }
+
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      padding-bottom: 18px;
+      border-bottom: 1px solid var(--rule);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 15px;
+      line-height: 1.3;
+    }
+
+    .nav a {
+      color: var(--link);
+      text-decoration: none;
+    }
+
+    .nav a:visited {
+      color: var(--visited);
+    }
+
+    .nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding-top: 44px;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(34px, 7vw, 48px);
+      line-height: 1.12;
+      font-weight: 400;
+    }
+
+    p {
+      margin: 0 0 22px;
+    }
+
+    .date {
+      margin-bottom: 34px;
+      color: #666;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 14px;
+    }
+
+    .essay-footer {
+      margin-top: 42px;
+      padding-top: 18px;
+      border-top: 1px solid var(--rule);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 15px;
+    }
+
+    @media (max-width: 520px) {
+      .site {
+        width: min(100% - 28px, 650px);
+        padding-top: 24px;
+      }
+    }
   </style>
 </head>
 <body>
-<font face="verdana" size="2">
-<table border="0" cellspacing="0" cellpadding="0" width="500">
-  <tr>
-    <td width="67" valign="top" class="nav">
-      <font face="verdana" size="2">
+  <div class="site">
+    <nav class="nav" aria-label="Main navigation">
       <a href="../index.html">Home</a>
       <a href="../essays.html">Essays</a>
-      <a href="../books.html">Books</a>
-      <a href="https://ycombinator.com">Y Combinator</a>
       <a href="../about.html">About</a>
-      <a href="https://twitter.com/leandropisaroni">Twitter</a>
       <a href="../rss.xml">RSS</a>
-      </font>
-    </td>
-    <td width="23">&nbsp;</td>
-    <td width="410" valign="top">
-      <font face="verdana" size="2">
-      <h2>Bienvenido</h2>
+    </nav>
 
-      <p>
-        <font size="1">5 de mayo de 2026</font>
-      </p>
+    <main>
+      <article>
+        <h1>Bienvenido</h1>
+        <p class="date">5 de mayo de 2026</p>
 
-      <p>
-        Este es el primer ensayo de ejemplo del sitio. Su trabajo no es
-        impresionar, sino dejar claro el formato: un titulo, una fecha y
-        parrafos breves que se puedan leer sin distracciones.
-      </p>
+        <p>Este es el primer ensayo de ejemplo del sitio. Su trabajo no es impresionar, sino dejar claro el formato: un titulo, una fecha y parrafos breves que se puedan leer sin distracciones.</p>
 
-      <p>
-        Un sitio de ensayos no necesita mucho mas. Necesita enlaces estables,
-        texto legible y una estructura que siga funcionando cuando cambien las
-        modas de diseno. Si una pagina se puede abrir, leer e imprimir, ya va
-        por buen camino.
-      </p>
+        <p>Un sitio de ensayos no necesita mucho mas. Necesita enlaces estables, texto legible y una estructura que siga funcionando cuando cambien las modas de diseno. Si una pagina se puede abrir, leer e imprimir, ya va por buen camino.</p>
 
-      <p>
-        La simplicidad tambien obliga a escribir mejor. Cuando no hay efectos,
-        paneles ni animaciones, cada frase queda mas expuesta. Eso puede ser
-        incomodo, pero suele ser util.
-      </p>
+        <p>La simplicidad tambien obliga a escribir mejor. Cuando no hay efectos, paneles ni animaciones, cada frase queda mas expuesta. Eso puede ser incomodo, pero suele ser util.</p>
+      </article>
 
-      <p>
-        <a href="../essays.html">Volver a ensayos</a>
-      </p>
-      </font>
-    </td>
-  </tr>
-</table>
-</font>
+      <p class="essay-footer"><a href="../essays.html">Volver a ensayos</a></p>
+    </main>
+  </div>
 </body>
 </html>

@@ -31,8 +31,8 @@ from typing import List, Optional
 # ---------------------------------------------------------------------------
 # Config
 # ---------------------------------------------------------------------------
-BOOK_SITE = "https://nousresearch.github.io/sitio/panteon-en.html"
-BOOK_URL_SHORT = "sitio/panteon-en.html"
+BOOK_SITE = "https://nanopisaroni.vercel.app"
+BOOK_URL_SHORT = "nanopisaroni.vercel.app"
 HASHTAGS = "#Panteon #PanteonBook #Thinkers #Philosophy"
 AGENTS_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(AGENTS_DIR, "data")

@@ -357,7 +357,7 @@ function applyCoupon() {
     couponFree = true;
     couponApplied = true;
     msg.className = 'coupon-msg valid';
-    msg.innerHTML = '✅ Code applied! You can download the book for free. Use the buttons below.';
+    msg.innerHTML = '✅ Code applied! You can download the book for free. Use the buttons below. <span style="font-size:11px;color:#999">(tracked)</span>';
     document.getElementById('price-en').innerHTML = '$0 <span class="price-original">$10</span>';
     document.getElementById('price-es').innerHTML = '$0 <span class="price-original">$10</span>';
     document.getElementById('send-en').innerHTML = 'Free! Just click download:';
@@ -370,6 +370,25 @@ function applyCoupon() {
     document.getElementById('verify-en').classList.add('active');
     document.getElementById('verify-es').classList.add('active');
     [].forEach.call(document.querySelectorAll('.stripe-btn, .crypto-btn, .toggle, .verify-submit'), function(b) { b.style.display = 'none'; });
+    // Track the free download
+    fetch('/api/record-sale?edition=free&amount=0&method=freebook&txHash=freebook-' + Date.now().toString(36)).catch(function(){});
+  } else if (code === 'free') {
+    couponFree = true;
+    couponApplied = true;
+    msg.className = 'coupon-msg valid';
+    msg.innerHTML = '✅ Personal code activated. Free download ready.';
+    document.getElementById('price-en').innerHTML = '$0 <span class="price-original">$10</span>';
+    document.getElementById('price-es').innerHTML = '$0 <span class="price-original">$10</span>';
+    document.getElementById('send-en').innerHTML = 'Free! Just click download:';
+    document.getElementById('send-es').innerHTML = '¡Gratis! Descargá directo:';
+    document.getElementById('dl-en').classList.add('active');
+    document.getElementById('dl-es').classList.add('active');
+    document.getElementById('step1-en').classList.add('active');
+    document.getElementById('step1-es').classList.add('active');
+    document.getElementById('verify-en').classList.add('active');
+    document.getElementById('verify-es').classList.add('active');
+    [].forEach.call(document.querySelectorAll('.stripe-btn, .crypto-btn, .toggle, .verify-submit'), function(b) { b.style.display = 'none'; });
+    // Free code — no tracking
   } else {
     couponFree = false;
     couponApplied = false;

@@ -23,6 +23,7 @@ td{padding:8px 12px;border-bottom:1px solid #222}
 .badge.stripe{background:#635bff20;color:#635bff}
 .badge.crypto{background:#f7931a20;color:#f7931a}
 .badge.manual{background:#66620;color:#666}
+.badge.freebook{background:#05966920;color:#059669}
 .refresh{font-size:13px;color:var(--accent);text-decoration:none;float:right;margin-top:4px}
 .refresh:hover{text-decoration:underline}
 .empty{color:var(--muted);text-align:center;padding:40px;font-size:14px}
@@ -50,6 +51,10 @@ td{padding:8px 12px;border-bottom:1px solid #222}
   <div class="card">
     <div class="label">Spanish Edition</div>
     <div class="value" id="esSales">—</div>
+  </div>
+  <div class="card">
+    <div class="label">Free Downloads 🆓</div>
+    <div class="value" id="freeDownloads">—</div>
   </div>
 </div>
 
@@ -92,6 +97,9 @@ function renderSales(sales) {
   document.getElementById('enSales').textContent = enSales;
   document.getElementById('esSales').textContent = esSales;
 
+  var freeDls = sales.filter(function(s) { return s.method === 'freebook'; }).length;
+  document.getElementById('freeDownloads').textContent = freeDls;
+
   if (sales.length === 0) {
     document.getElementById('salesTable').innerHTML = '<p class="empty">No sales yet. Share the book!</p>';
     return;
@@ -102,8 +110,8 @@ function renderSales(sales) {
     var s = sales[i];
     var date = new Date(s.timestamp).toLocaleDateString();
     var edition = s.edition === 'en' ? '📗 EN' : s.edition === 'es' ? '📖 ES' : s.edition;
-    var badge = s.method === 'stripe' ? 'stripe' : s.method === 'crypto' ? 'crypto' : 'manual';
-    html += '<tr><td>' + date + '</td><td>' + edition + '</td><td>$' + s.amount.toFixed(2) + '</td><td><span class="badge ' + badge + '">' + s.method + '</span></td><td class="tx">' + (s.txHash || '').slice(0, 12) + '...</td></tr>';
+    var badge = s.method === 'stripe' ? 'stripe' : s.method === 'crypto' ? 'crypto' : s.method === 'freebook' ? 'freebook' : 'manual';
+    html += '<tr><td>' + date + '</td><td>' + edition + '</td><td>$' + s.amount.toFixed(2) + '</td><td><span class="badge ' + badge + '">' + (s.method === 'freebook' ? '🆓 freebook' : s.method) + '</span></td><td class="tx">' + (s.txHash || '').slice(0, 12) + '...</td></tr>';
   }
   html += '</table>';
   document.getElementById('salesTable').innerHTML = html;

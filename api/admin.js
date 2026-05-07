@@ -102,6 +102,7 @@ td{padding:8px 12px;border-bottom:1px solid #222}
 .badge.stripe{background:#635bff20;color:#635bff}
 .badge.crypto{background:#f7931a20;color:#f7931a}
 .badge.manual{background:#66620;color:#666}
+.badge.freebook{background:#05966920;color:#059669}
 .refresh{font-size:13px;color:var(--accent);text-decoration:none;float:right;margin-top:4px}
 .refresh:hover{text-decoration:underline}
 .empty{color:var(--muted);text-align:center;padding:40px;font-size:14px}
@@ -130,6 +131,10 @@ td{padding:8px 12px;border-bottom:1px solid #222}
     <div class="label">Spanish Edition</div>
     <div class="value" id="esSales">—</div>
   </div>
+  <div class="card">
+    <div class="label">Free Downloads 🆓</div>
+    <div class="value" id="freeDownloads">—</div>
+  </div>
 </div>
 
 <h2 style="font-size:18px;font-weight:600;margin:0 0 12px">Recent Sales <a href="javascript:loadData()" class="refresh">⟳ Refresh</a></h2>
@@ -153,6 +158,9 @@ async function loadData() {
     document.getElementById('enSales').textContent = enSales;
     document.getElementById('esSales').textContent = esSales;
 
+    const freeDls = sales.filter(s => s.method === 'freebook').length;
+    document.getElementById('freeDownloads').textContent = freeDls;
+
     if (sales.length === 0) {
       document.getElementById('salesTable').innerHTML = '<p class="empty">No sales yet. Share the book!</p>';
       return;
@@ -163,8 +171,8 @@ async function loadData() {
       const date = new Date(s.timestamp).toLocaleDateString();
       const edition = s.edition === 'en' ? '📗 EN' : s.edition === 'es' ? '📖 ES' : s.edition;
       const method = s.method;
-      const badge = s.method === 'stripe' ? 'stripe' : s.method === 'crypto' ? 'crypto' : 'manual';
-      html += \`<tr><td>\${date}</td><td>\${edition}</td><td>$\${s.amount.toFixed(2)}</td><td><span class="badge \${badge}">\${method}</span></td><td class="tx">\${(s.txHash || '').slice(0, 12)}...</td></tr>\`;
+      const badge = s.method === 'stripe' ? 'stripe' : s.method === 'crypto' ? 'crypto' : s.method === 'freebook' ? 'freebook' : 'manual';
+      html += `<tr><td>${date}</td><td>${edition}</td><td>$${s.amount.toFixed(2)}</td><td><span class="badge ${badge}">${method === 'freebook' ? '🆓 freebook' : method}</span></td><td class="tx">${(s.txHash || '').slice(0, 12)}...</td></tr>`;
     }
     html += '</table>';
     document.getElementById('salesTable').innerHTML = html;

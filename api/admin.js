@@ -4,7 +4,7 @@
 
 const ADMIN_USER = 'nanopi';
 const ADMIN_PW = process.env.ADMIN_PW || 'panteon2026';
-const SALES_FILE = 'books/sales.json';
+const SALES_FILE = '/tmp/sales.json';
 
 export default async function handler(req, res) {
   // CORS

@@ -1,7 +1,7 @@
 // Record Sale — Vercel Serverless Function (no auth required)
 // Called from success.html client-side to log purchases
 
-const SALES_FILE = 'books/sales.json';
+const SALES_FILE = '/tmp/sales.json';
 
 export default async function handler(req, res) {
   // CORS

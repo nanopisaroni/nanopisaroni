@@ -1,189 +1,186 @@
-<!doctype html>
-<html lang="es">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Leandro Pisaroni</title>
-  <style>
-    :root {
-      color-scheme: light;
-      --bg: #fff;
-      --text: #1a1a1a;
-      --link: #2a5db0;
-      --visited: #555;
-      --rule: #e6e6e6;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      background: var(--bg);
-      color: var(--text);
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 18px;
-      line-height: 1.6;
-    }
-
-    a {
-      color: var(--link);
-    }
-
-    a:visited {
-      color: var(--visited);
-    }
-
-    .site {
-      width: min(100% - 40px, 650px);
-      margin: 0 auto;
-      padding: 32px 0 56px;
-    }
-
-    .nav {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 18px;
-      padding-bottom: 18px;
-      border-bottom: 1px solid var(--rule);
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      font-size: 15px;
-      line-height: 1.3;
-    }
-
-    .nav a {
-      color: var(--link);
-      text-decoration: none;
-    }
-
-    .nav a:visited {
-      color: var(--visited);
-    }
-
-    .nav a:hover {
-      text-decoration: underline;
-    }
-
-    main {
-      padding-top: 44px;
-    }
-
-    h1 {
-      margin: 0 0 12px;
-      font-size: clamp(34px, 7vw, 48px);
-      line-height: 1.12;
-      font-weight: 400;
-    }
-
-    h2 {
-      margin: 0 0 14px;
-      font-size: 24px;
-      line-height: 1.25;
-      font-weight: 400;
-    }
-
-    p {
-      margin: 0 0 22px;
-    }
-
-    .description {
-      margin-bottom: 34px;
-      color: #333;
-    }
-
-    .new {
-      margin-bottom: 34px;
-      padding-bottom: 28px;
-      border-bottom: 1px solid var(--rule);
-    }
-
-    .essay-list {
-      display: grid;
-      gap: 12px;
-      margin: 0;
-      padding: 0;
-      list-style: none;
-    }
-
-    .essay-list li {
-      display: flex;
-      gap: 14px;
-      align-items: baseline;
-      justify-content: space-between;
-      border-bottom: 1px solid var(--rule);
-      padding-bottom: 12px;
-    }
-
-    .date {
-      flex: 0 0 auto;
-      color: #666;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      font-size: 14px;
-    }
-
-    footer {
-      margin-top: 44px;
-      padding-top: 18px;
-      border-top: 1px solid var(--rule);
-      color: #666;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      font-size: 14px;
-    }
-
-    @media (max-width: 520px) {
-      .site {
-        width: min(100% - 28px, 650px);
-        padding-top: 24px;
-      }
-
-      .essay-list li {
-        display: block;
-      }
-
-      .date {
-        display: block;
-        margin-top: 2px;
-      }
-    }
-  </style>
-</head>
-<body>
-  <div class="site">
-    <nav class="nav" aria-label="Main navigation">
-      <a href="index.html">Home</a>
-      <a href="essays.html">Essays</a>
-      <a href="ideas.html">Ideas</a>
-      <a href="panteon.html">Panteón</a>
-      <a href="buy.html">Buy</a>
-      <a href="about.html">About</a>
-      <a href="rss.xml">RSS</a>
-    </nav>
-
-    <main>
-      <h1>Leandro Pisaroni</h1>
-      <p class="description">Ensayos, ideas y el Panteón Personal — un mapa de 16 pensadores que me formaron.</p>
-
-      <p class="new"><strong>New:</strong> <a href="panteon.html">📖 Panteón Personal (ES)</a> &middot; <a href="panteon-en.html">📗 Personal Pantheon (EN)</a> &middot; <a href="buy.html">🛒 Buy the Book</a></p>
-
-      <h2>Books</h2>
-      <ul class="essay-list">
-        <li>
-          <a href="buy.html">Panteón Personal · Personal Pantheon</a>
-          <span class="date">16 thinkers · 268 pages · $9.99</span>
-        </li>
-      </ul>
-
-      <h2>Essays</h2>
-      <ul class="essay-list">
-        <li>
-          <a href="essays/ensayo-ejemplo.html">Bienvenido</a>
-          <span class="date">5 de mayo de 2026</span>
-        </li>
-      </ul>
-    </main>
-
-    <footer>&copy; 2026 Leandro Pisaroni</footer>
-  </div>
-</body>
-</html>
+     1|<!doctype html>
+     2|<html lang="es">
+     3|<head>
+     4|  <meta charset="utf-8">
+     5|  <meta name="viewport" content="width=device-width, initial-scale=1">
+     6|  <title>Leandro Pisaroni</title>
+     7|  <style>
+     8|    :root {
+     9|      color-scheme: light;
+    10|      --bg: #fff;
+    11|      --text: #1a1a1a;
+    12|      --link: #2a5db0;
+    13|      --visited: #555;
+    14|      --rule: #e6e6e6;
+    15|    }
+    16|
+    17|    * {
+    18|      box-sizing: border-box;
+    19|    }
+    20|
+    21|    body {
+    22|      margin: 0;
+    23|      background: var(--bg);
+    24|      color: var(--text);
+    25|      font-family: Georgia, "Times New Roman", serif;
+    26|      font-size: 18px;
+    27|      line-height: 1.6;
+    28|    }
+    29|
+    30|    a {
+    31|      color: var(--link);
+    32|    }
+    33|
+    34|    a:visited {
+    35|      color: var(--visited);
+    36|    }
+    37|
+    38|    .site {
+    39|      width: min(100% - 40px, 650px);
+    40|      margin: 0 auto;
+    41|      padding: 32px 0 56px;
+    42|    }
+    43|
+    44|    .nav {
+    45|      display: flex;
+    46|      flex-wrap: wrap;
+    47|      gap: 18px;
+    48|      padding-bottom: 18px;
+    49|      border-bottom: 1px solid var(--rule);
+    50|      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    51|      font-size: 15px;
+    52|      line-height: 1.3;
+    53|    }
+    54|
+    55|    .nav a {
+    56|      color: var(--link);
+    57|      text-decoration: none;
+    58|    }
+    59|
+    60|    .nav a:visited {
+    61|      color: var(--visited);
+    62|    }
+    63|
+    64|    .nav a:hover {
+    65|      text-decoration: underline;
+    66|    }
+    67|
+    68|    main {
+    69|      padding-top: 44px;
+    70|    }
+    71|
+    72|    h1 {
+    73|      margin: 0 0 12px;
+    74|      font-size: clamp(34px, 7vw, 48px);
+    75|      line-height: 1.12;
+    76|      font-weight: 400;
+    77|    }
+    78|
+    79|    h2 {
+    80|      margin: 0 0 14px;
+    81|      font-size: 24px;
+    82|      line-height: 1.25;
+    83|      font-weight: 400;
+    84|    }
+    85|
+    86|    p {
+    87|      margin: 0 0 22px;
+    88|    }
+    89|
+    90|    .description {
+    91|      margin-bottom: 34px;
+    92|      color: #333;
+    93|    }
+    94|
+    95|    .new {
+    96|      margin-bottom: 34px;
+    97|      padding-bottom: 28px;
+    98|      border-bottom: 1px solid var(--rule);
+    99|    }
+   100|
+   101|    .essay-list {
+   102|      display: grid;
+   103|      gap: 12px;
+   104|      margin: 0;
+   105|      padding: 0;
+   106|      list-style: none;
+   107|    }
+   108|
+   109|    .essay-list li {
+   110|      display: flex;
+   111|      gap: 14px;
+   112|      align-items: baseline;
+   113|      justify-content: space-between;
+   114|      border-bottom: 1px solid var(--rule);
+   115|      padding-bottom: 12px;
+   116|    }
+   117|
+   118|    .date {
+   119|      flex: 0 0 auto;
+   120|      color: #666;
+   121|      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+   122|      font-size: 14px;
+   123|    }
+   124|
+   125|    footer {
+   126|      margin-top: 44px;
+   127|      padding-top: 18px;
+   128|      border-top: 1px solid var(--rule);
+   129|      color: #666;
+   130|      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+   131|      font-size: 14px;
+   132|    }
+   133|
+   134|    @media (max-width: 520px) {
+   135|      .site {
+   136|        width: min(100% - 28px, 650px);
+   137|        padding-top: 24px;
+   138|      }
+   139|
+   140|      .essay-list li {
+   141|        display: block;
+   142|      }
+   143|
+   144|      .date {
+   145|        display: block;
+   146|        margin-top: 2px;
+   147|      }
+   148|    }
+   149|  </style>
+   150|</head>
+   151|<body>
+   152|  <div class="site">
+   153|    <nav class="nav" aria-label="Main navigation">
+<a href="index.html">Home</a> <a href="essays.html">Essays</a> <a href="ideas.html">Ideas</a>
+<a href="panteon-en.html">Pantheon</a> <a href="panteon.html">Panteón</a>
+<a href="buy.html">Buy</a> <a href="about.html">About</a> <a href="rss.xml">RSS</a>
+</nav>
+   162|
+   163|    <main>
+   164|      <h1>Leandro Pisaroni</h1>
+   165|      <p class="description">Ensayos, ideas y el Panteón Personal — un mapa de 16 pensadores que me formaron.</p>
+   166|
+   167|      <p class="new"><strong>New:</strong> <a href="panteon.html">📖 Panteón Personal (ES)</a> &middot; <a href="panteon-en.html">📗 Personal Pantheon (EN)</a> &middot; <a href="buy.html">🛒 Buy the Book</a></p>
+   168|
+   169|      <h2>Books</h2>
+   170|      <ul class="essay-list">
+   171|        <li>
+   172|          <a href="buy.html">Panteón Personal · Personal Pantheon</a>
+   173|          <span class="date">16 thinkers · 268 pages · $9.99</span>
+   174|        </li>
+   175|      </ul>
+   176|
+   177|      <h2>Essays</h2>
+   178|      <ul class="essay-list">
+   179|        <li>
+   180|          <a href="essays/ensayo-ejemplo.html">Bienvenido</a>
+   181|          <span class="date">5 de mayo de 2026</span>
+   182|        </li>
+   183|      </ul>
+   184|    </main>
+   185|
+   186|    <footer>&copy; 2026 Leandro Pisaroni</footer>
+   187|  </div>
+   188|</body>
+   189|</html>
+   190|

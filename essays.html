@@ -1,149 +1,146 @@
-<!doctype html>
-<html lang="es">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Essays - Leandro Pisaroni</title>
-  <style>
-    :root {
-      color-scheme: light;
-      --bg: #fff;
-      --text: #1a1a1a;
-      --link: #2a5db0;
-      --visited: #555;
-      --rule: #e6e6e6;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      background: var(--bg);
-      color: var(--text);
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 18px;
-      line-height: 1.6;
-    }
-
-    a {
-      color: var(--link);
-    }
-
-    a:visited {
-      color: var(--visited);
-    }
-
-    .site {
-      width: min(100% - 40px, 650px);
-      margin: 0 auto;
-      padding: 32px 0 56px;
-    }
-
-    .nav {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 18px;
-      padding-bottom: 18px;
-      border-bottom: 1px solid var(--rule);
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      font-size: 15px;
-      line-height: 1.3;
-    }
-
-    .nav a {
-      color: var(--link);
-      text-decoration: none;
-    }
-
-    .nav a:visited {
-      color: var(--visited);
-    }
-
-    .nav a:hover {
-      text-decoration: underline;
-    }
-
-    main {
-      padding-top: 44px;
-    }
-
-    h1 {
-      margin: 0 0 12px;
-      font-size: clamp(34px, 7vw, 48px);
-      line-height: 1.12;
-      font-weight: 400;
-    }
-
-    p {
-      margin: 0 0 26px;
-    }
-
-    .essay-list {
-      display: grid;
-      gap: 14px;
-      margin: 0;
-      padding: 0;
-      list-style: none;
-    }
-
-    .essay-list li {
-      display: flex;
-      gap: 14px;
-      align-items: baseline;
-      justify-content: space-between;
-      border-bottom: 1px solid var(--rule);
-      padding-bottom: 14px;
-    }
-
-    .date {
-      flex: 0 0 auto;
-      color: #666;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      font-size: 14px;
-    }
-
-    @media (max-width: 520px) {
-      .site {
-        width: min(100% - 28px, 650px);
-        padding-top: 24px;
-      }
-
-      .essay-list li {
-        display: block;
-      }
-
-      .date {
-        display: block;
-        margin-top: 2px;
-      }
-    }
-  </style>
-</head>
-<body>
-  <div class="site">
-    <nav class="nav" aria-label="Main navigation">
-      <a href="index.html">Home</a>
-      <a href="essays.html">Essays</a>
-      <a href="ideas.html">Ideas</a>
-      <a href="panteon.html">Panteón</a>
-      <a href="buy.html">Buy</a>
-      <a href="about.html">About</a>
-      <a href="rss.xml">RSS</a>
-    </nav>
-
-    <main>
-      <h1>Essays</h1>
-      <p>Lista completa de ensayos, en orden cronologico inverso.</p>
-
-      <ul class="essay-list">
-        <li>
-          <a href="essays/ensayo-ejemplo.html">Bienvenido</a>
-          <span class="date">5 de mayo de 2026</span>
-        </li>
-      </ul>
-    </main>
-  </div>
-</body>
-</html>
+     1|<!doctype html>
+     2|<html lang="es">
+     3|<head>
+     4|  <meta charset="utf-8">
+     5|  <meta name="viewport" content="width=device-width, initial-scale=1">
+     6|  <title>Essays - Leandro Pisaroni</title>
+     7|  <style>
+     8|    :root {
+     9|      color-scheme: light;
+    10|      --bg: #fff;
+    11|      --text: #1a1a1a;
+    12|      --link: #2a5db0;
+    13|      --visited: #555;
+    14|      --rule: #e6e6e6;
+    15|    }
+    16|
+    17|    * {
+    18|      box-sizing: border-box;
+    19|    }
+    20|
+    21|    body {
+    22|      margin: 0;
+    23|      background: var(--bg);
+    24|      color: var(--text);
+    25|      font-family: Georgia, "Times New Roman", serif;
+    26|      font-size: 18px;
+    27|      line-height: 1.6;
+    28|    }
+    29|
+    30|    a {
+    31|      color: var(--link);
+    32|    }
+    33|
+    34|    a:visited {
+    35|      color: var(--visited);
+    36|    }
+    37|
+    38|    .site {
+    39|      width: min(100% - 40px, 650px);
+    40|      margin: 0 auto;
+    41|      padding: 32px 0 56px;
+    42|    }
+    43|
+    44|    .nav {
+    45|      display: flex;
+    46|      flex-wrap: wrap;
+    47|      gap: 18px;
+    48|      padding-bottom: 18px;
+    49|      border-bottom: 1px solid var(--rule);
+    50|      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    51|      font-size: 15px;
+    52|      line-height: 1.3;
+    53|    }
+    54|
+    55|    .nav a {
+    56|      color: var(--link);
+    57|      text-decoration: none;
+    58|    }
+    59|
+    60|    .nav a:visited {
+    61|      color: var(--visited);
+    62|    }
+    63|
+    64|    .nav a:hover {
+    65|      text-decoration: underline;
+    66|    }
+    67|
+    68|    main {
+    69|      padding-top: 44px;
+    70|    }
+    71|
+    72|    h1 {
+    73|      margin: 0 0 12px;
+    74|      font-size: clamp(34px, 7vw, 48px);
+    75|      line-height: 1.12;
+    76|      font-weight: 400;
+    77|    }
+    78|
+    79|    p {
+    80|      margin: 0 0 26px;
+    81|    }
+    82|
+    83|    .essay-list {
+    84|      display: grid;
+    85|      gap: 14px;
+    86|      margin: 0;
+    87|      padding: 0;
+    88|      list-style: none;
+    89|    }
+    90|
+    91|    .essay-list li {
+    92|      display: flex;
+    93|      gap: 14px;
+    94|      align-items: baseline;
+    95|      justify-content: space-between;
+    96|      border-bottom: 1px solid var(--rule);
+    97|      padding-bottom: 14px;
+    98|    }
+    99|
+   100|    .date {
+   101|      flex: 0 0 auto;
+   102|      color: #666;
+   103|      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+   104|      font-size: 14px;
+   105|    }
+   106|
+   107|    @media (max-width: 520px) {
+   108|      .site {
+   109|        width: min(100% - 28px, 650px);
+   110|        padding-top: 24px;
+   111|      }
+   112|
+   113|      .essay-list li {
+   114|        display: block;
+   115|      }
+   116|
+   117|      .date {
+   118|        display: block;
+   119|        margin-top: 2px;
+   120|      }
+   121|    }
+   122|  </style>
+   123|</head>
+   124|<body>
+   125|  <div class="site">
+   126|    <nav class="nav" aria-label="Main navigation">
+<a href="index.html">Home</a> <a href="essays.html">Essays</a> <a href="ideas.html">Ideas</a>
+<a href="panteon-en.html">Pantheon</a> <a href="panteon.html">Panteón</a>
+<a href="buy.html">Buy</a> <a href="about.html">About</a> <a href="rss.xml">RSS</a>
+</nav>
+   135|
+   136|    <main>
+   137|      <h1>Essays</h1>
+   138|      <p>Lista completa de ensayos, en orden cronologico inverso.</p>
+   139|
+   140|      <ul class="essay-list">
+   141|        <li>
+   142|          <a href="essays/ensayo-ejemplo.html">Bienvenido</a>
+   143|          <span class="date">5 de mayo de 2026</span>
+   144|        </li>
+   145|      </ul>
+   146|    </main>
+   147|  </div>
+   148|</body>
+   149|</html>
+   150|

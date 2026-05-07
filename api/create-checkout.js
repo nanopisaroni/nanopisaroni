@@ -35,12 +35,13 @@ export default async function handler(req, res) {
       },
       body: new URLSearchParams({
         'mode': 'payment',
+        'payment_method_types[]': 'card',
         'success_url': `https://nanopisaroni.vercel.app/success.html?lang=${isEn ? 'en' : 'es'}&method=stripe&session_id={CHECKOUT_SESSION_ID}`,
         'cancel_url': 'https://nanopisaroni.vercel.app/buy.html',
         'line_items[0][price_data][currency]': 'usd',
         'line_items[0][price_data][product_data][name]': isEn ? 'Personal Pantheon (English)' : 'Panteón Personal (Español)',
         'line_items[0][price_data][product_data][description]': isEn ? '268 pages · 16 thinkers · A5 PDF' : '262 páginas · 16 pensadores · PDF A5',
-        'line_items[0][price_data][unit_amount]': '999',
+        'line_items[0][price_data][unit_amount]': isEn ? '999' : '499',
         'line_items[0][quantity]': '1',
       })
     });

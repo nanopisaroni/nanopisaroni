@@ -25,8 +25,9 @@ export default async function handler(req, res) {
   }
 
   try {
-    const { edition } = req.body || {};
-    const isEn = edition === 'en' || !edition;
+  const { edition, price } = req.body || {};
+  const isEn = edition === 'en';
+  const unitAmount = parseInt(price) || 1000; // default $10 for both
 
     const session = await fetch('https://api.stripe.com/v1/checkout/sessions', {
       method: 'POST',
@@ -42,7 +43,7 @@ export default async function handler(req, res) {
         'line_items[0][price_data][currency]': 'usd',
         'line_items[0][price_data][product_data][name]': isEn ? 'Personal Pantheon (English)' : 'Panteón Personal (Español)',
         'line_items[0][price_data][product_data][description]': isEn ? '268 pages · 16 thinkers · A5 PDF' : '262 páginas · 16 pensadores · PDF A5',
-        'line_items[0][price_data][unit_amount]': isEn ? '999' : '499',
+        'line_items[0][price_data][unit_amount]': unitAmount.toString(),
         'line_items[0][quantity]': '1',
       })
     });

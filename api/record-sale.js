@@ -2,6 +2,7 @@
 // Called from success.html client-side to log purchases
 
 const SALES_FILE = '/tmp/sales.json';
+const PRICE_CENTS = 1000; // $10 default
 
 export default async function handler(req, res) {
   // CORS

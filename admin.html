@@ -66,17 +66,20 @@ var KNOWN_SALES = [
 ];
 
 async function loadData() {
+  var allSales = KNOWN_SALES.slice(); // start with known sales
   try {
     var resp = await fetch('/api/admin?action=data');
     if (resp.ok) {
       var data = await resp.json();
-      renderSales(data.sales || []);
-      return;
+      var apiSales = data.sales || [];
+      // Merge: add API sales not already in known sales
+      for (var i = 0; i < apiSales.length; i++) {
+        var exists = allSales.some(function(s) { return s.txHash && s.txHash === apiSales[i].txHash; });
+        if (!exists) allSales.push(apiSales[i]);
+      }
     }
   } catch(e) {}
-
-  // Fallback: show known sales
-  renderSales(KNOWN_SALES);
+  renderSales(allSales);
 }
 
 function renderSales(sales) {

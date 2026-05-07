@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="es">
+<head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Assets Promocionales - Panteón</title>
+<style>
+:root{--bg:#0a0a0a;--card:#1a1a1a;--text:#f0ede5;--muted:#666;--accent:#c9a23c}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,sans-serif;font-size:15px}
+.site{width:min(100%-32px,720px);margin:0 auto;padding:32px 16px}
+h1{font-size:24px;font-weight:600;color:var(--accent);margin:0 0 4px}
+.sub{color:var(--muted);font-size:13px;margin-bottom:28px}
+.section{margin-bottom:32px}
+h2{font-size:17px;font-weight:600;margin:0 0 12px;padding-bottom:6px;border-bottom:1px solid #222}
+.card{background:var(--card);border:1px solid #333;border-radius:8px;padding:16px;margin-bottom:12px}
+.card h3{font-size:15px;font-weight:600;margin:0 0 4px}
+.card p{color:var(--muted);font-size:13px;margin:0 0 8px}
+.card a{color:var(--accent);text-decoration:none;font-size:13px}
+.card a:hover{text-decoration:underline}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:8px;margin-top:12px}
+.grid a{display:block;background:var(--card);border:1px solid #333;border-radius:6px;padding:6px;text-align:center;color:var(--text);text-decoration:none;font-size:12px;overflow:hidden}
+.grid a:hover{border-color:var(--accent)}
+.grid img{width:100%;height:auto;border-radius:4px;margin-bottom:4px}
+</style>
+</head>
+<body>
+<div class="site">
+<h1>📦 Assets Promocionales</h1>
+<p class="sub">Panteón Personal · Personal Pantheon — Todo el contenido generado</p>
+
+<div class="section">
+<h2>📋 Plan de Contenido (3 meses)</h2>
+<div class="card">
+<h3>143 piezas de contenido</h3>
+<p>Tweets de lanzamiento, 12 semanas temáticas (Stoicism Week, Epistemology Week, etc.), quote cards, blog posts, pricing psychology, SEO content.</p>
+<a href="promocion/content-plan.txt" download>📄 Descargar content-plan.txt (56 KB)</a>
+</div>
+</div>
+
+<div class="section">
+<h2>🤖 Sistema de Agentes (16 Personas)</h2>
+<div class="card">
+<h3>panteon-agents.py</h3>
+<p>16 personas del panteón con voces únicas, rivalidades y afinidades. Modos: --post, --thread, --schedule, --csv, --verify, --cron.</p>
+<a href="promocion/agents/panteon-agents.py" download>🐍 Descargar panteon-agents.py (64 KB)</a>
+</div>
+<div class="card">
+<h3>Ejecutar en terminal</h3>
+<p style="font-family:monospace;font-size:12px;color:var(--muted);margin:0">
+python3 panteon-agents.py --post random &nbsp;# post aleatorio<br>
+python3 panteon-agents.py --thread &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# interacción entre personas<br>
+python3 panteon-agents.py --schedule &nbsp;&nbsp;# schedule semanal<br>
+python3 panteon-agents.py --verify &nbsp;&nbsp;&nbsp;&nbsp;# verificar links al libro
+</p>
+</div>
+</div>
+
+<div class="section">
+<h2>🖼️ Quote Cards</h2>
+<p style="color:var(--muted);font-size:13px;margin:0 0 8px">17 imágenes 1080×1080px listas para Instagram/Twitter</p>
+<div class="grid" id="quoteGrid"></div>
+</div>
+
+<div class="section">
+<h2>📰 Daily Content Generator</h2>
+<div class="card">
+<h3>Último output del cron job</h3>
+<p id="dailyPreview">Cargando...</p>
+<a href="promocion/agents/logs/" id="dailyLink">Ver últimos logs</a>
+</div>
+</div>
+
+<div class="section">
+<h2>📚 El Libro</h2>
+<div class="card">
+<h3>Personal Pantheon (English)</h3>
+<p>268 páginas · 16 thinkers · PDF A5</p>
+<a href="books/panteon-en.pdf">📗 Descargar PDF</a>
+</div>
+<div class="card">
+<h3>Panteón Personal (Español)</h3>
+<p>262 páginas · 16 pensadores · PDF A5</p>
+<a href="books/panteon-personal.pdf">📖 Descargar PDF</a>
+</div>
+</div>
+
+</div>
+<script>
+// Load quote card images
+for (let i = 1; i <= 16; i++) {
+  const names = [
+    "Jorge Luis Borges", "Richard Feynman", "Nassim Taleb", "David Deutsch",
+    "Peter Thiel", "Karl Popper", "Charlie Munger", "Daniel Kahneman",
+    "Paul Graham", "Eliezer Yudkowsky", "Marcus Aurelius", "Epictetus",
+    "Alan Watts", "Jiddu Krishnamurti", "Facundo Cabral", "Naval Ravikant"
+  ];
+  const slug = "quote-" + String(i).padStart(2,'0') + "-" + names[i-1].toLowerCase().replace(/[^a-z]+/g,'-').replace(/-$/,'');
+  document.getElementById('quoteGrid').innerHTML +=
+    '<a href="promocion/images/' + slug + '.png" target="_blank">' +
+    '<img src="promocion/images/' + slug + '.png" alt="' + names[i-1] + '">' +
+    names[i-1] + '</a>';
+}
+// Load daily preview
+fetch('/promocion/agents/logs/')
+  .then(r => r.text())
+  .then(t => document.getElementById('dailyPreview').textContent = 'Logs disponibles')
+  .catch(() => document.getElementById('dailyPreview').textContent = 'No hay logs todavía');
+</script>
+</body>
+</html>

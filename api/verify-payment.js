@@ -13,7 +13,7 @@ const CHAINS = {
     name: 'Ethereum (ERC-20)'
   },
   polygon: {
-    rpc: 'https://polygon-rpc.com',
+    rpc: 'https://polygon-bor-rpc.publicnode.com',
     usdc: '0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359',
     name: 'Polygon'
   },

@@ -219,11 +219,13 @@ function applyCoupon() {
     document.getElementById('price-es').innerHTML = '$0 <span class="price-original">$10</span>';
     document.getElementById('send-en').innerHTML = 'Free! Just click download:';
     document.getElementById('send-es').innerHTML = '¡Gratis! Descargá directo:';
-    // Show download buttons directly — also show parent steps
+    // Show download buttons directly — show parent steps
     document.getElementById('dl-en').classList.add('active');
     document.getElementById('dl-es').classList.add('active');
     document.getElementById('step1-en').classList.add('active');
     document.getElementById('step1-es').classList.add('active');
+    document.getElementById('verify-en').classList.add('active');
+    document.getElementById('verify-es').classList.add('active');
     [].forEach.call(document.querySelectorAll('.stripe-btn, .crypto-btn, .toggle, .verify-submit'), function(b) { b.style.display = 'none'; });
   } else {
     couponFree = false;

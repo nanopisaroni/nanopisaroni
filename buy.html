@@ -75,7 +75,7 @@ footer{margin-top:44px;padding-top:18px;border-top:1px solid var(--rule);color:#
     <div class="price">$9.99</div>
     <div class="desc">268 pages · English · 16 thinkers · A5 PDF</div>
 
-    <a href="https://buy.stripe.com/test_YOUR_STRIPE_LINK_EN" class="pay-btn stripe-btn" target="_blank">💳 Pay with Card (Stripe)</a>
+    <a href="javascript:void(0)" onclick="checkout('en')" class="pay-btn stripe-btn">💳 Pay with Card (Stripe)</a>
 
     <button class="toggle" onclick="showStep('step1-en')">₿ Pay with Crypto ↓</button>
 
@@ -117,7 +117,7 @@ footer{margin-top:44px;padding-top:18px;border-top:1px solid var(--rule);color:#
     <div class="price">$9.99</div>
     <div class="desc">262 páginas · Español · 16 pensadores · PDF A5</div>
 
-    <a href="https://buy.stripe.com/test_YOUR_STRIPE_LINK_ES" class="pay-btn stripe-btn" target="_blank">💳 Pagar con Tarjeta (Stripe)</a>
+    <a href="javascript:void(0)" onclick="checkout('es')" class="pay-btn stripe-btn">💳 Pagar con Tarjeta (Stripe)</a>
 
     <button class="toggle" onclick="showStep('step1-es')">₿ Pagar con Crypto ↓</button>
 
@@ -177,7 +177,47 @@ footer{margin-top:44px;padding-top:18px;border-top:1px solid var(--rule);color:#
 <footer><p>Leandro Pisaroni · <a href="https://nanopisaroni.vercel.app">nanopisaroni.vercel.app</a></p></footer>
 </div>
 
+<script src="https://js.stripe.com/v3/"></script>
 <script>
+const STRIPE_PK = 'pk_live_51TURidRs4ZN0QmrbcNZhih7nE3hIozb9l7abUyT6lqAgFNPaJvcQFctLg2bkiWbKav9BhESlLOYYr9sOieo4LJpr00HG46bYg3';
+
+async function checkout(edition) {
+  const btn = event.target;
+  btn.textContent = '⏳ Processing...';
+  btn.disabled = true;
+
+  try {
+    const resp = await fetch('/api/create-checkout', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ edition })
+    });
+    const data = await resp.json();
+
+    if (data.checkoutUrl) {
+      window.location.href = data.checkoutUrl;
+    } else if (data.fallback) {
+      // Fallback: use Stripe.js with the publishable key
+      const stripe = Stripe(STRIPE_PK);
+      const { error } = await stripe.redirectToCheckout({
+        lineItems: [{ price: edition === 'es' ? 'price_es_placeholder' : 'price_en_placeholder', quantity: 1 }],
+        mode: 'payment',
+        successUrl: window.location.origin + '/success.html?lang=' + edition + '&method=stripe',
+        cancelUrl: window.location.origin + '/buy.html',
+      });
+      if (error) alert(error.message);
+    } else {
+      alert('Error: ' + (data.error || 'Unknown'));
+      btn.textContent = '💳 Pay with Card (Stripe)';
+      btn.disabled = false;
+    }
+  } catch (e) {
+    alert('Connection error. Try again.');
+    btn.textContent = '💳 Pay with Card (Stripe)';
+    btn.disabled = false;
+  }
+}
+
 function showStep(id) {
   var steps = document.querySelectorAll('.step');
   steps.forEach(function(s) { s.classList.remove('active'); });

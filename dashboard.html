@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="es">
+<head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dashboard - Panteón Admin</title>
+<style>
+:root{--bg:#0a0a0a;--card:#1a1a1a;--text:#f0ede5;--muted:#666;--accent:#c9a23c;--green:#059669}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,sans-serif;font-size:15px;line-height:1.5}
+.site{width:min(100%-32px,800px);margin:0 auto;padding:32px 16px}
+.header{display:flex;justify-content:space-between;align-items:center;margin-bottom:32px}
+h1{font-size:24px;font-weight:600;margin:0;color:var(--accent)}
+.logout{font-size:13px;color:var(--muted);text-decoration:none;padding:6px 14px;border:1px solid #333;border-radius:4px}
+.logout:hover{border-color:var(--accent);color:var(--accent)}
+.sub{color:var(--muted);font-size:13px;margin:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin-bottom:28px}
+.card{background:var(--card);border:1px solid #333;border-radius:8px;padding:16px}
+.card .label{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
+.card .value{font-size:28px;font-weight:700}
+.card .value.green{color:var(--green)}
+.card .value.gold{color:var(--accent)}
+h2{font-size:16px;font-weight:600;margin:0 0 12px;color:var(--text);display:flex;justify-content:space-between;align-items:center}
+.refresh{background:none;border:1px solid #333;color:var(--muted);border-radius:4px;padding:4px 12px;cursor:pointer;font-size:12px}
+.refresh:hover{color:var(--accent);border-color:var(--accent)}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th{text-align:left;color:var(--muted);padding:8px 10px;border-bottom:1px solid #333;font-weight:500}
+td{padding:8px 10px;border-bottom:1px solid #222}
+.badge{display:inline-block;padding:2px 7px;border-radius:4px;font-size:11px;font-weight:600}
+.badge.stripe{background:#635bff20;color:#8b83ff}
+.badge.crypto{background:#f7931a20;color:#f7931a}
+.badge.manual{background:#66620;color:#999}
+.empty{color:var(--muted);text-align:center;padding:40px;font-size:13px}
+.tx{font-family:monospace;font-size:11px;color:#555;max-width:80px;overflow:hidden;text-overflow:ellipsis;display:inline-block;vertical-align:middle}
+.footer{text-align:center;margin-top:40px;padding-top:20px;border-top:1px solid #222;font-size:12px;color:var(--muted)}
+.wallet{background:var(--card);border:1px solid #333;border-radius:6px;padding:12px;font-family:monospace;font-size:12px;color:var(--muted);word-break:break-all;margin-top:12px}
+</style>
+</head>
+<body>
+<div class="site">
+<div class="header">
+<div>
+<h1>📊 Dashboard</h1>
+<p class="sub">Panteón Personal · Personal Pantheon</p>
+</div>
+<a href="admin.html" class="logout" onclick="sessionStorage.clear()">⏻ Salir</a>
+</div>
+
+<div class="grid">
+<div class="card"><div class="label">Ventas Totales</div><div class="value gold" id="totalSales">—</div></div>
+<div class="card"><div class="label">Revenue</div><div class="value green" id="totalRevenue">—</div></div>
+<div class="card"><div class="label">Edición EN</div><div class="value" id="enSales">—</div></div>
+<div class="card"><div class="label">Edición ES</div><div class="value" id="esSales">—</div></div>
+</div>
+
+<h2>Últimas Ventas <button class="refresh" onclick="loadData()">⟳ Actualizar</button></h2>
+<div id="salesTable"><p class="empty">Cargando...</p></div>
+
+<div class="wallet">
+Wallet USDC: 0x18C3886478DE8c945c086A4DDe8967Ab15A1862F<br>
+Redes: Ethereum · Polygon · Arbitrum · Base · Optimism · Avalanche
+</div>
+
+<div class="footer">
+Contraseña configurable via ADMIN_PW en Vercel · Usuario: nanopi
+</div>
+</div>
+
+<script>
+async function loadData() {
+  const user = sessionStorage.getItem('admin_user');
+  const pass = sessionStorage.getItem('admin_pass');
+
+  if (!user || !pass) {
+    window.location.href = '/admin.html';
+    return;
+  }
+
+  try {
+    const resp = await fetch('/api/admin?action=data', {
+      headers: { 'Authorization': 'Basic ' + btoa(user + ':' + pass) }
+    });
+
+    if (resp.status === 401 || resp.status === 403) {
+      sessionStorage.clear();
+      window.location.href = '/admin.html';
+      return;
+    }
+
+    const data = await resp.json();
+    const sales = data.sales || [];
+
+    document.getElementById('totalSales').textContent = sales.length;
+    document.getElementById('totalRevenue').textContent = '$' + (data.totalRevenue || 0).toFixed(2);
+
+    const enSales = sales.filter(s => s.edition === 'en' || s.edition === 'english').length;
+    const esSales = sales.filter(s => s.edition === 'es' || s.edition === 'spanish').length;
+    document.getElementById('enSales').textContent = enSales;
+    document.getElementById('esSales').textContent = esSales;
+
+    const container = document.getElementById('salesTable');
+    if (sales.length === 0) {
+      container.innerHTML = '<p class="empty">Todavía no hay ventas. ¡A compartir el libro!</p>';
+      return;
+    }
+
+    let html = '<table><tr><th>Fecha</th><th>Edición</th><th>Monto</th><th>Método</th><th>TX</th></tr>';
+    for (const s of sales.slice().reverse().slice(0, 50)) {
+      const date = new Date(s.timestamp).toLocaleDateString('es-AR');
+      const edition = s.edition === 'en' ? '📗 EN' : s.edition === 'es' ? '📖 ES' : s.edition;
+      const badge = s.method === 'stripe' ? 'stripe' : s.method === 'crypto' ? 'crypto' : 'manual';
+      const txShort = (s.txHash || '').slice(0, 14);
+      html += \`<tr><td>\${date}</td><td>\${edition}</td><td>$\${(s.amount||0).toFixed(2)}</td><td><span class="badge \${badge}">\${s.method}</span></td><td class="tx">\${txShort}</td></tr>\`;
+    }
+    html += '</table>';
+    container.innerHTML = html;
+  } catch (e) {
+    document.getElementById('salesTable').innerHTML = '<p class="empty">Error al cargar datos. ¿Seguro que estás logueado?</p>';
+  }
+}
+
+loadData();
+setInterval(loadData, 30000);
+</script>
+</body>
+</html>

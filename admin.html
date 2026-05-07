@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="es">
+<head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Admin Login - Panteón</title>
+<style>
+:root{--bg:#0a0a0a;--card:#1a1a1a;--text:#f0ede5;--muted:#666;--accent:#c9a23c;--green:#059669}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,sans-serif;font-size:15px;line-height:1.5;display:flex;align-items:center;justify-content:center;min-height:100vh}
+.login-box{width:340px;padding:32px}
+h1{font-size:22px;font-weight:600;margin:0 0 4px;color:var(--accent);text-align:center}
+.sub{color:var(--muted);font-size:13px;text-align:center;margin-bottom:28px}
+label{display:block;font-size:13px;color:var(--muted);margin-bottom:4px;margin-top:16px}
+input{width:100%;padding:10px 14px;border:1px solid #333;border-radius:6px;background:#111;color:var(--text);font-size:15px;outline:none}
+input:focus{border-color:var(--accent)}
+.btn{width:100%;padding:12px;background:var(--accent);color:#0a0a0a;border:none;border-radius:6px;font-size:15px;font-weight:600;cursor:pointer;margin-top:20px}
+.btn:hover{background:#d4a93a}
+.btn:disabled{opacity:0.5;cursor:not-allowed}
+.error{color:#ef4444;font-size:13px;margin-top:12px;display:none;text-align:center}
+.loading{display:none;text-align:center;margin-top:12px;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="login-box">
+<h1>🔐 Panteón Admin</h1>
+<p class="sub">Ingresá para ver el dashboard de ventas</p>
+<div class="error" id="error">Credenciales inválidas</div>
+<div class="loading" id="loading">Verificando...</div>
+<label for="user">Usuario</label>
+<input type="text" id="user" value="nanopi" placeholder="usuario">
+<label for="pass">Contraseña</label>
+<input type="password" id="pass" placeholder="contraseña" autofocus>
+<button class="btn" id="loginBtn" onclick="login()">Entrar</button>
+</div>
+<script>
+async function login() {
+  const user = document.getElementById('user').value;
+  const pass = document.getElementById('pass').value;
+  const btn = document.getElementById('loginBtn');
+  const err = document.getElementById('error');
+  const loading = document.getElementById('loading');
+
+  err.style.display = 'none';
+  btn.disabled = true;
+  loading.style.display = 'block';
+
+  // Test credentials against the API
+  try {
+    const resp = await fetch('/api/admin?action=data', {
+      headers: { 'Authorization': 'Basic ' + btoa(user + ':' + pass) }
+    });
+    if (resp.ok) {
+      // Store in session
+      sessionStorage.setItem('admin_user', user);
+      sessionStorage.setItem('admin_pass', pass);
+      window.location.href = '/dashboard.html';
+    } else {
+      err.style.display = 'block';
+      btn.disabled = false;
+      loading.style.display = 'none';
+    }
+  } catch (e) {
+    err.textContent = 'Error de conexión';
+    err.style.display = 'block';
+    btn.disabled = false;
+    loading.style.display = 'none';
+  }
+}
+
+document.getElementById('pass').addEventListener('keydown', function(e) {
+  if (e.key === 'Enter') login();
+});
+</script>
+</body>
+</html>

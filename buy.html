@@ -14,7 +14,7 @@ a{color:var(--link)} a:visited{color:#555}
 .nav a{color:var(--link);text-decoration:none}.nav a:visited{color:#555}.nav a:hover{text-decoration:underline}
 main{padding-top:44px}
 h1{margin:0 0 8px;font-size:clamp(32px,6vw,42px);line-height:1.12;font-weight:400}
-h2{margin:48px 0 18px;font-size:22px;line-height:1.25;font-weight:400;padding-bottom:8px;border-bottom:1px solid var(--rule)}
+h2{margin:48px 0 18px;font-size:22px;font-weight:400;padding-bottom:8px;border-bottom:1px solid var(--rule)}
 h3{margin:0 0 6px;font-size:19px;font-weight:500;line-height:1.3}
 p{margin:0 0 22px}.sub{color:#555;margin-bottom:32px}
 .plans{display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));margin:24px 0}
@@ -25,16 +25,29 @@ p{margin:0 0 22px}.sub{color:#555;margin-bottom:32px}
 .pay-btn{display:block;width:100%;text-align:center;font-family:system-ui,sans-serif;font-size:15px;font-weight:600;padding:12px;border-radius:6px;text-decoration:none;margin-bottom:8px}
 .stripe-btn{background:#635bff;color:#fff}.stripe-btn:hover{background:#4a42d4}
 .crypto-btn{background:#0a0a0a;color:#fff}.crypto-btn:hover{background:#222}
-.toggle{font-family:system-ui,sans-serif;font-size:14px;color:var(--link);cursor:pointer;text-align:center;margin-top:4px;display:block;border:none;background:none;width:100%;text-decoration:underline}
+.toggle{font-family:system-ui,sans-serif;font-size:14px;color:var(--link);cursor:pointer;margin-top:4px;display:block;border:none;background:none;width:100%;text-decoration:underline;padding:0}
 .toggle:hover{color:#1d4ed8}
-.crypto-box{display:none;margin-top:16px;padding:16px;background:#fff;border:1px solid var(--rule);border-radius:6px}
-.crypto-box.show{display:block}
+.step{display:none;margin-top:16px}
+.step.active{display:block}
 .wallet-addr{font-family:monospace;font-size:13px;background:#f0f0f0;padding:8px 12px;border-radius:4px;word-break:break-all;margin:8px 0 4px;user-select:all}
 .copy-btn{font-family:system-ui,sans-serif;font-size:12px;padding:4px 12px;border:1px solid var(--rule);border-radius:4px;background:#fff;cursor:pointer;margin-bottom:12px}
 .copy-btn:hover{background:#f0f0f0}
 .networks{font-size:13px;color:var(--muted);margin-bottom:12px}
-.confirm-btn{display:block;width:100%;text-align:center;font-family:system-ui,sans-serif;font-size:15px;font-weight:600;padding:12px;border-radius:6px;text-decoration:none;background:var(--accent);color:#fff;margin-top:12px}
-.confirm-btn:hover{background:#047857}
+.verify-box{margin-top:16px;padding:16px;background:#fff;border:1px solid var(--rule);border-radius:6px}
+.verify-box label{font-family:system-ui,sans-serif;font-size:14px;font-weight:600;display:block;margin-bottom:6px}
+.tx-input{width:100%;font-family:monospace;font-size:13px;padding:8px 12px;border:1px solid var(--rule);border-radius:4px;margin-bottom:8px}
+.tx-input:focus{outline:2px solid var(--accent);outline-offset:2px}
+.verify-submit{font-family:system-ui,sans-serif;font-size:15px;font-weight:600;padding:10px 24px;background:var(--accent);color:#fff;border:none;border-radius:6px;cursor:pointer}
+.verify-submit:hover{background:#047857}.verify-submit:disabled{background:#ccc;cursor:not-allowed}
+.chain-select{font-family:system-ui,sans-serif;font-size:14px;padding:6px 12px;border:1px solid var(--rule);border-radius:4px;margin-bottom:12px;width:100%}
+.status{font-family:system-ui,sans-serif;font-size:14px;padding:12px;border-radius:6px;margin-top:12px;display:none}
+.status.success{display:block;background:#f0fdf4;border:1px solid #bbf7d0;color:#166534}
+.status.error{display:block;background:#fef2f2;border:1px solid #fecaca;color:#991b1b}
+.status.pending{display:block;background:#fefce8;border:1px solid #fef08a;color:#854d0e}
+.dl-section{display:none;margin-top:16px}
+.dl-section.active{display:block}
+.dl-btn{display:inline-block;font-family:system-ui,sans-serif;font-size:16px;font-weight:600;padding:14px 32px;background:var(--accent);color:#fff;border-radius:6px;text-decoration:none}
+.dl-btn:hover{background:#047857}
 .chain-info{font-family:system-ui,sans-serif;font-size:13px;color:var(--muted);margin-top:16px;padding:12px;background:#f0fdf4;border:1px solid #bbf7d0;border-radius:6px}
 .chain-info strong{color:#166534}
 .faq{margin:24px 0}
@@ -47,101 +60,190 @@ footer{margin-top:44px;padding-top:18px;border-top:1px solid var(--rule);color:#
 <body>
 <div class="site">
 <nav class="nav">
-<a href="index.html">Home</a>
-<a href="essays.html">Essays</a>
-<a href="ideas.html">Ideas</a>
-<a href="panteon-en.html">Pantheon</a>
-<a href="panteon.html">Panteón (ES)</a>
-<a href="buy.html">Buy</a>
-<a href="about.html">About</a>
-<a href="rss.xml">RSS</a>
+<a href="index.html">Home</a> <a href="essays.html">Essays</a> <a href="ideas.html">Ideas</a>
+<a href="panteon-en.html">Pantheon</a> <a href="panteon.html">Panteón (ES)</a>
+<a href="buy.html">Buy</a> <a href="about.html">About</a> <a href="rss.xml">RSS</a>
 </nav>
 <main>
 <h1>Buy the Book</h1>
-<p class="sub">Choose your version and payment method. PDF delivered immediately after payment.</p>
+<p class="sub">Choose your version and payment method. PDF delivered immediately after payment verification.</p>
 
 <div class="plans">
   <!-- English -->
-  <div class="plan">
+  <div class="plan" id="plan-en">
     <h3>📗 Personal Pantheon</h3>
     <div class="price">$9.99</div>
     <div class="desc">268 pages · English · 16 thinkers · A5 PDF</div>
 
-    <a href="https://buy.stripe.com/test_YOUR_STRIPE_LINK_EN" class="pay-btn stripe-btn" target="_blank">Pay with Card (Stripe)</a>
+    <a href="https://buy.stripe.com/test_YOUR_STRIPE_LINK_EN" class="pay-btn stripe-btn" target="_blank">💳 Pay with Card (Stripe)</a>
 
-    <button class="toggle" onclick="toggleCrypto('en')">Pay with Crypto ↓</button>
-    <div class="crypto-box" id="crypto-en">
-      <p style="font-size:14px;margin:0 0 8px;font-family:system-ui,sans-serif">Send <strong>9.99 USDC</strong> to:</p>
+    <button class="toggle" onclick="showStep('step1-en')">₿ Pay with Crypto ↓</button>
+
+    <!-- Step 1: Send USDC -->
+    <div class="step" id="step1-en">
+      <p style="font-size:14px;margin:0 0 8px;font-family:system-ui,sans-serif">Send <strong>9.99 USDC</strong> (or equivalent USDT) to:</p>
       <div class="wallet-addr">0x18C3886478DE8c945c086A4DDe8967Ab15A1862F</div>
       <button class="copy-btn" onclick="copyAddr()">📋 Copy Address</button>
-      <div class="networks">Supported: Ethereum (ERC-20), Polygon, Arbitrum, Base, Optimism, Avalanche C-Chain</div>
-      <a href="success.html?lang=en" class="confirm-btn">✅ I've Sent the Payment — Download Now</a>
-      <div class="chain-info"><strong>💡 Auto-delivery:</strong> After sending USDC, click the button above to access your PDF immediately. No need to wait for me to send it.</div>
+      <div class="networks">Supported: Ethereum, Polygon, Arbitrum, Base, Optimism, Avalanche C-Chain</div>
+      <button class="toggle" onclick="showStep('verify-en')" style="margin-top:8px">✅ I sent it — Verify Transaction →</button>
+    </div>
+
+    <!-- Step 2: Verify -->
+    <div class="step" id="verify-en">
+      <div class="verify-box">
+        <label for="tx-en">Transaction Hash (TX ID)</label>
+        <select class="chain-select" id="chain-en">
+          <option value="ethereum">Ethereum (ERC-20)</option>
+          <option value="polygon">Polygon</option>
+          <option value="arbitrum">Arbitrum</option>
+          <option value="base">Base</option>
+          <option value="optimism">Optimism</option>
+          <option value="avalanche">Avalanche C-Chain</option>
+        </select>
+        <input class="tx-input" id="tx-en" type="text" placeholder="0x... paste your transaction hash here" oninput="clearStatus('en')">
+        <button class="verify-submit" id="verify-btn-en" onclick="verifyPayment('en')">🔍 Verify Payment</button>
+        <div class="status" id="status-en"></div>
+        <div class="dl-section" id="dl-en">
+          <a href="books/panteon-en.pdf" class="dl-btn">⬇ Download Personal Pantheon (EN)</a>
+          <p style="font-family:system-ui,sans-serif;font-size:13px;color:var(--muted);margin-top:8px">2.2 MB · 268 pages</p>
+        </div>
+      </div>
     </div>
   </div>
 
   <!-- Spanish -->
-  <div class="plan">
+  <div class="plan" id="plan-es">
     <h3>📖 Panteón Personal</h3>
     <div class="price">$9.99</div>
     <div class="desc">262 páginas · Español · 16 pensadores · PDF A5</div>
 
-    <a href="https://buy.stripe.com/test_YOUR_STRIPE_LINK_ES" class="pay-btn stripe-btn" target="_blank">Pagar con Tarjeta (Stripe)</a>
+    <a href="https://buy.stripe.com/test_YOUR_STRIPE_LINK_ES" class="pay-btn stripe-btn" target="_blank">💳 Pagar con Tarjeta (Stripe)</a>
 
-    <button class="toggle" onclick="toggleCrypto('es')">Pagar con Crypto ↓</button>
-    <div class="crypto-box" id="crypto-es">
+    <button class="toggle" onclick="showStep('step1-es')">₿ Pagar con Crypto ↓</button>
+
+    <div class="step" id="step1-es">
       <p style="font-size:14px;margin:0 0 8px;font-family:system-ui,sans-serif">Envía <strong>9.99 USDC</strong> a:</p>
       <div class="wallet-addr">0x18C3886478DE8c945c086A4DDe8967Ab15A1862F</div>
       <button class="copy-btn" onclick="copyAddr()">📋 Copiar Dirección</button>
-      <div class="networks">Redes: Ethereum (ERC-20), Polygon, Arbitrum, Base, Optimism, Avalanche C-Chain</div>
-      <a href="success.html?lang=es" class="confirm-btn">✅ Ya Envié el Pago — Descargar Ahora</a>
-      <div class="chain-info"><strong>💡 Entrega automática:</strong> Después de enviar USDC, hacé clic en el botón de arriba para descargar al instante. No necesito enviártelo manualmente.</div>
+      <div class="networks">Redes: Ethereum, Polygon, Arbitrum, Base, Optimism, Avalanche</div>
+      <button class="toggle" onclick="showStep('verify-es')" style="margin-top:8px">✅ Ya envié — Verificar Transacción →</button>
+    </div>
+
+    <div class="step" id="verify-es">
+      <div class="verify-box">
+        <label for="tx-es">Transaction Hash (TX ID)</label>
+        <select class="chain-select" id="chain-es">
+          <option value="ethereum">Ethereum (ERC-20)</option>
+          <option value="polygon">Polygon</option>
+          <option value="arbitrum">Arbitrum</option>
+          <option value="base">Base</option>
+          <option value="optimism">Optimism</option>
+          <option value="avalanche">Avalanche C-Chain</option>
+        </select>
+        <input class="tx-input" id="tx-es" type="text" placeholder="0x... pega el hash de tu transacción" oninput="clearStatus('es')">
+        <button class="verify-submit" id="verify-btn-es" onclick="verifyPayment('es')">🔍 Verificar Pago</button>
+        <div class="status" id="status-es"></div>
+        <div class="dl-section" id="dl-es">
+          <a href="books/panteon-personal.pdf" class="dl-btn">⬇ Descargar Panteón Personal (ES)</a>
+          <p style="font-family:system-ui,sans-serif;font-size:13px;color:var(--muted);margin-top:8px">2.2 MB · 262 páginas</p>
+        </div>
+      </div>
     </div>
   </div>
 </div>
 
-<h2>Frequently Asked Questions</h2>
+<div class="chain-info"><strong>🔗 On-chain verification:</strong> The API checks the blockchain directly via public RPCs. Your transaction is verified against the USDC Transfer event to our wallet address. Requires 12+ confirmations (≈3 min on Ethereum, faster on L2s).</div>
+
+<h2>FAQ</h2>
 <div class="faq">
 <details>
-<summary>What do I get?</summary>
-<div class="answer">A beautifully formatted A5 PDF (2.2 MB, 268 pages English / 262 pages Spanish) with 16 thinker profiles, actionable concepts, and a neural network connecting them all.</div>
-</details>
-<details>
 <summary>How does crypto payment work?</summary>
-<div class="answer">Send exactly <strong>9.99 USDC</strong> to the address shown. Works on Ethereum (ERC-20), Polygon, Arbitrum, Base, Optimism, or Avalanche C-Chain. After sending, click "I've Sent the Payment" and you'll get immediate access to your download.</div>
+<div class="answer">Send <strong>9.99 USDC</strong> to the wallet address shown. Copy your transaction hash (TX ID) from your wallet after sending, paste it in the verification box, and select the correct chain. The system verifies the transaction on-chain and unlocks the download instantly.</div>
 </details>
 <details>
 <summary>Which wallets can I use?</summary>
-<div class="answer">Any wallet that supports USDC: MetaMask, Coinbase Wallet, Trust Wallet, Ledger, Phantom (on Solana — not supported here), or any exchange wallet (Binance, Coinbase, Kraken). Make sure you're sending <strong>USDC</strong> on a supported network.</div>
+<div class="answer">MetaMask, Coinbase Wallet, Trust Wallet, Ledger, or any wallet/app that sends USDC on Ethereum, Polygon, Arbitrum, Base, Optimism, or Avalanche.</div>
 </details>
 <details>
-<summary>Can I get both versions?</summary>
-<div class="answer">Yes! Buy one version, then the other. The PDFs are separate purchases.</div>
+<summary>How long does verification take?</summary>
+<div class="answer">~30 seconds to check, but needs 12 blockchain confirmations. On Ethereum ~3 min, on Polygon/Arbitrum/Base ~30-60 seconds. The page tells you if it's still pending.</div>
 </details>
 <details>
-<summary>Do I get updates?</summary>
-<div class="answer">Yes — all purchases include future updates. The pantheon is never finished, and neither is this book.</div>
-</details>
-<details>
-<summary>Refunds?</summary>
-<div class="answer">If the PDF doesn't work or you have technical issues, email leandro@kaleiventures.com. For crypto payments, refunds are sent back in USDC to the originating address minus network fees.</div>
+<summary>What if something goes wrong?</summary>
+<div class="answer">Email leandro@kaleiventures.com with your TX hash. Refunds sent in USDC minus network fees.</div>
 </details>
 </div>
-
 </main>
 <footer><p>Leandro Pisaroni · <a href="https://nanopisaroni.vercel.app">nanopisaroni.vercel.app</a></p></footer>
 </div>
+
 <script>
-function toggleCrypto(lang) {
-  var box = document.getElementById('crypto-' + lang);
-  box.classList.toggle('show');
+function showStep(id) {
+  var steps = document.querySelectorAll('.step');
+  steps.forEach(function(s) { s.classList.remove('active'); });
+  document.getElementById(id).classList.add('active');
 }
+
+function clearStatus(lang) {
+  document.getElementById('status-' + lang).style.display = 'none';
+  document.getElementById('dl-' + lang).classList.remove('active');
+}
+
 function copyAddr() {
   var addr = '0x18C3886478DE8c945c086A4DDe8967Ab15A1862F';
   navigator.clipboard.writeText(addr).then(function() {
     var btns = document.querySelectorAll('.copy-btn');
     btns.forEach(function(b) { b.textContent = '✅ Copied!'; setTimeout(function(){b.textContent='📋 Copy Address';},2000); });
   });
+}
+
+async function verifyPayment(lang) {
+  var txInput = document.getElementById('tx-' + lang);
+  var chainSelect = document.getElementById('chain-' + lang);
+  var statusDiv = document.getElementById('status-' + lang);
+  var dlSection = document.getElementById('dl-' + lang);
+  var btn = document.getElementById('verify-btn-' + lang);
+
+  var tx = txInput.value.trim();
+  var chain = chainSelect.value;
+
+  if (!tx || !tx.startsWith('0x')) {
+    statusDiv.className = 'status error';
+    statusDiv.innerHTML = '❌ Please enter a valid transaction hash starting with 0x';
+    statusDiv.style.display = 'block';
+    return;
+  }
+
+  btn.disabled = true;
+  btn.textContent = '⏳ Verifying...';
+  statusDiv.className = 'status pending';
+  statusDiv.innerHTML = '⏳ Checking blockchain...';
+  statusDiv.style.display = 'block';
+  dlSection.classList.remove('active');
+
+  try {
+    var resp = await fetch('/api/verify-payment?tx=' + encodeURIComponent(tx) + '&chain=' + encodeURIComponent(chain));
+    var data = await resp.json();
+
+    if (data.verified) {
+      statusDiv.className = 'status success';
+      statusDiv.innerHTML = '✅ ' + data.message;
+      statusDiv.style.display = 'block';
+      dlSection.classList.add('active');
+    } else {
+      statusDiv.className = 'status error';
+      var reason = data.reason || data.error || 'Verification failed';
+      statusDiv.innerHTML = '❌ ' + reason;
+      statusDiv.style.display = 'block';
+    }
+  } catch (err) {
+    statusDiv.className = 'status error';
+    statusDiv.innerHTML = '❌ Error connecting to verification server: ' + err.message;
+    statusDiv.style.display = 'block';
+  }
+
+  btn.disabled = false;
+  btn.textContent = '🔍 Verify Payment';
 }
 </script>
 </body>

@@ -1,0 +1,23 @@
+Date,Day,Time,Persona,Emoji,Domain,Topic,Type
+2026-05-04,Monday,09:00,Krishnamurti,🕊️,Freedom from Conditioning,choiceless awareness,morning_post
+2026-05-04,Monday,14:00,Alan Watts,☯️,Eastern Philosophy & Zen,the self as illusion,afternoon_post
+2026-05-04,Monday,19:00,Thiel,🏢,Entrepreneurship & Contrarianism,venture thinking,evening_post
+2026-05-05,Tuesday,09:00,Feynman,🔬,Physics & Curiosity,quantum weirdness,morning_post
+2026-05-05,Tuesday,14:00,Deutsch,🌌,Quantum Physics & Epistemology,the beginning of infinity,afternoon_post
+2026-05-05,Tuesday,19:00,Krishnamurti,🕊️,Freedom from Conditioning,the art of questioning,evening_post
+2026-05-06,Wednesday,09:00,Thiel,🏢,Entrepreneurship & Contrarianism,contrarian questions,morning_post
+2026-05-06,Wednesday,14:00,Munger,🧠,Mental Models & Investing,mental models,afternoon_post
+2026-05-06,Wednesday,19:00,Deutsch,🌌,Quantum Physics & Epistemology,quantum computation,evening_post
+2026-05-07,Thursday,09:00,Yudkowsky,🤖,AI Safety & Rationality,AI alignment,morning_post
+2026-05-07,Thursday,14:00,Kahneman,🧪,Behavioral Economics & Cognitive Biases,confirmation bias,afternoon_post
+2026-05-07,Thursday,19:00,Marco Aurelio,🏛️,Stoicism & Leadership,the inner citadel,evening_post
+2026-05-08,Friday,09:00,Epicteto,🔥,Stoic Practicioner,the dichotomy of control,morning_post
+2026-05-08,Friday,14:00,Taleb,🦢,Risk & Antifragility,black swans,afternoon_post
+2026-05-08,Friday,19:00,Facundo Cabral,🎸,Poetic Wisdom & Life Philosophy,music & the soul,evening_post
+2026-05-09,Saturday,09:00,Borges,📚,Literature & Metaphysics,labyrinths & mazes,morning_post
+2026-05-09,Saturday,14:00,Krishnamurti,🕊️,Freedom from Conditioning,thought & time,afternoon_post
+2026-05-09,Saturday,19:00,Thiel,🏢,Entrepreneurship & Contrarianism,secrets worth pursuing,evening_post
+2026-05-10,Sunday,09:00,Naval,💎,Wealth & Happiness,wealth creation,morning_post
+2026-05-10,Sunday,14:00,Paul Graham,✍️,Startups & Writing,founder psychology,afternoon_post
+2026-05-10,Sunday,19:00,Taleb,🦢,Risk & Antifragility,antifragility,evening_post
+2026-05-10,Sunday,20:00,"Munger, Facundo Cabral, Thiel",💬,Thread,reflection,interaction_thread

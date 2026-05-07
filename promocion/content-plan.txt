@@ -7,7 +7,7 @@
 OVERVIEW
   Book:      Personal Pantheon (EN) / Panteón Personal (ES)
   Author:    Leandro Pisaroni
-  Site:      https://lpisaroni.github.io/
+  Site:      https://nanopisaroni.vercel.app/
   Buy:       https://leanpub.com/personal-pantheon
   Pages:     262 (both editions)
   Price:     $9.99 EN / $4.99 or free ES
@@ -30,14 +30,14 @@ DAY 1 — LAUNCH ANNOUNCEMENT (EN)
   I spent 2026 writing a book about 16 people who rewired my brain.
   Not a philosophy textbook. A personal pantheon.
   It's called "Personal Pantheon" — and it's out now.
-  Free sample + buy: https://lpisaroni.github.io/panteon-en.html
+  Buy: https://nanopisaroni.vercel.app/buy.html
   #PersonalPantheon #Books #Writing
 
 DAY 1 — LAUNCH ANNOUNCEMENT (ES)
   Pasé 2026 escribiendo un libro sobre 16 personas que me
   reprogramaron la cabeza. No es un manual de filosofía.
   Es un panteón personal. Se llama "Panteón Personal".
-  Descarga gratis: https://lpisaroni.github.io/panteon.html
+  Comprar: https://nanopisaroni.vercel.app/buy.html
   #PanteónPersonal #Libros #Escritura
 
 DAY 2 — BORGES THREAD (EN)
@@ -46,14 +46,14 @@ DAY 2 — BORGES THREAD (EN)
   contains all others. The Aleph, the Library of Babel,
   the idea that maps can be larger than territories.
   He's not just literature — he's epistemology in disguise.
-  Full profile: https://lpisaroni.github.io/panteon-en.html
+  Full profile: https://nanopisaroni.vercel.app/panteon-en.html
   #Borges #PersonalPantheon
 
 DAY 2 — BORGES (ES)
   Borges abre el Panteón porque me enseñó que una biblioteca
   es infinita y todo libro contiene a todos los demás.
   No es solo literatura — es epistemología disfrazada.
-  Descarga gratis: https://lpisaroni.github.io/panteon.html
+  Comprar: https://nanopisaroni.vercel.app/buy.html
   #Borges #PanteónPersonal
 
 DAY 3 — FEYNMAN (EN)
@@ -227,14 +227,14 @@ DAY 14 — KRISHNAMURTI + CABRAL + NAVAL (THREAD)
   3/3 Naval Ravikant: "The most important skill for getting
   rich is becoming a perpetual learner." His model of
   leverage, accountability, and specific knowledge.
-  All 16 profiles: https://lpisaroni.github.io/panteon-en.html
+  All 16 profiles: https://nanopisaroni.vercel.app/panteon-en.html
   #Krishnamurti #Cabral #Naval #PersonalPantheon
 
 DAY 14 — CIERRE DE LANZAMIENTO (ES)
   Dos semanas de lanzamiento. 16 pensadores. Un libro.
   Si te gusta leer, pensar, y cuestionar lo que sabés,
   este libro es para vos. Gratis en español.
-  https://lpisaroni.github.io/panteon.html
+  https://nanopisaroni.vercel.app/panteon.html
   #PanteónPersonal #Lectura #PensamientoCrítico
 
 ================================================================================
@@ -1043,7 +1043,7 @@ PART 3: QUOTE CARDS (16 Thinkers — One Quote Per Thinker)
 ================================================================================
 Design specs: 1200x1200px, clean typography, thinker name + small
               icon/symbol, dark background with accent color per thinker.
-              Footer: "From Personal Pantheon — lpisaroni.github.io"
+              Footer: "From Personal Pantheon — nanopisaroni.vercel.app"
 
 1. JORGE LUIS BORGES
    "I have always imagined that Paradise will be a kind of library."
@@ -1312,7 +1312,7 @@ C. COMMUNITY SHARES (5 Communities)
 ================================================================================
 PART 6: SEO BLOG POSTS (5 Long-Form Posts Linking to the Book)
 ================================================================================
-Target: Each post 1500-2500 words, published on lpisaroni.github.io
+Target: Each post 1500-2500 words, published on nanopisaroni.vercel.app
         or as separate pages. Each links to the book landing page.
 
 POST 1

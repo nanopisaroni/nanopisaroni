@@ -54,10 +54,16 @@ Share it with someone who needs it. Write a review. And if this book sparked som
 // Show the correct language version based on URL parameter
 var params = new URLSearchParams(window.location.search);
 var lang = params.get('lang') || 'en';
+var method = params.get('method') || 'stripe';
+var tx = params.get('tx') || '';
+
 if (lang === 'es') {
   document.getElementById('card-en').style.display = 'none';
   document.getElementById('card-es').style.display = 'block';
 }
+
+// Record the sale
+fetch('/api/admin?action=record&edition=' + lang + '&amount=9.99&method=' + method + '&txHash=' + tx).catch(function(){});
 </script>
 </body>
 </html>

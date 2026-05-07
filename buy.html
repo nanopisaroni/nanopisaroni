@@ -230,6 +230,10 @@ async function verifyPayment(lang) {
       statusDiv.innerHTML = '✅ ' + data.message;
       statusDiv.style.display = 'block';
       dlSection.classList.add('active');
+      // Redirect to success page after 2 seconds
+      setTimeout(function() {
+        window.location.href = '/success.html?lang=' + lang + '&method=crypto&tx=' + encodeURIComponent(tx);
+      }, 2000);
     } else {
       statusDiv.className = 'status error';
       var reason = data.reason || data.error || 'Verification failed';

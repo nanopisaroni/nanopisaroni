@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Thank You - Personal Pantheon</title>
+<style>
+:root{--bg:#fff;--text:#1a1a1a;--link:#2a5db0;--rule:#e6e6e6;--accent:#059669;--muted:#666}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Georgia,"Times New Roman",serif;font-size:18px;line-height:1.6}
+a{color:var(--link)}
+.site{width:min(100%-40px,650px);margin:0 auto;padding:60px 0}
+h1{font-size:clamp(32px,6vw,42px);font-weight:400;margin:0 0 8px}
+.check{font-size:64px;margin-bottom:16px}
+.sub{color:#555;margin-bottom:32px;font-size:17px}
+.card{background:#f8f9fa;border:1px solid var(--rule);border-radius:8px;padding:32px;margin-bottom:24px}
+.card h2{margin:0 0 4px;font-size:20px;font-weight:600}
+.card .desc{color:var(--muted);font-size:14px;margin-bottom:20px;font-family:system-ui,sans-serif}
+.dl-btn{display:inline-block;font-family:system-ui,sans-serif;font-size:16px;font-weight:600;padding:14px 32px;background:var(--accent);color:#fff;border-radius:6px;text-decoration:none}
+.dl-btn:hover{background:#047857}
+.dl-meta{font-family:system-ui,sans-serif;font-size:13px;color:var(--muted);margin-top:8px}
+.note{background:#f0fdf4;border:1px solid #bbf7d0;border-radius:6px;padding:16px;margin-top:24px;font-size:14px;color:#166534;font-family:system-ui,sans-serif}
+.note strong{display:block;margin-bottom:4px}
+</style>
+</head>
+<body>
+<div class="site">
+<div class="check">🎉</div>
+<h1>Thank You for Your Purchase!</h1>
+<p class="sub">Your download is ready. Save it, share it, build your own pantheon.</p>
+
+<div class="card" id="card-en">
+  <h2>📗 Personal Pantheon</h2>
+  <p class="desc">16 thinkers · 268 pages · A5 PDF</p>
+  <a href="books/panteon-en.pdf" class="dl-btn">⬇ Download Personal Pantheon (EN)</a>
+  <p class="dl-meta">2.2 MB · Click to download</p>
+</div>
+
+<div class="card" id="card-es" style="display:none">
+  <h2>📖 Panteón Personal</h2>
+  <p class="desc">16 pensadores · 262 páginas · PDF A5</p>
+  <a href="books/panteon-personal.pdf" class="dl-btn">⬇ Descargar Panteón Personal (ES)</a>
+  <p class="dl-meta">2.2 MB · Click para descargar</p>
+</div>
+
+<div class="note">
+<strong>💡 What's next?</strong>
+Share it with someone who needs it. Write a review. And if this book sparked something, the pantheon is never finished — the next thinker is always waiting.
+</div>
+
+<p style="margin-top:32px"><a href="index.html">← Back to Home</a></p>
+</div>
+<script>
+// Show the correct language version based on URL parameter
+var params = new URLSearchParams(window.location.search);
+var lang = params.get('lang') || 'en';
+if (lang === 'es') {
+  document.getElementById('card-en').style.display = 'none';
+  document.getElementById('card-es').style.display = 'block';
+}
+</script>
+</body>
+</html>

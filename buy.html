@@ -1,427 +1,148 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Buy - Leandro Pisaroni</title>
-  <style>
-    :root {
-      color-scheme: light;
-      --bg: #fff;
-      --text: #1a1a1a;
-      --link: #2a5db0;
-      --visited: #555;
-      --rule: #e6e6e6;
-      --accent: #2563eb;
-      --accent-hover: #1d4ed8;
-      --card-bg: #f8f9fa;
-      --muted: #666;
-    }
-
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      background: var(--bg);
-      color: var(--text);
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 18px;
-      line-height: 1.6;
-    }
-
-    a { color: var(--link); }
-    a:visited { color: var(--visited); }
-
-    .site {
-      width: min(100% - 40px, 720px);
-      margin: 0 auto;
-      padding: 32px 0 56px;
-    }
-
-    .nav {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 18px;
-      padding-bottom: 18px;
-      border-bottom: 1px solid var(--rule);
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      font-size: 15px;
-      line-height: 1.3;
-    }
-
-    .nav a { color: var(--link); text-decoration: none; }
-    .nav a:visited { color: var(--visited); }
-    .nav a:hover { text-decoration: underline; }
-
-    main { padding-top: 44px; }
-
-    h1 {
-      margin: 0 0 8px;
-      font-size: clamp(32px, 6vw, 42px);
-      line-height: 1.12;
-      font-weight: 400;
-    }
-
-    h2 {
-      margin: 48px 0 18px;
-      font-size: 22px;
-      line-height: 1.25;
-      font-weight: 400;
-      padding-bottom: 8px;
-      border-bottom: 1px solid var(--rule);
-    }
-
-    h3 {
-      margin: 0 0 6px;
-      font-size: 19px;
-      font-weight: 500;
-      line-height: 1.3;
-    }
-
-    p {
-      margin: 0 0 22px;
-    }
-
-    .subtitle {
-      font-size: 17px;
-      color: #555;
-      margin-bottom: 32px;
-    }
-
-    /* Product cards */
-    .products {
-      display: grid;
-      gap: 28px;
-      margin: 32px 0;
-    }
-
-    .product-card {
-      border: 1px solid var(--rule);
-      border-radius: 8px;
-      padding: 28px;
-      background: var(--card-bg);
-    }
-
-    .product-card h3 {
-      font-size: 20px;
-      font-weight: 600;
-      margin-bottom: 8px;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    }
-
-    .product-card .price {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      font-size: 28px;
-      font-weight: 700;
-      color: var(--text);
-      margin: 4px 0 12px;
-    }
-
-    .product-card .price small {
-      font-size: 16px;
-      font-weight: 400;
-      color: var(--muted);
-    }
-
-    .product-card .desc {
-      font-size: 15px;
-      color: #444;
-      margin-bottom: 20px;
-      line-height: 1.6;
-    }
-
-    .product-card .meta {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      font-size: 13px;
-      color: #888;
-      margin-bottom: 18px;
-    }
-
-    .product-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      align-items: center;
-    }
-
-    .btn {
-      display: inline-block;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      font-size: 15px;
-      font-weight: 600;
-      padding: 12px 28px;
-      background: var(--accent);
-      color: #fff;
-      border-radius: 6px;
-      text-decoration: none;
-      border: none;
-      cursor: pointer;
-      transition: background 0.15s;
-    }
-
-    .btn:hover { background: var(--accent-hover); }
-
-    .btn-outline {
-      background: transparent;
-      color: var(--accent);
-      border: 1.5px solid var(--accent);
-    }
-
-    .btn-outline:hover {
-      background: var(--accent);
-      color: #fff;
-    }
-
-    .btn-sm {
-      padding: 8px 18px;
-      font-size: 14px;
-    }
-
-    /* Crypto section */
-    .crypto-grid {
-      display: grid;
-      gap: 16px;
-      margin: 24px 0;
-    }
-
-    .crypto-item {
-      border: 1px solid var(--rule);
-      border-radius: 8px;
-      padding: 20px 24px;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 16px;
-    }
-
-    .crypto-item .label {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      font-weight: 600;
-      font-size: 15px;
-      min-width: 80px;
-    }
-
-    .crypto-item .address {
-      font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
-      font-size: 13px;
-      color: var(--muted);
-      word-break: break-all;
-      flex: 1;
-      min-width: 200px;
-    }
-
-    .crypto-item .note {
-      font-size: 13px;
-      color: var(--muted);
-      width: 100%;
-      margin-top: 4px;
-    }
-
-    /* FAQ */
-    .faq-list {
-      margin: 24px 0;
-    }
-
-    .faq-item {
-      padding: 18px 0;
-      border-bottom: 1px solid var(--rule);
-    }
-
-    .faq-item:last-child { border-bottom: none; }
-
-    .faq-item .q {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      font-weight: 600;
-      font-size: 16px;
-      margin-bottom: 4px;
-    }
-
-    .faq-item .a {
-      font-size: 15px;
-      color: #444;
-      line-height: 1.6;
-    }
-
-    /* Intro text */
-    .intro-text {
-      margin-bottom: 32px;
-      font-size: 16px;
-      color: #444;
-    }
-
-    footer {
-      margin-top: 48px;
-      padding-top: 18px;
-      border-top: 1px solid var(--rule);
-      color: var(--muted);
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      font-size: 14px;
-    }
-
-    @media (max-width: 520px) {
-      .site { width: min(100% - 28px, 720px); padding-top: 24px; }
-      .product-card { padding: 20px; }
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Buy - Personal Pantheon</title>
+<style>
+:root{--bg:#fff;--text:#1a1a1a;--link:#2a5db0;--rule:#e6e6e6;--accent:#059669;--muted:#666;--card-bg:#f8f9fa}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Georgia,"Times New Roman",serif;font-size:18px;line-height:1.6}
+a{color:var(--link)} a:visited{color:#555}
+.site{width:min(100%-40px,720px);margin:0 auto;padding:32px 0 56px}
+.nav{display:flex;flex-wrap:wrap;gap:18px;padding-bottom:18px;border-bottom:1px solid var(--rule);font-family:system-ui,-apple-system,sans-serif;font-size:15px}
+.nav a{color:var(--link);text-decoration:none}.nav a:visited{color:#555}.nav a:hover{text-decoration:underline}
+main{padding-top:44px}
+h1{margin:0 0 8px;font-size:clamp(32px,6vw,42px);line-height:1.12;font-weight:400}
+h2{margin:48px 0 18px;font-size:22px;line-height:1.25;font-weight:400;padding-bottom:8px;border-bottom:1px solid var(--rule)}
+h3{margin:0 0 6px;font-size:19px;font-weight:500;line-height:1.3}
+p{margin:0 0 22px}.sub{color:#555;margin-bottom:32px}
+.plans{display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));margin:24px 0}
+.plan{background:var(--card-bg);border:1px solid var(--rule);border-radius:8px;padding:28px}
+.plan h3{font-size:18px;font-weight:600;margin:0}
+.plan .price{font-size:28px;font-weight:600;margin:8px 0 4px;color:var(--accent)}
+.plan .desc{color:var(--muted);font-size:14px;margin-bottom:20px}
+.pay-btn{display:block;width:100%;text-align:center;font-family:system-ui,sans-serif;font-size:15px;font-weight:600;padding:12px;border-radius:6px;text-decoration:none;margin-bottom:8px}
+.stripe-btn{background:#635bff;color:#fff}.stripe-btn:hover{background:#4a42d4}
+.crypto-btn{background:#0a0a0a;color:#fff}.crypto-btn:hover{background:#222}
+.toggle{font-family:system-ui,sans-serif;font-size:14px;color:var(--link);cursor:pointer;text-align:center;margin-top:4px;display:block;border:none;background:none;width:100%;text-decoration:underline}
+.toggle:hover{color:#1d4ed8}
+.crypto-box{display:none;margin-top:16px;padding:16px;background:#fff;border:1px solid var(--rule);border-radius:6px}
+.crypto-box.show{display:block}
+.wallet-addr{font-family:monospace;font-size:13px;background:#f0f0f0;padding:8px 12px;border-radius:4px;word-break:break-all;margin:8px 0 4px;user-select:all}
+.copy-btn{font-family:system-ui,sans-serif;font-size:12px;padding:4px 12px;border:1px solid var(--rule);border-radius:4px;background:#fff;cursor:pointer;margin-bottom:12px}
+.copy-btn:hover{background:#f0f0f0}
+.networks{font-size:13px;color:var(--muted);margin-bottom:12px}
+.confirm-btn{display:block;width:100%;text-align:center;font-family:system-ui,sans-serif;font-size:15px;font-weight:600;padding:12px;border-radius:6px;text-decoration:none;background:var(--accent);color:#fff;margin-top:12px}
+.confirm-btn:hover{background:#047857}
+.chain-info{font-family:system-ui,sans-serif;font-size:13px;color:var(--muted);margin-top:16px;padding:12px;background:#f0fdf4;border:1px solid #bbf7d0;border-radius:6px}
+.chain-info strong{color:#166534}
+.faq{margin:24px 0}
+.faq details{margin-bottom:12px}
+.faq summary{font-family:system-ui,sans-serif;font-size:15px;font-weight:600;cursor:pointer;padding:8px 0}
+.faq .answer{font-size:15px;color:#333;padding:4px 0 12px;line-height:1.5;font-family:system-ui,sans-serif}
+footer{margin-top:44px;padding-top:18px;border-top:1px solid var(--rule);color:#666;font-family:system-ui,sans-serif;font-size:14px}
+</style>
 </head>
 <body>
-  <div class="site">
-    <nav class="nav" aria-label="Main navigation">
-      <a href="index.html">Home</a>
-      <a href="essays.html">Essays</a>
-      <a href="ideas.html">Ideas</a>
-      <a href="panteon.html">Panteón</a>
-      <a href="buy.html">Buy</a>
-      <a href="about.html">About</a>
-      <a href="rss.xml">RSS</a>
-    </nav>
+<div class="site">
+<nav class="nav">
+<a href="index.html">Home</a>
+<a href="essays.html">Essays</a>
+<a href="ideas.html">Ideas</a>
+<a href="panteon-en.html">Pantheon</a>
+<a href="panteon.html">Panteón (ES)</a>
+<a href="buy.html">Buy</a>
+<a href="about.html">About</a>
+<a href="rss.xml">RSS</a>
+</nav>
+<main>
+<h1>Buy the Book</h1>
+<p class="sub">Choose your version and payment method. PDF delivered immediately after payment.</p>
 
-    <main>
-      <h1>Buy the Book</h1>
-      <p class="subtitle">Personal Pantheon &mdash; the mental toolkit of 16 thinkers who shaped how I think</p>
+<div class="plans">
+  <!-- English -->
+  <div class="plan">
+    <h3>📗 Personal Pantheon</h3>
+    <div class="price">$9.99</div>
+    <div class="desc">268 pages · English · 16 thinkers · A5 PDF</div>
 
-      <p class="intro-text">
-        You can download the Spanish edition for free. The English edition and premium formats are available for purchase below. All proceeds support more writing.
-      </p>
+    <a href="https://buy.stripe.com/test_YOUR_STRIPE_LINK_EN" class="pay-btn stripe-btn" target="_blank">Pay with Card (Stripe)</a>
 
-      <!-- Products -->
-      <div class="products">
-
-        <!-- English: Personal Pantheon -->
-        <div class="product-card">
-          <h3>Personal Pantheon</h3>
-          <div class="price">$9.99 <small>USD</small></div>
-          <p class="desc">
-            16 thinkers &mdash; from Feynman to Taleb, Borges to Krishnamurti &mdash; and the mental models that form a practical philosophy for life, work, and decision-making. 262 pages. English edition.
-          </p>
-          <p class="meta">Digital PDF &middot; 2.2 MB &middot; A5 format</p>
-          <div class="product-actions">
-            <!-- Stripe Checkout button -->
-            <form action="https://buy.stripe.com/test_XXXXXXXX" method="GET" target="_blank">
-              <button class="btn stripe-buy-btn" 
-                data-stripe-key="pk_test_XXXXXXXXXXXXXXXXXXXXXXXX"
-                data-price-id="price_XXXXXXXXXXXXXXXXXXXXXXXX"
-                data-product-name="Personal Pantheon (English)"
-                data-product-price="9.99"
-                type="submit">
-                &#127775; Buy with Card
-              </button>
-            </form>
-            <span style="font-size:14px;color:var(--muted);font-family:system-ui;">Stripe Checkout &middot; PayPal &middot; Apple Pay</span>
-          </div>
-        </div>
-
-        <!-- Spanish: Panteón Personal -->
-        <div class="product-card">
-          <h3>Panteón Personal <span style="font-size:13px;font-weight:400;color:var(--muted);">(Español)</span></h3>
-          <div class="price">$4.99 <small>USD</small> <span style="font-size:14px;font-weight:400;color:#888;">&middot; o descarga gratis</span></div>
-          <p class="desc">
-            16 pensadores &mdash; de Feynman a Taleb, Borges a Krishnamurti &mdash; y los modelos mentales que forman una filosofía práctica para la vida, el trabajo y las decisiones. 262 páginas. Edición en español.
-          </p>
-          <p class="meta">PDF digital &middot; 2.2 MB &middot; Formato A5</p>
-          <div class="product-actions">
-            <a href="panteon-personal.pdf" class="btn btn-outline btn-sm">⬇ Descargar gratis</a>
-            <form action="https://buy.stripe.com/test_XXXXXXXX" method="GET" target="_blank">
-              <button class="btn btn-sm stripe-buy-btn" 
-                data-stripe-key="pk_test_XXXXXXXXXXXXXXXXXXXXXXXX"
-                data-price-id="price_XXXXXXXXXXXXXXXXXXXXXXXX"
-                data-product-name="Panteón Personal (Español)"
-                data-product-price="4.99"
-                type="submit">
-                Comprar con tarjeta
-              </button>
-            </form>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Crypto Payments -->
-      <h2>Crypto Payments</h2>
-      <p style="font-size:15px;color:#444;">Send the exact amount to one of the addresses below, then <a href="/cdn-cgi/l/email-protection#4a23242c250a2e2538242b64292527">email me</a> with the transaction hash and I'll send you the book within 24 hours.</p>
-
-      <div class="crypto-grid">
-        <div class="crypto-item">
-          <span class="label">Bitcoin</span>
-          <span class="address">bc1qxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span>
-          <div class="note">Send $9.99 USD equivalent in BTC. Network: Bitcoin (mainnet).</div>
-        </div>
-        <div class="crypto-item">
-          <span class="label">Ethereum</span>
-          <span class="address">0xXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span>
-          <div class="note">Send $9.99 USD equivalent in ETH. Network: Ethereum (ERC-20).</div>
-        </div>
-        <div class="crypto-item">
-          <span class="label">Lightning</span>
-          <span class="address">lnbc1xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span>
-          <div class="note">Send $9.99 USD equivalent via Lightning Invoice. Use any Lightning wallet (Wallet of Satoshi, Phoenix, Breez, etc.).</div>
-        </div>
-      </div>
-
-      <p style="font-size:14px;color:var(--muted);">Prices in BTC/ETH are approximate. Send the USD equivalent at current market rates.</p>
-
-      <!-- FAQ -->
-      <h2>FAQ</h2>
-      <div class="faq-list">
-        <div class="faq-item">
-          <div class="q">How do I receive the book after payment?</div>
-          <div class="a">For card payments (Stripe), you'll be redirected to the download page immediately after purchase. For crypto payments, I'll send the PDF to your email within 24 hours once the transaction is confirmed.</div>
-        </div>
-        <div class="faq-item">
-          <div class="q">What format is the book in?</div>
-          <div class="a">The book is a digital PDF, formatted in A5 size (148 × 210 mm), optimized for reading on screens and printing. 262 pages, approximately 2.2 MB.</div>
-        </div>
-        <div class="faq-item">
-          <div class="q">Is there a paperback or hardcover edition?</div>
-          <div class="a">Not yet. The digital PDF is the only format available right now. If there's enough interest, I'll explore print-on-demand options.</div>
-        </div>
-        <div class="faq-item">
-          <div class="q">Why is the English version $9.99 and the Spanish one $4.99 (or free)?</div>
-          <div class="a">The Spanish edition is available for free download because I want it to reach as many Spanish-speaking readers as possible. The $4.99 option is a voluntary contribution. The English edition is a separate translation effort, and your purchase supports that work and future projects.</div>
-        </div>
-        <div class="faq-item">
-          <div class="q">Do you accept other cryptocurrencies?</div>
-          <div class="a">I can accept USDT (TRC-20 or ERC-20), USDC, or Solana (SOL) on request. <a href="/cdn-cgi/l/email-protection#5a33343c351a3e3528343b74393537">Email me</a> and we'll figure it out.</div>
-        </div>
-        <div class="faq-item">
-          <div class="q">Can I get a refund?</div>
-          <div class="a">Digital products are non-refundable. However, if you have any issues with the file or your payment, <a href="/cdn-cgi/l/email-protection#31585f575e71555e435f501f525e5c">email me</a> and I'll make it right.</div>
-        </div>
-        <div class="faq-item">
-          <div class="q">Can I buy both books together at a discount?</div>
-          <div class="a">Not yet, but I'm working on a bundle option. For now, just grab the Spanish one for free and buy the English one if it's useful to you.</div>
-        </div>
-      </div>
-
-    </main>
-
-    <footer>&copy; 2026 Leandro Pisaroni</footer>
+    <button class="toggle" onclick="toggleCrypto('en')">Pay with Crypto ↓</button>
+    <div class="crypto-box" id="crypto-en">
+      <p style="font-size:14px;margin:0 0 8px;font-family:system-ui,sans-serif">Send <strong>9.99 USDC</strong> to:</p>
+      <div class="wallet-addr">0x18C3886478DE8c945c086A4DDe8967Ab15A1862F</div>
+      <button class="copy-btn" onclick="copyAddr()">📋 Copy Address</button>
+      <div class="networks">Supported: Ethereum (ERC-20), Polygon, Arbitrum, Base, Optimism, Avalanche C-Chain</div>
+      <a href="success.html?lang=en" class="confirm-btn">✅ I've Sent the Payment — Download Now</a>
+      <div class="chain-info"><strong>💡 Auto-delivery:</strong> After sending USDC, click the button above to access your PDF immediately. No need to wait for me to send it.</div>
+    </div>
   </div>
 
-  <!-- Stripe.js integration: set your public key in data-stripe-key attributes above -->
-  <script>
-    (function() {
-      // This script handles Stripe Checkout via data attributes.
-      // Replace the placeholder keys and price IDs with your actual Stripe credentials.
-      const buttons = document.querySelectorAll('.stripe-buy-btn');
-      buttons.forEach(function(btn) {
-        btn.addEventListener('click', function(e) {
-          // If you have configured the form action with your actual Stripe Checkout link,
-          // the default form submission will handle it. Otherwise, you can integrate
-          // the Stripe.js SDK here:
-          //
-          // const stripe = Stripe(btn.dataset.stripeKey);
-          // stripe.redirectToCheckout({
-          //   lineItems: [{ price: btn.dataset.priceId, quantity: 1 }],
-          //   mode: 'payment',
-          //   successUrl: window.location.origin + '/thank-you.html',
-          //   cancelUrl: window.location.origin + '/buy.html',
-          // });
-          //
-          // For now, the buttons submit to the placeholder form action.
-        });
-      });
-    })();
-  </script>
+  <!-- Spanish -->
+  <div class="plan">
+    <h3>📖 Panteón Personal</h3>
+    <div class="price">$9.99</div>
+    <div class="desc">262 páginas · Español · 16 pensadores · PDF A5</div>
+
+    <a href="https://buy.stripe.com/test_YOUR_STRIPE_LINK_ES" class="pay-btn stripe-btn" target="_blank">Pagar con Tarjeta (Stripe)</a>
+
+    <button class="toggle" onclick="toggleCrypto('es')">Pagar con Crypto ↓</button>
+    <div class="crypto-box" id="crypto-es">
+      <p style="font-size:14px;margin:0 0 8px;font-family:system-ui,sans-serif">Envía <strong>9.99 USDC</strong> a:</p>
+      <div class="wallet-addr">0x18C3886478DE8c945c086A4DDe8967Ab15A1862F</div>
+      <button class="copy-btn" onclick="copyAddr()">📋 Copiar Dirección</button>
+      <div class="networks">Redes: Ethereum (ERC-20), Polygon, Arbitrum, Base, Optimism, Avalanche C-Chain</div>
+      <a href="success.html?lang=es" class="confirm-btn">✅ Ya Envié el Pago — Descargar Ahora</a>
+      <div class="chain-info"><strong>💡 Entrega automática:</strong> Después de enviar USDC, hacé clic en el botón de arriba para descargar al instante. No necesito enviártelo manualmente.</div>
+    </div>
+  </div>
+</div>
+
+<h2>Frequently Asked Questions</h2>
+<div class="faq">
+<details>
+<summary>What do I get?</summary>
+<div class="answer">A beautifully formatted A5 PDF (2.2 MB, 268 pages English / 262 pages Spanish) with 16 thinker profiles, actionable concepts, and a neural network connecting them all.</div>
+</details>
+<details>
+<summary>How does crypto payment work?</summary>
+<div class="answer">Send exactly <strong>9.99 USDC</strong> to the address shown. Works on Ethereum (ERC-20), Polygon, Arbitrum, Base, Optimism, or Avalanche C-Chain. After sending, click "I've Sent the Payment" and you'll get immediate access to your download.</div>
+</details>
+<details>
+<summary>Which wallets can I use?</summary>
+<div class="answer">Any wallet that supports USDC: MetaMask, Coinbase Wallet, Trust Wallet, Ledger, Phantom (on Solana — not supported here), or any exchange wallet (Binance, Coinbase, Kraken). Make sure you're sending <strong>USDC</strong> on a supported network.</div>
+</details>
+<details>
+<summary>Can I get both versions?</summary>
+<div class="answer">Yes! Buy one version, then the other. The PDFs are separate purchases.</div>
+</details>
+<details>
+<summary>Do I get updates?</summary>
+<div class="answer">Yes — all purchases include future updates. The pantheon is never finished, and neither is this book.</div>
+</details>
+<details>
+<summary>Refunds?</summary>
+<div class="answer">If the PDF doesn't work or you have technical issues, email leandro@kaleiventures.com. For crypto payments, refunds are sent back in USDC to the originating address minus network fees.</div>
+</details>
+</div>
+
+</main>
+<footer><p>Leandro Pisaroni · <a href="https://nanopisaroni.vercel.app">nanopisaroni.vercel.app</a></p></footer>
+</div>
+<script>
+function toggleCrypto(lang) {
+  var box = document.getElementById('crypto-' + lang);
+  box.classList.toggle('show');
+}
+function copyAddr() {
+  var addr = '0x18C3886478DE8c945c086A4DDe8967Ab15A1862F';
+  navigator.clipboard.writeText(addr).then(function() {
+    var btns = document.querySelectorAll('.copy-btn');
+    btns.forEach(function(b) { b.textContent = '✅ Copied!'; setTimeout(function(){b.textContent='📋 Copy Address';},2000); });
+  });
+}
+</script>
 </body>
 </html>

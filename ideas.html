@@ -1,259 +1,258 @@
-     1|<!doctype html>
-     2|<html lang="es">
-     3|<head>
-     4|  <meta charset="utf-8">
-     5|  <meta name="viewport" content="width=device-width, initial-scale=1">
-     6|  <title>General Purpose Ideas - Leandro Pisaroni</title>
-     7|  <style>
-     8|    :root {
-     9|      color-scheme: light;
-    10|      --bg: #fff;
-    11|      --text: #1a1a1a;
-    12|      --link: #2a5db0;
-    13|      --visited: #555;
-    14|      --rule: #e6e6e6;
-    15|      --accent: #2563eb;
-    16|    }
-    17|
-    18|    * { box-sizing: border-box; }
-    19|
-    20|    body {
-    21|      margin: 0;
-    22|      background: var(--bg);
-    23|      color: var(--text);
-    24|      font-family: Georgia, "Times New Roman", serif;
-    25|      font-size: 18px;
-    26|      line-height: 1.6;
-    27|    }
-    28|
-    29|    a { color: var(--link); }
-    30|    a:visited { color: var(--visited); }
-    31|
-    32|    .site {
-    33|      width: min(100% - 40px, 650px);
-    34|      margin: 0 auto;
-    35|      padding: 32px 0 56px;
-    36|    }
-    37|
-    38|    .nav {
-    39|      display: flex;
-    40|      flex-wrap: wrap;
-    41|      gap: 18px;
-    42|      padding-bottom: 18px;
-    43|      border-bottom: 1px solid var(--rule);
-    44|      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    45|      font-size: 15px;
-    46|      line-height: 1.3;
-    47|    }
-    48|
-    49|    .nav a { color: var(--link); text-decoration: none; }
-    50|    .nav a:visited { color: var(--visited); }
-    51|    .nav a:hover { text-decoration: underline; }
-    52|
-    53|    main { padding-top: 44px; }
-    54|
-    55|    h1 {
-    56|      margin: 0 0 8px;
-    57|      font-size: clamp(30px, 6vw, 42px);
-    58|      line-height: 1.12;
-    59|      font-weight: 400;
-    60|    }
-    61|
-    62|    h2 {
-    63|      margin: 44px 0 18px;
-    64|      font-size: 22px;
-    65|      line-height: 1.25;
-    66|      font-weight: 400;
-    67|      padding-bottom: 8px;
-    68|      border-bottom: 1px solid var(--rule);
-    69|    }
-    70|
-    71|    h3 {
-    72|      margin: 28px 0 6px;
-    73|      font-size: 19px;
-    74|      font-weight: 500;
-    75|      line-height: 1.3;
-    76|    }
-    77|
-    78|    p {
-    79|      margin: 0 0 22px;
-    80|    }
-    81|
-    82|    .description {
-    83|      margin-bottom: 34px;
-    84|      color: #333;
-    85|    }
-    86|
-    87|    .toc {
-    88|      margin: 34px 0;
-    89|      padding: 20px 24px;
-    90|      background: #f8f9fa;
-    91|      border-radius: 6px;
-    92|      font-size: 15px;
-    93|      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    94|    }
-    95|
-    96|    .toc p {
-    97|      margin: 0 0 10px;
-    98|      font-weight: 600;
-    99|      font-size: 13px;
-   100|      text-transform: uppercase;
-   101|      letter-spacing: 0.5px;
-   102|      color: #666;
-   103|    }
-   104|
-   105|    .toc a {
-   106|      display: block;
-   107|      padding: 3px 0;
-   108|      text-decoration: none;
-   109|    }
-   110|
-   111|    .toc a:hover { text-decoration: underline; }
-   112|
-   113|    .toc .count {
-   114|      color: #999;
-   115|      font-size: 13px;
-   116|      margin-left: 4px;
-   117|    }
-   118|
-   119|    .concept {
-   120|      margin: 22px 0;
-   121|      padding: 18px 0;
-   122|      border-bottom: 1px solid var(--rule);
-   123|    }
-   124|
-   125|    .concept:last-of-type { border-bottom: none; }
-   126|
-   127|    .concept h3 {
-   128|      margin: 0 0 4px;
-   129|      font-size: 18px;
-   130|    }
-   131|
-   132|    .concept h3 .num {
-   133|      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-   134|      font-size: 13px;
-   135|      color: var(--accent);
-   136|      font-weight: 400;
-   137|      margin-right: 4px;
-   138|    }
-   139|
-   140|    .concept p {
-   141|      margin: 0;
-   142|      color: #444;
-   143|      font-size: 16px;
-   144|      line-height: 1.6;
-   145|    }
-   146|
-   147|    footer {
-   148|      margin-top: 44px;
-   149|      padding-top: 18px;
-   150|      border-top: 1px solid var(--rule);
-   151|      color: #666;
-   152|      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-   153|      font-size: 14px;
-   154|    }
-   155|
-   156|    @media (max-width: 520px) {
-   157|      .site { width: min(100% - 28px, 650px); padding-top: 24px; }
-   158|    }
-   159|  </style>
-   160|</head>
-   161|<body>
-   162|  <div class="site">
-   163|    <nav class="nav" aria-label="Main navigation">
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>General Purpose Ideas - Leandro Pisaroni</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #fff;
+      --text: #1a1a1a;
+      --link: #2a5db0;
+      --visited: #555;
+      --rule: #e6e6e6;
+      --accent: #2563eb;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    a { color: var(--link); }
+    a:visited { color: var(--visited); }
+
+    .site {
+      width: min(100% - 40px, 650px);
+      margin: 0 auto;
+      padding: 32px 0 56px;
+    }
+
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      padding-bottom: 18px;
+      border-bottom: 1px solid var(--rule);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 15px;
+      line-height: 1.3;
+    }
+
+    .nav a { color: var(--link); text-decoration: none; }
+    .nav a:visited { color: var(--visited); }
+    .nav a:hover { text-decoration: underline; }
+
+    main { padding-top: 44px; }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(30px, 6vw, 42px);
+      line-height: 1.12;
+      font-weight: 400;
+    }
+
+    h2 {
+      margin: 44px 0 18px;
+      font-size: 22px;
+      line-height: 1.25;
+      font-weight: 400;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    h3 {
+      margin: 28px 0 6px;
+      font-size: 19px;
+      font-weight: 500;
+      line-height: 1.3;
+    }
+
+    p {
+      margin: 0 0 22px;
+    }
+
+    .description {
+      margin-bottom: 34px;
+      color: #333;
+    }
+
+    .toc {
+      margin: 34px 0;
+      padding: 20px 24px;
+      background: #f8f9fa;
+      border-radius: 6px;
+      font-size: 15px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    .toc p {
+      margin: 0 0 10px;
+      font-weight: 600;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: #666;
+    }
+
+    .toc a {
+      display: block;
+      padding: 3px 0;
+      text-decoration: none;
+    }
+
+    .toc a:hover { text-decoration: underline; }
+
+    .toc .count {
+      color: #999;
+      font-size: 13px;
+      margin-left: 4px;
+    }
+
+    .concept {
+      margin: 22px 0;
+      padding: 18px 0;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .concept:last-of-type { border-bottom: none; }
+
+    .concept h3 {
+      margin: 0 0 4px;
+      font-size: 18px;
+    }
+
+    .concept h3 .num {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 13px;
+      color: var(--accent);
+      font-weight: 400;
+      margin-right: 4px;
+    }
+
+    .concept p {
+      margin: 0;
+      color: #444;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    footer {
+      margin-top: 44px;
+      padding-top: 18px;
+      border-top: 1px solid var(--rule);
+      color: #666;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 14px;
+    }
+
+    @media (max-width: 520px) {
+      .site { width: min(100% - 28px, 650px); padding-top: 24px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="site">
+    <nav class="nav">
 <a href="index.html">Home</a> <a href="essays.html">Essays</a> <a href="ideas.html">Ideas</a>
 <a href="panteon-en.html">Pantheon</a> <a href="panteon.html">Panteón</a>
 <a href="buy.html">Buy</a> <a href="about.html">About</a> <a href="rss.xml">RSS</a>
 </nav>
-   172|
-   173|    <main>
-   174|      <h1>General Purpose Ideas</h1>
-   175|      <p class="description">Modelos mentales que fui recopilando a lo largo de los a&ntilde;os. Algunos vienen de la ciencia, otros de la filosof&iacute;a, la estrategia militar, la econom&iacute;a o la psicolog&iacute;a. Lo que tienen en com&uacute;n es que son &uacute;tiles &mdash; marcos para pensar, decidir y entender el mundo.</p>
-   176|      <p class="description" style="margin-top:-20px;"><em>~55 conceptos organizados por tema. Versi&oacute;n descargable: <a href="general-purpose-ideas.pdf">PDF</a>.</em></p>
-   177|
-   178|      <div class="toc">
-   179|        <p>Contenido</p>
-   180|        <a href="#razonamiento">Razonamiento &amp; Toma de Decisiones <span class="count">(8)</span></a>
-   181|        <a href="#psicologia">Psicolog&iacute;a &amp; Comportamiento <span class="count">(7)</span></a>
-   182|        <a href="#riesgo">Riesgo &amp; Incertidumbre <span class="count">(10)</span></a>
-   183|        <a href="#sistemas">Sistemas &amp; Din&aacute;micas <span class="count">(10)</span></a>
-   184|        <a href="#economia">Econom&iacute;a &amp; Estrategia <span class="count">(8)</span></a>
-   185|        <a href="#redes">Crecimiento &amp; Redes <span class="count">(5)</span></a>
-   186|        <a href="#paradojas">Paradojas &amp; Trampas <span class="count">(7)</span></a>
-   187|      </div>
-   188|
-   189|      <h2 id="razonamiento">Razonamiento &amp; Toma de Decisiones</h2>
-   190|      <div class="concept"><h3><span class="num">01</span> The Map is not the Territory</h3><p>Un mapa es una representaci&oacute;n simplificada de la realidad, no la realidad misma. El error es confundir el modelo con el territorio que describe. Los mapas omiten detalles por definici&oacute;n &mdash; lo importante es saber qu&eacute; se dej&oacute; afuera y c&oacute;mo eso afecta la decisi&oacute;n. Aplicable a modelos financieros, estrategias de negocio, pron&oacute;sticos pol&iacute;ticos y cualquier abstracci&oacute;n que usemos para navegar el mundo.</p></div>
-   191|      <div class="concept"><h3><span class="num">02</span> Occam&rsquo;s Razor</h3><p>Entre explicaciones en competencia, la m&aacute;s simple suele ser la correcta. No porque la simplicidad sea inherentemente mejor, sino porque las explicaciones simples tienen menos supuestos no verificados y por lo tanto menos lugares donde estar&iacute;an equivocadas. En negocios: cuando algo no funciona, la explicaci&oacute;n m&aacute;s simple (precio, producto, distribuci&oacute;n) es m&aacute;s probable que la conspiraci&oacute;n elaborada.</p></div>
-   192|      <div class="concept"><h3><span class="num">03</span> Availability Heuristic</h3><p>Tendemos a juzgar la probabilidad de los eventos seg&uacute;n qu&eacute; tan f&aacute;cilmente nos vienen ejemplos a la mente. Lo que es m&aacute;s reciente, dram&aacute;tico o emocional nos parece m&aacute;s probable. Por eso la gente le teme m&aacute;s a los aviones que a los autos (mueren m&aacute;s en autos, pero los accidentes a&eacute;reos son m&aacute;s noticia). En inversiones: la &uacute;ltima crisis siempre parece m&aacute;s probable que la pr&oacute;xima.</p></div>
-   193|      <div class="concept"><h3><span class="num">04</span> Survivorship Bias</h3><p>Mir&aacute;s solo a los que sobrevivieron y sac&aacute;s conclusiones equivocadas. Los libros sobre startups exitosas ignoran a las 9 de cada 10 que fracasaron con exactamente las mismas pr&aacute;cticas. El sesgo de supervivencia te hace creer que el &eacute;xito es predecible cuando en realidad hay un componente enorme de suerte y selecci&oacute;n. La correcci&oacute;n: estudi&aacute; tambi&eacute;n a los que fracasaron.</p></div>
-   194|      <div class="concept"><h3><span class="num">05</span> Analysis Paralysis</h3><p>Cuando la sobrecarga de informaci&oacute;n impide la acci&oacute;n. Cuantos m&aacute;s datos ten&eacute;s, m&aacute;s c&oacute;modo se siente no decidir &mdash; pero el costo de la inacci&oacute;n suele superar al costo de una decisi&oacute;n imperfecta. La soluci&oacute;n no es m&aacute;s informaci&oacute;n, sino criterios claros para decidir con la informaci&oacute;n disponible. Perfecto es enemigo de hecho.</p></div>
-   195|      <div class="concept"><h3><span class="num">06</span> The Teleological Fallacy</h3><p>Explicar algo por su prop&oacute;sito en vez de por su causa. "Las aves tienen alas para volar" suena l&oacute;gico pero invierte la causalidad: las aves vuelan porque tienen alas (evoluci&oacute;n), no al rev&eacute;s. En negocios: "la empresa existe para maximizar valor" confunde efecto con intenci&oacute;n. Muy com&uacute;n en an&aacute;lisis estrat&eacute;gico.</p></div>
-   196|      <div class="concept"><h3><span class="num">07</span> Frugality of Information</h3><p>A veces menos informaci&oacute;n lleva a mejores decisiones. El exceso de datos introduce ruido, falsas correlaciones y par&aacute;lisis. Los expertos suelen usar menos variables que los novatos para decidir &mdash; porque saben cu&aacute;les importan. Dise&ntilde;ar sistemas para que funcionen con informaci&oacute;n limitada es m&aacute;s robusto que depender de datos perfectos.</p></div>
-   197|      <div class="concept"><h3><span class="num">08</span> Postmortem</h3><p>El an&aacute;lisis de lo que sali&oacute; mal (y bien) despu&eacute;s de un proyecto o evento. La clave es hacerlo sin culpa &mdash; el objetivo es aprender, no asignar responsabilidad. Un buen postmortem identifica causas ra&iacute;z, no s&iacute;ntomas. Las mejores organizaciones hacen postmortems incluso de los &eacute;xitos, para entender qu&eacute; funcion&oacute; y poder repetirlo.</p></div>
-   198|
-   199|      <h2 id="psicologia">Psicolog&iacute;a &amp; Comportamiento</h2>
-   200|      <div class="concept"><h3><span class="num">09</span> Social Proof (Safety in Numbers)</h3><p>En situaciones de incertidumbre, la gente copia lo que hacen otros asumiendo que es el comportamiento correcto. Es el motor de las modas, las burbujas financieras y la adopci&oacute;n tecnol&oacute;gica. &Uacute;til para entender comportamiento de mercado, pero peligroso cuando suprime el pensamiento independiente. Warren Buffett: "S&eacute; temeroso cuando otros son codiciosos y codicioso cuando otros son temerosos."</p></div>
-   201|      <div class="concept"><h3><span class="num">10</span> Reciprocity</h3><p>Tendencia humana a devolver favores y corresponder gestos. Es una de las normas sociales m&aacute;s universales y poderosas. En negociaciones: dar primero (informaci&oacute;n, un favor, una concesi&oacute;n) genera una obligaci&oacute;n impl&iacute;cita de reciprocidad. En relaciones: la reciprocidad genuina construye confianza; la forzada genera resentimiento.</p></div>
-   202|      <div class="concept"><h3><span class="num">11</span> Activation Energy</h3><p>La energ&iacute;a necesaria para iniciar un h&aacute;bito o proceso. Reducir la fricci&oacute;n de arranque es la forma m&aacute;s efectiva de cambiar comportamiento. Ejemplo: preparar la ropa para el gimnasio la noche anterior reduce dr&aacute;sticamente la activaci&oacute;n necesaria a la ma&ntilde;ana. En producto: cada paso extra en el onboarding es activaci&oacute;n que perd&eacute;s usuarios.</p></div>
-   203|      <div class="concept"><h3><span class="num">12</span> Domain Dependence</h3><p>La dificultad de transferir conocimiento de un dominio a otro. Entend&eacute;s un concepto en contexto A pero no lo reconoc&eacute;s en contexto B. La educaci&oacute;n tradicional ense&ntilde;a en silos; el pensamiento multidisciplinario intenta romper este sesgo. La gente m&aacute;s creativa suele tener experiencia en m&uacute;ltiples dominios &mdash; pueden conectar ideas que otros no ven.</p></div>
-   204|      <div class="concept"><h3><span class="num">13</span> Good Procrastination</h3><p>No toda procrastinaci&oacute;n es mala. Si posterg&aacute;s una tarea de bajo impacto para hacer algo m&aacute;s importante, est&aacute;s priorizando. El problema no es postergar, sino postergar lo importante. Paul Graham distingue entre procrastinar en la forma (hacer tareas triviales para evitar las duras) vs. procrastinar en el fondo (evitar pensar en lo fundamental).</p></div>
-   205|      <div class="concept"><h3><span class="num">14</span> Picasso&rsquo;s Checks (Hit or Miss)</h3><p>El enfoque de producci&oacute;n en volumen como estrategia. Picasso pintaba cientos de obras; algunas eran obras maestras, otras no. La idea es que la cantidad genera calidad &mdash; produc&iacute; mucho, y estad&iacute;sticamente algo va a ser bueno. En startups: prob&aacute; muchas hip&oacute;tesis r&aacute;pidamente. En creatividad: gener&aacute; sin juzgar, despu&eacute;s edit&aacute;.</p></div>
-   206|      <div class="concept"><h3><span class="num">15</span> Fight/Flight</h3><p>La respuesta autom&aacute;tica del sistema nervioso ante una amenaza: pelear o huir. En el mundo moderno, esta respuesta se activa con estr&eacute;s laboral, conflictos, presi&oacute;n financiera. Reconocer cu&aacute;ndo est&aacute;s en modo fight/flight te permite no tomar decisiones importantes en ese estado. La respiraci&oacute;n y la pausa son el ant&iacute;doto.</p></div>
-   207|
-   208|      <h2 id="riesgo">Riesgo &amp; Incertidumbre</h2>
-   209|      <div class="concept"><h3><span class="num">16</span> Fragility &ndash; Robustness &ndash; Antifragility</h3><p>Propuesto por Nassim Taleb. Lo fr&aacute;gil se rompe bajo estr&eacute;s y volatilidad. Lo robusto aguanta. Lo antifr&aacute;gil se beneficia del desorden, el error y la volatilidad. La evoluci&oacute;n es antifr&aacute;gil: los errores gen&eacute;ticos son la materia prima de la adaptaci&oacute;n. Las startups deber&iacute;an dise&ntilde;arse para ser antifr&aacute;giles: errores peque&ntilde;os que generan aprendizaje y fortalecen el sistema.</p></div>
-   210|      <div class="concept"><h3><span class="num">17</span> Black Swans</h3><p>Eventos altamente improbables, de impacto masivo, que en retrospectiva parecen predecibles. Antes de Australia, todos asum&iacute;an que todos los cisnes eran blancos. Ejemplos: la crisis del 2008, la pandemia, la explosi&oacute;n de Internet. La lecci&oacute;n: no dise&ntilde;es sistemas que dependan de que no ocurra un cisne negro. Constru&iacute; redundancia y colchones de seguridad.</p></div>
-   211|      <div class="concept"><h3><span class="num">18</span> Redundancy</h3><p>Tener m&aacute;s de lo necesario como seguro contra fallos. En ingenier&iacute;a: sistemas redundantes (backups, servidores espejo). En finanzas: colch&oacute;n de efectivo. En biolog&iacute;a: dos ri&ntilde;ones. La redundancia parece ineficiente hasta que la necesit&aacute;s. La lecci&oacute;n de Taleb: el exceso de optimizaci&oacute;n elimina la redundancia y crea fragilidad.</p></div>
-   212|      <div class="concept"><h3><span class="num">19</span> Barbell Strategy</h3><p>Estrategia de Taleb para navegar la incertidumbre: en vez de ir por el medio (riesgo moderado), pon&eacute; la mayor parte de tus recursos en lo seguro y una peque&ntilde;a parte en apuestas de alto riesgo/alto retorno. Ejemplo: un trabajo estable (seguro) + tiempo invertido en proyectos especulativos (startups, escritura, arte). Lo del medio es lo peor: riesgo sin suficiente retorno.</p></div>
-   213|      <div class="concept"><h3><span class="num">20</span> Asymmetric Warfare</h3><p>Cuando un oponente m&aacute;s d&eacute;bil enfrenta a uno m&aacute;s fuerte usando t&aacute;cticas que explotan las debilidades del m&aacute;s fuerte. David vs Goliat. En negocios: startups compitiendo contra incumbentes. La ventaja del d&eacute;bil es que no tiene nada que perder, puede moverse m&aacute;s r&aacute;pido, y no juega con las mismas reglas. El fuerte tiene restricciones que el d&eacute;bil no.</p></div>
-   214|      <div class="concept"><h3><span class="num">21</span> Potential Downside &lt; Potential Upside</h3><p>Regla b&aacute;sica de decisi&oacute;n: tom&aacute; apuestas donde lo m&aacute;ximo que pod&eacute;s perder es limitado pero lo que pod&eacute;s ganar es enorme. Es el principio del venture capital: 1 de cada 10 startups paga por las otras 9. En la vida: decir que s&iacute; a oportunidades de bajo riesgo y alto potencial vale m&aacute;s que optimizar decisiones seguras de bajo retorno.</p></div>
-   215|      <div class="concept"><h3><span class="num">22</span> Iatrogenics</h3><p>El da&ntilde;o causado por el tratamiento (m&eacute;dico), no por la enfermedad original. Se extiende a cualquier intervenci&oacute;n bien intencionada que empeora las cosas. Ejemplos: intervencionismo estatal que genera m&aacute;s problemas de los que resuelve, optimizaci&oacute;n excesiva en empresas que mata la cultura, consejos financieros que hacen perder plata. Primero: no hacer da&ntilde;o.</p></div>
-   216|      <div class="concept"><h3><span class="num">23</span> Hormesis</h3><p>El fen&oacute;meno por el cual una dosis baja de algo da&ntilde;ino fortalece al organismo. El ejercicio da&ntilde;a los m&uacute;sculos para que se reparen m&aacute;s fuertes. Las vacunas exponen al sistema inmune a versiones atenuadas del virus. En startups: la fricci&oacute;n, la competencia y los fracasos peque&ntilde;os fortalecen a la organizaci&oacute;n. El exceso de protecci&oacute;n genera fragilidad.</p></div>
-   217|      <div class="concept"><h3><span class="num">24</span> The Lindy Effect</h3><p>La expectativa de vida futura de algo es proporcional a su edad actual. Cuanto m&aacute;s tiempo sobrevivi&oacute; algo (una tecnolog&iacute;a, una idea, una instituci&oacute;n), m&aacute;s tiempo va a seguir sobreviviendo. Lo que lleva 100 a&ntilde;os probablemente dure otros 100. Lo que lleva 5 a&ntilde;os&hellip; no. Aplicaci&oacute;n: prefer&iacute; ideas, tecnolog&iacute;as y libros que ya demostraron longevidad sobre las modas.</p></div>
-   218|      <div class="concept"><h3><span class="num">25</span> Avoidance of Harm</h3><p>Principio estoico: lo primero no es buscar el bien, sino evitar el da&ntilde;o. En inversiones: la regla n&uacute;mero 1 es no perder plata. En decisiones: antes de preguntar "c&oacute;mo gano", pregunt&aacute; "c&oacute;mo pierdo". La asimetr&iacute;a importa: evitar una p&eacute;rdida grande es m&aacute;s importante que buscar una ganancia grande. Inversi&oacute;n: lo que no compr&aacute;s importa m&aacute;s que lo que compr&aacute;s.</p></div>
-   219|
-   220|      <h2 id="sistemas">Sistemas &amp; Din&aacute;micas</h2>
-   221|      <div class="concept"><h3><span class="num">26</span> Compounding</h3><p>El crecimiento exponencial donde los resultados se realimentan. Inter&eacute;s compuesto en finanzas, aprendizaje compuesto (cada nuevo conocimiento hace m&aacute;s f&aacute;cil aprender m&aacute;s), redes compuestas (cada usuario nuevo hace la red m&aacute;s valiosa). La magia ocurre cuando el horizonte es largo. El problema humano es que el compounding es aburrido al principio y espectacular al final.</p></div>
-   222|      <div class="concept"><h3><span class="num">27</span> Pareto Principle (80/20)</h3><p>El 80% de los resultados vienen del 20% de los esfuerzos. El 80% de las ventas viene del 20% de los clientes. El 80% de los bugs viene del 20% del c&oacute;digo. El principio no es una ley exacta sino una observaci&oacute;n sobre distribuciones desiguales. La aplicaci&oacute;n pr&aacute;ctica: identific&aacute; el 20% que genera el 80% del valor y enfocate ah&iacute;.</p></div>
-   223|      <div class="concept"><h3><span class="num">28</span> Technology Adoption Life Cycle</h3><p>Modelo de c&oacute;mo los mercados adoptan nuevas tecnolog&iacute;as: innovadores &rarr; early adopters &rarr; mayor&iacute;a temprana &rarr; mayor&iacute;a tard&iacute;a &rarr; rezagados. El abismo (de Geoffrey Moore) es la brecha entre early adopters (que compran por la novedad) y la mayor&iacute;a temprana (que compra por utilidad pr&aacute;ctica). La mayor&iacute;a de las startups mueren en el abismo.</p></div>
-   224|      <div class="concept"><h3><span class="num">29</span> Hype Cycle</h3><p>Modelo de Gartner sobre c&oacute;mo las tecnolog&iacute;as pasan por: pico de expectativas infladas &rarr; valle de desilusi&oacute;n &rarr; pendiente de iluminaci&oacute;n &rarr; meseta de productividad. &Uacute;til para no subirse a modas ni abandonar tecnolog&iacute;as en el momento equivocado. Cuando todos hablan de algo, probablemente est&aacute; cerca del pico. El momento de construir es en el valle.</p></div>
-   225|      <div class="concept"><h3><span class="num">30</span> Network Effects</h3><p>Un producto o servicio se vuelve m&aacute;s valioso cuantas m&aacute;s personas lo usan. Ley de Metcalfe: el valor de una red es proporcional al cuadrado de sus usuarios. Ejemplos: redes sociales, mercados, plataformas de mensajer&iacute;a. Es el foso competitivo m&aacute;s poderoso porque es dif&iacute;cil de replicar &mdash; necesit&aacute;s masa cr&iacute;tica. Por eso las startups persiguen crecimiento a cualquier costo.</p></div>
-   226|      <div class="concept"><h3><span class="num">31</span> Red Queen Effect</h3><p>Del libro "Alicia del otro lado del espejo": correr lo m&aacute;s r&aacute;pido posible para mantenerte en el mismo lugar. En evoluci&oacute;n: cada adaptaci&oacute;n de una especie genera presi&oacute;n de selecci&oacute;n en otra, que a su vez se adapta. En negocios: competir significa que todos mejoran constantemente y la ventaja es temporal. La soluci&oacute;n no es correr m&aacute;s r&aacute;pido, sino cambiar el juego.</p></div>
-   227|      <div class="concept"><h3><span class="num">32</span> Creative Destruction</h3><p>Concepto de Schumpeter: el motor del capitalismo es la destrucci&oacute;n de lo viejo para crear lo nuevo. Nuevas tecnolog&iacute;as destruyen industrias establecidas (el streaming destruy&oacute; Blockbuster, el smartphone destruy&oacute; las c&aacute;maras). El proceso es doloroso pero necesario para el crecimiento. Las empresas que no se canibalizan a s&iacute; mismas terminan canibalizadas por otros.</p></div>
-   228|      <div class="concept"><h3><span class="num">33</span> Bottlenecks</h3><p>El cuello de botella determina la capacidad de todo el sistema. La ley de las restricciones (Goldratt): toda mejora fuera del bottleneck es una ilusi&oacute;n. Encontr&aacute; la restricci&oacute;n principal, aliviala, y repet&iacute;. En startups: el bottleneck cambia con el tiempo (primero es producto, despu&eacute;s distribuci&oacute;n, despu&eacute;s talento, despu&eacute;s capital). Identificarlo es m&aacute;s importante que optimizar cualquier otra cosa.</p></div>
-   229|      <div class="concept"><h3><span class="num">34</span> Convexity Effects</h3><p>De Taleb. Una relaci&oacute;n convexa significa que las ganancias potenciales superan a las p&eacute;rdidas potenciales a medida que aumenta la volatilidad. Busc&aacute; convexidad: situaciones donde gan&aacute;s mucho si algo funciona y perd&eacute;s poco si no. La convexidad es antifragilidad. Ejemplo: escribir un libro &mdash; si no funciona perdiste tiempo, si funciona te cambia la vida.</p></div>
-   230|      <div class="concept"><h3><span class="num">35</span> Escaping the Idea Maze</h3><p>Concepto de Balaji Srinivasan: una buena idea de startup no es una idea, es un laberinto. Hay que conocer las decisiones pasadas, los competidores, las tecnolog&iacute;as, las regulaciones, los modelos de negocio que ya se probaron y por qu&eacute; funcionaron o no. "Escapar del laberinto" significa encontrar el camino correcto a trav&eacute;s de todo ese conocimiento acumulado.</p></div>
-   231|
-   232|      <h2 id="economia">Econom&iacute;a &amp; Estrategia</h2>
-   233|      <div class="concept"><h3><span class="num">36</span> Opportunity Costs</h3><p>El costo de una decisi&oacute;n es el valor de la mejor alternativa a la que renunci&aacute;s. Elegir A significa NO elegir B. Toda decisi&oacute;n tiene un costo oculto &mdash; lo que no est&aacute;s haciendo. En inversiones: el retorno de una acci&oacute;n se mide contra lo que habr&iacute;as ganado con otra. En tiempo: cada hora en reuniones es una hora que no est&aacute;s construyendo.</p></div>
-   234|      <div class="concept"><h3><span class="num">37</span> Arbitrage</h3><p>Comprar barato y vender caro simult&aacute;neamente, aprovechando diferencias de precio en distintos mercados. En su forma m&aacute;s pura es sin riesgo. Pero el verdadero arbitraje en la vida es m&aacute;s sutil: arbitraje de conocimiento (saber algo que otros no), arbitraje de tiempo (hacer algo antes que otros), arbitraje geogr&aacute;fico (costo de vida).</p></div>
-   235|      <div class="concept"><h3><span class="num">38</span> Scarcity</h3><p>El principio econ&oacute;mico fundamental: los recursos son limitados y las necesidades ilimitadas. Todo tiene un costo de oportunidad. La escasez impulsa el valor &mdash; lo abundante es barato, lo escaso es caro. En marketing: la percepci&oacute;n de escasez (edici&oacute;n limitada, &uacute;ltimo disponible) activa mecanismos psicol&oacute;gicos de deseo. En estrategia: busc&aacute; escasez donde puedas crear monopolio.</p></div>
-   236|      <div class="concept"><h3><span class="num">39</span> The Agency Problem</h3><p>El conflicto de intereses entre un principal (due&ntilde;o, inversor) y un agente (empleado, gestor) que act&uacute;a en su nombre. El agente puede priorizar sus intereses sobre los del principal. Ejemplos: CEOs que buscan bonus de corto plazo en vez de salud de largo plazo de la empresa, asesores financieros que recomiendan productos por comisi&oacute;n. La soluci&oacute;n: alinear incentivos.</p></div>
-   237|      <div class="concept"><h3><span class="num">40</span> The Matthew Effect</h3><p>"Al que tiene, se le dar&aacute; m&aacute;s." Las ventajas se acumulan: los ricos se vuelven m&aacute;s ricos, los famosos m&aacute;s famosos, los exitosos reciben m&aacute;s oportunidades. En ciencia: los investigadores con nombre reciben m&aacute;s cr&eacute;dito. En startups: el capital va al que ya levant&oacute; capital. No es justo, pero es real. La estrategia: logr&aacute; una peque&ntilde;a ventaja inicial y deja que el efecto compounding haga su trabajo.</p></div>
-   238|      <div class="concept"><h3><span class="num">41</span> Leverage</h3><p>Amplificar el impacto de tus acciones usando una palanca. Tipos de leverage: capital (plata que trabaja para vos), trabajo (gente que trabaja para vos), c&oacute;digo/tecnolog&iacute;a (software que escala sin costo marginal), medios (una idea que llega a millones). El leverage multiplica resultados, pero tambi&eacute;n riesgo. La clave es usarlo cuando ten&eacute;s una ventaja asim&eacute;trica.</p></div>
-   239|      <div class="concept"><h3><span class="num">42</span> Incentives</h3><p>El motor del comportamiento humano. La gente responde a incentivos. Si quer&eacute;s entender por qu&eacute; alguien hace algo, segu&iacute; los incentivos. Charlie Munger: "Mu&eacute;strame el incentivo y te mostrar&eacute; el resultado." Dise&ntilde;ar mal los incentivos genera comportamiento indeseado (ej: m&eacute;dicos que cobran por procedimiento hacen m&aacute;s procedimientos, no pacientes m&aacute;s sanos).</p></div>
-   240|      <div class="concept"><h3><span class="num">43</span> The Prisoner&rsquo;s Dilemma</h3><p>Dos personas actuando en su propio inter&eacute;s individual terminan peor que si hubieran cooperado. El dilema cl&aacute;sico de teor&iacute;a de juegos. Explica por qu&eacute; se forman c&aacute;rteles, por qu&eacute; las guerras de precios son destructivas, y por qu&eacute; la confianza es valiosa. En iteraciones (repetido), la cooperaci&oacute;n emerge como estrategia &oacute;ptima. En negocios: constru&iacute; relaciones de largo plazo.</p></div>
-   241|
-   242|      <h2 id="redes">Crecimiento &amp; Redes</h2>
-   243|      <div class="concept"><h3><span class="num">44</span> Law of the Few</h3><p>De Malcolm Gladwell ("The Tipping Point"). Las epidemias sociales son impulsadas por tres tipos de personas: conectores (conocen a mucha gente), mavens (acumulan conocimiento y comparten), y vendedores (persuaden). Para que una idea se vuelva viral, no necesit&aacute;s llegar a todos &mdash; necesit&aacute;s llegar a estos pocos. Identificarlos es m&aacute;s eficiente que marketing masivo.</p></div>
-   244|      <div class="concept"><h3><span class="num">45</span> The Stickiness Factor</h3><p>Lo que hace que un mensaje, producto o idea se quede en la memoria. No alcanza con que llegue a muchas personas &mdash; tiene que pegar. La stickiness depende de: simplicidad, concreci&oacute;n, emoci&oacute;n, historias. Un mensaje sticky se recuerda y se transmite. En producto: la retenci&oacute;n importa m&aacute;s que la adquisici&oacute;n. Un producto sticky se vuelve h&aacute;bito.</p></div>
-   245|      <div class="concept"><h3><span class="num">46</span> Weak Ties</h3><p>Los lazos d&eacute;biles (conocidos, no amigos cercanos) son m&aacute;s valiosos para oportunidades laborales e informaci&oacute;n nueva que los lazos fuertes. Los amigos cercanos se mueven en los mismos c&iacute;rculos y saben lo mismo. Los conocidos te conectan con mundos diferentes. La investigaci&oacute;n de Granovetter mostr&oacute; que la mayor&iacute;a de los trabajos se consiguen por lazos d&eacute;biles.</p></div>
-   246|      <div class="concept"><h3><span class="num">47</span> Fed by Two Pizzas</h3><p>La regla de Amazon: si un equipo no puede alimentarse con dos pizzas, es demasiado grande. Equipos peque&ntilde;os se comunican mejor, deciden m&aacute;s r&aacute;pido y tienen mayor ownership. Grupos grandes gastan m&aacute;s tiempo en coordinaci&oacute;n que en ejecuci&oacute;n. Jeff Bezos populariz&oacute; esta regla como ant&iacute;doto a la burocracia que crece con el tama&ntilde;o de la organizaci&oacute;n.</p></div>
-   247|      <div class="concept"><h3><span class="num">48</span> Dunbar&rsquo;s Number</h3><p>El n&uacute;mero m&aacute;ximo de relaciones estables que el cerebro humano puede mantener: aproximadamente 150. Es un l&iacute;mite cognitivo, no una elecci&oacute;n. Por eso los ej&eacute;rcitos hist&oacute;ricamente se organizaban en unidades de ~150, y las empresas que pasan ese umbral necesitan jerarqu&iacute;as formales. Explica por qu&eacute; las comunidades online grandes pierden cohesi&oacute;n.</p></div>
-   248|
-   249|      <h2 id="paradojas">Paradojas &amp; Trampas</h2>
-   250|      <div class="concept"><h3><span class="num">49</span> The Turkey Problem</h3><p>De Taleb. Un pavo es alimentado cada d&iacute;a durante 1000 d&iacute;as. Cada d&iacute;a de comida refuerza su creencia de que los humanos son buenos y lo cuidan. Hasta el d&iacute;a 1001, antes de Acci&oacute;n de Gracias. El problema: usar el pasado para predecir el futuro sin considerar cambios de r&eacute;gimen. El pavo aprende del pasado justo hasta que el pasado deja de ser relevante.</p></div>
-   251|      <div class="concept"><h3><span class="num">50</span> Buridan&rsquo;s Donkey</h3><p>Un burro igualmente hambriento y sediento, colocado exactamente a la misma distancia entre un balde de agua y un balde de avena, muere porque no puede decidir. La paradoja ilustra que la indecisi&oacute;n puede ser peor que una decisi&oacute;n sub&oacute;ptima. Cuando las opciones son equivalentes, cualquier decisi&oacute;n es mejor que ninguna. El an&aacute;lisis excesivo mata la acci&oacute;n.</p></div>
-   252|      <div class="concept"><h3><span class="num">51</span> The Streisand Effect</h3><p>Intentar censurar o eliminar informaci&oacute;n produce el efecto opuesto: la informaci&oacute;n se vuelve m&aacute;s conocida y se difunde m&aacute;s. Barbra Streisand intent&oacute; ocultar fotos de su casa y el intento atrajo millones de miradas. Lecci&oacute;n: a veces la mejor respuesta a informaci&oacute;n no deseada es ignorarla. Cuanto m&aacute;s la combat&iacute;s, m&aacute;s la amplific&aacute;s.</p></div>
-   253|      <div class="concept"><h3><span class="num">52</span> The Procrustean Bed</h3><p>Forzar la realidad para que encaje en nuestro modelo. Procrustes estiraba o cortaba a sus v&iacute;ctimas para que encajaran en su cama. Metaf&oacute;ricamente: ajustar los datos a la hip&oacute;tesis en vez de ajustar la hip&oacute;tesis a los datos. En negocios: "esto es lo que construimos, ahora busqu&eacute;mosle un mercado" (solution in search of a problem).</p></div>
-   254|      <div class="concept"><h3><span class="num">53</span> Mutually Assured Destruction</h3><p>Una situaci&oacute;n donde dos partes tienen el poder de destruirse mutuamente, lo que disuade a cualquiera de atacar. Es el equilibrio de la Guerra Fr&iacute;a. En negocios: guerras de precios donde todos pierden, demandas mutuas, disputas de propiedad intelectual. A veces la amenaza de escalada es m&aacute;s poderosa que la escalada misma.</p></div>
-   255|      <div class="concept"><h3><span class="num">54</span> Evolution by Natural Selection</h3><p>El mecanismo fundamental de la vida: variaci&oacute;n, selecci&oacute;n, retenci&oacute;n. Las variaciones surgen al azar. Las que mejor se adaptan al entorno se reproducen m&aacute;s. Aplicado a ideas (mem&eacute;tica): las ideas compiten, mutan y evolucionan. En negocios: las empresas que mejor se adaptan al entorno sobreviven. No es la m&aacute;s fuerte ni la m&aacute;s inteligente, sino la que mejor se adapta al cambio.</p></div>
-   256|      <div class="concept"><h3><span class="num">55</span> Hammurabi&rsquo;s Code</h3><p>Uno de los primeros c&oacute;digos legales escritos (1754 a.C.), basado en "ojo por ojo". Pero la lecci&oacute;n m&aacute;s relevante no es la retaliaci&oacute;n, sino que las reglas deben ser expl&iacute;citas, claras y conocidas por todos. Un sistema de reglas transparente es m&aacute;s justo que uno arbitrario. En organizaciones: la claridad de reglas importa m&aacute;s que la severidad.</p></div>
-   257|    </main>
-   258|
-   259|    <footer>&copy; 2026 Leandro Pisaroni</footer>
-   260|  </div>
-   261|</body>
-   262|</html>
-   263|
+
+    <main>
+      <h1>General Purpose Ideas</h1>
+      <p class="description">Modelos mentales que fui recopilando a lo largo de los a&ntilde;os. Algunos vienen de la ciencia, otros de la filosof&iacute;a, la estrategia militar, la econom&iacute;a o la psicolog&iacute;a. Lo que tienen en com&uacute;n es que son &uacute;tiles &mdash; marcos para pensar, decidir y entender el mundo.</p>
+      <p class="description" style="margin-top:-20px;"><em>~55 conceptos organizados por tema. Versi&oacute;n descargable: <a href="general-purpose-ideas.pdf">PDF</a>.</em></p>
+
+      <div class="toc">
+        <p>Contenido</p>
+        <a href="#razonamiento">Razonamiento &amp; Toma de Decisiones <span class="count">(8)</span></a>
+        <a href="#psicologia">Psicolog&iacute;a &amp; Comportamiento <span class="count">(7)</span></a>
+        <a href="#riesgo">Riesgo &amp; Incertidumbre <span class="count">(10)</span></a>
+        <a href="#sistemas">Sistemas &amp; Din&aacute;micas <span class="count">(10)</span></a>
+        <a href="#economia">Econom&iacute;a &amp; Estrategia <span class="count">(8)</span></a>
+        <a href="#redes">Crecimiento &amp; Redes <span class="count">(5)</span></a>
+        <a href="#paradojas">Paradojas &amp; Trampas <span class="count">(7)</span></a>
+      </div>
+
+      <h2 id="razonamiento">Razonamiento &amp; Toma de Decisiones</h2>
+      <div class="concept"><h3><span class="num">01</span> The Map is not the Territory</h3><p>Un mapa es una representaci&oacute;n simplificada de la realidad, no la realidad misma. El error es confundir el modelo con el territorio que describe. Los mapas omiten detalles por definici&oacute;n &mdash; lo importante es saber qu&eacute; se dej&oacute; afuera y c&oacute;mo eso afecta la decisi&oacute;n. Aplicable a modelos financieros, estrategias de negocio, pron&oacute;sticos pol&iacute;ticos y cualquier abstracci&oacute;n que usemos para navegar el mundo.</p></div>
+      <div class="concept"><h3><span class="num">02</span> Occam&rsquo;s Razor</h3><p>Entre explicaciones en competencia, la m&aacute;s simple suele ser la correcta. No porque la simplicidad sea inherentemente mejor, sino porque las explicaciones simples tienen menos supuestos no verificados y por lo tanto menos lugares donde estar&iacute;an equivocadas. En negocios: cuando algo no funciona, la explicaci&oacute;n m&aacute;s simple (precio, producto, distribuci&oacute;n) es m&aacute;s probable que la conspiraci&oacute;n elaborada.</p></div>
+      <div class="concept"><h3><span class="num">03</span> Availability Heuristic</h3><p>Tendemos a juzgar la probabilidad de los eventos seg&uacute;n qu&eacute; tan f&aacute;cilmente nos vienen ejemplos a la mente. Lo que es m&aacute;s reciente, dram&aacute;tico o emocional nos parece m&aacute;s probable. Por eso la gente le teme m&aacute;s a los aviones que a los autos (mueren m&aacute;s en autos, pero los accidentes a&eacute;reos son m&aacute;s noticia). En inversiones: la &uacute;ltima crisis siempre parece m&aacute;s probable que la pr&oacute;xima.</p></div>
+      <div class="concept"><h3><span class="num">04</span> Survivorship Bias</h3><p>Mir&aacute;s solo a los que sobrevivieron y sac&aacute;s conclusiones equivocadas. Los libros sobre startups exitosas ignoran a las 9 de cada 10 que fracasaron con exactamente las mismas pr&aacute;cticas. El sesgo de supervivencia te hace creer que el &eacute;xito es predecible cuando en realidad hay un componente enorme de suerte y selecci&oacute;n. La correcci&oacute;n: estudi&aacute; tambi&eacute;n a los que fracasaron.</p></div>
+      <div class="concept"><h3><span class="num">05</span> Analysis Paralysis</h3><p>Cuando la sobrecarga de informaci&oacute;n impide la acci&oacute;n. Cuantos m&aacute;s datos ten&eacute;s, m&aacute;s c&oacute;modo se siente no decidir &mdash; pero el costo de la inacci&oacute;n suele superar al costo de una decisi&oacute;n imperfecta. La soluci&oacute;n no es m&aacute;s informaci&oacute;n, sino criterios claros para decidir con la informaci&oacute;n disponible. Perfecto es enemigo de hecho.</p></div>
+      <div class="concept"><h3><span class="num">06</span> The Teleological Fallacy</h3><p>Explicar algo por su prop&oacute;sito en vez de por su causa. "Las aves tienen alas para volar" suena l&oacute;gico pero invierte la causalidad: las aves vuelan porque tienen alas (evoluci&oacute;n), no al rev&eacute;s. En negocios: "la empresa existe para maximizar valor" confunde efecto con intenci&oacute;n. Muy com&uacute;n en an&aacute;lisis estrat&eacute;gico.</p></div>
+      <div class="concept"><h3><span class="num">07</span> Frugality of Information</h3><p>A veces menos informaci&oacute;n lleva a mejores decisiones. El exceso de datos introduce ruido, falsas correlaciones y par&aacute;lisis. Los expertos suelen usar menos variables que los novatos para decidir &mdash; porque saben cu&aacute;les importan. Dise&ntilde;ar sistemas para que funcionen con informaci&oacute;n limitada es m&aacute;s robusto que depender de datos perfectos.</p></div>
+      <div class="concept"><h3><span class="num">08</span> Postmortem</h3><p>El an&aacute;lisis de lo que sali&oacute; mal (y bien) despu&eacute;s de un proyecto o evento. La clave es hacerlo sin culpa &mdash; el objetivo es aprender, no asignar responsabilidad. Un buen postmortem identifica causas ra&iacute;z, no s&iacute;ntomas. Las mejores organizaciones hacen postmortems incluso de los &eacute;xitos, para entender qu&eacute; funcion&oacute; y poder repetirlo.</p></div>
+
+      <h2 id="psicologia">Psicolog&iacute;a &amp; Comportamiento</h2>
+      <div class="concept"><h3><span class="num">09</span> Social Proof (Safety in Numbers)</h3><p>En situaciones de incertidumbre, la gente copia lo que hacen otros asumiendo que es el comportamiento correcto. Es el motor de las modas, las burbujas financieras y la adopci&oacute;n tecnol&oacute;gica. &Uacute;til para entender comportamiento de mercado, pero peligroso cuando suprime el pensamiento independiente. Warren Buffett: "S&eacute; temeroso cuando otros son codiciosos y codicioso cuando otros son temerosos."</p></div>
+      <div class="concept"><h3><span class="num">10</span> Reciprocity</h3><p>Tendencia humana a devolver favores y corresponder gestos. Es una de las normas sociales m&aacute;s universales y poderosas. En negociaciones: dar primero (informaci&oacute;n, un favor, una concesi&oacute;n) genera una obligaci&oacute;n impl&iacute;cita de reciprocidad. En relaciones: la reciprocidad genuina construye confianza; la forzada genera resentimiento.</p></div>
+      <div class="concept"><h3><span class="num">11</span> Activation Energy</h3><p>La energ&iacute;a necesaria para iniciar un h&aacute;bito o proceso. Reducir la fricci&oacute;n de arranque es la forma m&aacute;s efectiva de cambiar comportamiento. Ejemplo: preparar la ropa para el gimnasio la noche anterior reduce dr&aacute;sticamente la activaci&oacute;n necesaria a la ma&ntilde;ana. En producto: cada paso extra en el onboarding es activaci&oacute;n que perd&eacute;s usuarios.</p></div>
+      <div class="concept"><h3><span class="num">12</span> Domain Dependence</h3><p>La dificultad de transferir conocimiento de un dominio a otro. Entend&eacute;s un concepto en contexto A pero no lo reconoc&eacute;s en contexto B. La educaci&oacute;n tradicional ense&ntilde;a en silos; el pensamiento multidisciplinario intenta romper este sesgo. La gente m&aacute;s creativa suele tener experiencia en m&uacute;ltiples dominios &mdash; pueden conectar ideas que otros no ven.</p></div>
+      <div class="concept"><h3><span class="num">13</span> Good Procrastination</h3><p>No toda procrastinaci&oacute;n es mala. Si posterg&aacute;s una tarea de bajo impacto para hacer algo m&aacute;s importante, est&aacute;s priorizando. El problema no es postergar, sino postergar lo importante. Paul Graham distingue entre procrastinar en la forma (hacer tareas triviales para evitar las duras) vs. procrastinar en el fondo (evitar pensar en lo fundamental).</p></div>
+      <div class="concept"><h3><span class="num">14</span> Picasso&rsquo;s Checks (Hit or Miss)</h3><p>El enfoque de producci&oacute;n en volumen como estrategia. Picasso pintaba cientos de obras; algunas eran obras maestras, otras no. La idea es que la cantidad genera calidad &mdash; produc&iacute; mucho, y estad&iacute;sticamente algo va a ser bueno. En startups: prob&aacute; muchas hip&oacute;tesis r&aacute;pidamente. En creatividad: gener&aacute; sin juzgar, despu&eacute;s edit&aacute;.</p></div>
+      <div class="concept"><h3><span class="num">15</span> Fight/Flight</h3><p>La respuesta autom&aacute;tica del sistema nervioso ante una amenaza: pelear o huir. En el mundo moderno, esta respuesta se activa con estr&eacute;s laboral, conflictos, presi&oacute;n financiera. Reconocer cu&aacute;ndo est&aacute;s en modo fight/flight te permite no tomar decisiones importantes en ese estado. La respiraci&oacute;n y la pausa son el ant&iacute;doto.</p></div>
+
+      <h2 id="riesgo">Riesgo &amp; Incertidumbre</h2>
+      <div class="concept"><h3><span class="num">16</span> Fragility &ndash; Robustness &ndash; Antifragility</h3><p>Propuesto por Nassim Taleb. Lo fr&aacute;gil se rompe bajo estr&eacute;s y volatilidad. Lo robusto aguanta. Lo antifr&aacute;gil se beneficia del desorden, el error y la volatilidad. La evoluci&oacute;n es antifr&aacute;gil: los errores gen&eacute;ticos son la materia prima de la adaptaci&oacute;n. Las startups deber&iacute;an dise&ntilde;arse para ser antifr&aacute;giles: errores peque&ntilde;os que generan aprendizaje y fortalecen el sistema.</p></div>
+      <div class="concept"><h3><span class="num">17</span> Black Swans</h3><p>Eventos altamente improbables, de impacto masivo, que en retrospectiva parecen predecibles. Antes de Australia, todos asum&iacute;an que todos los cisnes eran blancos. Ejemplos: la crisis del 2008, la pandemia, la explosi&oacute;n de Internet. La lecci&oacute;n: no dise&ntilde;es sistemas que dependan de que no ocurra un cisne negro. Constru&iacute; redundancia y colchones de seguridad.</p></div>
+      <div class="concept"><h3><span class="num">18</span> Redundancy</h3><p>Tener m&aacute;s de lo necesario como seguro contra fallos. En ingenier&iacute;a: sistemas redundantes (backups, servidores espejo). En finanzas: colch&oacute;n de efectivo. En biolog&iacute;a: dos ri&ntilde;ones. La redundancia parece ineficiente hasta que la necesit&aacute;s. La lecci&oacute;n de Taleb: el exceso de optimizaci&oacute;n elimina la redundancia y crea fragilidad.</p></div>
+      <div class="concept"><h3><span class="num">19</span> Barbell Strategy</h3><p>Estrategia de Taleb para navegar la incertidumbre: en vez de ir por el medio (riesgo moderado), pon&eacute; la mayor parte de tus recursos en lo seguro y una peque&ntilde;a parte en apuestas de alto riesgo/alto retorno. Ejemplo: un trabajo estable (seguro) + tiempo invertido en proyectos especulativos (startups, escritura, arte). Lo del medio es lo peor: riesgo sin suficiente retorno.</p></div>
+      <div class="concept"><h3><span class="num">20</span> Asymmetric Warfare</h3><p>Cuando un oponente m&aacute;s d&eacute;bil enfrenta a uno m&aacute;s fuerte usando t&aacute;cticas que explotan las debilidades del m&aacute;s fuerte. David vs Goliat. En negocios: startups compitiendo contra incumbentes. La ventaja del d&eacute;bil es que no tiene nada que perder, puede moverse m&aacute;s r&aacute;pido, y no juega con las mismas reglas. El fuerte tiene restricciones que el d&eacute;bil no.</p></div>
+      <div class="concept"><h3><span class="num">21</span> Potential Downside &lt; Potential Upside</h3><p>Regla b&aacute;sica de decisi&oacute;n: tom&aacute; apuestas donde lo m&aacute;ximo que pod&eacute;s perder es limitado pero lo que pod&eacute;s ganar es enorme. Es el principio del venture capital: 1 de cada 10 startups paga por las otras 9. En la vida: decir que s&iacute; a oportunidades de bajo riesgo y alto potencial vale m&aacute;s que optimizar decisiones seguras de bajo retorno.</p></div>
+      <div class="concept"><h3><span class="num">22</span> Iatrogenics</h3><p>El da&ntilde;o causado por el tratamiento (m&eacute;dico), no por la enfermedad original. Se extiende a cualquier intervenci&oacute;n bien intencionada que empeora las cosas. Ejemplos: intervencionismo estatal que genera m&aacute;s problemas de los que resuelve, optimizaci&oacute;n excesiva en empresas que mata la cultura, consejos financieros que hacen perder plata. Primero: no hacer da&ntilde;o.</p></div>
+      <div class="concept"><h3><span class="num">23</span> Hormesis</h3><p>El fen&oacute;meno por el cual una dosis baja de algo da&ntilde;ino fortalece al organismo. El ejercicio da&ntilde;a los m&uacute;sculos para que se reparen m&aacute;s fuertes. Las vacunas exponen al sistema inmune a versiones atenuadas del virus. En startups: la fricci&oacute;n, la competencia y los fracasos peque&ntilde;os fortalecen a la organizaci&oacute;n. El exceso de protecci&oacute;n genera fragilidad.</p></div>
+      <div class="concept"><h3><span class="num">24</span> The Lindy Effect</h3><p>La expectativa de vida futura de algo es proporcional a su edad actual. Cuanto m&aacute;s tiempo sobrevivi&oacute; algo (una tecnolog&iacute;a, una idea, una instituci&oacute;n), m&aacute;s tiempo va a seguir sobreviviendo. Lo que lleva 100 a&ntilde;os probablemente dure otros 100. Lo que lleva 5 a&ntilde;os&hellip; no. Aplicaci&oacute;n: prefer&iacute; ideas, tecnolog&iacute;as y libros que ya demostraron longevidad sobre las modas.</p></div>
+      <div class="concept"><h3><span class="num">25</span> Avoidance of Harm</h3><p>Principio estoico: lo primero no es buscar el bien, sino evitar el da&ntilde;o. En inversiones: la regla n&uacute;mero 1 es no perder plata. En decisiones: antes de preguntar "c&oacute;mo gano", pregunt&aacute; "c&oacute;mo pierdo". La asimetr&iacute;a importa: evitar una p&eacute;rdida grande es m&aacute;s importante que buscar una ganancia grande. Inversi&oacute;n: lo que no compr&aacute;s importa m&aacute;s que lo que compr&aacute;s.</p></div>
+
+      <h2 id="sistemas">Sistemas &amp; Din&aacute;micas</h2>
+      <div class="concept"><h3><span class="num">26</span> Compounding</h3><p>El crecimiento exponencial donde los resultados se realimentan. Inter&eacute;s compuesto en finanzas, aprendizaje compuesto (cada nuevo conocimiento hace m&aacute;s f&aacute;cil aprender m&aacute;s), redes compuestas (cada usuario nuevo hace la red m&aacute;s valiosa). La magia ocurre cuando el horizonte es largo. El problema humano es que el compounding es aburrido al principio y espectacular al final.</p></div>
+      <div class="concept"><h3><span class="num">27</span> Pareto Principle (80/20)</h3><p>El 80% de los resultados vienen del 20% de los esfuerzos. El 80% de las ventas viene del 20% de los clientes. El 80% de los bugs viene del 20% del c&oacute;digo. El principio no es una ley exacta sino una observaci&oacute;n sobre distribuciones desiguales. La aplicaci&oacute;n pr&aacute;ctica: identific&aacute; el 20% que genera el 80% del valor y enfocate ah&iacute;.</p></div>
+      <div class="concept"><h3><span class="num">28</span> Technology Adoption Life Cycle</h3><p>Modelo de c&oacute;mo los mercados adoptan nuevas tecnolog&iacute;as: innovadores &rarr; early adopters &rarr; mayor&iacute;a temprana &rarr; mayor&iacute;a tard&iacute;a &rarr; rezagados. El abismo (de Geoffrey Moore) es la brecha entre early adopters (que compran por la novedad) y la mayor&iacute;a temprana (que compra por utilidad pr&aacute;ctica). La mayor&iacute;a de las startups mueren en el abismo.</p></div>
+      <div class="concept"><h3><span class="num">29</span> Hype Cycle</h3><p>Modelo de Gartner sobre c&oacute;mo las tecnolog&iacute;as pasan por: pico de expectativas infladas &rarr; valle de desilusi&oacute;n &rarr; pendiente de iluminaci&oacute;n &rarr; meseta de productividad. &Uacute;til para no subirse a modas ni abandonar tecnolog&iacute;as en el momento equivocado. Cuando todos hablan de algo, probablemente est&aacute; cerca del pico. El momento de construir es en el valle.</p></div>
+      <div class="concept"><h3><span class="num">30</span> Network Effects</h3><p>Un producto o servicio se vuelve m&aacute;s valioso cuantas m&aacute;s personas lo usan. Ley de Metcalfe: el valor de una red es proporcional al cuadrado de sus usuarios. Ejemplos: redes sociales, mercados, plataformas de mensajer&iacute;a. Es el foso competitivo m&aacute;s poderoso porque es dif&iacute;cil de replicar &mdash; necesit&aacute;s masa cr&iacute;tica. Por eso las startups persiguen crecimiento a cualquier costo.</p></div>
+      <div class="concept"><h3><span class="num">31</span> Red Queen Effect</h3><p>Del libro "Alicia del otro lado del espejo": correr lo m&aacute;s r&aacute;pido posible para mantenerte en el mismo lugar. En evoluci&oacute;n: cada adaptaci&oacute;n de una especie genera presi&oacute;n de selecci&oacute;n en otra, que a su vez se adapta. En negocios: competir significa que todos mejoran constantemente y la ventaja es temporal. La soluci&oacute;n no es correr m&aacute;s r&aacute;pido, sino cambiar el juego.</p></div>
+      <div class="concept"><h3><span class="num">32</span> Creative Destruction</h3><p>Concepto de Schumpeter: el motor del capitalismo es la destrucci&oacute;n de lo viejo para crear lo nuevo. Nuevas tecnolog&iacute;as destruyen industrias establecidas (el streaming destruy&oacute; Blockbuster, el smartphone destruy&oacute; las c&aacute;maras). El proceso es doloroso pero necesario para el crecimiento. Las empresas que no se canibalizan a s&iacute; mismas terminan canibalizadas por otros.</p></div>
+      <div class="concept"><h3><span class="num">33</span> Bottlenecks</h3><p>El cuello de botella determina la capacidad de todo el sistema. La ley de las restricciones (Goldratt): toda mejora fuera del bottleneck es una ilusi&oacute;n. Encontr&aacute; la restricci&oacute;n principal, aliviala, y repet&iacute;. En startups: el bottleneck cambia con el tiempo (primero es producto, despu&eacute;s distribuci&oacute;n, despu&eacute;s talento, despu&eacute;s capital). Identificarlo es m&aacute;s importante que optimizar cualquier otra cosa.</p></div>
+      <div class="concept"><h3><span class="num">34</span> Convexity Effects</h3><p>De Taleb. Una relaci&oacute;n convexa significa que las ganancias potenciales superan a las p&eacute;rdidas potenciales a medida que aumenta la volatilidad. Busc&aacute; convexidad: situaciones donde gan&aacute;s mucho si algo funciona y perd&eacute;s poco si no. La convexidad es antifragilidad. Ejemplo: escribir un libro &mdash; si no funciona perdiste tiempo, si funciona te cambia la vida.</p></div>
+      <div class="concept"><h3><span class="num">35</span> Escaping the Idea Maze</h3><p>Concepto de Balaji Srinivasan: una buena idea de startup no es una idea, es un laberinto. Hay que conocer las decisiones pasadas, los competidores, las tecnolog&iacute;as, las regulaciones, los modelos de negocio que ya se probaron y por qu&eacute; funcionaron o no. "Escapar del laberinto" significa encontrar el camino correcto a trav&eacute;s de todo ese conocimiento acumulado.</p></div>
+
+      <h2 id="economia">Econom&iacute;a &amp; Estrategia</h2>
+      <div class="concept"><h3><span class="num">36</span> Opportunity Costs</h3><p>El costo de una decisi&oacute;n es el valor de la mejor alternativa a la que renunci&aacute;s. Elegir A significa NO elegir B. Toda decisi&oacute;n tiene un costo oculto &mdash; lo que no est&aacute;s haciendo. En inversiones: el retorno de una acci&oacute;n se mide contra lo que habr&iacute;as ganado con otra. En tiempo: cada hora en reuniones es una hora que no est&aacute;s construyendo.</p></div>
+      <div class="concept"><h3><span class="num">37</span> Arbitrage</h3><p>Comprar barato y vender caro simult&aacute;neamente, aprovechando diferencias de precio en distintos mercados. En su forma m&aacute;s pura es sin riesgo. Pero el verdadero arbitraje en la vida es m&aacute;s sutil: arbitraje de conocimiento (saber algo que otros no), arbitraje de tiempo (hacer algo antes que otros), arbitraje geogr&aacute;fico (costo de vida).</p></div>
+      <div class="concept"><h3><span class="num">38</span> Scarcity</h3><p>El principio econ&oacute;mico fundamental: los recursos son limitados y las necesidades ilimitadas. Todo tiene un costo de oportunidad. La escasez impulsa el valor &mdash; lo abundante es barato, lo escaso es caro. En marketing: la percepci&oacute;n de escasez (edici&oacute;n limitada, &uacute;ltimo disponible) activa mecanismos psicol&oacute;gicos de deseo. En estrategia: busc&aacute; escasez donde puedas crear monopolio.</p></div>
+      <div class="concept"><h3><span class="num">39</span> The Agency Problem</h3><p>El conflicto de intereses entre un principal (due&ntilde;o, inversor) y un agente (empleado, gestor) que act&uacute;a en su nombre. El agente puede priorizar sus intereses sobre los del principal. Ejemplos: CEOs que buscan bonus de corto plazo en vez de salud de largo plazo de la empresa, asesores financieros que recomiendan productos por comisi&oacute;n. La soluci&oacute;n: alinear incentivos.</p></div>
+      <div class="concept"><h3><span class="num">40</span> The Matthew Effect</h3><p>"Al que tiene, se le dar&aacute; m&aacute;s." Las ventajas se acumulan: los ricos se vuelven m&aacute;s ricos, los famosos m&aacute;s famosos, los exitosos reciben m&aacute;s oportunidades. En ciencia: los investigadores con nombre reciben m&aacute;s cr&eacute;dito. En startups: el capital va al que ya levant&oacute; capital. No es justo, pero es real. La estrategia: logr&aacute; una peque&ntilde;a ventaja inicial y deja que el efecto compounding haga su trabajo.</p></div>
+      <div class="concept"><h3><span class="num">41</span> Leverage</h3><p>Amplificar el impacto de tus acciones usando una palanca. Tipos de leverage: capital (plata que trabaja para vos), trabajo (gente que trabaja para vos), c&oacute;digo/tecnolog&iacute;a (software que escala sin costo marginal), medios (una idea que llega a millones). El leverage multiplica resultados, pero tambi&eacute;n riesgo. La clave es usarlo cuando ten&eacute;s una ventaja asim&eacute;trica.</p></div>
+      <div class="concept"><h3><span class="num">42</span> Incentives</h3><p>El motor del comportamiento humano. La gente responde a incentivos. Si quer&eacute;s entender por qu&eacute; alguien hace algo, segu&iacute; los incentivos. Charlie Munger: "Mu&eacute;strame el incentivo y te mostrar&eacute; el resultado." Dise&ntilde;ar mal los incentivos genera comportamiento indeseado (ej: m&eacute;dicos que cobran por procedimiento hacen m&aacute;s procedimientos, no pacientes m&aacute;s sanos).</p></div>
+      <div class="concept"><h3><span class="num">43</span> The Prisoner&rsquo;s Dilemma</h3><p>Dos personas actuando en su propio inter&eacute;s individual terminan peor que si hubieran cooperado. El dilema cl&aacute;sico de teor&iacute;a de juegos. Explica por qu&eacute; se forman c&aacute;rteles, por qu&eacute; las guerras de precios son destructivas, y por qu&eacute; la confianza es valiosa. En iteraciones (repetido), la cooperaci&oacute;n emerge como estrategia &oacute;ptima. En negocios: constru&iacute; relaciones de largo plazo.</p></div>
+
+      <h2 id="redes">Crecimiento &amp; Redes</h2>
+      <div class="concept"><h3><span class="num">44</span> Law of the Few</h3><p>De Malcolm Gladwell ("The Tipping Point"). Las epidemias sociales son impulsadas por tres tipos de personas: conectores (conocen a mucha gente), mavens (acumulan conocimiento y comparten), y vendedores (persuaden). Para que una idea se vuelva viral, no necesit&aacute;s llegar a todos &mdash; necesit&aacute;s llegar a estos pocos. Identificarlos es m&aacute;s eficiente que marketing masivo.</p></div>
+      <div class="concept"><h3><span class="num">45</span> The Stickiness Factor</h3><p>Lo que hace que un mensaje, producto o idea se quede en la memoria. No alcanza con que llegue a muchas personas &mdash; tiene que pegar. La stickiness depende de: simplicidad, concreci&oacute;n, emoci&oacute;n, historias. Un mensaje sticky se recuerda y se transmite. En producto: la retenci&oacute;n importa m&aacute;s que la adquisici&oacute;n. Un producto sticky se vuelve h&aacute;bito.</p></div>
+      <div class="concept"><h3><span class="num">46</span> Weak Ties</h3><p>Los lazos d&eacute;biles (conocidos, no amigos cercanos) son m&aacute;s valiosos para oportunidades laborales e informaci&oacute;n nueva que los lazos fuertes. Los amigos cercanos se mueven en los mismos c&iacute;rculos y saben lo mismo. Los conocidos te conectan con mundos diferentes. La investigaci&oacute;n de Granovetter mostr&oacute; que la mayor&iacute;a de los trabajos se consiguen por lazos d&eacute;biles.</p></div>
+      <div class="concept"><h3><span class="num">47</span> Fed by Two Pizzas</h3><p>La regla de Amazon: si un equipo no puede alimentarse con dos pizzas, es demasiado grande. Equipos peque&ntilde;os se comunican mejor, deciden m&aacute;s r&aacute;pido y tienen mayor ownership. Grupos grandes gastan m&aacute;s tiempo en coordinaci&oacute;n que en ejecuci&oacute;n. Jeff Bezos populariz&oacute; esta regla como ant&iacute;doto a la burocracia que crece con el tama&ntilde;o de la organizaci&oacute;n.</p></div>
+      <div class="concept"><h3><span class="num">48</span> Dunbar&rsquo;s Number</h3><p>El n&uacute;mero m&aacute;ximo de relaciones estables que el cerebro humano puede mantener: aproximadamente 150. Es un l&iacute;mite cognitivo, no una elecci&oacute;n. Por eso los ej&eacute;rcitos hist&oacute;ricamente se organizaban en unidades de ~150, y las empresas que pasan ese umbral necesitan jerarqu&iacute;as formales. Explica por qu&eacute; las comunidades online grandes pierden cohesi&oacute;n.</p></div>
+
+      <h2 id="paradojas">Paradojas &amp; Trampas</h2>
+      <div class="concept"><h3><span class="num">49</span> The Turkey Problem</h3><p>De Taleb. Un pavo es alimentado cada d&iacute;a durante 1000 d&iacute;as. Cada d&iacute;a de comida refuerza su creencia de que los humanos son buenos y lo cuidan. Hasta el d&iacute;a 1001, antes de Acci&oacute;n de Gracias. El problema: usar el pasado para predecir el futuro sin considerar cambios de r&eacute;gimen. El pavo aprende del pasado justo hasta que el pasado deja de ser relevante.</p></div>
+      <div class="concept"><h3><span class="num">50</span> Buridan&rsquo;s Donkey</h3><p>Un burro igualmente hambriento y sediento, colocado exactamente a la misma distancia entre un balde de agua y un balde de avena, muere porque no puede decidir. La paradoja ilustra que la indecisi&oacute;n puede ser peor que una decisi&oacute;n sub&oacute;ptima. Cuando las opciones son equivalentes, cualquier decisi&oacute;n es mejor que ninguna. El an&aacute;lisis excesivo mata la acci&oacute;n.</p></div>
+      <div class="concept"><h3><span class="num">51</span> The Streisand Effect</h3><p>Intentar censurar o eliminar informaci&oacute;n produce el efecto opuesto: la informaci&oacute;n se vuelve m&aacute;s conocida y se difunde m&aacute;s. Barbra Streisand intent&oacute; ocultar fotos de su casa y el intento atrajo millones de miradas. Lecci&oacute;n: a veces la mejor respuesta a informaci&oacute;n no deseada es ignorarla. Cuanto m&aacute;s la combat&iacute;s, m&aacute;s la amplific&aacute;s.</p></div>
+      <div class="concept"><h3><span class="num">52</span> The Procrustean Bed</h3><p>Forzar la realidad para que encaje en nuestro modelo. Procrustes estiraba o cortaba a sus v&iacute;ctimas para que encajaran en su cama. Metaf&oacute;ricamente: ajustar los datos a la hip&oacute;tesis en vez de ajustar la hip&oacute;tesis a los datos. En negocios: "esto es lo que construimos, ahora busqu&eacute;mosle un mercado" (solution in search of a problem).</p></div>
+      <div class="concept"><h3><span class="num">53</span> Mutually Assured Destruction</h3><p>Una situaci&oacute;n donde dos partes tienen el poder de destruirse mutuamente, lo que disuade a cualquiera de atacar. Es el equilibrio de la Guerra Fr&iacute;a. En negocios: guerras de precios donde todos pierden, demandas mutuas, disputas de propiedad intelectual. A veces la amenaza de escalada es m&aacute;s poderosa que la escalada misma.</p></div>
+      <div class="concept"><h3><span class="num">54</span> Evolution by Natural Selection</h3><p>El mecanismo fundamental de la vida: variaci&oacute;n, selecci&oacute;n, retenci&oacute;n. Las variaciones surgen al azar. Las que mejor se adaptan al entorno se reproducen m&aacute;s. Aplicado a ideas (mem&eacute;tica): las ideas compiten, mutan y evolucionan. En negocios: las empresas que mejor se adaptan al entorno sobreviven. No es la m&aacute;s fuerte ni la m&aacute;s inteligente, sino la que mejor se adapta al cambio.</p></div>
+      <div class="concept"><h3><span class="num">55</span> Hammurabi&rsquo;s Code</h3><p>Uno de los primeros c&oacute;digos legales escritos (1754 a.C.), basado en "ojo por ojo". Pero la lecci&oacute;n m&aacute;s relevante no es la retaliaci&oacute;n, sino que las reglas deben ser expl&iacute;citas, claras y conocidas por todos. Un sistema de reglas transparente es m&aacute;s justo que uno arbitrario. En organizaciones: la claridad de reglas importa m&aacute;s que la severidad.</p></div>
+    </main>
+
+    <footer>&copy; 2026 Leandro Pisaroni</footer>
+  </div>
+</body>
+</html>

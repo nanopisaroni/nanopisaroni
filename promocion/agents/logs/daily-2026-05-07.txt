@@ -1,0 +1,45 @@
+---
+📅 Date: 2026-05-07 (Thursday)
+📖 Week Theme: LAUNCH CAMPAIGN — Week 1: THE REVEAL
+🎭 Today's Persona: Naval Ravikant (💎)
+---
+
+=== TWEET 1 — ENGLISH ===
+
+I spent 2025 writing about 16 people who rewired how I think. It's not a philosophy textbook — it's a personal pantheon. Each chapter is a mental tool from someone who changed my life.
+
+"Personal Pantheon" is out now.
+Free sample + book: https://lpisaroni.github.io/panteon-en.html
+#PersonalPantheon #Books #MentalModels
+
+=== TWEET 2 — SPANISH ===
+
+Pasé 2025 escribiendo sobre 16 personas que me reprogramaron la cabeza. No es un manual de filosofía — es un panteón personal. Cada capítulo es una herramienta mental de alguien que cambió mi forma de pensar.
+
+"Panteón Personal" ya está disponible.
+Descarga gratis: https://lpisaroni.github.io/panteon.html
+#PanteónPersonal #Libros #Pensamiento
+
+=== TODAY'S PERSONA POST — NAVAL ===
+
+💎 @Naval
+
+Desire is a contract you make with yourself to be unhappy until you get what you want. Want less. Enjoy more. That's the only wealth hack that works. #Naval #Happiness
+
+📖 The Panteón is the highest-leverage book you'll read — 16 thinkers for the price of one. Apply one idea from each chapter and your life trajectory changes permanently.
+
+#Panteon #PanteonBook #Thinkers #Philosophy
+
+📖 https://lpisaroni.github.io/panteon-en.html
+
+=== XURL STATUS ===
+
+xurl is NOT installed on this system. Skipping Twitter post.
+To post automatically, install xurl (https://github.com/xdevplatform/xurl) and complete OAuth 2.0 authentication:
+  1. curl -fsSL https://raw.githubusercontent.com/xdevplatform/xurl/main/install.sh | bash
+  2. xurl auth apps add my-app --client-id YOUR_CLIENT_ID --client-secret YOUR_CLIENT_SECRET
+  3. xurl auth oauth2 --app my-app YOUR_USERNAME
+  4. xurl auth default my-app
+  5. xurl auth status  # verify
+
+After setup, re-run this cron job to auto-post.

@@ -3,7 +3,7 @@
 // Auto-deploys via api/ directory on Vercel
 
 const OUR_WALLET = '0x18C3886478DE8c945c086A4DDe8967Ab15A1862F'.toLowerCase();
-const MIN_AMOUNT = BigInt('9990000'); // 9.99 USDC (6 decimals)
+const MIN_AMOUNT = BigInt('9990000'); // 9.99 USDC min (price is $10, $0.01 tolerance for fees)
 const TRANSFER_EVENT = '0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef';
 
 const CHAINS = {

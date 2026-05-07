@@ -16,7 +16,7 @@ export default async function handler(req, res) {
   const sale = {
     id: Date.now().toString(36),
     edition: edition || 'unknown',
-    amount: parseFloat(amount) || 9.99,
+    amount: parseFloat(amount) || (amount === '0' ? 0 : 9.99),
     currency: 'USD',
     method: method || 'manual',
     txHash: txHash || '',

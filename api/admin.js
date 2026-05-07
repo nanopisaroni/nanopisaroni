@@ -172,7 +172,7 @@ async function loadData() {
       const edition = s.edition === 'en' ? '📗 EN' : s.edition === 'es' ? '📖 ES' : s.edition;
       const method = s.method;
       const badge = s.method === 'stripe' ? 'stripe' : s.method === 'crypto' ? 'crypto' : s.method === 'freebook' ? 'freebook' : 'manual';
-      html += `<tr><td>${date}</td><td>${edition}</td><td>$${s.amount.toFixed(2)}</td><td><span class="badge ${badge}">${method === 'freebook' ? '🆓 freebook' : method}</span></td><td class="tx">${(s.txHash || '').slice(0, 12)}...</td></tr>`;
+      html += '<tr><td>' + date + '</td><td>' + edition + '</td><td>$' + s.amount.toFixed(2) + '</td><td><span class="badge ' + badge + '">' + (method === 'freebook' ? '🆓 freebook' : method) + '</span></td><td class="tx">' + (s.txHash || '').slice(0, 12) + '...</td></tr>';
     }
     html += '</table>';
     document.getElementById('salesTable').innerHTML = html;

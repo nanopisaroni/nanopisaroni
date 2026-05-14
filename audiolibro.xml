@@ -11,7 +11,12 @@
     <itunes:category text="Education"/>
     <itunes:category text="Society &amp; Culture"/>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image href="https://nanopisaroni.vercel.app/panteon.html"/>
+    <itunes:image href="https://nanopisaroni.vercel.app/audiolibro/podcast-cover.jpg"/>
+    <image>
+      <url>https://nanopisaroni.vercel.app/audiolibro/podcast-cover.jpg</url>
+      <title>Panteón Personal — Audiolibro</title>
+      <link>https://nanopisaroni.vercel.app/audiolibro.html</link>
+    </image>
 
     <item>
       <title>Capítulo 1: Jorge Luis Borges</title>

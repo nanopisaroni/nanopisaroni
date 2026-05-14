@@ -23,8 +23,12 @@
     .chapter-num { font-family: system-ui, sans-serif; font-size: 13px; color: #888; font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase; }
     .chapter-title { font-size: 18px; font-weight: 600; }
     .chapter-meta { font-family: system-ui, sans-serif; font-size: 13px; color: #888; }
+    .chapter-item { display: flex; gap: 14px; align-items: flex-start; }
+    .chapter-art { width: 110px; height: auto; border-radius: 8px; flex-shrink: 0; box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+    .chapter-body { flex: 1; min-width: 200px; }
     audio { width: 100%; height: 40px; margin-top: 6px; border-radius: 4px; }
     .download-link { font-family: system-ui, sans-serif; font-size: 13px; }
+    @media (max-width: 520px) { .chapter-item { flex-direction: column; } .chapter-art { width: 100%; max-width: 300px; } }
     .rss-note { margin-top: 32px; padding: 16px; background: #f7f7f7; border-radius: 6px; font-size: 15px; }
     .rss-note code { font-size: 13px; background: #eee; padding: 2px 6px; border-radius: 3px; }
     footer { margin-top: 40px; padding-top: 18px; border-top: 1px solid var(--rule); color: #666; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 14px; }
@@ -55,84 +59,132 @@
 
       <ol class="chapter-list">
         <li class="chapter-item">
-          <div class="chapter-header"><span class="chapter-num">Capítulo 1</span><span class="chapter-title">Jorge Luis Borges</span><span class="chapter-meta">16 min</span></div>
-          <audio controls preload="none"><source src="audiolibro/01_borges.mp3" type="audio/mpeg"></audio>
-          <a class="download-link" href="audiolibro/01_borges.mp3" download>⬇ Descargar</a>
+          <img class="chapter-art" src="audiolibro/images/ep01_borges.jpg" alt="Jorge Luis Borges" loading="lazy">
+          <div class="chapter-body">
+            <div class="chapter-header"><span class="chapter-num">Capítulo 1</span><span class="chapter-title">Jorge Luis Borges</span><span class="chapter-meta">16 min</span></div>
+            <audio controls preload="none"><source src="audiolibro/01_borges.mp3" type="audio/mpeg"></audio>
+            <a class="download-link" href="audiolibro/01_borges.mp3" download>⬇ Descargar</a>
+          </div>
         </li>
         <li class="chapter-item">
-          <div class="chapter-header"><span class="chapter-num">Capítulo 2</span><span class="chapter-title">Richard Feynman</span><span class="chapter-meta">14 min</span></div>
-          <audio controls preload="none"><source src="audiolibro/02_feynman.mp3" type="audio/mpeg"></audio>
-          <a class="download-link" href="audiolibro/02_feynman.mp3" download>⬇ Descargar</a>
+          <img class="chapter-art" src="audiolibro/images/ep02_feynman.jpg" alt="Richard Feynman" loading="lazy">
+          <div class="chapter-body">
+            <div class="chapter-header"><span class="chapter-num">Capítulo 2</span><span class="chapter-title">Richard Feynman</span><span class="chapter-meta">14 min</span></div>
+            <audio controls preload="none"><source src="audiolibro/02_feynman.mp3" type="audio/mpeg"></audio>
+            <a class="download-link" href="audiolibro/02_feynman.mp3" download>⬇ Descargar</a>
+          </div>
         </li>
         <li class="chapter-item">
-          <div class="chapter-header"><span class="chapter-num">Capítulo 3</span><span class="chapter-title">Nassim Nicholas Taleb</span><span class="chapter-meta">16 min</span></div>
-          <audio controls preload="none"><source src="audiolibro/03_taleb.mp3" type="audio/mpeg"></audio>
-          <a class="download-link" href="audiolibro/03_taleb.mp3" download>⬇ Descargar</a>
+          <img class="chapter-art" src="audiolibro/images/ep03_taleb.jpg" alt="Nassim Nicholas Taleb" loading="lazy">
+          <div class="chapter-body">
+            <div class="chapter-header"><span class="chapter-num">Capítulo 3</span><span class="chapter-title">Nassim Nicholas Taleb</span><span class="chapter-meta">16 min</span></div>
+            <audio controls preload="none"><source src="audiolibro/03_taleb.mp3" type="audio/mpeg"></audio>
+            <a class="download-link" href="audiolibro/03_taleb.mp3" download>⬇ Descargar</a>
+          </div>
         </li>
         <li class="chapter-item">
-          <div class="chapter-header"><span class="chapter-num">Capítulo 4</span><span class="chapter-title">David Deutsch</span><span class="chapter-meta">15 min</span></div>
-          <audio controls preload="none"><source src="audiolibro/04_deutsch.mp3" type="audio/mpeg"></audio>
-          <a class="download-link" href="audiolibro/04_deutsch.mp3" download>⬇ Descargar</a>
+          <img class="chapter-art" src="audiolibro/images/ep04_deutsch.jpg" alt="David Deutsch" loading="lazy">
+          <div class="chapter-body">
+            <div class="chapter-header"><span class="chapter-num">Capítulo 4</span><span class="chapter-title">David Deutsch</span><span class="chapter-meta">15 min</span></div>
+            <audio controls preload="none"><source src="audiolibro/04_deutsch.mp3" type="audio/mpeg"></audio>
+            <a class="download-link" href="audiolibro/04_deutsch.mp3" download>⬇ Descargar</a>
+          </div>
         </li>
         <li class="chapter-item">
-          <div class="chapter-header"><span class="chapter-num">Capítulo 5</span><span class="chapter-title">Peter Thiel</span><span class="chapter-meta">16 min</span></div>
-          <audio controls preload="none"><source src="audiolibro/05_thiel.mp3" type="audio/mpeg"></audio>
-          <a class="download-link" href="audiolibro/05_thiel.mp3" download>⬇ Descargar</a>
+          <img class="chapter-art" src="audiolibro/images/ep05_thiel.jpg" alt="Peter Thiel" loading="lazy">
+          <div class="chapter-body">
+            <div class="chapter-header"><span class="chapter-num">Capítulo 5</span><span class="chapter-title">Peter Thiel</span><span class="chapter-meta">16 min</span></div>
+            <audio controls preload="none"><source src="audiolibro/05_thiel.mp3" type="audio/mpeg"></audio>
+            <a class="download-link" href="audiolibro/05_thiel.mp3" download>⬇ Descargar</a>
+          </div>
         </li>
         <li class="chapter-item">
-          <div class="chapter-header"><span class="chapter-num">Capítulo 6</span><span class="chapter-title">Karl Popper</span><span class="chapter-meta">10 min</span></div>
-          <audio controls preload="none"><source src="audiolibro/06_popper.mp3" type="audio/mpeg"></audio>
-          <a class="download-link" href="audiolibro/06_popper.mp3" download>⬇ Descargar</a>
+          <img class="chapter-art" src="audiolibro/images/ep06_popper.jpg" alt="Karl Popper" loading="lazy">
+          <div class="chapter-body">
+            <div class="chapter-header"><span class="chapter-num">Capítulo 6</span><span class="chapter-title">Karl Popper</span><span class="chapter-meta">10 min</span></div>
+            <audio controls preload="none"><source src="audiolibro/06_popper.mp3" type="audio/mpeg"></audio>
+            <a class="download-link" href="audiolibro/06_popper.mp3" download>⬇ Descargar</a>
+          </div>
         </li>
         <li class="chapter-item">
-          <div class="chapter-header"><span class="chapter-num">Capítulo 7</span><span class="chapter-title">Charlie Munger</span><span class="chapter-meta">10 min</span></div>
-          <audio controls preload="none"><source src="audiolibro/07_munger.mp3" type="audio/mpeg"></audio>
-          <a class="download-link" href="audiolibro/07_munger.mp3" download>⬇ Descargar</a>
+          <img class="chapter-art" src="audiolibro/images/ep07_munger.jpg" alt="Charlie Munger" loading="lazy">
+          <div class="chapter-body">
+            <div class="chapter-header"><span class="chapter-num">Capítulo 7</span><span class="chapter-title">Charlie Munger</span><span class="chapter-meta">10 min</span></div>
+            <audio controls preload="none"><source src="audiolibro/07_munger.mp3" type="audio/mpeg"></audio>
+            <a class="download-link" href="audiolibro/07_munger.mp3" download>⬇ Descargar</a>
+          </div>
         </li>
         <li class="chapter-item">
-          <div class="chapter-header"><span class="chapter-num">Capítulo 8</span><span class="chapter-title">Daniel Kahneman</span><span class="chapter-meta">11 min</span></div>
-          <audio controls preload="none"><source src="audiolibro/08_kahneman.mp3" type="audio/mpeg"></audio>
-          <a class="download-link" href="audiolibro/08_kahneman.mp3" download>⬇ Descargar</a>
+          <img class="chapter-art" src="audiolibro/images/ep08_kahneman.jpg" alt="Daniel Kahneman" loading="lazy">
+          <div class="chapter-body">
+            <div class="chapter-header"><span class="chapter-num">Capítulo 8</span><span class="chapter-title">Daniel Kahneman</span><span class="chapter-meta">11 min</span></div>
+            <audio controls preload="none"><source src="audiolibro/08_kahneman.mp3" type="audio/mpeg"></audio>
+            <a class="download-link" href="audiolibro/08_kahneman.mp3" download>⬇ Descargar</a>
+          </div>
         </li>
         <li class="chapter-item">
-          <div class="chapter-header"><span class="chapter-num">Capítulo 9</span><span class="chapter-title">Paul Graham</span><span class="chapter-meta">8 min</span></div>
-          <audio controls preload="none"><source src="audiolibro/09_graham.mp3" type="audio/mpeg"></audio>
-          <a class="download-link" href="audiolibro/09_graham.mp3" download>⬇ Descargar</a>
+          <img class="chapter-art" src="audiolibro/images/ep09_graham.jpg" alt="Paul Graham" loading="lazy">
+          <div class="chapter-body">
+            <div class="chapter-header"><span class="chapter-num">Capítulo 9</span><span class="chapter-title">Paul Graham</span><span class="chapter-meta">8 min</span></div>
+            <audio controls preload="none"><source src="audiolibro/09_graham.mp3" type="audio/mpeg"></audio>
+            <a class="download-link" href="audiolibro/09_graham.mp3" download>⬇ Descargar</a>
+          </div>
         </li>
         <li class="chapter-item">
-          <div class="chapter-header"><span class="chapter-num">Capítulo 10</span><span class="chapter-title">Eliezer Yudkowsky</span><span class="chapter-meta">9 min</span></div>
-          <audio controls preload="none"><source src="audiolibro/10_yudkowsky.mp3" type="audio/mpeg"></audio>
-          <a class="download-link" href="audiolibro/10_yudkowsky.mp3" download>⬇ Descargar</a>
+          <img class="chapter-art" src="audiolibro/images/ep10_yudkowsky.jpg" alt="Eliezer Yudkowsky" loading="lazy">
+          <div class="chapter-body">
+            <div class="chapter-header"><span class="chapter-num">Capítulo 10</span><span class="chapter-title">Eliezer Yudkowsky</span><span class="chapter-meta">9 min</span></div>
+            <audio controls preload="none"><source src="audiolibro/10_yudkowsky.mp3" type="audio/mpeg"></audio>
+            <a class="download-link" href="audiolibro/10_yudkowsky.mp3" download>⬇ Descargar</a>
+          </div>
         </li>
         <li class="chapter-item">
-          <div class="chapter-header"><span class="chapter-num">Capítulo 11</span><span class="chapter-title">Marco Aurelio</span><span class="chapter-meta">8 min</span></div>
-          <audio controls preload="none"><source src="audiolibro/11_marco_aurelio.mp3" type="audio/mpeg"></audio>
-          <a class="download-link" href="audiolibro/11_marco_aurelio.mp3" download>⬇ Descargar</a>
+          <img class="chapter-art" src="audiolibro/images/ep11_marco_aurelio.jpg" alt="Marco Aurelio" loading="lazy">
+          <div class="chapter-body">
+            <div class="chapter-header"><span class="chapter-num">Capítulo 11</span><span class="chapter-title">Marco Aurelio</span><span class="chapter-meta">8 min</span></div>
+            <audio controls preload="none"><source src="audiolibro/11_marco_aurelio.mp3" type="audio/mpeg"></audio>
+            <a class="download-link" href="audiolibro/11_marco_aurelio.mp3" download>⬇ Descargar</a>
+          </div>
         </li>
         <li class="chapter-item">
-          <div class="chapter-header"><span class="chapter-num">Capítulo 12</span><span class="chapter-title">Epicteto (y Séneca)</span><span class="chapter-meta">14 min</span></div>
-          <audio controls preload="none"><source src="audiolibro/12_epicteto.mp3" type="audio/mpeg"></audio>
-          <a class="download-link" href="audiolibro/12_epicteto.mp3" download>⬇ Descargar</a>
+          <img class="chapter-art" src="audiolibro/images/ep12_epicteto_seneca.jpg" alt="Epicteto (y Séneca)" loading="lazy">
+          <div class="chapter-body">
+            <div class="chapter-header"><span class="chapter-num">Capítulo 12</span><span class="chapter-title">Epicteto (y Séneca)</span><span class="chapter-meta">14 min</span></div>
+            <audio controls preload="none"><source src="audiolibro/12_epicteto.mp3" type="audio/mpeg"></audio>
+            <a class="download-link" href="audiolibro/12_epicteto.mp3" download>⬇ Descargar</a>
+          </div>
         </li>
         <li class="chapter-item">
-          <div class="chapter-header"><span class="chapter-num">Capítulo 13</span><span class="chapter-title">Alan Watts</span><span class="chapter-meta">13 min</span></div>
-          <audio controls preload="none"><source src="audiolibro/13_watts.mp3" type="audio/mpeg"></audio>
-          <a class="download-link" href="audiolibro/13_watts.mp3" download>⬇ Descargar</a>
+          <img class="chapter-art" src="audiolibro/images/ep13_watts.jpg" alt="Alan Watts" loading="lazy">
+          <div class="chapter-body">
+            <div class="chapter-header"><span class="chapter-num">Capítulo 13</span><span class="chapter-title">Alan Watts</span><span class="chapter-meta">13 min</span></div>
+            <audio controls preload="none"><source src="audiolibro/13_watts.mp3" type="audio/mpeg"></audio>
+            <a class="download-link" href="audiolibro/13_watts.mp3" download>⬇ Descargar</a>
+          </div>
         </li>
         <li class="chapter-item">
-          <div class="chapter-header"><span class="chapter-num">Capítulo 14</span><span class="chapter-title">Jiddu Krishnamurti</span><span class="chapter-meta">14 min</span></div>
-          <audio controls preload="none"><source src="audiolibro/14_krishnamurti.mp3" type="audio/mpeg"></audio>
-          <a class="download-link" href="audiolibro/14_krishnamurti.mp3" download>⬇ Descargar</a>
+          <img class="chapter-art" src="audiolibro/images/ep14_krishnamurti.jpg" alt="Jiddu Krishnamurti" loading="lazy">
+          <div class="chapter-body">
+            <div class="chapter-header"><span class="chapter-num">Capítulo 14</span><span class="chapter-title">Jiddu Krishnamurti</span><span class="chapter-meta">14 min</span></div>
+            <audio controls preload="none"><source src="audiolibro/14_krishnamurti.mp3" type="audio/mpeg"></audio>
+            <a class="download-link" href="audiolibro/14_krishnamurti.mp3" download>⬇ Descargar</a>
+          </div>
         </li>
         <li class="chapter-item">
-          <div class="chapter-header"><span class="chapter-num">Capítulo 15</span><span class="chapter-title">Facundo Cabral</span><span class="chapter-meta">13 min</span></div>
-          <audio controls preload="none"><source src="audiolibro/15_cabral.mp3" type="audio/mpeg"></audio>
-          <a class="download-link" href="audiolibro/15_cabral.mp3" download>⬇ Descargar</a>
+          <img class="chapter-art" src="audiolibro/images/ep15_cabral.jpg" alt="Facundo Cabral" loading="lazy">
+          <div class="chapter-body">
+            <div class="chapter-header"><span class="chapter-num">Capítulo 15</span><span class="chapter-title">Facundo Cabral</span><span class="chapter-meta">13 min</span></div>
+            <audio controls preload="none"><source src="audiolibro/15_cabral.mp3" type="audio/mpeg"></audio>
+            <a class="download-link" href="audiolibro/15_cabral.mp3" download>⬇ Descargar</a>
+          </div>
         </li>
         <li class="chapter-item">
-          <div class="chapter-header"><span class="chapter-num">Capítulo 16</span><span class="chapter-title">Naval Ravikant</span><span class="chapter-meta">9 min</span></div>
-          <audio controls preload="none"><source src="audiolibro/16_naval.mp3" type="audio/mpeg"></audio>
-          <a class="download-link" href="audiolibro/16_naval.mp3" download>⬇ Descargar</a>
+          <img class="chapter-art" src="audiolibro/images/ep16_naval.jpg" alt="Naval Ravikant" loading="lazy">
+          <div class="chapter-body">
+            <div class="chapter-header"><span class="chapter-num">Capítulo 16</span><span class="chapter-title">Naval Ravikant</span><span class="chapter-meta">9 min</span></div>
+            <audio controls preload="none"><source src="audiolibro/16_naval.mp3" type="audio/mpeg"></audio>
+            <a class="download-link" href="audiolibro/16_naval.mp3" download>⬇ Descargar</a>
+          </div>
         </li>
         <li class="chapter-item" style="border-bottom: none;">
           <div class="chapter-header"><span class="chapter-num">Bonus</span><span class="chapter-title">Conexiones entre ellos</span><span class="chapter-meta">1 min</span></div>

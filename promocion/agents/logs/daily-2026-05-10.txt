@@ -1,0 +1,72 @@
+---
+📅 Date: 2026-05-10 (Sunday)
+📖 Week Theme: STOICISM WEEK — Ancient wisdom for modern chaos
+🎭 Today's Persona: Epicteto (🔥) — via --post random
+---
+
+=== TWEET 1 — ENGLISH ===
+
+Stoicism at its core is not a philosophy. It's a practice.
+
+Three Stoics, one question: "What is within your control?"
+
+Epictetus: Your judgments. Your reactions. Nothing else.
+Seneca: Your use of time. Not how much you have — how you spend it.
+Marcus Aurelius: Your attention. What you let into your mind is a choice.
+
+That's the entire tradition in three sentences. Everything else is commentary.
+
+From "Personal Pantheon" — 16 thinkers who build mental tools. Start with the Stoics.
+EN → https://lpisaroni.github.io/panteon-en.html
+ES → https://lpisaroni.github.io/panteon.html
+#Stoicism #Epictetus #MarcusAurelius #Seneca #PersonalPantheon
+
+
+=== TWEET 2 — SPANISH ===
+
+El estoicismo no es una filosofía. Es una práctica.
+
+Tres estoicos, una pregunta: "¿Qué está bajo tu control?"
+
+Epicteto: Tus juicios. Tus reacciones. Nada más.
+Séneca: Tu uso del tiempo. No cuánto tenés — cómo lo gastás.
+Marco Aurelio: Tu atención. Lo que dejás entrar a tu mente es una elección.
+
+Esa es toda la tradición en tres oraciones. Todo lo demás es comentario.
+
+Del "Panteón Personal" — 16 pensadores que construyen herramientas mentales. Empezá por los estoicos.
+EN → https://lpisaroni.github.io/panteon-en.html
+ES → https://lpisaroni.github.io/panteon.html
+#Estoicismo #Epicteto #MarcoAurelio #Séneca #PanteónPersonal
+
+
+=== TODAY'S PERSONA POST — EPICTETO (via --post random) ===
+
+🔥 @Epicteto
+
+If you have nothing, but want nothing, you are richer than any king. If you have everything, but fear losing it, you are poorer than any beggar. #Seneca
+
+📖 The Panteón is a Stoic handbook for the modern world — 16 teachers all reminding you that the only thing you control is your response to what the universe sends.
+
+#Panteon #PanteonBook #Thinkers #Philosophy
+
+📖 https://nanopisaroni.vercel.app
+
+
+=== XURL STATUS ===
+
+xurl is INSTALLED at /home/nanobot/.local/bin/xurl
+  - App "panteon" exists with client_id configured
+  - Default "panteon" has no OAuth 2.0 token (oauth2: (none))
+  - Default "default" app also has no credentials
+  - Previous sessions show same state since May 8
+
+Posting SKIPPED — no valid auth token available for either app.
+
+To enable auto-posting:
+  1. Run headless OAuth: xurl auth oauth2 --app panteon @YOUR_X_HANDLE
+     (run in background, capture the auth URL)
+  2. Visit the authorization URL in a browser to approve
+  3. Set as default: xurl auth default panteon
+  4. Verify: xurl auth status (should show oauth2 token with user)
+  5. Re-run this cron job to auto-post

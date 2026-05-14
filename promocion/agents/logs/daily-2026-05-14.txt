@@ -1,0 +1,156 @@
+================================================================================
+  PERSONAL PANTHEON / PANTEÓN PERSONAL — DAILY POST LOG
+  Date:       Thursday, May 14, 2026
+  Generated:  2026-05-14 09:00 ART
+  Cron Job:   Daily promotional tweet generation
+================================================================================
+
+📅 Date: 2026-05-14 (Thursday)
+📖 Week Theme: MINDSET & PSYCHOLOGY WEEK — "The mind is the problem and the solution."
+   Content Plan — Week 7 of Part 2: Focus on Kahneman, Krishnamurti, Watts
+   Thursday daily themes from agent system: psychology, behavioral, decision-making
+   Thursday persona match: Kahneman, Munger, Yudkowsky, Taleb
+🎭 Today's Persona: Marco Aurelio (🏛️) — via panteon-agents.py --post random
+
+════════════════════════════════════════════════════════════════════════
+  TWEET 1 — ENGLISH
+════════════════════════════════════════════════════════════════════════
+
+Your anxiety is lying to you.
+
+Kahneman proved it: "Nothing in life is as important as you think it is while you are thinking about it." The focusing illusion makes the present feel permanent — but it isn't.
+
+Krishnamurti gave the antidote: observe without evaluating. Don't label. Don't judge. Just watch. That simple practice dissolves most anxiety.
+
+Two thinkers. Same insight from opposite directions.
+
+📖 Personal Pantheon → https://lpisaroni.github.io/panteon-en.html
+#Kahneman #Krishnamurti #FocusingIllusion #PersonalPantheon
+
+────────────────────────────────────────────────────────────────────────
+  Character count: 477 chars (thread format required)
+
+  Thread format:
+    T1: Your anxiety is lying to you.
+
+        Kahneman proved it: "Nothing in life is as important as you think it is while you are thinking about it." The focusing illusion makes the present feel permanent — but it isn't.
+
+    T2: Krishnamurti gave the antidote: observe without evaluating. Don't label. Don't judge. Just watch.
+
+        That simple practice dissolves most anxiety.
+
+        Two thinkers. Same insight from opposite directions.
+
+    T3: 📖 Personal Pantheon → https://lpisaroni.github.io/panteon-en.html
+        #Kahneman #Krishnamurti #FocusingIllusion #PersonalPantheon
+────────────────────────────────────────────────────────────────────────
+
+════════════════════════════════════════════════════════════════════════
+  TWEET 2 — SPANISH
+════════════════════════════════════════════════════════════════════════
+
+Tu ansiedad te está mintiendo.
+
+Kahneman lo demostró: "Nada en la vida es tan importante como creés mientras lo estás pensando." La ilusión del foco hace que el presente se sienta permanente — pero no lo es.
+
+Krishnamurti dio el antídoto: observá sin juzgar. No etiquetés. No evalués. Sólo mirá. Esa práctica simple disuelve la mayor parte de la ansiedad.
+
+Dos pensadores. La misma conclusión desde direcciones opuestas.
+
+📖 Panteón Personal → https://lpisaroni.github.io/panteon.html
+#Kahneman #Krishnamurti #IlusiónDelFoco #PanteónPersonal
+
+────────────────────────────────────────────────────────────────────────
+  Character count: 485 chars (thread format required)
+
+  Thread format:
+    T1: Tu ansiedad te está mintiendo.
+
+        Kahneman lo demostró: "Nada en la vida es tan importante como creés mientras lo estás pensando." La ilusión del foco hace que el presente se sienta permanente — pero no lo es.
+
+    T2: Krishnamurti dio el antídoto: observá sin juzgar. No etiquetés. No evalués. Sólo mirá.
+
+        Esa práctica simple disuelve la mayor parte de la ansiedad.
+
+        Dos pensadores. La misma conclusión desde direcciones opuestas.
+
+    T3: 📖 Panteón Personal → https://lpisaroni.github.io/panteon.html
+        #Kahneman #Krishnamurti #IlusiónDelFoco #PanteónPersonal
+────────────────────────────────────────────────────────────────────────
+
+════════════════════════════════════════════════════════════════════════
+  TODAY'S PERSONA POST — Marco Aurelio (via panteon-agents.py --post random)
+════════════════════════════════════════════════════════════════════════
+
+🏛️ @Marco Aurelio
+
+  At dawn, when you rise from sleep, tell yourself: I am going to meet
+  people who are ungrateful, arrogant, deceitful, envious, unsocial.
+  But I have seen the beauty of good, and the ugliness of evil.
+  #MarcusAurelius #Stoicism
+
+  The happiness of your life depends upon the quality of your thoughts.
+
+  📖 The Panteón is a modern Meditations — a series of reflections
+  designed to be read a page at a time, internalized through repetition,
+  and lived through action.
+
+  #Panteon #PanteonBook #Thinkers #Philosophy
+
+  📖 https://nanopisaroni.vercel.app
+
+════════════════════════════════════════════════════════════════════════
+  XURL / TWITTER STATUS
+════════════════════════════════════════════════════════════════════════
+
+xurl auth status:
+  ▸ panteon  [client_id: Q2hGMnNZ…]  — oauth2: (none)
+    default  [(no credentials)]        — oauth2: (none)
+
+Status: ❌ No OAuth 2.0 tokens available. App "panteon" has a client_id
+registered but has never completed the OAuth 2.0 PKCE flow. No user is
+authenticated. This state has been unchanged since May 8.
+
+Cannot post to X/Twitter. To enable:
+  1. xurl auth oauth2 --app panteon @YOUR_HANDLE   # starts callback server
+  2. timeout 8 xurl auth oauth2 --app panteon @HANDLE  # get auth URL
+  3. Visit the auth URL in a browser → authorize
+  4. xurl auth default panteon
+  5. xurl auth status → should show oauth2: (username)
+
+No posts were sent to X/Twitter this cycle.
+
+════════════════════════════════════════════════════════════════════════
+  SCHEDULED AGENT POSTS TODAY (from agent system)
+════════════════════════════════════════════════════════════════════════
+
+Thursday (May 14) — Theme: psychology/behavioral/decision-making
+  09:00  🧪 @Kahneman   — Behavioral Economics & Cognitive Biases  — cognitive biases
+  14:00  🧠 @Munger     — Mental Models & Investing                — behavioral psychology
+  19:00  🦢 @Taleb      — Risk & Antifragility                     — the ludic fallacy
+
+Marco Aurelio was randomly selected as the promotional persona. The
+MINDSET & PSYCHOLOGY WEEK theme aligns well with Thursday's daily
+themes of psychology and decision-making.
+
+════════════════════════════════════════════════════════════════════════
+  CONTENT PLAN MATCH
+════════════════════════════════════════════════════════════════════════
+
+  Part 2, Week 7 — MINDSET & PSYCHOLOGY WEEK
+  Hook:  "The mind is the problem and the solution."
+  Focus: Kahneman, Krishnamurti, Watts
+  Tweets available in content-plan.txt (lines 640-700):
+    TWEET 1 — Kahneman: Focusing Illusion
+    TWEET 2 — Krishnamurti: Observe without evaluating
+    TWEET 3 — Alan Watts: Dance of life / Backwards law
+
+  Today's English & Spanish tweets combine TWEET 1 (Kahneman's focusing
+  illusion) and TWEET 2 (Krishnamurti's choiceless awareness), adapted
+  into a short thread format. The connection between Kahneman's
+  description of the problem and Krishnamurti's solution creates a
+  natural throughline — two thinkers with convergent insights.
+
+════════════════════════════════════════════════════════════════════════
+END OF DAILY LOG
+════════════════════════════════════════════════════════════════════════

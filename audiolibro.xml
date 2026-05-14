@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Panteón Personal</title>
+    <link>https://nanopisaroni.vercel.app/audiolibro.html</link>
+    <description>16 pensadores que me formaron. Un recorrido por Borges, Feynman, Taleb, Deutsch, Thiel, Popper, Munger, Kahneman, Graham, Yudkowsky, Marco Aurelio, Epicteto, Watts, Krishnamurti, Cabral y Naval Ravikant. Voz: Alonso (Español neutro).</description>
+    <language>es</language>
+    <lastBuildDate>Wed, 14 May 2026 10:00:00 -0300</lastBuildDate>
+    <itunes:author>Leandro Pisaroni</itunes:author>
+    <itunes:summary>16 pensadores que me formaron. Un recorrido por Borges, Feynman, Taleb, Deutsch, Thiel, Popper, Munger, Kahneman, Graham, Yudkowsky, Marco Aurelio, Epicteto, Watts, Krishnamurti, Cabral y Naval Ravikant. Voz: Alonso (Español neutro).</itunes:summary>
+    <itunes:category text="Education"/>
+    <itunes:category text="Society &amp; Culture"/>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:image href="https://nanopisaroni.vercel.app/panteon.html"/>
+
+    <item>
+      <title>Capítulo 1: Jorge Luis Borges</title>
+      <link>https://nanopisaroni.vercel.app/audiolibro.html</link>
+      <description>Vida, ideas centrales, obras clave y conexiones de Jorge Luis Borges, el escritor argentino que convirtió la biblioteca en un universo y la ficción en una máquina de pensar.</description>
+      <enclosure url="https://nanopisaroni.vercel.app/audiolibro/01_borges.mp3" length="16777216" type="audio/mpeg"/>
+      <guid isPermaLink="false">panteon-01-borges</guid>
+      <pubDate>Wed, 14 May 2026 10:00:00 -0300</pubDate>
+      <itunes:duration>16:00</itunes:duration>
+      <itunes:episode>1</itunes:episode>
+    </item>
+    <item>
+      <title>Capítulo 2: Richard Feynman</title>
+      <link>https://nanopisaroni.vercel.app/audiolibro.html</link>
+      <description>Vida, ideas centrales, obras clave y conexiones de Richard Feynman. El físico que nos enseñó a no engañarnos a nosotros mismos, a pensar en diagramas y a no confundir el mapa con el territorio.</description>
+      <enclosure url="https://nanopisaroni.vercel.app/audiolibro/02_feynman.mp3" length="14680064" type="audio/mpeg"/>
+      <guid isPermaLink="false">panteon-02-feynman</guid>
+      <pubDate>Wed, 14 May 2026 10:00:00 -0300</pubDate>
+      <itunes:duration>14:00</itunes:duration>
+      <itunes:episode>2</itunes:episode>
+    </item>
+    <item>
+      <title>Capítulo 3: Nassim Nicholas Taleb</title>
+      <link>https://nanopisaroni.vercel.app/audiolibro.html</link>
+      <description>Vida, ideas centrales, obras clave y conexiones de Nassim Nicholas Taleb. El pensador de los cisnes negros, la antifragilidad y el skin in the game.</description>
+      <enclosure url="https://nanopisaroni.vercel.app/audiolibro/03_taleb.mp3" length="16777216" type="audio/mpeg"/>
+      <guid isPermaLink="false">panteon-03-taleb</guid>
+      <pubDate>Wed, 14 May 2026 10:00:00 -0300</pubDate>
+      <itunes:duration>16:00</itunes:duration>
+      <itunes:episode>3</itunes:episode>
+    </item>
+    <item>
+      <title>Capítulo 4: David Deutsch</title>
+      <link>https://nanopisaroni.vercel.app/audiolibro.html</link>
+      <description>Vida, ideas centrales, obras clave y conexiones de David Deutsch. El padre de la computación cuántica y la teoría del conocimiento basada en buenas explicaciones.</description>
+      <enclosure url="https://nanopisaroni.vercel.app/audiolibro/04_deutsch.mp3" length="15728640" type="audio/mpeg"/>
+      <guid isPermaLink="false">panteon-04-deutsch</guid>
+      <pubDate>Wed, 14 May 2026 10:00:00 -0300</pubDate>
+      <itunes:duration>15:00</itunes:duration>
+      <itunes:episode>4</itunes:episode>
+    </item>
+    <item>
+      <title>Capítulo 5: Peter Thiel</title>
+      <link>https://nanopisaroni.vercel.app/audiolibro.html</link>
+      <description>Vida, ideas centrales, obras clave y conexiones de Peter Thiel. El inversor que piensa desde cero y pregunta lo que nadie más se anima a preguntar.</description>
+      <enclosure url="https://nanopisaroni.vercel.app/audiolibro/05_thiel.mp3" length="16777216" type="audio/mpeg"/>
+      <guid isPermaLink="false">panteon-05-thiel</guid>
+      <pubDate>Wed, 14 May 2026 10:00:00 -0300</pubDate>
+      <itunes:duration>16:00</itunes:duration>
+      <itunes:episode>5</itunes:episode>
+    </item>
+    <item>
+      <title>Capítulo 6: Karl Popper</title>
+      <link>https://nanopisaroni.vercel.app/audiolibro.html</link>
+      <description>Vida, ideas centrales, obras clave y conexiones de Karl Popper. El filósofo de la ciencia que entendió que el conocimiento avanza por refutación, no por confirmación.</description>
+      <enclosure url="https://nanopisaroni.vercel.app/audiolibro/06_popper.mp3" length="10066330" type="audio/mpeg"/>
+      <guid isPermaLink="false">panteon-06-popper</guid>
+      <pubDate>Wed, 14 May 2026 10:00:00 -0300</pubDate>
+      <itunes:duration>10:00</itunes:duration>
+      <itunes:episode>6</itunes:episode>
+    </item>
+    <item>
+      <title>Capítulo 7: Charlie Munger</title>
+      <link>https://nanopisaroni.vercel.app/audiolibro.html</link>
+      <description>Vida, ideas centrales, obras clave y conexiones de Charlie Munger. El vicepresidente de Berkshire Hathaway que construyó un sistema de modelos mentales para tomar mejores decisiones.</description>
+      <enclosure url="https://nanopisaroni.vercel.app/audiolibro/07_munger.mp3" length="10380902" type="audio/mpeg"/>
+      <guid isPermaLink="false">panteon-07-munger</guid>
+      <pubDate>Wed, 14 May 2026 10:00:00 -0300</pubDate>
+      <itunes:duration>10:00</itunes:duration>
+      <itunes:episode>7</itunes:episode>
+    </item>
+    <item>
+      <title>Capítulo 8: Daniel Kahneman</title>
+      <link>https://nanopisaroni.vercel.app/audiolibro.html</link>
+      <description>Vida, ideas centrales, obras clave y conexiones de Daniel Kahneman. El psicólogo que demostró que nuestra mente tiene dos sistemas y que no somos tan racionales como creemos.</description>
+      <enclosure url="https://nanopisaroni.vercel.app/audiolibro/08_kahneman.mp3" length="11534336" type="audio/mpeg"/>
+      <guid isPermaLink="false">panteon-08-kahneman</guid>
+      <pubDate>Wed, 14 May 2026 10:00:00 -0300</pubDate>
+      <itunes:duration>11:00</itunes:duration>
+      <itunes:episode>8</itunes:episode>
+    </item>
+    <item>
+      <title>Capítulo 9: Paul Graham</title>
+      <link>https://nanopisaroni.vercel.app/audiolibro.html</link>
+      <description>Vida, ideas centrales, obras clave y conexiones de Paul Graham. El ensayista, programador y cofundador de Y Combinator que escribe para descubrir qué piensa.</description>
+      <enclosure url="https://nanopisaroni.vercel.app/audiolibro/09_graham.mp3" length="8598323" type="audio/mpeg"/>
+      <guid isPermaLink="false">panteon-09-graham</guid>
+      <pubDate>Wed, 14 May 2026 10:00:00 -0300</pubDate>
+      <itunes:duration>8:00</itunes:duration>
+      <itunes:episode>9</itunes:episode>
+    </item>
+    <item>
+      <title>Capítulo 10: Eliezer Yudkowsky</title>
+      <link>https://nanopisaroni.vercel.app/audiolibro.html</link>
+      <description>Vida, ideas centrales, obras clave y conexiones de Eliezer Yudkowsky. El ingeniero de la racionalidad que aplicó el rigor científico al arte de pensar bien.</description>
+      <enclosure url="https://nanopisaroni.vercel.app/audiolibro/10_yudkowsky.mp3" length="9017754" type="audio/mpeg"/>
+      <guid isPermaLink="false">panteon-10-yudkowsky</guid>
+      <pubDate>Wed, 14 May 2026 10:00:00 -0300</pubDate>
+      <itunes:duration>9:00</itunes:duration>
+      <itunes:episode>10</itunes:episode>
+    </item>
+    <item>
+      <title>Capítulo 11: Marco Aurelio</title>
+      <link>https://nanopisaroni.vercel.app/audiolibro.html</link>
+      <description>Vida, ideas centrales, obras clave y conexiones de Marco Aurelio. El emperador estoico que escribió sus Meditaciones como un cuaderno de batalla contra su propia mente.</description>
+      <enclosure url="https://nanopisaroni.vercel.app/audiolibro/11_marco_aurelio.mp3" length="8808038" type="audio/mpeg"/>
+      <guid isPermaLink="false">panteon-11-marco-aurelio</guid>
+      <pubDate>Wed, 14 May 2026 10:00:00 -0300</pubDate>
+      <itunes:duration>8:00</itunes:duration>
+      <itunes:episode>11</itunes:episode>
+    </item>
+    <item>
+      <title>Capítulo 12: Epicteto (y Séneca)</title>
+      <link>https://nanopisaroni.vercel.app/audiolibro.html</link>
+      <description>Vida, ideas centrales, obras clave y conexiones de Epicteto y Séneca. Los estoicos que nos enseñaron a distinguir lo que controlamos de lo que no.</description>
+      <enclosure url="https://nanopisaroni.vercel.app/audiolibro/12_epicteto.mp3" length="14680064" type="audio/mpeg"/>
+      <guid isPermaLink="false">panteon-12-epicteto</guid>
+      <pubDate>Wed, 14 May 2026 10:00:00 -0300</pubDate>
+      <itunes:duration>14:00</itunes:duration>
+      <itunes:episode>12</itunes:episode>
+    </item>
+    <item>
+      <title>Capítulo 13: Alan Watts</title>
+      <link>https://nanopisaroni.vercel.app/audiolibro.html</link>
+      <description>Vida, ideas centrales, obras clave y conexiones de Alan Watts. El filósofo que llevó el budismo zen a Occidente y nos recordó que el universo no es un problema a resolver sino una realidad a experimentar.</description>
+      <enclosure url="https://nanopisaroni.vercel.app/audiolibro/13_watts.mp3" length="13631488" type="audio/mpeg"/>
+      <guid isPermaLink="false">panteon-13-watts</guid>
+      <pubDate>Wed, 14 May 2026 10:00:00 -0300</pubDate>
+      <itunes:duration>13:00</itunes:duration>
+      <itunes:episode>13</itunes:episode>
+    </item>
+    <item>
+      <title>Capítulo 14: Jiddu Krishnamurti</title>
+      <link>https://nanopisaroni.vercel.app/audiolibro.html</link>
+      <description>Vida, ideas centrales, obras clave y conexiones de Jiddu Krishnamurti. El pensador que disolvió su propia autoridad y nos dijo que la verdad es un país sin caminos.</description>
+      <enclosure url="https://nanopisaroni.vercel.app/audiolibro/14_krishnamurti.mp3" length="14680064" type="audio/mpeg"/>
+      <guid isPermaLink="false">panteon-14-krishnamurti</guid>
+      <pubDate>Wed, 14 May 2026 10:00:00 -0300</pubDate>
+      <itunes:duration>14:00</itunes:duration>
+      <itunes:episode>14</itunes:episode>
+    </item>
+    <item>
+      <title>Capítulo 15: Facundo Cabral</title>
+      <link>https://nanopisaroni.vercel.app/audiolibro.html</link>
+      <description>Vida, ideas centrales, obras clave y conexiones de Facundo Cabral. El cantautor argentino que convirtió su pobreza y su dolor en una filosofía de vida simple y profunda.</description>
+      <enclosure url="https://nanopisaroni.vercel.app/audiolibro/15_cabral.mp3" length="13631488" type="audio/mpeg"/>
+      <guid isPermaLink="false">panteon-15-cabral</guid>
+      <pubDate>Wed, 14 May 2026 10:00:00 -0300</pubDate>
+      <itunes:duration>13:00</itunes:duration>
+      <itunes:episode>15</itunes:episode>
+    </item>
+    <item>
+      <title>Capítulo 16: Naval Ravikant</title>
+      <link>https://nanopisaroni.vercel.app/audiolibro.html</link>
+      <description>Vida, ideas centrales, obras clave y conexiones de Naval Ravikant. El inversor y filósofo moderno que entiende que la riqueza, la salud y la felicidad son habilidades que se aprenden.</description>
+      <enclosure url="https://nanopisaroni.vercel.app/audiolibro/16_naval.mp3" length="9437184" type="audio/mpeg"/>
+      <guid isPermaLink="false">panteon-16-naval</guid>
+      <pubDate>Wed, 14 May 2026 10:00:00 -0300</pubDate>
+      <itunes:duration>9:00</itunes:duration>
+      <itunes:episode>16</itunes:episode>
+    </item>
+    <item>
+      <title>Bonus: Conexiones entre ellos</title>
+      <link>https://nanopisaroni.vercel.app/audiolibro.html</link>
+      <description>Red neuronal del panteón. Cómo se conectan los 16 pensadores entre sí, formando un mapa de ideas que se cruzan, se potencian y a veces se contradicen.</description>
+      <enclosure url="https://nanopisaroni.vercel.app/audiolibro/17_conexiones.mp3" length="1048576" type="audio/mpeg"/>
+      <guid isPermaLink="false">panteon-17-conexiones</guid>
+      <pubDate>Wed, 14 May 2026 10:00:00 -0300</pubDate>
+      <itunes:duration>1:00</itunes:duration>
+      <itunes:episode>17</itunes:episode>
+    </item>
+  </channel>
+</rss>

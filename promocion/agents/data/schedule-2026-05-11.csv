@@ -1,0 +1,23 @@
+Date,Day,Time,Persona,Emoji,Domain,Topic,Type
+2026-05-11,Monday,09:00,Krishnamurti,🕊️,Freedom from Conditioning,the art of questioning,morning_post
+2026-05-11,Monday,14:00,Alan Watts,☯️,Eastern Philosophy & Zen,the watercourse way,afternoon_post
+2026-05-11,Monday,19:00,Yudkowsky,🤖,AI Safety & Rationality,Bayesian reasoning,evening_post
+2026-05-12,Tuesday,09:00,Popper,⚗️,Philosophy of Science,the paradox of tolerance,morning_post
+2026-05-12,Tuesday,14:00,Deutsch,🌌,Quantum Physics & Epistemology,optimism as epistemology,afternoon_post
+2026-05-12,Tuesday,19:00,Alan Watts,☯️,Eastern Philosophy & Zen,zen koans,evening_post
+2026-05-13,Wednesday,09:00,Paul Graham,✍️,Startups & Writing,why essays matter,morning_post
+2026-05-13,Wednesday,14:00,Thiel,🏢,Entrepreneurship & Contrarianism,horizontal vs vertical progress,afternoon_post
+2026-05-13,Wednesday,19:00,Facundo Cabral,🎸,Poetic Wisdom & Life Philosophy,the art of storytelling,evening_post
+2026-05-14,Thursday,09:00,Munger,🧠,Mental Models & Investing,behavioral psychology,morning_post
+2026-05-14,Thursday,14:00,Yudkowsky,🤖,AI Safety & Rationality,AI alignment,afternoon_post
+2026-05-14,Thursday,19:00,Marco Aurelio,🏛️,Stoicism & Leadership,virtue ethics,evening_post
+2026-05-15,Friday,09:00,Epicteto,🔥,Stoic Practicioner,the role of the philosopher,morning_post
+2026-05-15,Friday,14:00,Marco Aurelio,🏛️,Stoicism & Leadership,the inner citadel,afternoon_post
+2026-05-15,Friday,19:00,Alan Watts,☯️,Eastern Philosophy & Zen,the self as illusion,evening_post
+2026-05-16,Saturday,09:00,Borges,📚,Literature & Metaphysics,imaginary books,morning_post
+2026-05-16,Saturday,14:00,Facundo Cabral,🎸,Poetic Wisdom & Life Philosophy,simplicity & distraction,afternoon_post
+2026-05-16,Saturday,19:00,Deutsch,🌌,Quantum Physics & Epistemology,the multiverse,evening_post
+2026-05-17,Sunday,09:00,Naval,💎,Wealth & Happiness,long-term thinking,morning_post
+2026-05-17,Sunday,14:00,Marco Aurelio,🏛️,Stoicism & Leadership,memento mori,afternoon_post
+2026-05-17,Sunday,19:00,Yudkowsky,🤖,AI Safety & Rationality,decision theory,evening_post
+2026-05-17,Sunday,20:00,"Kahneman, Yudkowsky, Facundo Cabral",💬,Thread,reflection,interaction_thread

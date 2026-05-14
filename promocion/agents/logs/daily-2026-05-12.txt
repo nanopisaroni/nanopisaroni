@@ -1,0 +1,117 @@
+================================================================================
+  PERSONAL PANTHEON / PANTEÓN PERSONAL — DAILY POST LOG
+  Date:       Tuesday, May 12, 2026
+  Generated:  2026-05-12 09:00 ART
+  Cron Job:   Daily promotional tweet generation
+================================================================================
+
+📅 Date: 2026-05-12
+📖 Week Theme: Rationality (Epistemology Week overlap — content-plan Week 2)
+🎭 Today's Persona: Feynman (random via panteon-agents.py --post)
+
+════════════════════════════════════════════════════════════════════════
+  TWEET 1 — ENGLISH
+════════════════════════════════════════════════════════════════════════
+
+Feynman's superpower wasn't his math — it was knowing when he didn't understand something.
+
+Most people fake it. Feynman chased confusion like it was the only honest state.
+
+"The first principle is that you must not fool yourself — and you are the easiest person to fool."
+
+That's chapter 2 of Personal Pantheon.
+
+Read it → https://lpisaroni.github.io/panteon-en.html
+#PersonalPantheon #Feynman #Rationality #MentalModels
+
+────────────────────────────────────────────────────────────────────────
+  Character count: 380 chars (over 280 — thread format)
+  Thread format:
+    T1: Feynman's superpower wasn't his math — it was knowing when he didn't understand something.
+    T2: Most people fake it. Feynman chased confusion like it was the only honest state.
+    T3: "The first principle is that you must not fool yourself — and you are the easiest person to fool."
+    T4: That's chapter 2 of Personal Pantheon.
+        Read it → https://lpisaroni.github.io/panteon-en.html
+        #PersonalPantheon #Feynman #Rationality #MentalModels
+────────────────────────────────────────────────────────────────────────
+
+════════════════════════════════════════════════════════════════════════
+  TWEET 2 — SPANISH
+════════════════════════════════════════════════════════════════════════
+
+El superpoder de Feynman no eran sus ecuaciones — era saber cuándo NO entendía algo.
+
+La mayoría finge. Feynman perseguía la confusión como el único estado honesto.
+
+"El primer principio es que no debes engañarte a ti mismo — y tú eres la persona más fácil de engañar."
+
+Capítulo 2 del Panteón Personal.
+
+Leelo gratis → https://lpisaroni.github.io/panteon.html
+#PanteónPersonal #Feynman #Racionalidad #ModelosMentales
+
+────────────────────────────────────────────────────────────────────────
+  Character count: 375 chars (over 280 — thread format)
+  Thread format:
+    T1: El superpoder de Feynman no eran sus ecuaciones — era saber cuándo NO entendía algo.
+    T2: La mayoría finge. Feynman perseguía la confusión como el único estado honesto.
+    T3: "El primer principio es que no debes engañarte a ti mismo — y tú eres la persona más fácil de engañar."
+    T4: Capítulo 2 del Panteón Personal.
+        Leelo gratis → https://lpisaroni.github.io/panteon.html
+        #PanteónPersonal #Feynman #Racionalidad #ModelosMentales
+────────────────────────────────────────────────────────────────────────
+
+════════════════════════════════════════════════════════════════════════
+  PERSONA POST — Feynman (via panteon-agents.py --post random)
+════════════════════════════════════════════════════════════════════════
+
+🔬 @Feynman
+
+"Why?" is the most dangerous question in science. Because if you ask it
+enough times, you end up rewriting all of physics. Ask it anyway.
+
+#Panteon #PanteonBook #Thinkers #Philosophy
+
+📖 https://nanopisaroni.vercel.app
+
+────────────────────────────────────────────────────────────────────────
+
+════════════════════════════════════════════════════════════════════════
+  XURL / TWITTER STATUS
+════════════════════════════════════════════════════════════════════════
+
+xurl auth status:
+  - default app:  (no credentials) — oauth2: (none)
+  - panteon app:  Q2hGMnNZ…        — oauth2: (none)
+
+Status: ❌ 0 apps with OAuth tokens. Cannot post.
+
+The "panteon" app is registered (has client_id) but has no OAuth 2.0
+session — no tokens, no authenticated user. xurl requires a completed
+OAuth 2.0 PKCE flow before it can post.
+
+To fix:
+  1. User runs: xurl auth oauth2 --app panteon @USERNAME
+  2. Opens the OAuth URL in a browser
+  3. xurl redirect callback completes the flow
+  4. Verify: xurl auth status → should show oauth2: (user)
+  5. Post:    xurl post "Tweet text"
+
+No posts were sent to X/Twitter this cycle. Tweets saved for manual
+posting or future automation once auth is set up.
+
+════════════════════════════════════════════════════════════════════════
+  SCHEDULED AGENT POSTS TODAY (from weekly-plan-2026-05-11)
+════════════════════════════════════════════════════════════════════════
+
+Tuesday May 12 — Theme: rationality
+  09:00  🤖 @Yudkowsky   — AI Safety & Rationality      — x-risk & existential hope
+  14:00  ⚗️ @Popper      — Philosophy of Science        — falsifiability
+  19:00  💎 @Naval       — Wealth & Happiness           — reading & learning
+
+Feynman was selected as the persona for the promotional tweet. He aligns
+well with Tuesday's rationality theme (curiosity → rationality → knowledge).
+
+════════════════════════════════════════════════════════════════════════
+END OF DAILY LOG
+════════════════════════════════════════════════════════════════════════

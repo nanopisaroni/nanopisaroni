@@ -1,0 +1,128 @@
+================================================================================
+  PERSONAL PANTHEON / PANTEÓN PERSONAL — WEEKLY PLAN
+  Week of: 2026-05-11 (Monday 11 — Sunday 17 May)
+  Generated: 2026-05-11 07:00 ART
+================================================================================
+
+═══ PART 1: AGENT SCHEDULE (panteon-agents.py --schedule) ═══
+
+Monday    (May 11) — Theme: consciousness
+  09:00  🎸 @Facundo Cabral   | Poetic Wisdom & Life Philosophy     | resilience through hardship
+  14:00  📚 @Borges           | Literature & Metaphysics            | imaginary books
+  19:00  💎 @Naval            | Wealth & Happiness                  | happiness as skill
+
+Tuesday   (May 12) — Theme: rationality
+  09:00  🤖 @Yudkowsky        | AI Safety & Rationality             | x-risk & existential hope
+  14:00  ⚗️ @Popper           | Philosophy of Science               | falsifiability
+  19:00  💎 @Naval            | Wealth & Happiness                  | reading & learning
+
+Wednesday (May 13) — Theme: mental models
+  09:00  💎 @Naval            | Wealth & Happiness                  | long-term thinking
+  14:00  🧠 @Munger           | Mental Models & Investing           | behavioral psychology
+  19:00  🤖 @Yudkowsky        | AI Safety & Rationality             | meta-cognition
+
+Thursday  (May 14) — Theme: psychology
+  09:00  🤖 @Yudkowsky        | AI Safety & Rationality             | x-risk & existential hope
+  14:00  🧪 @Kahneman         | Behavioral Economics & Cog. Biases  | prospect theory
+  19:00  ⚗️ @Popper           | Philosophy of Science               | falsifiability
+
+Friday    (May 15) — Theme: stoicism
+  09:00  🔥 @Epicteto         | Stoic Practicioner                  | the role of the philosopher
+  14:00  🦢 @Taleb            | Risk & Antifragility                | the ludic fallacy
+  19:00  ✍️ @Paul Graham      | Startups & Writing                  | makers vs managers
+
+Saturday  (May 16) — Theme: eastern philosophy
+  09:00  ☯️ @Alan Watts       | Eastern Philosophy & Zen            | music & philosophy
+  14:00  🎸 @Facundo Cabral   | Poetic Wisdom & Life Philosophy     | faith & doubt
+  19:00  🔥 @Epicteto         | Stoic Practicioner                  | desire & aversion
+
+Sunday    (May 17) — Theme: wisdom
+  09:00  🏛️ @Marco Aurelio    | Stoicism & Leadership               | controlling what you can
+  14:00  💎 @Naval            | Wealth & Happiness                  | the philosophy of money
+  19:00  🎸 @Facundo Cabral   | Poetic Wisdom & Life Philosophy     | resilience through hardship
+  20:00  💬 THREAD            | Borges, Kahneman, Paul Graham       | wisdom
+
+Agent total: 22 posts + 1 thread
+
+Note: The CSV export (current-week.csv) shows a different set of personas than
+the --schedule output. The CSV lists Krishnamurti, Alan Watts, Yudkowsky for
+Monday — likely a separate generation / randomization from the same agent pool.
+Verify which schedule is active.
+
+═══ PART 2: CONTENT PLAN WEEKLY THEMES (content-plan.txt) ═══
+
+The content plan defines 12 weekly themes (Part 2). The plan was generated
+in May 2026. Part 1 covers a 14-day launch campaign. The 12 weekly themes
+in Part 2 follow the launch period.
+
+Current week themes per the content plan:
+
+  The launch campaign (Part 1) covers ~2 weeks of daily tweets.
+  The 12 Part 2 weeks and their themes:
+
+  Week  1 — Stoicism Week        (focus: Marcus Aurelius, Epictetus, Seneca)
+  Week  2 — Epistemology Week    (focus: Popper, Deutsch, Yudkowsky)
+  Week  3 — Contrarian Thinking  (focus: Taleb, Thiel)
+  Week  4 — Mental Models Week   (focus: Munger, Kahneman)
+  Week  5 — Writing & Comm. Week (focus: Paul Graham, Borges, Feynman)
+  Week  6 — Startups & Leverage  (focus: Naval, Thiel, Paul Graham)
+  Week  7 — Mindset & Psychology (focus: Kahneman, Krishnamurti, Watts)
+  Week  8 — Creativity & Art     (focus: Borges, Cabral, Watts)
+  Week  9 — Rationality & Bias   (focus: Kahneman, Yudkowsky, Taleb)
+  Week 10 — Philosophy of Science (focus: Popper, Deutsch, Feynman)
+  Week 11 — Life Philosophy      (focus: Stoics, Watts, Krishnamurti, Cabral)
+  Week 12 — Pantheon Method      (focus: Synthesis of all 16)
+
+The agents' daily themes for this week (consciousness, rationality, mental
+models, psychology, stoicism, eastern philosophy, wisdom) don't map 1:1 to
+any single content-plan week. The content plan assigns one theme per week,
+while the agents cycle daily. Closest match: Week 7 (Mindset & Psychology)
+and Week 11 (Life Philosophy) overlap with this week's psychology, stoicism,
+and eastern philosophy days.
+
+Upcoming content (from content-plan.txt) that could be published this week:
+
+  TWEETS (ready to post from Part 2):
+    Week 7 — Mindset & Psych:
+      - Kahneman: Focusing Illusion        "Nothing in life is as important..."
+      - Krishnamurti: Observe w/o eval.    "The highest form of human intelligence..."
+      - Alan Watts: Dance of Life           "The only way to make sense out of change..."
+    Week 11 — Life Philosophy:
+      - Epictetus: Response > events       "It's not what happens to you..."
+      - Krishnamurti: Freedom              "Freedom is the absence of the need to choose..."
+      - Facundo Cabral: Presence           "No estás deprimido, estás distraído..."
+
+  BLOG POST OUTLINES available:
+    - "The Focusing Illusion: Why Nothing Is as Important as You Think"
+    - "Philosophy for Daily Life: 7 Practices That Actually Work"
+
+  THREAD IDEAS available:
+    - "3 Mental Traps You Fall for Every Day"  (Kahneman, Taleb, Krishnamurti)
+    - "The 20 Rules for Life from Personal Pantheon"
+
+  IMAGE/VISUAL IDEAS available:
+    - Mind maze: "Your mind is a maze. Here's the map."
+    - Compass with 16 points: "16 Thinkers. 1 Compass."
+
+═══ PART 3: COMBINED WEEKLY SCHEDULE ═══
+
+Day        | Agent Posts                       | Content Plan Matches
+-----------|-----------------------------------|--------------------------------------
+Mon May 11 | Cabral, Borges, Naval             | Watts/Krishnamurti (W7+W11 overlap)
+Tue May 12 | Yudkowsky, Popper, Naval          | Epistemology bits (W2)
+Wed May 13 | Naval, Munger, Yudkowsky          | Mental Models (W4)
+Thu May 14 | Yudkowsky, Kahneman, Popper       | Kahneman bias focus (W7)
+Fri May 15 | Epicteto, Taleb, Paul Graham      | Stoicism (W1) + Contrarian (W3)
+Sat May 16 | Alan Watts, Cabral, Epicteto      | East. Phil + Life Phil. (W11)
+Sun May 17 | Marco Aurelio, Naval, Cabral, Thread| Stoicism (W1) + Wisdom synth
+
+Total 22 agent posts + 1 thread + available content-plan pieces ready to use.
+
+Files saved:
+  - /home/nanobot/sitio/promocion/agents/logs/weekly-2026-05-11.txt
+  - /home/nanobot/sitio/promocion/agents/data/current-week.csv
+  - /home/nanobot/sitio/promocion/agents/logs/weekly-plan-2026-05-11.txt
+
+================================================================================
+END OF WEEKLY PLAN
+================================================================================

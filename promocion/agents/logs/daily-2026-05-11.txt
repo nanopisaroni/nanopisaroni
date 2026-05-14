@@ -1,0 +1,71 @@
+---
+📅 Date: 2026-05-11 (Monday)
+📖 Week Theme: STOICISM WEEK — Ancient wisdom for modern chaos
+🎭 Today's Persona: Paul Graham (✍️) — via --post random
+---
+
+=== TWEET 1 — ENGLISH ===
+
+Monday is the Stoic's day to set intention.
+
+Epictetus taught that some things are up to us and some are not. Before your week spirals into reactive mode, draw the line.
+
+Your calendar? Not entirely up to you. How you show up to each meeting? Entirely up to you.
+Your inbox? Not up to you. How you prioritize your attention? Entirely up to you.
+
+This one distinction — the Dichotomy of Control — is the most useful mental filter ever invented. Use it Monday morning. Use it all week.
+
+From "Personal Pantheon" — 16 thinkers who build mental tools. Start with the Stoics.
+EN → https://lpisaroni.github.io/panteon-en.html
+ES → https://lpisaroni.github.io/panteon.html
+#Stoicism #Epictetus #DichotomyOfControl #PersonalPantheon
+
+
+=== TWEET 2 — SPANISH ===
+
+El lunes es el día del estoico para fijar la intención.
+
+Epicteto enseñó que algunas cosas dependen de nosotros y otras no. Antes de que tu semana entre en modo reactivo, trazá la línea.
+
+¿Tu calendario? No depende completamente de vos. Cómo te presentás a cada reunión? Completamente de vos.
+¿Tu bandeja de entrada? No depende de vos. Cómo priorizás tu atención? Completamente de vos.
+
+Esta distinción — la Dicotomía del Control — es el filtro mental más útil jamás inventado. Usala el lunes a la mañana. Usala toda la semana.
+
+Del "Panteón Personal" — 16 pensadores que construyen herramientas mentales. Empezá por los estoicos.
+EN → https://lpisaroni.github.io/panteon-en.html
+ES → https://lpisaroni.github.io/panteon.html
+#Estoicismo #Epicteto #DicotomíaDelControl #PanteónPersonal
+
+
+=== TODAY'S PERSONA POST — PAUL GRAHAM (via --post random) ===
+
+✍️ @Paul Graham
+
+Startups are hard because you're not competing against other companies — you're competing against the tendency of the world to stay the same.
+
+The way to do great work is to love what you do.
+
+📖 The Panteón is the book Paul Graham would appreciate: a series of well-structured essays by 16 thinkers, each one arising from a genuine question.
+
+#Panteon #PanteonBook #Thinkers #Philosophy
+
+📖 https://nanopisaroni.vercel.app
+
+
+=== XURL STATUS ===
+
+xurl is INSTALLED at /home/nanobot/.local/bin/xurl
+  - App "panteon" exists with client_id: Q2hGMnNZ…
+  - BUT no OAuth 2.0 token is present (oauth2: (none))
+  - App "default" is marked as active (▸) but has no credentials
+  - State unchanged since May 8 — no valid auth token available
+
+Posting SKIPPED — no valid auth token for any app.
+
+To enable auto-posting:
+  1. Run headless OAuth: xurl auth oauth2 --app panteon @YOUR_X_HANDLE
+     (run in background, capture the auth URL with timeout 8)
+  2. Visit the authorization URL in a browser to approve
+  3. Set as default: xurl auth default panteon
+  4. Verify: xurl auth status (should show oauth2 token with user info)

@@ -11,7 +11,7 @@ export default async function handler(req, res) {
   if (req.method === 'OPTIONS') return res.status(200).end();
   if (req.method !== 'GET') return res.status(405).json({ error: 'GET only' });
 
-  const { edition, amount, method, txHash } = req.query;
+  const { edition, amount, method, txHash, email } = req.query;
 
   const sale = {
     id: Date.now().toString(36),
@@ -20,6 +20,7 @@ export default async function handler(req, res) {
     currency: 'USD',
     method: method || 'manual',
     txHash: txHash || '',
+    email: email || '',
     timestamp: new Date().toISOString()
   };
 
@@ -36,6 +37,15 @@ export default async function handler(req, res) {
     data.totalRevenue = data.sales.reduce((sum, s) => sum + s.amount, 0);
 
     await fs.writeFile(SALES_FILE, JSON.stringify(data, null, 2));
+
+    // Sync to Google Sheets if email is present
+    if (email) {
+      const gsheetUrl = 'https://script.google.com/macros/s/AKfycbxIYP0lCJri51OBitI3pgM497O-eVyThuxSfC0SixZBlZQVBhRLvJdrr2N0hteQ-af20A/exec';
+      try {
+        await fetch(gsheetUrl + '?email=' + encodeURIComponent(email) + '&edition=' + encodeURIComponent(edition || 'free') + '&method=' + encodeURIComponent(method || 'freebook') + '&source=vercel-api&userAgent=' + encodeURIComponent(req.headers['user-agent'] || ''));
+      } catch {}
+    }
+
     return res.json({ success: true, sale });
   } catch (e) {
     return res.status(500).json({ error: e.message });

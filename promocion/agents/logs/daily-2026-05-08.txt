@@ -1,0 +1,56 @@
+---
+📅 Date: 2026-05-08 (Friday)
+📖 Week Theme: LAUNCH CAMPAIGN — Week 1: THE REVEAL
+🎭 Today's Persona: Alan Watts (☯️)
+---
+
+=== TWEET 1 — ENGLISH ===
+
+Every thinker you've never heard of has something to teach you. The problem is finding them — and connecting their ideas.
+
+I spent years curating 16 minds that rewired my thinking. Borges on infinity. Feynman on curiosity. Taleb on antifragility. Watts on presence.
+
+That curation became "Personal Pantheon" — 16 chapters, each a mental tool from someone who changed my life.
+
+EN → https://lpisaroni.github.io/panteon-en.html
+ES → https://lpisaroni.github.io/panteon.html
+#PersonalPantheon #MentalModels #Thinkers
+
+=== TWEET 2 — SPANISH ===
+
+Cada pensador que nunca escuchaste tiene algo para enseñarte. El problema es encontrarlos — y conectar sus ideas.
+
+Pasé años seleccionando a 16 mentes que reprogramaron mi forma de pensar. Borges sobre el infinito. Feynman sobre la curiosidad. Taleb sobre la antifragilidad. Watts sobre la presencia.
+
+Esa selección se convirtió en "Panteón Personal" — 16 capítulos, cada uno una herramienta mental de alguien que cambió mi vida.
+
+EN → https://lpisaroni.github.io/panteon-en.html
+ES → https://lpisaroni.github.io/panteon.html
+#PanteónPersonal #ModelosMentales #Pensadores
+
+=== TODAY'S PERSONA POST — ALAN WATTS (via --post random) ===
+
+☯️ @Alan Watts
+
+The #PanteonBook is a finger pointing at the moon. Don't worship the finger. Don't worship the book. Read it, smile, and look where it's pointing.
+
+#Panteon #PanteonBook #Thinkers #Philosophy
+
+📖 https://nanopisaroni.vercel.app
+
+=== XURL STATUS ===
+
+xurl is INSTALLED at /home/nanobot/.local/bin/xurl
+  - App "panteon" exists with client_id configured
+  - BUT no OAuth 2.0 token is present (oauth2: (none))
+  - Default app also has no credentials
+  - Action needed: User must complete headless OAuth 2.0 setup
+
+Posting SKIPPED — no valid auth token available.
+
+To enable auto-posting:
+  1. Run: xurl auth oauth2 --app panteon @YOUR_USERNAME
+     (run in background, capture the auth URL)
+  2. Visit the URL in a browser to authorize
+  3. Set default: xurl auth default panteon
+  4. Verify: xurl auth status

@@ -204,6 +204,18 @@ p{margin:0 0 22px}.sub{color:#555;margin-bottom:32px}
 .coupon-msg{font-size:12px;margin-top:6px;min-height:18px}
 .coupon-msg.valid{color:var(--accent);font-weight:600}
 .coupon-msg.invalid{color:#dc2626}
+.email-form{display:none;margin-bottom:20px;padding:16px;border:1px solid var(--accent);border-radius:8px;background:#f0fdf4;font-family:system-ui,sans-serif;font-size:14px}
+.email-form.active{display:block}
+.email-form label{font-weight:600;display:block;margin-bottom:8px;color:var(--accent)}
+.email-row{display:flex;gap:8px}
+.email-row input{flex:1;font-family:system-ui,sans-serif;font-size:14px;padding:10px 12px;border:1px solid var(--rule);border-radius:4px}
+.email-row input:focus{outline:2px solid var(--accent);outline-offset:2px}
+.email-row button{font-family:system-ui,sans-serif;font-size:14px;font-weight:600;padding:10px 20px;background:var(--accent);color:#fff;border:none;border-radius:4px;cursor:pointer;white-space:nowrap}
+.email-row button:hover{background:#047857}
+.email-row button:disabled{background:#ccc;cursor:not-allowed}
+.email-msg{font-size:12px;margin-top:6px;min-height:18px}
+.email-msg.valid{color:var(--accent);font-weight:600}
+.email-msg.error{color:#dc2626}
 .price-original{text-decoration:line-through;color:#999;font-size:16px}
 .faq{margin:24px 0}
 .faq details{margin-bottom:12px}
@@ -231,6 +243,16 @@ footer{margin-top:44px;padding-top:18px;border-top:1px solid var(--rule);color:#
     <button onclick="applyCoupon()">Apply</button>
   </div>
   <div class="coupon-msg" id="coupon-msg"></div>
+</div>
+
+<!-- Email form for free download -->
+<div class="email-form" id="email-form">
+  <label for="email-input">✉️ Enter your email to get the free download:</label>
+  <div class="email-row">
+    <input type="email" id="email-input" placeholder="you@example.com" onkeydown="if(event.key==='Enter')claimFreeDownload()">
+    <button onclick="claimFreeDownload()">Get Download →</button>
+  </div>
+  <div class="email-msg" id="email-msg"></div>
 </div>
 
 <div class="plans">
@@ -354,24 +376,14 @@ function applyCoupon() {
   var code = input.value.trim().toLowerCase();
 
   if (code === 'freebook') {
-    couponFree = true;
-    couponApplied = true;
+    document.getElementById('coupon-box').style.display = 'none';
+    document.getElementById('email-form').classList.add('active');
     msg.className = 'coupon-msg valid';
-    msg.innerHTML = '✅ Code applied! You can download the book for free. Use the buttons below. <span style="font-size:11px;color:#999">(tracked)</span>';
+    msg.innerHTML = '✅ Code applied! Enter your email to download.';
     document.getElementById('price-en').innerHTML = '$0 <span class="price-original">$10</span>';
     document.getElementById('price-es').innerHTML = '$0 <span class="price-original">$10</span>';
     document.getElementById('send-en').innerHTML = 'Free! Just click download:';
     document.getElementById('send-es').innerHTML = '¡Gratis! Descargá directo:';
-    // Show download buttons directly — show parent steps
-    document.getElementById('dl-en').classList.add('active');
-    document.getElementById('dl-es').classList.add('active');
-    document.getElementById('step1-en').classList.add('active');
-    document.getElementById('step1-es').classList.add('active');
-    document.getElementById('verify-en').classList.add('active');
-    document.getElementById('verify-es').classList.add('active');
-    [].forEach.call(document.querySelectorAll('.stripe-btn, .crypto-btn, .toggle, .verify-submit'), function(b) { b.style.display = 'none'; });
-    // Track the free download
-    fetch('/api/record-sale?edition=free&amount=0&method=freebook&txHash=freebook-' + Date.now().toString(36)).catch(function(){});
   } else if (code === 'free') {
     couponFree = true;
     couponApplied = true;
@@ -395,6 +407,61 @@ function applyCoupon() {
     msg.className = 'coupon-msg invalid';
     msg.innerHTML = '❌ Invalid code. Try again.';
   }
+}
+
+const GOOGLE_SHEET_URL = 'https://script.google.com/macros/s/AKfycbxIYP0lCJri51OBitI3pgM497O-eVyThuxSfC0SixZBlZQVBhRLvJdrr2N0hteQ-af20A/exec';
+
+/* ── Free Download with Email ── */
+function claimFreeDownload() {
+  var email = document.getElementById('email-input').value.trim();
+  var msg = document.getElementById('email-msg');
+  var btn = document.querySelector('.email-row button');
+  var emailBox = document.getElementById('email-form');
+
+  if (!email || !email.includes('@') || !email.includes('.')) {
+    msg.className = 'email-msg error';
+    msg.innerHTML = '❌ Please enter a valid email address.';
+    return;
+  }
+
+  btn.disabled = true;
+  btn.textContent = '⏳ Processing...';
+  msg.className = 'email-msg';
+  msg.innerHTML = '⏳ Sending...';
+
+  var txHash = 'freebook-' + Date.now().toString(36);
+
+  // Track to /api/record-sale (saves to Vercel + Google Sheets)
+  fetch('/api/record-sale?edition=free&amount=0&method=freebook&email=' + encodeURIComponent(email) + '&txHash=' + txHash)
+    .then(function(r) { return r.json(); })
+    .then(function(data) {
+      couponFree = true;
+      couponApplied = true;
+      msg.className = 'email-msg valid';
+      msg.innerHTML = '✅ Email saved! Your download is ready.';
+      // Show download buttons
+      document.getElementById('dl-en').classList.add('active');
+      document.getElementById('dl-es').classList.add('active');
+      document.getElementById('step1-en').classList.add('active');
+      document.getElementById('step1-es').classList.add('active');
+      document.getElementById('verify-en').classList.add('active');
+      document.getElementById('verify-es').classList.add('active');
+      [].forEach.call(document.querySelectorAll('.stripe-btn, .crypto-btn, .toggle, .verify-submit'), function(b) { b.style.display = 'none'; });
+    })
+    .catch(function() {
+      // Fallback: show downloads anyway
+      couponFree = true;
+      couponApplied = true;
+      msg.className = 'email-msg valid';
+      msg.innerHTML = '✅ Download ready!';
+      document.getElementById('dl-en').classList.add('active');
+      document.getElementById('dl-es').classList.add('active');
+      document.getElementById('step1-en').classList.add('active');
+      document.getElementById('step1-es').classList.add('active');
+      document.getElementById('verify-en').classList.add('active');
+      document.getElementById('verify-es').classList.add('active');
+      [].forEach.call(document.querySelectorAll('.stripe-btn, .crypto-btn, .toggle, .verify-submit'), function(b) { b.style.display = 'none'; });
+    });
 }
 
 /* ── Stripe Checkout ── */

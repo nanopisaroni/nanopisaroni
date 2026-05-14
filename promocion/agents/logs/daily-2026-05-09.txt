@@ -1,0 +1,62 @@
+---
+📅 Date: 2026-05-09 (Saturday)
+📖 Week Theme: STOICISM WEEK — Ancient wisdom for modern chaos
+🎭 Today's Persona: Borges (📚)
+---
+
+=== TWEET 1 — ENGLISH ===
+
+Saturday is the Stoic day for reflection.
+
+Marcus Aurelius practiced the "View from Above" — zooming out until his problems became cosmic specks. Not as escape. As perspective.
+
+The Stoics knew that most of what we panic about doesn't matter. Not because it's trivial — because we choose what gets our attention.
+
+Try it this weekend. Zoom out. Breathe. Pick one thing you can actually control and let the rest go.
+
+From "Personal Pantheon" — the Stoic chapter.
+EN → https://lpisaroni.github.io/panteon-en.html
+ES → https://lpisaroni.github.io/panteon.html
+#Stoicism #MarcusAurelius #PersonalPantheon #MentalModels
+
+=== TWEET 2 — SPANISH ===
+
+El sábado es el día estoico para la reflexión.
+
+Marco Aurelio practicaba la "Vista desde Arriba" — alejar sus problemas hasta que se volvían motas cósmicas. No como escape. Como perspectiva.
+
+Los estoicos sabían que la mayoría de nuestras urgencias no importan. No porque sean triviales — sino porque elegimos a qué prestar atención.
+
+Probá este fin de semana. Alejate. Respirá. Elegí una cosa que sí podés controlar y soltá el resto.
+
+Del "Panteón Personal" — el capítulo estoico.
+EN → https://lpisaroni.github.io/panteon-en.html
+ES → https://lpisaroni.github.io/panteon.html
+#Estoicismo #MarcoAurelio #PanteónPersonal #ModelosMentales
+
+=== TODAY'S PERSONA POST — BORGES (via --post random) ===
+
+📚 @Borges
+
+Aleph, aleph — the point in space that contains all other points. Perhaps your morning coffee holds a universe. #PanteonBook
+
+#Panteon #PanteonBook #Thinkers #Philosophy
+
+📖 https://nanopisaroni.vercel.app
+
+=== XURL STATUS ===
+
+xurl is INSTALLED at /home/nanobot/.local/bin/xurl
+  - App "panteon" exists with client_id configured
+  - BUT no OAuth 2.0 token is present (oauth2: (none))
+  - Default app also has no credentials
+  - Second app "default" has no credentials either
+
+Posting SKIPPED — no valid auth token available.
+
+To enable auto-posting:
+  1. Run headless OAuth: xurl auth oauth2 --app panteon @YOUR_X_HANDLE
+     (start in background, capture the authorization URL)
+  2. Visit the URL in a browser to authorize the app
+  3. Set as default: xurl auth default panteon
+  4. Verify: xurl auth status (should show oauth2 token)

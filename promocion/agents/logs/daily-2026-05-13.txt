@@ -1,0 +1,163 @@
+================================================================================
+  PERSONAL PANTHEON / PANTEÓN PERSONAL — DAILY POST LOG
+  Date:       Wednesday, May 13, 2026
+  Generated:  2026-05-13 09:00 ART
+  Cron Job:   Daily promotional tweet generation
+================================================================================
+
+📅 Date: 2026-05-13 (Wednesday)
+📖 Week Theme: MENTAL MODELS WEEK — "Your brain is using outdated software. Update it."
+   Content Plan — Week 4 of Part 2: Focus on Munger & Kahneman
+🎭 Today's Persona: Marco Aurelio (🏛️) — via panteon-agents.py --post random
+   Agent schedule match: Naval, Munger, Yudkowsky (mental models daily theme)
+
+════════════════════════════════════════════════════════════════════════
+  TWEET 1 — ENGLISH
+════════════════════════════════════════════════════════════════════════
+
+Your brain runs on two operating systems.
+
+System 1: fast, emotional, lazy. System 2: slow, rational, expensive.
+
+Most of your life runs on System 1. The key isn't to disable it — it's to know when it's leading you astray.
+
+Kahneman mapped this. Munger built the tools to fix it.
+
+Two chapters. One book. 16 thinkers who'll rewire how you decide.
+
+📖 Personal Pantheon → https://lpisaroni.github.io/panteon-en.html
+#MentalModels #Munger #Kahneman #PersonalPantheon
+
+────────────────────────────────────────────────────────────────────────
+  Character count: 410 chars (thread format recommended)
+  
+  Thread format:
+    T1: Your brain runs on two operating systems.
+    
+        System 1: fast, emotional, lazy.
+        System 2: slow, rational, expensive.
+        
+        Most of your life runs on System 1. The key isn't to disable it — it's to know when it's leading you astray.
+    
+    T2: Kahneman mapped this. Munger built the tools to fix it.
+    
+        Two chapters. One book. 16 thinkers who'll rewire how you decide.
+        
+        📖 Personal Pantheon → https://lpisaroni.github.io/panteon-en.html
+        #MentalModels #Munger #Kahneman #PersonalPantheon
+────────────────────────────────────────────────────────────────────────
+
+════════════════════════════════════════════════════════════════════════
+  TWEET 2 — SPANISH
+════════════════════════════════════════════════════════════════════════
+
+Tu cerebro funciona con dos sistemas operativos.
+
+Sistema 1: rápido, emocional, vago. Sistema 2: lento, racional, costoso.
+
+La mayor parte de tu vida corre en Sistema 1. La clave no es desactivarlo — es saber cuándo te está llevando por mal camino.
+
+Kahneman mapeó esto. Munger construyó las herramientas para corregirlo.
+
+Dos capítulos. Un libro. 16 pensadores que van a recablear tu forma de decidir.
+
+📖 Panteón Personal → https://lpisaroni.github.io/panteon.html
+#ModelosMentales #Munger #Kahneman #PanteónPersonal
+
+────────────────────────────────────────────────────────────────────────
+  Character count: 412 chars (thread format recommended)
+  
+  Thread format:
+    T1: Tu cerebro funciona con dos sistemas operativos.
+    
+        Sistema 1: rápido, emocional, vago.
+        Sistema 2: lento, racional, costoso.
+        
+        La mayor parte de tu vida corre en Sistema 1. La clave no es desactivarlo — es saber cuándo te está llevando por mal camino.
+    
+    T2: Kahneman mapeó esto. Munger construyó las herramientas para corregirlo.
+    
+        Dos capítulos. Un libro. 16 pensadores que van a recablear tu forma de decidir.
+        
+        📖 Panteón Personal → https://lpisaroni.github.io/panteon.html
+        #ModelosMentales #Munger #Kahneman #PanteónPersonal
+────────────────────────────────────────────────────────────────────────
+
+════════════════════════════════════════════════════════════════════════
+  TODAY'S PERSONA POST — Marco Aurelio (via panteon-agents.py --post random)
+════════════════════════════════════════════════════════════════════════
+
+🏛️ @Marco Aurelio
+
+  You could leave life right now. Let that determine what you do and say
+  and think. #MementoMori
+
+  The soul becomes dyed with the color of its thoughts.
+
+  📖 The Panteón is a modern Meditations — a series of reflections
+  designed to be read a page at a time, internalized through repetition,
+  and lived through action.
+
+  #Panteon #PanteonBook #Thinkers #Philosophy
+
+  📖 https://nanopisaroni.vercel.app
+
+════════════════════════════════════════════════════════════════════════
+  XURL / TWITTER STATUS
+════════════════════════════════════════════════════════════════════════
+
+xurl auth status:
+  - default app:  (no credentials) — oauth2: (none)
+  - panteon app:  Q2hGMnNZ…        — oauth2: (none)
+
+Status: ❌ No OAuth 2.0 tokens available. Cannot post.
+
+The "panteon" app is registered with a client_id but has never
+completed the OAuth 2.0 PKCE flow. No user is authenticated. This
+state is unchanged since May 8 — the cron job has never been able to
+post autonomously.
+
+To enable auto-posting, a user with a browser must complete the
+headless OAuth flow:
+
+  1. Start callback server: xurl auth oauth2 --app panteon @YOUR_HANDLE
+     (run in background, listens on localhost:8080)
+  2. Get auth URL via: timeout 8 xurl auth oauth2 --app panteon @HANDLE
+  3. User visits URL in browser → authorizes → callback completes
+  4. Set default: xurl auth default panteon
+  5. Verify: xurl auth status (should show oauth2 with username)
+
+No posts were sent to X/Twitter this cycle.
+
+════════════════════════════════════════════════════════════════════════
+  SCHEDULED AGENT POSTS TODAY (from weekly-plan-2026-05-11)
+════════════════════════════════════════════════════════════════════════
+
+Wednesday (May 13) — Theme: mental models
+  09:00  💎 @Naval       — Wealth & Happiness           — long-term thinking
+  14:00  🧠 @Munger      — Mental Models & Investing    — behavioral psychology
+  19:00  🤖 @Yudkowsky   — AI Safety & Rationality      — meta-cognition
+
+Marco Aurelio was randomly selected as the persona for the promotional
+post. The mental models theme aligns well with today's content-plan
+Week 4 (Munger + Kahneman focus).
+
+════════════════════════════════════════════════════════════════════════
+  CONTENT PLAN MATCH
+════════════════════════════════════════════════════════════════════════
+
+  Part 2, Week 4 — MENTAL MODELS WEEK
+  Hook:  "Your brain is using outdated software. Update it."
+  Focus: Munger, Kahneman
+  Tweets available in content-plan.txt:
+    TWEET 1 — Munger: "Invert, always invert."
+    TWEET 2 — Kahneman: Two systems of thought.
+    TWEET 3 — Munger + Kahneman combo
+
+  Today's English & Spanish tweets draw from TWEET 2 (Kahneman's
+  System 1 / System 2 framework) and TWEET 3 (the Munger+Kahneman
+  combo), adapted for the daily thread format.
+
+════════════════════════════════════════════════════════════════════════
+END OF DAILY LOG
+════════════════════════════════════════════════════════════════════════

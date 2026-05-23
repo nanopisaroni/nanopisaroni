@@ -1,0 +1,690 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hermes Agent — Tu agente de IA, como vos lo querés</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #08090a;
+      --panel: #0f1011;
+      --surface: #191a1b;
+      --surface-hover: #222326;
+      --text-primary: #f7f8f8;
+      --text-secondary: #d0d6e0;
+      --text-tertiary: #8a8f98;
+      --text-muted: #62666d;
+      --accent: #7170ff;
+      --accent-hover: #828fff;
+      --accent-bg: #5e6ad2;
+      --border: rgba(255,255,255,0.08);
+      --border-subtle: rgba(255,255,255,0.05);
+      --success: #10b981;
+      --warning: #f59e0b;
+      --radius: 8px;
+      --radius-sm: 6px;
+      --max-width: 1100px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+      font-feature-settings: 'cv01', 'ss03';
+      background: var(--bg);
+      color: var(--text-primary);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ─── Layout ─── */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ─── Nav ─── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(8, 9, 10, 0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-subtle);
+    }
+    nav .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 56px;
+    }
+    nav .logo {
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--text-primary);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    nav .logo svg { width: 20px; height: 20px; }
+    nav .links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+    nav .links a {
+      font-size: 13px;
+      font-weight: 510;
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: color .2s;
+    }
+    nav .links a:hover { color: var(--text-primary); }
+
+    /* ─── Sections ─── */
+    section { padding: 80px 0; }
+    section + section { border-top: 1px solid var(--border-subtle); }
+
+    .section-label {
+      font-size: 13px;
+      font-weight: 510;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+    }
+
+    h2 {
+      font-size: 36px;
+      font-weight: 510;
+      letter-spacing: -0.8px;
+      line-height: 1.15;
+      margin-bottom: 16px;
+      color: var(--text-primary);
+    }
+
+    h3 {
+      font-size: 20px;
+      font-weight: 590;
+      letter-spacing: -0.24px;
+      line-height: 1.33;
+      margin-bottom: 8px;
+      color: var(--text-primary);
+    }
+
+    p { color: var(--text-secondary); margin-bottom: 16px; font-size: 16px; }
+    p:last-child { margin-bottom: 0; }
+
+    /* ─── Hero ─── */
+    #hero {
+      padding: 100px 0 80px;
+      text-align: center;
+    }
+    #hero .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 12px;
+      background: rgba(113, 112, 255, 0.1);
+      border: 1px solid rgba(113, 112, 255, 0.2);
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 510;
+      color: var(--accent);
+      margin-bottom: 24px;
+    }
+    #hero .badge .dot {
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--success);
+    }
+    #hero h1 {
+      font-size: clamp(40px, 6vw, 64px);
+      font-weight: 510;
+      letter-spacing: -1.4px;
+      line-height: 1.05;
+      margin-bottom: 20px;
+    }
+    #hero h1 span { color: var(--accent); }
+    #hero .subtitle {
+      font-size: 18px;
+      color: var(--text-tertiary);
+      max-width: 640px;
+      margin: 0 auto 32px;
+      line-height: 1.7;
+    }
+    #hero .cta-group {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    /* ─── Buttons ─── */
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 10px 20px;
+      background: var(--accent-bg);
+      color: #fff;
+      text-decoration: none;
+      border-radius: var(--radius-sm);
+      font-size: 14px;
+      font-weight: 510;
+      transition: background .2s, transform .1s;
+    }
+    .btn-primary:hover { background: var(--accent); transform: translateY(-1px); }
+
+    .btn-ghost {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 10px 20px;
+      background: rgba(255,255,255,0.03);
+      color: var(--text-secondary);
+      text-decoration: none;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border);
+      font-size: 14px;
+      font-weight: 510;
+      transition: background .2s, color .2s;
+    }
+    .btn-ghost:hover { background: rgba(255,255,255,0.06); color: var(--text-primary); }
+
+    /* ─── How it Works ─── */
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+    .step-card {
+      background: rgba(255,255,255,0.02);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px;
+      transition: background .2s, border-color .2s;
+    }
+    .step-card:hover {
+      background: rgba(255,255,255,0.04);
+      border-color: rgba(255,255,255,0.12);
+    }
+    .step-card .icon {
+      width: 40px; height: 40px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 16px;
+      font-size: 18px;
+    }
+    .step-card .icon.purple { background: rgba(113, 112, 255, 0.15); color: var(--accent); }
+    .step-card .icon.green { background: rgba(16, 185, 129, 0.15); color: var(--success); }
+    .step-card .icon.orange { background: rgba(245, 158, 11, 0.15); color: var(--warning); }
+    .step-card .icon.blue { background: rgba(59, 130, 246, 0.15); color: #3b82f6; }
+    .step-card .icon.pink { background: rgba(236, 72, 153, 0.15); color: #ec4899; }
+
+    /* ─── Features Grid ─── */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+    .feature-card {
+      background: rgba(255,255,255,0.02);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      transition: background .2s;
+    }
+    .feature-card:hover { background: rgba(255,255,255,0.04); }
+    .feature-card .icon { font-size: 24px; margin-bottom: 12px; display: block; }
+
+    /* ─── Examples Timeline ─── */
+    .examples-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin-top: 40px;
+    }
+    .example-item {
+      background: rgba(255,255,255,0.02);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px;
+      transition: background .2s, border-color .2s;
+    }
+    .example-item:hover {
+      background: rgba(255,255,255,0.04);
+      border-color: rgba(255,255,255,0.12);
+    }
+    .example-item .meta {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+    .example-item .tag {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: 510;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .tag.automation { background: rgba(16, 185, 129, 0.12); color: var(--success); }
+    .tag.creative { background: rgba(113, 112, 255, 0.12); color: var(--accent); }
+    .tag.analysis { background: rgba(245, 158, 11, 0.12); color: var(--warning); }
+    .tag.deployment { background: rgba(59, 130, 246, 0.12); color: #3b82f6; }
+    .tag.multi-agent { background: rgba(236, 72, 153, 0.12); color: #ec4899; }
+
+    .example-item h3 { font-size: 18px; font-weight: 590; }
+    .example-item p { font-size: 14px; color: var(--text-tertiary); line-height: 1.6; }
+
+    /* ─── Code ─── */
+    .code-block {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 16px 20px;
+      margin: 16px 0 0;
+      overflow-x: auto;
+      font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 13px;
+      line-height: 1.6;
+      color: var(--text-secondary);
+    }
+    .code-block .comment { color: var(--text-muted); }
+    .code-block .keyword { color: var(--accent); }
+    .code-block .string { color: var(--success); }
+
+    /* ─── CTA Bottom ─── */
+    #cta {
+      text-align: center;
+      padding: 100px 0;
+    }
+    #cta h2 { margin-bottom: 12px; }
+    #cta p { max-width: 500px; margin: 0 auto 28px; color: var(--text-tertiary); }
+
+    /* ─── Footer ─── */
+    footer {
+      border-top: 1px solid var(--border-subtle);
+      padding: 32px 0;
+    }
+    footer .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    footer p {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin: 0;
+    }
+    footer .links {
+      display: flex;
+      gap: 20px;
+    }
+    footer .links a {
+      font-size: 13px;
+      color: var(--text-tertiary);
+      text-decoration: none;
+      transition: color .2s;
+    }
+    footer .links a:hover { color: var(--text-primary); }
+
+    /* ─── Responsive ─── */
+    @media (max-width: 768px) {
+      #hero { padding: 60px 0 40px; }
+      #hero h1 { font-size: 36px; letter-spacing: -0.8px; }
+      section { padding: 48px 0; }
+      h2 { font-size: 28px; }
+      nav .links { gap: 16px; }
+    }
+    @media (max-width: 520px) {
+      #hero .cta-group { flex-direction: column; align-items: center; }
+      .steps, .features-grid { grid-template-columns: 1fr; }
+      footer .container { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ─── Nav ─── -->
+  <nav>
+    <div class="container">
+      <a href="/" class="logo">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>
+        </svg>
+        Leandro
+      </a>
+      <div class="links">
+        <a href="/">Home</a>
+        <a href="/about.html">About</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ─── Hero ─── -->
+  <section id="hero">
+    <div class="container">
+      <div class="badge">
+        <span class="dot"></span>
+        Open Source · AI Agent
+      </div>
+      <h1>Tu agente de IA,<br><span>como vos lo querés</span></h1>
+      <p class="subtitle">
+        Hermes Agent es mi asistente personal de IA. Corre en mi servidor, conoce mis proyectos,
+        toma acciones en el mundo real, y se vuelve más útil cada día. Esto es lo que hace y cómo funciona.
+      </p>
+      <div class="cta-group">
+        <a href="https://hermes-agent.nousresearch.com" target="_blank" class="btn-primary">
+          Docs oficiales →
+        </a>
+        <a href="https://github.com/NousResearch/hermes-agent" target="_blank" class="btn-ghost">
+          GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── What is Hermes ─── -->
+  <section>
+    <div class="container">
+      <p class="section-label">¿Qué es?</p>
+      <h2>Un agente que vive en tu<wbr>máquina y hace cosas</h2>
+      <p style="max-width: 680px;">
+        Hermes no es un chatbot al que le hablás y te responde. Hermes es un <strong>agente autónomo</strong>
+        que vive en tu servidor, tiene acceso a tus archivos, ejecuta código, navega la web, programa tareas,
+        y puede actuar en tu nombre. No necesita que le des la mano en cada paso.
+      </p>
+      <p style="max-width: 680px;">
+        Le hablás por Telegram, WhatsApp o terminal, y él resuelve. Desde revisar el clima y tu calendario
+        por la mañana, hasta construir páginas web enteras, hacer lead generation, monitorear mercados de
+        predicción, o coordinar subagentes para tareas complejas.
+      </p>
+    </div>
+  </section>
+
+  <!-- ─── How It Works ─── -->
+  <section>
+    <div class="container">
+      <p class="section-label">Arquitectura</p>
+      <h2>Cómo funciona</h2>
+      <div class="steps">
+
+        <div class="step-card">
+          <div class="icon purple">⚡</div>
+          <h3>Skills</h3>
+          <p>Módulos reutilizables que le enseñan a hacer cosas específicas. Cada skill es un archivo Markdown con instrucciones, triggers, y steps. Hay skills para deployar sitios, revisar PRs, buscar papers, generar música, y más.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="icon green">🧠</div>
+          <h3>Memoria Persistente</h3>
+          <p>Hermes recuerda quién sos, qué proyectos tenés, cómo configuraste las cosas, qué preferís. No necesitás repetirle nada. La memoria cruza sesiones — si le corregiste algo una vez, no se le olvida.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="icon orange">🔧</div>
+          <h3>Herramientas Reales</h3>
+          <p>Ejecuta código Python, edita archivos, corre scripts en la terminal, navega el browser, hace llamadas REST API, envía mensajes, programa cron jobs, invoca subagentes. No es texto simulado — son acciones reales.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="icon blue">⏰</div>
+          <h3>Cron Jobs</h3>
+          <p>Programás tareas recurrentes y Hermes las ejecuta solo. Briefings matutinos, monitoreo de portfolios, chequeo de servidores, generación de reportes — todo corre en background y te llega a Telegram.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="icon pink">👥</div>
+          <h3>Multi-Agente</h3>
+          <p>Cuando una tarea es compleja, Hermes puede delegar partes a subagentes que trabajan en paralelo. Cada subagente tiene su propia terminal, contexto y herramientas. Escalás sin saturar tu conversación.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="icon purple">🎨</div>
+          <h3>Creador de Skills</h3>
+          <p>Si Hermes hace algo nuevo que vale la pena repetir, se guarda el approach como un skill. Auto-aprende de sus propios resultados y mejora con el tiempo. Como él mismo dice: <em>"Skills que no se mantienen son deuda técnica."</em></p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── What You Can Do ─── -->
+  <section>
+    <div class="container">
+      <p class="section-label">Capacidades</p>
+      <h2>¿Qué podés hacer con Hermes?</h2>
+      <div class="features-grid">
+
+        <div class="feature-card">
+          <span class="icon">🌐</span>
+          <h3>Desarrollar y deployar sitios</h3>
+          <p>Pedile una landing page, un blog, un dashboard. La construye, la sube a GitHub, la deploya a Vercel. Todo desde un mensaje.</p>
+        </div>
+
+        <div class="feature-card">
+          <span class="icon">📊</span>
+          <h3>Analizar datos</h3>
+          <p>Consultá tu portfolio de inversiones, revisá KPIs, analizá tendencias de mercado. Hermes usa Python, pandas, y lo que haga falta.</p>
+        </div>
+
+        <div class="feature-card">
+          <span class="icon">📧</span>
+          <h3>Manejar tu email y calendario</h3>
+          <p>Leé, buscá, respondé mails. Revisá tu agenda. Programá reuniones. Todo desde Telegram sin abrir Gmail.</p>
+        </div>
+
+        <div class="feature-card">
+          <span class="icon">📝</span>
+          <h3>Code Review automatizado</h3>
+          <p>Mandale un PR y Hermes revisa el código, encuentra bugs, sugiere mejoras, y deja comentarios en GitHub.</p>
+        </div>
+
+        <div class="feature-card">
+          <span class="icon">🔍</span>
+          <h3>Investigación web profunda</h3>
+          <p>Investigá personas, empresas, o tecnologías. Hermes navega, extrae, sintetiza. Te vuelve con un informe listo.</p>
+        </div>
+
+        <div class="feature-card">
+          <span class="icon">🤖</span>
+          <h3>Automatizar workflows</h3>
+          <p>Cron jobs, monitoreo, alertas, generación de contenido, scraping, pipelines. Hermes corre solo en background.</p>
+        </div>
+
+        <div class="feature-card">
+          <span class="icon">🎵</span>
+          <h3>Generar contenido creativo</h3>
+          <p>Música con Suno, arte ASCII, animaciones con Manim, videos, podcasts, libros EPUB. Todo desde una conversación.</p>
+        </div>
+
+        <div class="feature-card">
+          <span class="icon">📈</span>
+          <h3>Monitorear mercados</h3>
+          <p>Prediction markets, crypto, acciones. Hermes corre monitores en background y te alerta cuando hay oportunidades.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── What I Built ─── -->
+  <section>
+    <div class="container">
+      <p class="section-label">Casos reales</p>
+      <h2>Lo que construí con Hermes</h2>
+      <div class="examples-list">
+
+        <div class="example-item">
+          <div class="meta">
+            <span class="tag automation">Automation</span>
+            <span class="tag multi-agent">Multi-Agente</span>
+          </div>
+          <h3>10 Money Engines Autónomos</h3>
+          <p>
+            En una madrugada, Hermes construyó 10 motores de ingresos automatizados: bots de crypto arbitraje,
+            agencia de contenido AI, growth engine para redes sociales, toolkit de micro-SaaS, info products,
+            airdrop farming, marketing de afiliados, trading bot, freelance AI arbitrage, y digital real estate.
+            Cada uno con su propio script, cron job, y dashboard. Todo desde una conversación de Telegram.
+          </p>
+        </div>
+
+        <div class="example-item">
+          <div class="meta">
+            <span class="tag automation">Automation</span>
+            <span class="tag analysis">Análisis</span>
+          </div>
+          <h3>Monitoreo de Prediction Markets</h3>
+          <p>
+            Hermes construyó un monitor que cada 4 horas escanea Polymarket en busca de spreads y oportunidades.
+            Detectó un spread de 9pp en la valoración de OpenAI (>US$23K de volumen). Corre solo en background,
+            analiza mercados de Argentina (Milei 2027, dollarización, Malvinas), fútbol, crypto, startups.
+          </p>
+        </div>
+
+        <div class="example-item">
+          <div class="meta">
+            <span class="tag deployment">Deployment</span>
+            <span class="tag creative">Creativo</span>
+          </div>
+          <h3>Pitch Decks para Only Hwangs</h3>
+          <p>
+            Dos pitch decks HTML completos de ~30 slides cada uno para su venture de K-beauty con COSMAX Korea.
+            Tema oscuro premium, navegación por teclado, datos financieros, unit economics, proyecciones de
+            revenue ($192K → $5.4M en 3 años), análisis competitivo. Listos para compartir, cero dependencias.
+          </p>
+        </div>
+
+        <div class="example-item">
+          <div class="meta">
+            <span class="tag automation">Automation</span>
+          </div>
+          <h3>Briefing Matutino Automático</h3>
+          <p>
+            Cada mañana, Hermes me manda un resumen: clima, eventos del calendario, estado de proyectos activos,
+            recordatorios, y una frase del día. Si algo está mal (servidor caído, monitoreo con alertas),
+            me lo dice antes de que yo pregunte.
+          </p>
+        </div>
+
+        <div class="example-item">
+          <div class="meta">
+            <span class="tag deployment">Deployment</span>
+            <span class="tag creative">Creativo</span>
+          </div>
+          <h3>Mi Sitio Personal + Panteón</h3>
+          <p>
+            Todo el sitio — nanopisaroni.vercel.app — incluyendo libros (Panteón Personal en EPUB de 16 capítulos),
+            sistema de promoción con cron jobs, generación de arte por capítulo, feed RSS, y páginas de venta
+            con Stripe. Deployado en Vercel. Todo armado y mantenido por Hermes.
+          </p>
+        </div>
+
+        <div class="example-item">
+          <div class="meta">
+            <span class="tag automation">Automation</span>
+            <span class="tag analysis">Análisis</span>
+          </div>
+          <h3>Portfolio Tracker de Kalei Ventures</h3>
+          <p>
+            Hermes mantiene un Google Sheet con KPIs trimestrales de 22 portcos (desde Q4 2019 hasta hoy).
+            Consulta, actualiza, analiza tendencias. Automatiza la revisión del portfolio sin que yo abra
+            una planilla nunca.
+          </p>
+        </div>
+
+        <div class="example-item">
+          <div class="meta">
+            <span class="tag multi-agent">Multi-Agente</span>
+          </div>
+          <h3>Perfil "Agatha" para Mari</h3>
+          <p>
+            Cloné mi configuración completa de Hermes en un perfil separado para mi esposa. Skills filtrados,
+            identidad renombrada, API keys compartidas. Dos agentes conviviendo en la misma máquina, cada uno
+            con su personalidad, memoria y automatizaciones.
+          </p>
+        </div>
+
+        <div class="example-item">
+          <div class="meta">
+            <span class="tag automation">Automation</span>
+          </div>
+          <h3>Lead Generation para La Oveja Industrial</h3>
+          <p>
+            Investigó 195 miembros de la Cámara de Corredores Inmobiliarios de Córdoba, extrajo datos de
+            contacto, los cargó en Airtable, y armó un pitch personalizado. Todo sin que yo toque un excel.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── How I use it ─── -->
+  <section>
+    <div class="container">
+      <p class="section-label">Mi Configuración</p>
+      <h2>Cómo lo tengo puesto</h2>
+      <p style="max-width: 680px;">
+        Hermes corre en una VM en mi casa (un Nanopi, de ahí mi alias). Le hablo por <strong>Telegram</strong>
+        y <strong>WhatsApp</strong>. Usa DeepSeek como modelo principal y Gemini para visión. Tiene más de
+        <strong>100 skills</strong> cargados, acceso a mi GBrain (20K+ páginas de conocimiento personal),
+        y un learning loop que lo hace mejor con cada interacción.
+      </p>
+      <div class="code-block">
+        <span class="comment"># Modelos que usa Hermes en mi setup</span><br>
+        Principal → <span class="string">DeepSeek V4 Flash</span><br>
+        Visión &nbsp;&nbsp;&nbsp; → <span class="string">Gemini 2.5 Flash</span><br>
+        Canales &nbsp;&nbsp;→ <span class="string">Telegram + WhatsApp</span><br>
+        Memoria &nbsp;→ <span class="string">Persistente entre sesiones</span><br>
+        Skills &nbsp;&nbsp;&nbsp;&nbsp;→ <span class="string">100+ módulos reutilizables</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CTA ─── -->
+  <section id="cta">
+    <div class="container">
+      <h2>¿Te copa la idea?</h2>
+      <p>Todo esto es open source. Te podés instalar Hermes en tu propia máquina y tener tu agente personal en minutos.</p>
+      <div class="cta-group">
+        <a href="https://hermes-agent.nousresearch.com/docs" target="_blank" class="btn-primary">
+          Empezar →
+        </a>
+        <a href="https://github.com/NousResearch/hermes-agent" target="_blank" class="btn-ghost">
+          Ver en GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Footer ─── -->
+  <footer>
+    <div class="container">
+      <p>Hecho con Hermes Agent · <a href="https://nanopisaroni.vercel.app" style="color: var(--text-tertiary); text-decoration: none;">Leandro Pisaroni</a></p>
+      <div class="links">
+        <a href="/">Home</a>
+        <a href="/about.html">About</a>
+        <a href="https://hermes-agent.nousresearch.com">Hermes</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

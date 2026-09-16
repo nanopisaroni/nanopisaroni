@@ -82,6 +82,104 @@
     .bcard.open .b-note { display: block; }
     .b-orig { font-size: 12px; color: var(--text-faint); font-style: italic; margin-top: 2px; }
 
+    /* ---------- vínculos ---------- */
+    .view-switch { display: flex; gap: 7px; margin-bottom: 14px; }
+    .shared-toggle {
+      display: flex; align-items: center; gap: 8px; margin-bottom: 16px;
+      font-family: var(--font-body); font-size: 13.5px; color: var(--text-muted); cursor: pointer;
+    }
+    .shared-toggle input { width: 15px; height: 15px; accent-color: var(--accent); cursor: pointer; }
+
+    .links-block { margin-bottom: 44px; }
+    .links-help {
+      font-size: 14px; line-height: 1.6; color: var(--text-muted);
+      margin: -4px 0 18px; max-width: 640px;
+    }
+    .links-help em { font-style: italic; }
+
+    .bcard.has-links { border-left: 3px solid var(--accent); }
+    .b-links {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-top: 10px;
+    }
+    .link-label {
+      font-family: var(--font-body); font-size: 10.5px; text-transform: uppercase;
+      letter-spacing: .5px; color: var(--text-faint); font-weight: 600;
+    }
+    .link-chip {
+      display: inline-flex; align-items: center; gap: 5px;
+      font-family: var(--font-body); font-size: 12px;
+      padding: 3px 9px; border: 1px solid var(--accent);
+      border-radius: 999px; background: #fff; color: var(--accent);
+      cursor: pointer; transition: all .15s ease;
+    }
+    .link-chip:hover { background: var(--accent); color: #fff; }
+    .link-chip:hover .mini { background: rgba(255,255,255,.25); color: #fff; }
+    .mini {
+      font-size: 9px; font-weight: 700; text-transform: uppercase;
+      letter-spacing: .3px; padding: 1px 5px; border-radius: 999px;
+      background: var(--accent-soft); color: #8a4a0c;
+    }
+    .mini.citado, .mini.influencia { background: #efedea; color: #78716c; }
+    .mini.recomendado { background: #e8f0e4; color: #4a6b3a; }
+
+    .pair-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 12px; }
+    .pair-card {
+      border: 1px solid var(--rule); border-radius: 10px; padding: 14px 16px;
+      background: var(--surface); cursor: pointer; transition: all .16s ease;
+    }
+    .pair-card:hover { border-color: var(--accent); transform: translateY(-2px);
+                       box-shadow: 0 2px 12px rgba(0,0,0,.05); }
+    .pair-card.open { border-color: var(--accent); background: #fffdf9; }
+    .pair-head { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; }
+    .pair-names { font-family: var(--font-display); font-size: 15.5px; font-weight: 600; line-height: 1.35; }
+    .pair-x { color: var(--accent); margin: 0 4px; font-weight: 400; }
+    .pair-count {
+      font-family: var(--font-body); font-size: 11.5px; font-weight: 700;
+      color: #fff; background: var(--accent); padding: 3px 9px; border-radius: 999px;
+      white-space: nowrap;
+    }
+    .pair-titles { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 10px; }
+    .ptitle {
+      font-family: var(--font-body); font-size: 11.5px; color: var(--text-muted);
+      background: var(--rule); padding: 3px 9px; border-radius: 6px;
+    }
+    .more { font-family: var(--font-body); font-size: 11px; color: var(--text-faint); align-self: center; }
+    .pair-body { margin-top: 12px; padding-top: 12px; border-top: 1px dashed var(--rule); display: none; }
+    .pair-card.open .pair-body { display: block; }
+    .pair-row { margin-bottom: 10px; }
+    .pair-row:last-child { margin-bottom: 0; }
+    .pr-title { font-family: var(--font-display); font-size: 14px; font-weight: 600; margin-bottom: 4px; }
+    .pr-who { display: flex; flex-wrap: wrap; gap: 5px; }
+    .mini-badge {
+      font-family: var(--font-body); font-size: 10.5px; padding: 2px 8px;
+      border-radius: 999px; background: #e6ebf2; color: #4a5c78;
+    }
+    .mini-badge.propio { background: var(--accent-soft); color: #8a4a0c; }
+    .mini-badge.recomendado { background: #e8f0e4; color: #4a6b3a; }
+    .mini-badge.influencia { background: #efedea; color: #78716c; }
+
+    .degree-list { display: flex; flex-direction: column; gap: 6px; }
+    .degree-row {
+      display: flex; align-items: center; gap: 12px; width: 100%;
+      background: none; border: none; padding: 8px 10px; border-radius: 8px;
+      cursor: pointer; transition: background .15s ease; text-align: left;
+    }
+    .degree-row:hover { background: var(--accent-soft); }
+    .deg-name {
+      font-family: var(--font-body); font-size: 13.5px; color: var(--text);
+      flex: 0 0 170px; font-weight: 500;
+    }
+    .deg-bar { flex: 1; height: 8px; background: var(--rule); border-radius: 999px; overflow: hidden; }
+    .deg-bar span { display: block; height: 100%; background: var(--accent); border-radius: 999px; }
+    .deg-num {
+      font-family: var(--font-body); font-size: 12.5px; font-weight: 700;
+      color: var(--accent); flex: 0 0 28px; text-align: right;
+    }
+    @media (max-width: 600px) {
+      .deg-name { flex: 0 0 110px; font-size: 12.5px; }
+      .pair-count { font-size: 10.5px; }
+    }
+
     .empty { text-align: center; padding: 60px 20px; color: var(--text-muted);
              font-size: 15px; font-family: var(--font-body); }
     .loading { text-align: center; padding: 60px 20px; color: var(--text-muted); }
@@ -119,13 +217,28 @@
         <p>La distinción importa: <strong>recomendado</strong> es lo que el pensador aconsejó
         explícitamente; <strong>citado</strong> es lo que aparece una y otra vez en su obra;
         <strong>influencia</strong> es lo que se sabe que lo formó; <strong>propio</strong> es
-        su propia obra canónica. Un mismo libro puede ser dos cosas según quién lo mire —
-        Borges y el Papa Francisco comparten a Virgilio, y los dos por razones distintas.</p>
+        su propia obra canónica.</p>
+        <p>Y hay un tercer dato, quizá el más interesante: <strong>muchos libros aparecen en más
+        de una lista</strong>. Cuando el mismo título figura en dos pensadores, no es una
+        repetición: es un vínculo. Borges y el Papa Francisco comparten a Virgilio, pero por
+        razones distintas; Taleb recomienda a Kahneman y Kahneman lo cita a Taleb. Activá
+        <strong>Vínculos</strong> para ver esa red, o tildá <em>solo compartidos</em> para leer
+        la biblioteca por sus cruces.</p>
       </div>
 
       <div class="controls">
         <input type="search" id="q" class="search-box" placeholder="Buscar por título o autor…" aria-label="Buscar libros">
       </div>
+
+      <div class="view-switch" id="viewChips" role="group" aria-label="Cambiar vista">
+        <button class="chip on" data-vw="lista">Lista</button>
+        <button class="chip" data-vw="vinculos">Vínculos</button>
+      </div>
+
+      <label class="shared-toggle">
+        <input type="checkbox" id="sharedOnly">
+        <span>Solo libros compartidos con otro pensador</span>
+      </label>
 
       <div class="chips" id="thinkerChips" role="group" aria-label="Filtrar por pensador"></div>
       <div class="chips" id="typeChips" role="group" aria-label="Filtrar por tipo"></div>

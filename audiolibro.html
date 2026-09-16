@@ -4,205 +4,266 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Audiolibro — Panteón Personal · Leandro Pisaroni</title>
+  <link rel="stylesheet" href="style.css">
   <style>
-    :root { color-scheme: light; --bg: #fff; --text: #1a1a1a; --link: #2a5db0; --visited: #555; --rule: #e6e6e6; --accent: #2a5db0; }
-    * { box-sizing: border-box; }
-    body { margin: 0; background: var(--bg); color: var(--text); font-family: Georgia, "Times New Roman", serif; font-size: 18px; line-height: 1.6; }
-    a { color: var(--link); }
-    a:visited { color: var(--visited); }
-    .site { width: min(100% - 40px, 650px); margin: 0 auto; padding: 32px 0 56px; }
-    .nav { display: flex; flex-wrap: wrap; gap: 18px; padding-bottom: 18px; border-bottom: 1px solid var(--rule); font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 15px; line-height: 1.3; }
-    .nav a { color: var(--link); text-decoration: none; }
-    .nav a:hover { text-decoration: underline; }
-    main { padding-top: 32px; }
-    h1 { margin: 0 0 8px; font-size: clamp(28px, 5vw, 38px); line-height: 1.2; font-weight: 400; }
-    .subtitle { color: #555; margin: 0 0 28px; font-size: 16px; }
-    .chapter-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; }
-    .chapter-item { padding: 16px 0; border-bottom: 1px solid var(--rule); }
-    .chapter-header { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; margin-bottom: 6px; }
-    .chapter-num { font-family: system-ui, sans-serif; font-size: 13px; color: #888; font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase; }
-    .chapter-title { font-size: 18px; font-weight: 600; }
-    .chapter-meta { font-family: system-ui, sans-serif; font-size: 13px; color: #888; }
-    .chapter-item { display: flex; gap: 14px; align-items: flex-start; }
-    .chapter-art { width: 110px; height: auto; border-radius: 8px; flex-shrink: 0; box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
-    .chapter-body { flex: 1; min-width: 200px; }
-    audio { width: 100%; height: 40px; margin-top: 6px; border-radius: 4px; }
-    .download-link { font-family: system-ui, sans-serif; font-size: 13px; }
-    @media (max-width: 520px) { .chapter-item { flex-direction: column; } .chapter-art { width: 100%; max-width: 300px; } }
-    .rss-note { margin-top: 32px; padding: 16px; background: #f7f7f7; border-radius: 6px; font-size: 15px; }
-    .rss-note code { font-size: 13px; background: #eee; padding: 2px 6px; border-radius: 3px; }
-    footer { margin-top: 40px; padding-top: 18px; border-top: 1px solid var(--rule); color: #666; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 14px; }
-    @media (max-width: 520px) { .site { width: min(100% - 28px, 650px); padding-top: 24px; } .chapter-header { flex-wrap: wrap; } }
+    /* ── Audiobook-specific ── */
+    .spotify-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #1DB954;
+      color: #fff;
+      padding: 12px 28px;
+      border-radius: 999px;
+      font-size: 15px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all .2s;
+    }
+    .spotify-btn:hover {
+      background: #1aa34a;
+      color: #fff;
+      transform: translateY(-1px);
+    }
+
+    .cover-img {
+      max-width: 400px;
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+      margin-bottom: 32px;
+    }
+
+    .rss-box {
+      margin-top: 32px;
+      padding: 20px 24px;
+      background: var(--surface);
+      border: 1px solid var(--rule);
+      border-radius: 8px;
+      font-size: 15px;
+      color: var(--text-muted);
+    }
+    .rss-box strong {
+      color: var(--text);
+    }
+    .rss-box code {
+      font-family: var(--font-mono);
+      font-size: 13px;
+      background: var(--hover-bg);
+      padding: 1px 6px;
+      border-radius: 3px;
+    }
+
+    @media (max-width: 520px) {
+      .chapter-item {
+        flex-direction: column;
+      }
+      .chapter-art {
+        width: 100% !important;
+        max-width: 280px !important;
+      }
+    }
   </style>
+  <script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments)};</script><script defer src="/_vercel/insights/script.js"></script>
 </head>
 <body>
   <div class="site">
-    <nav class="nav">
-      <a href="index.html">Home</a> <a href="essays.html">Essays</a> <a href="ideas.html">Ideas</a>
-      <a href="panteon-en.html">Pantheon</a> <a href="panteon.html">Panteón</a>
-      <a href="buy.html">Buy</a> <a href="audiolibro.html">🎧 Audiolibro</a> <a href="about.html">About</a>
-    </nav>
+    <header>
+      <a href="index.html" class="site-title">Leandro Pisaroni</a>
+      <nav>
+        <a href="essays.html">Essays</a>
+        <a href="ideas.html">Ideas</a>
+        <a href="panteon.html">Panteón</a>
+        <a href="libros.html">Libros</a>
+        <a href="panteon-en.html">Pantheon</a>
+        <a href="buy.html">Buy</a>
+        <a href="audiolibro.html" class="active">Audio</a>
+        <a href="about.html">About</a>
+      </nav>
+    </header>
 
     <main>
-      <h1>🎧 Panteón Personal — Audiolibro</h1>
+      <h1 style="font-size: clamp(28px, 6vw, 38px);">Panteón Personal — Audiolibro</h1>
       <p class="subtitle">16 pensadores que me formaron. Voz: Alonso (Español neutro). 17 capítulos.</p>
 
-      <div style="text-align:center;margin:24px 0 16px">
-        <a href="https://open.spotify.com/show/033gwQQ5IdTs3tlLgjXy9o?si=IUIJcssPRJ6xhihaaRGHaA" target="_blank" style="display:inline-flex;align-items:center;gap:8px;background:#1DB954;color:#fff;padding:12px 28px;border-radius:999px;font-family:system-ui,sans-serif;font-size:16px;font-weight:600;text-decoration:none;transition:all .2s">
+      <div style="text-align:center; margin: 24px 0 20px;">
+        <a href="https://open.spotify.com/show/033gwQQ5IdTs3tlLgjXy9o?si=IUIJcssPRJ6xhihaaRGHaA" target="_blank" class="spotify-btn">
           🎧 Escuchar en Spotify
         </a>
       </div>
 
-      <div style="text-align:center;margin:24px 0 32px">
-        <img src="audiolibro/images/cover.jpg" alt="Panteón Personal — Audiolibro" style="max-width:400px;width:100%;border-radius:12px;box-shadow:0 4px 24px rgba(0,0,0,0.15)">
+      <div style="text-align:center;">
+        <img class="cover-img" src="audiolibro/images/cover.jpg" alt="Panteón Personal — Audiolibro">
       </div>
 
-      <ol class="chapter-list">
+      <ul class="chapter-list">
         <li class="chapter-item">
-          <img class="chapter-art" src="audiolibro/images/ep01_borges.jpg" alt="Jorge Luis Borges" loading="lazy">
-          <div class="chapter-body">
-            <div class="chapter-header"><span class="chapter-num">Capítulo 1</span><span class="chapter-title">Jorge Luis Borges</span><span class="chapter-meta">16 min</span></div>
+          <img class="chapter-art" src="audiolibro/images/ep01_borges.jpg" alt="Jorge Luis Borges" loading="lazy" style="width:100px;border-radius:8px;flex-shrink:0;box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+          <div class="chapter-info">
+            <div class="chapter-title">Jorge Luis Borges</div>
+            <div class="chapter-meta">Capítulo 1 · 16 min</div>
             <audio controls preload="none"><source src="audiolibro/01_borges.mp3" type="audio/mpeg"></audio>
-            <a class="download-link" href="audiolibro/01_borges.mp3" download>⬇ Descargar</a>
+            <a class="meta" href="audiolibro/01_borges.mp3" download style="font-size:12px;margin-top:2px;display:inline-block;">⬇ Descargar</a>
           </div>
         </li>
         <li class="chapter-item">
-          <img class="chapter-art" src="audiolibro/images/ep02_feynman.jpg" alt="Richard Feynman" loading="lazy">
-          <div class="chapter-body">
-            <div class="chapter-header"><span class="chapter-num">Capítulo 2</span><span class="chapter-title">Richard Feynman</span><span class="chapter-meta">14 min</span></div>
+          <img class="chapter-art" src="audiolibro/images/ep02_feynman.jpg" alt="Richard Feynman" loading="lazy" style="width:100px;border-radius:8px;flex-shrink:0;box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+          <div class="chapter-info">
+            <div class="chapter-title">Richard Feynman</div>
+            <div class="chapter-meta">Capítulo 2 · 14 min</div>
             <audio controls preload="none"><source src="audiolibro/02_feynman.mp3" type="audio/mpeg"></audio>
-            <a class="download-link" href="audiolibro/02_feynman.mp3" download>⬇ Descargar</a>
+            <a class="meta" href="audiolibro/02_feynman.mp3" download style="font-size:12px;margin-top:2px;display:inline-block;">⬇ Descargar</a>
           </div>
         </li>
         <li class="chapter-item">
-          <img class="chapter-art" src="audiolibro/images/ep03_taleb.jpg" alt="Nassim Nicholas Taleb" loading="lazy">
-          <div class="chapter-body">
-            <div class="chapter-header"><span class="chapter-num">Capítulo 3</span><span class="chapter-title">Nassim Nicholas Taleb</span><span class="chapter-meta">16 min</span></div>
+          <img class="chapter-art" src="audiolibro/images/ep03_taleb.jpg" alt="Nassim Nicholas Taleb" loading="lazy" style="width:100px;border-radius:8px;flex-shrink:0;box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+          <div class="chapter-info">
+            <div class="chapter-title">Nassim Nicholas Taleb</div>
+            <div class="chapter-meta">Capítulo 3 · 16 min</div>
             <audio controls preload="none"><source src="audiolibro/03_taleb.mp3" type="audio/mpeg"></audio>
-            <a class="download-link" href="audiolibro/03_taleb.mp3" download>⬇ Descargar</a>
+            <a class="meta" href="audiolibro/03_taleb.mp3" download style="font-size:12px;margin-top:2px;display:inline-block;">⬇ Descargar</a>
           </div>
         </li>
         <li class="chapter-item">
-          <img class="chapter-art" src="audiolibro/images/ep04_deutsch.jpg" alt="David Deutsch" loading="lazy">
-          <div class="chapter-body">
-            <div class="chapter-header"><span class="chapter-num">Capítulo 4</span><span class="chapter-title">David Deutsch</span><span class="chapter-meta">15 min</span></div>
+          <img class="chapter-art" src="audiolibro/images/ep04_deutsch.jpg" alt="David Deutsch" loading="lazy" style="width:100px;border-radius:8px;flex-shrink:0;box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+          <div class="chapter-info">
+            <div class="chapter-title">David Deutsch</div>
+            <div class="chapter-meta">Capítulo 4 · 15 min</div>
             <audio controls preload="none"><source src="audiolibro/04_deutsch.mp3" type="audio/mpeg"></audio>
-            <a class="download-link" href="audiolibro/04_deutsch.mp3" download>⬇ Descargar</a>
+            <a class="meta" href="audiolibro/04_deutsch.mp3" download style="font-size:12px;margin-top:2px;display:inline-block;">⬇ Descargar</a>
           </div>
         </li>
         <li class="chapter-item">
-          <img class="chapter-art" src="audiolibro/images/ep05_thiel.jpg" alt="Peter Thiel" loading="lazy">
-          <div class="chapter-body">
-            <div class="chapter-header"><span class="chapter-num">Capítulo 5</span><span class="chapter-title">Peter Thiel</span><span class="chapter-meta">16 min</span></div>
+          <img class="chapter-art" src="audiolibro/images/ep05_thiel.jpg" alt="Peter Thiel" loading="lazy" style="width:100px;border-radius:8px;flex-shrink:0;box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+          <div class="chapter-info">
+            <div class="chapter-title">Peter Thiel</div>
+            <div class="chapter-meta">Capítulo 5 · 16 min</div>
             <audio controls preload="none"><source src="audiolibro/05_thiel.mp3" type="audio/mpeg"></audio>
-            <a class="download-link" href="audiolibro/05_thiel.mp3" download>⬇ Descargar</a>
+            <a class="meta" href="audiolibro/05_thiel.mp3" download style="font-size:12px;margin-top:2px;display:inline-block;">⬇ Descargar</a>
           </div>
         </li>
         <li class="chapter-item">
-          <img class="chapter-art" src="audiolibro/images/ep06_popper.jpg" alt="Karl Popper" loading="lazy">
-          <div class="chapter-body">
-            <div class="chapter-header"><span class="chapter-num">Capítulo 6</span><span class="chapter-title">Karl Popper</span><span class="chapter-meta">10 min</span></div>
+          <img class="chapter-art" src="audiolibro/images/ep06_popper.jpg" alt="Karl Popper" loading="lazy" style="width:100px;border-radius:8px;flex-shrink:0;box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+          <div class="chapter-info">
+            <div class="chapter-title">Karl Popper</div>
+            <div class="chapter-meta">Capítulo 6 · 10 min</div>
             <audio controls preload="none"><source src="audiolibro/06_popper.mp3" type="audio/mpeg"></audio>
-            <a class="download-link" href="audiolibro/06_popper.mp3" download>⬇ Descargar</a>
+            <a class="meta" href="audiolibro/06_popper.mp3" download style="font-size:12px;margin-top:2px;display:inline-block;">⬇ Descargar</a>
           </div>
         </li>
         <li class="chapter-item">
-          <img class="chapter-art" src="audiolibro/images/ep07_munger.jpg" alt="Charlie Munger" loading="lazy">
-          <div class="chapter-body">
-            <div class="chapter-header"><span class="chapter-num">Capítulo 7</span><span class="chapter-title">Charlie Munger</span><span class="chapter-meta">10 min</span></div>
+          <img class="chapter-art" src="audiolibro/images/ep07_munger.jpg" alt="Charlie Munger" loading="lazy" style="width:100px;border-radius:8px;flex-shrink:0;box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+          <div class="chapter-info">
+            <div class="chapter-title">Charlie Munger</div>
+            <div class="chapter-meta">Capítulo 7 · 10 min</div>
             <audio controls preload="none"><source src="audiolibro/07_munger.mp3" type="audio/mpeg"></audio>
-            <a class="download-link" href="audiolibro/07_munger.mp3" download>⬇ Descargar</a>
+            <a class="meta" href="audiolibro/07_munger.mp3" download style="font-size:12px;margin-top:2px;display:inline-block;">⬇ Descargar</a>
           </div>
         </li>
         <li class="chapter-item">
-          <img class="chapter-art" src="audiolibro/images/ep08_kahneman.jpg" alt="Daniel Kahneman" loading="lazy">
-          <div class="chapter-body">
-            <div class="chapter-header"><span class="chapter-num">Capítulo 8</span><span class="chapter-title">Daniel Kahneman</span><span class="chapter-meta">11 min</span></div>
+          <img class="chapter-art" src="audiolibro/images/ep08_kahneman.jpg" alt="Daniel Kahneman" loading="lazy" style="width:100px;border-radius:8px;flex-shrink:0;box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+          <div class="chapter-info">
+            <div class="chapter-title">Daniel Kahneman</div>
+            <div class="chapter-meta">Capítulo 8 · 11 min</div>
             <audio controls preload="none"><source src="audiolibro/08_kahneman.mp3" type="audio/mpeg"></audio>
-            <a class="download-link" href="audiolibro/08_kahneman.mp3" download>⬇ Descargar</a>
+            <a class="meta" href="audiolibro/08_kahneman.mp3" download style="font-size:12px;margin-top:2px;display:inline-block;">⬇ Descargar</a>
           </div>
         </li>
         <li class="chapter-item">
-          <img class="chapter-art" src="audiolibro/images/ep09_graham.jpg" alt="Paul Graham" loading="lazy">
-          <div class="chapter-body">
-            <div class="chapter-header"><span class="chapter-num">Capítulo 9</span><span class="chapter-title">Paul Graham</span><span class="chapter-meta">8 min</span></div>
+          <img class="chapter-art" src="audiolibro/images/ep09_graham.jpg" alt="Paul Graham" loading="lazy" style="width:100px;border-radius:8px;flex-shrink:0;box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+          <div class="chapter-info">
+            <div class="chapter-title">Paul Graham</div>
+            <div class="chapter-meta">Capítulo 9 · 8 min</div>
             <audio controls preload="none"><source src="audiolibro/09_graham.mp3" type="audio/mpeg"></audio>
-            <a class="download-link" href="audiolibro/09_graham.mp3" download>⬇ Descargar</a>
+            <a class="meta" href="audiolibro/09_graham.mp3" download style="font-size:12px;margin-top:2px;display:inline-block;">⬇ Descargar</a>
           </div>
         </li>
         <li class="chapter-item">
-          <img class="chapter-art" src="audiolibro/images/ep10_yudkowsky.jpg" alt="Eliezer Yudkowsky" loading="lazy">
-          <div class="chapter-body">
-            <div class="chapter-header"><span class="chapter-num">Capítulo 10</span><span class="chapter-title">Eliezer Yudkowsky</span><span class="chapter-meta">9 min</span></div>
+          <img class="chapter-art" src="audiolibro/images/ep10_yudkowsky.jpg" alt="Eliezer Yudkowsky" loading="lazy" style="width:100px;border-radius:8px;flex-shrink:0;box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+          <div class="chapter-info">
+            <div class="chapter-title">Eliezer Yudkowsky</div>
+            <div class="chapter-meta">Capítulo 10 · 9 min</div>
             <audio controls preload="none"><source src="audiolibro/10_yudkowsky.mp3" type="audio/mpeg"></audio>
-            <a class="download-link" href="audiolibro/10_yudkowsky.mp3" download>⬇ Descargar</a>
+            <a class="meta" href="audiolibro/10_yudkowsky.mp3" download style="font-size:12px;margin-top:2px;display:inline-block;">⬇ Descargar</a>
           </div>
         </li>
         <li class="chapter-item">
-          <img class="chapter-art" src="audiolibro/images/ep11_marco_aurelio.jpg" alt="Marco Aurelio" loading="lazy">
-          <div class="chapter-body">
-            <div class="chapter-header"><span class="chapter-num">Capítulo 11</span><span class="chapter-title">Marco Aurelio</span><span class="chapter-meta">8 min</span></div>
+          <img class="chapter-art" src="audiolibro/images/ep11_marco_aurelio.jpg" alt="Marco Aurelio" loading="lazy" style="width:100px;border-radius:8px;flex-shrink:0;box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+          <div class="chapter-info">
+            <div class="chapter-title">Marco Aurelio</div>
+            <div class="chapter-meta">Capítulo 11 · 8 min</div>
             <audio controls preload="none"><source src="audiolibro/11_marco_aurelio.mp3" type="audio/mpeg"></audio>
-            <a class="download-link" href="audiolibro/11_marco_aurelio.mp3" download>⬇ Descargar</a>
+            <a class="meta" href="audiolibro/11_marco_aurelio.mp3" download style="font-size:12px;margin-top:2px;display:inline-block;">⬇ Descargar</a>
           </div>
         </li>
         <li class="chapter-item">
-          <img class="chapter-art" src="audiolibro/images/ep12_epicteto_seneca.jpg" alt="Epicteto (y Séneca)" loading="lazy">
-          <div class="chapter-body">
-            <div class="chapter-header"><span class="chapter-num">Capítulo 12</span><span class="chapter-title">Epicteto (y Séneca)</span><span class="chapter-meta">14 min</span></div>
+          <img class="chapter-art" src="audiolibro/images/ep12_epicteto_seneca.jpg" alt="Epicteto (y Séneca)" loading="lazy" style="width:100px;border-radius:8px;flex-shrink:0;box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+          <div class="chapter-info">
+            <div class="chapter-title">Epicteto (y Séneca)</div>
+            <div class="chapter-meta">Capítulo 12 · 14 min</div>
             <audio controls preload="none"><source src="audiolibro/12_epicteto.mp3" type="audio/mpeg"></audio>
-            <a class="download-link" href="audiolibro/12_epicteto.mp3" download>⬇ Descargar</a>
+            <a class="meta" href="audiolibro/12_epicteto.mp3" download style="font-size:12px;margin-top:2px;display:inline-block;">⬇ Descargar</a>
           </div>
         </li>
         <li class="chapter-item">
-          <img class="chapter-art" src="audiolibro/images/ep13_watts.jpg" alt="Alan Watts" loading="lazy">
-          <div class="chapter-body">
-            <div class="chapter-header"><span class="chapter-num">Capítulo 13</span><span class="chapter-title">Alan Watts</span><span class="chapter-meta">13 min</span></div>
+          <img class="chapter-art" src="audiolibro/images/ep13_watts.jpg" alt="Alan Watts" loading="lazy" style="width:100px;border-radius:8px;flex-shrink:0;box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+          <div class="chapter-info">
+            <div class="chapter-title">Alan Watts</div>
+            <div class="chapter-meta">Capítulo 13 · 13 min</div>
             <audio controls preload="none"><source src="audiolibro/13_watts.mp3" type="audio/mpeg"></audio>
-            <a class="download-link" href="audiolibro/13_watts.mp3" download>⬇ Descargar</a>
+            <a class="meta" href="audiolibro/13_watts.mp3" download style="font-size:12px;margin-top:2px;display:inline-block;">⬇ Descargar</a>
           </div>
         </li>
         <li class="chapter-item">
-          <img class="chapter-art" src="audiolibro/images/ep14_krishnamurti.jpg" alt="Jiddu Krishnamurti" loading="lazy">
-          <div class="chapter-body">
-            <div class="chapter-header"><span class="chapter-num">Capítulo 14</span><span class="chapter-title">Jiddu Krishnamurti</span><span class="chapter-meta">14 min</span></div>
+          <img class="chapter-art" src="audiolibro/images/ep14_krishnamurti.jpg" alt="Jiddu Krishnamurti" loading="lazy" style="width:100px;border-radius:8px;flex-shrink:0;box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+          <div class="chapter-info">
+            <div class="chapter-title">Jiddu Krishnamurti</div>
+            <div class="chapter-meta">Capítulo 14 · 14 min</div>
             <audio controls preload="none"><source src="audiolibro/14_krishnamurti.mp3" type="audio/mpeg"></audio>
-            <a class="download-link" href="audiolibro/14_krishnamurti.mp3" download>⬇ Descargar</a>
+            <a class="meta" href="audiolibro/14_krishnamurti.mp3" download style="font-size:12px;margin-top:2px;display:inline-block;">⬇ Descargar</a>
           </div>
         </li>
         <li class="chapter-item">
-          <img class="chapter-art" src="audiolibro/images/ep15_cabral.jpg" alt="Facundo Cabral" loading="lazy">
-          <div class="chapter-body">
-            <div class="chapter-header"><span class="chapter-num">Capítulo 15</span><span class="chapter-title">Facundo Cabral</span><span class="chapter-meta">13 min</span></div>
+          <img class="chapter-art" src="audiolibro/images/ep15_cabral.jpg" alt="Facundo Cabral" loading="lazy" style="width:100px;border-radius:8px;flex-shrink:0;box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+          <div class="chapter-info">
+            <div class="chapter-title">Facundo Cabral</div>
+            <div class="chapter-meta">Capítulo 15 · 13 min</div>
             <audio controls preload="none"><source src="audiolibro/15_cabral.mp3" type="audio/mpeg"></audio>
-            <a class="download-link" href="audiolibro/15_cabral.mp3" download>⬇ Descargar</a>
+            <a class="meta" href="audiolibro/15_cabral.mp3" download style="font-size:12px;margin-top:2px;display:inline-block;">⬇ Descargar</a>
           </div>
         </li>
         <li class="chapter-item">
-          <img class="chapter-art" src="audiolibro/images/ep16_naval.jpg" alt="Naval Ravikant" loading="lazy">
-          <div class="chapter-body">
-            <div class="chapter-header"><span class="chapter-num">Capítulo 16</span><span class="chapter-title">Naval Ravikant</span><span class="chapter-meta">9 min</span></div>
+          <img class="chapter-art" src="audiolibro/images/ep16_naval.jpg" alt="Naval Ravikant" loading="lazy" style="width:100px;border-radius:8px;flex-shrink:0;box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+          <div class="chapter-info">
+            <div class="chapter-title">Naval Ravikant</div>
+            <div class="chapter-meta">Capítulo 16 · 9 min</div>
             <audio controls preload="none"><source src="audiolibro/16_naval.mp3" type="audio/mpeg"></audio>
-            <a class="download-link" href="audiolibro/16_naval.mp3" download>⬇ Descargar</a>
+            <a class="meta" href="audiolibro/16_naval.mp3" download style="font-size:12px;margin-top:2px;display:inline-block;">⬇ Descargar</a>
           </div>
         </li>
-        <li class="chapter-item" style="border-bottom: none;">
-          <div class="chapter-header"><span class="chapter-num">Bonus</span><span class="chapter-title">Conexiones entre ellos</span><span class="chapter-meta">1 min</span></div>
-          <audio controls preload="none"><source src="audiolibro/17_conexiones.mp3" type="audio/mpeg"></audio>
-          <a class="download-link" href="audiolibro/17_conexiones.mp3" download>⬇ Descargar</a>
+        <li class="chapter-item" style="border-bottom:none;">
+          <div style="flex-shrink:0;width:100px;"></div>
+          <div class="chapter-info">
+            <div class="chapter-title">Conexiones entre ellos <span class="meta" style="font-size:12px;">(Bonus)</span></div>
+            <div class="chapter-meta">1 min</div>
+            <audio controls preload="none"><source src="audiolibro/17_conexiones.mp3" type="audio/mpeg"></audio>
+            <a class="meta" href="audiolibro/17_conexiones.mp3" download style="font-size:12px;margin-top:2px;display:inline-block;">⬇ Descargar</a>
+          </div>
         </li>
-      </ol>
+      </ul>
 
-      <div class="rss-note">
+      <div class="rss-box">
         <strong>📡 Escuchalo en Spotify</strong><br>
         <a href="https://open.spotify.com/show/033gwQQ5IdTs3tlLgjXy9o?si=IUIJcssPRJ6xhihaaRGHaA" target="_blank">open.spotify.com/show/033gwQQ5IdTs3tlLgjXy9o</a>
         <br><br>
         <strong>O suscribite via RSS:</strong><br>
-        RSS Feed: <code><a href="audiolibro.xml">audiolibro.xml</a></code><br><br>
+        RSS Feed: <code><a href="audiolibro.xml">audiolibro.xml</a></code>
       </div>
     </main>
 
-    <footer>&copy; 2026 Leandro Pisaroni · <a href="audiolibro.xml">RSS Feed</a></footer>
+    <footer>
+      &copy; 2026 Leandro Pisaroni · <a href="audiolibro.xml">RSS Feed</a>
+    </footer>
   </div>
 </body>
 </html>

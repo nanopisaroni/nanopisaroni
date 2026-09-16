@@ -1,0 +1,3181 @@
+[
+ {
+  "slug": "borges",
+  "nombre": "Jorge Luis Borges",
+  "num": 1,
+  "libros": [
+   {
+    "n": 1,
+    "titulo": "El hombre que fue Jueves",
+    "titulo_original": "The Man Who Was Thursday",
+    "autor": "G. K. Chesterton",
+    "anio": 1908,
+    "tipo": "recomendado",
+    "nota": "Borges lo prologó en su Biblioteca Personal y celebró su mezcla de policial, alegoría y pesadilla."
+   },
+   {
+    "n": 2,
+    "titulo": "La metamorfosis",
+    "titulo_original": "Die Verwandlung",
+    "autor": "Franz Kafka",
+    "anio": 1915,
+    "tipo": "recomendado",
+    "nota": "Lo tradujo y lo volvió emblema de lo kafkiano: una situación imposible narrada con tono llano."
+   },
+   {
+    "n": 3,
+    "titulo": "La máquina del tiempo",
+    "titulo_original": "The Time Machine",
+    "autor": "H. G. Wells",
+    "anio": 1895,
+    "tipo": "recomendado",
+    "nota": "Lo incluyó entre sus lecturas decisivas por convertir una idea metafísica en aventura precisa."
+   },
+   {
+    "n": 4,
+    "titulo": "Saga de los Volsungos",
+    "titulo_original": "Volsunga saga",
+    "autor": "Anónimo",
+    "anio": 1270,
+    "tipo": "recomendado",
+    "nota": "Sus clases y prólogos vuelven a las sagas nórdicas como modelo de épica sobria y destino trágico."
+   },
+   {
+    "n": 5,
+    "titulo": "Poema de Mio Cid",
+    "titulo_original": "",
+    "autor": "Anónimo",
+    "anio": 1200,
+    "tipo": "citado",
+    "nota": "Lo citó como una de las raíces narrativas del castellano y admiró su sequedad heroica."
+   },
+   {
+    "n": 6,
+    "titulo": "La Divina Comedia",
+    "titulo_original": "Commedia",
+    "autor": "Dante Alighieri",
+    "anio": 1321,
+    "tipo": "citado",
+    "nota": "Le dedicó ensayos y conferencias; para Borges era un libro inagotable, leído escena por escena."
+   },
+   {
+    "n": 7,
+    "titulo": "La Eneida",
+    "titulo_original": "Aeneis",
+    "autor": "Virgilio",
+    "anio": -19,
+    "tipo": "citado",
+    "nota": "Volvía a Virgilio por su música verbal y por la idea de un destino que excede al héroe."
+   },
+   {
+    "n": 8,
+    "titulo": "La isla del tesoro",
+    "titulo_original": "Treasure Island",
+    "autor": "Robert Louis Stevenson",
+    "anio": 1883,
+    "tipo": "recomendado",
+    "nota": "Lo defendió como narrador perfecto: aventura clara, ética del coraje y felicidad verbal."
+   },
+   {
+    "n": 9,
+    "titulo": "Kim",
+    "titulo_original": "",
+    "autor": "Rudyard Kipling",
+    "anio": 1901,
+    "tipo": "recomendado",
+    "nota": "Borges lo prologó y admiró la trama de espionaje, iniciación y mundo imperial visto desde abajo."
+   },
+   {
+    "n": 10,
+    "titulo": "El mundo como voluntad y representación",
+    "titulo_original": "Die Welt als Wille und Vorstellung",
+    "autor": "Arthur Schopenhauer",
+    "anio": 1819,
+    "tipo": "influencia",
+    "nota": "Fue su filósofo de cabecera; tomó de ahí el idealismo, el sueño y la voluntad como laberinto."
+   },
+   {
+    "n": 11,
+    "titulo": "Ensayos",
+    "titulo_original": "Essays",
+    "autor": "Ralph Waldo Emerson",
+    "anio": 1841,
+    "tipo": "recomendado",
+    "nota": "Lo leyó toda la vida y lo elogió por una prosa de pensamiento directo, sin sistema cerrado."
+   },
+   {
+    "n": 12,
+    "titulo": "Hojas de hierba",
+    "titulo_original": "Leaves of Grass",
+    "autor": "Walt Whitman",
+    "anio": 1855,
+    "tipo": "citado",
+    "nota": "Le escribió ensayos y poemas; le interesaba el yo plural que intenta contener a todos los hombres."
+   },
+   {
+    "n": 13,
+    "titulo": "La invención de Morel",
+    "titulo_original": "",
+    "autor": "Adolfo Bioy Casares",
+    "anio": 1940,
+    "tipo": "recomendado",
+    "nota": "Su prólogo la llamó de imaginación razonada y la ubicó como una trama fantástica perfecta."
+   },
+   {
+    "n": 14,
+    "titulo": "Museo de la novela de la Eterna",
+    "titulo_original": "",
+    "autor": "Macedonio Fernández",
+    "anio": 1967,
+    "tipo": "influencia",
+    "nota": "Macedonio fue su maestro porteño: humor metafísico, identidad dudosa y novela contra la novela."
+   },
+   {
+    "n": 15,
+    "titulo": "Cielo e infierno",
+    "titulo_original": "Heaven and Hell",
+    "autor": "Emanuel Swedenborg",
+    "anio": 1758,
+    "tipo": "citado",
+    "nota": "Lo citó por su visión minuciosa del más allá, donde cielo e infierno nacen de elecciones íntimas."
+   },
+   {
+    "n": 16,
+    "titulo": "El matrimonio del cielo y el infierno",
+    "titulo_original": "The Marriage of Heaven and Hell",
+    "autor": "William Blake",
+    "anio": 1790,
+    "tipo": "citado",
+    "nota": "Le atraía Blake como vidente: paradojas, proverbios y una teología poética fuera de iglesia."
+   },
+   {
+    "n": 17,
+    "titulo": "Las mil y una noches",
+    "titulo_original": "Alf layla wa-layla",
+    "autor": "Anónimo",
+    "anio": 850,
+    "tipo": "recomendado",
+    "nota": "Fue para Borges el gran libro de relatos dentro de relatos, espejo de bibliotecas infinitas."
+   },
+   {
+    "n": 18,
+    "titulo": "Los evangelios apócrifos",
+    "titulo_original": "",
+    "autor": "Anónimo",
+    "anio": 150,
+    "tipo": "recomendado",
+    "nota": "Los prologó por sus variantes imaginativas del mito cristiano, más literarias que dogmáticas."
+   },
+   {
+    "n": 19,
+    "titulo": "El corazón de las tinieblas",
+    "titulo_original": "Heart of Darkness",
+    "autor": "Joseph Conrad",
+    "anio": 1899,
+    "tipo": "recomendado",
+    "nota": "Lo incorporó a su canon de narradores de aventura moral, donde el viaje externo revela una culpa."
+   },
+   {
+    "n": 20,
+    "titulo": "Vathek",
+    "titulo_original": "",
+    "autor": "William Beckford",
+    "anio": 1786,
+    "tipo": "recomendado",
+    "nota": "Borges lo prologó y celebró su fantasía oriental, cruel y compacta, cercana a Las mil y una noches."
+   }
+  ]
+ },
+ {
+  "slug": "feynman",
+  "nombre": "Richard Feynman",
+  "num": 2,
+  "libros": [
+   {
+    "n": 1,
+    "titulo": "Lecciones de física de Feynman",
+    "titulo_original": "The Feynman Lectures on Physics",
+    "autor": "Richard P. Feynman, Robert B. Leighton y Matthew Sands",
+    "anio": 1964,
+    "tipo": "propio",
+    "nota": "Resume su modo de enseñar: partir de fenómenos simples y empujar hasta las leyes profundas."
+   },
+   {
+    "n": 2,
+    "titulo": "El carácter de la ley física",
+    "titulo_original": "The Character of Physical Law",
+    "autor": "Richard P. Feynman",
+    "anio": 1965,
+    "tipo": "propio",
+    "nota": "Sus conferencias de Cornell explican simetría, conservación y gravedad sin solemnidad académica."
+   },
+   {
+    "n": 3,
+    "titulo": "QED: la extraña teoría de la luz y la materia",
+    "titulo_original": "QED: The Strange Theory of Light and Matter",
+    "autor": "Richard P. Feynman",
+    "anio": 1985,
+    "tipo": "propio",
+    "nota": "Expone su versión de la electrodinámica cuántica con diagramas y amplitudes para lectores legos."
+   },
+   {
+    "n": 4,
+    "titulo": "¿Está usted de broma, Sr. Feynman?",
+    "titulo_original": "Surely You're Joking, Mr. Feynman!",
+    "autor": "Richard P. Feynman y Ralph Leighton",
+    "anio": 1985,
+    "tipo": "propio",
+    "nota": "Muestra su ética de curiosidad práctica: cajas fuertes, samba, Los Álamos y rechazo al prestigio vacío."
+   },
+   {
+    "n": 5,
+    "titulo": "Principios de mecánica cuántica",
+    "titulo_original": "The Principles of Quantum Mechanics",
+    "autor": "P. A. M. Dirac",
+    "anio": 1930,
+    "tipo": "influencia",
+    "nota": "Dirac fue el modelo de elegancia formal que Feynman discutía al enseñar amplitudes y estados."
+   },
+   {
+    "n": 6,
+    "titulo": "Mecánica cuántica: teoría no relativista",
+    "titulo_original": "Quantum Mechanics: Non-Relativistic Theory",
+    "autor": "Lev Landau y Evgeny Lifshitz",
+    "anio": 1958,
+    "tipo": "influencia",
+    "nota": "La serie Landau-Lifshitz era el estándar exigente contra el que medía claridad y cálculo."
+   },
+   {
+    "n": 7,
+    "titulo": "El significado de la relatividad",
+    "titulo_original": "The Meaning of Relativity",
+    "autor": "Albert Einstein",
+    "anio": 1922,
+    "tipo": "citado",
+    "nota": "Feynman volvía a Einstein al explicar cómo una teoría cambia lo que cuenta como medición."
+   },
+   {
+    "n": 8,
+    "titulo": "El universo misterioso",
+    "titulo_original": "The Mysterious Universe",
+    "autor": "James Jeans",
+    "anio": 1930,
+    "tipo": "influencia",
+    "nota": "Lo leyó de joven; ese estilo de divulgación física ayudó a encender su curiosidad temprana."
+   },
+   {
+    "n": 9,
+    "titulo": "La doble hélice",
+    "titulo_original": "The Double Helix",
+    "autor": "James D. Watson",
+    "anio": 1968,
+    "tipo": "recomendado",
+    "nota": "Lo recomendaba por mostrar ciencia real: competencia, intuición, errores y descubrimiento en marcha."
+   },
+   {
+    "n": 10,
+    "titulo": "Los sonámbulos",
+    "titulo_original": "The Sleepwalkers",
+    "autor": "Arthur Koestler",
+    "anio": 1959,
+    "tipo": "citado",
+    "nota": "Le servía para pensar la historia de la astronomía como avance torcido, no como marcha limpia."
+   },
+   {
+    "n": 11,
+    "titulo": "Principios matemáticos de la filosofía natural",
+    "titulo_original": "Philosophiae Naturalis Principia Mathematica",
+    "autor": "Isaac Newton",
+    "anio": 1687,
+    "tipo": "influencia",
+    "nota": "Newton aparece detrás de sus clases sobre leyes: pocas reglas, consecuencias enormes y cálculo duro."
+   },
+   {
+    "n": 12,
+    "titulo": "Tratado de electricidad y magnetismo",
+    "titulo_original": "A Treatise on Electricity and Magnetism",
+    "autor": "James Clerk Maxwell",
+    "anio": 1873,
+    "tipo": "influencia",
+    "nota": "Maxwell era el antecedente clásico de los campos que Feynman reformuló con partículas virtuales."
+   },
+   {
+    "n": 13,
+    "titulo": "¿Qué es la vida?",
+    "titulo_original": "What Is Life?",
+    "autor": "Erwin Schrödinger",
+    "anio": 1944,
+    "tipo": "citado",
+    "nota": "Feynman cruzaba física y biología; este libro marcó esa frontera como problema físico serio."
+   },
+   {
+    "n": 14,
+    "titulo": "La teoría matemática de la comunicación",
+    "titulo_original": "The Mathematical Theory of Communication",
+    "autor": "Claude Shannon y Warren Weaver",
+    "anio": 1949,
+    "tipo": "influencia",
+    "nota": "La noción de información entra en su mirada sobre computación, límites físicos y máquinas."
+   },
+   {
+    "n": 15,
+    "titulo": "La naturaleza del enlace químico",
+    "titulo_original": "The Nature of the Chemical Bond",
+    "autor": "Linus Pauling",
+    "anio": 1939,
+    "tipo": "influencia",
+    "nota": "Lo usó como puente entre mecánica cuántica y química concreta, una obsesión de sus clases."
+   },
+   {
+    "n": 16,
+    "titulo": "Métodos de física teórica",
+    "titulo_original": "Methods of Theoretical Physics",
+    "autor": "Philip M. Morse y Herman Feshbach",
+    "anio": 1953,
+    "tipo": "influencia",
+    "nota": "Representa la caja de herramientas matemática que Feynman prefería dominar sin ritualizar."
+   },
+   {
+    "n": 17,
+    "titulo": "Mecánica estadística",
+    "titulo_original": "Statistical Mechanics",
+    "autor": "Richard C. Tolman",
+    "anio": 1938,
+    "tipo": "influencia",
+    "nota": "Tolman fue base de la termodinámica estadística que Feynman enseñó con intuición microscópica."
+   },
+   {
+    "n": 18,
+    "titulo": "Espacio, tiempo, materia",
+    "titulo_original": "Raum, Zeit, Materie",
+    "autor": "Hermann Weyl",
+    "anio": 1918,
+    "tipo": "influencia",
+    "nota": "Weyl anticipa la geometría y simetría que Feynman trataba como claves de las leyes físicas."
+   },
+   {
+    "n": 19,
+    "titulo": "Cibernética",
+    "titulo_original": "Cybernetics",
+    "autor": "Norbert Wiener",
+    "anio": 1948,
+    "tipo": "citado",
+    "nota": "Su interés por computadoras y máquinas físicas dialoga con Wiener sobre control e información."
+   },
+   {
+    "n": 20,
+    "titulo": "Un tratado sobre probabilidad",
+    "titulo_original": "A Treatise on Probability",
+    "autor": "John Maynard Keynes",
+    "anio": 1921,
+    "tipo": "influencia",
+    "nota": "Encaja con su insistencia en razonar bajo incertidumbre y desconfiar de fórmulas sin chequeo."
+   }
+  ]
+ },
+ {
+  "slug": "taleb",
+  "nombre": "Nassim Nicholas Taleb",
+  "num": 3,
+  "libros": [
+   {
+    "n": 1,
+    "titulo": "Ensayos",
+    "titulo_original": "Essais",
+    "autor": "Michel de Montaigne",
+    "anio": 1580,
+    "tipo": "recomendado",
+    "nota": "Taleb lo toma como modelo de escepticismo práctico: pensar desde la vida, no desde sistemas."
+   },
+   {
+    "n": 2,
+    "titulo": "Cartas a Lucilio",
+    "titulo_original": "Epistulae Morales ad Lucilium",
+    "autor": "Séneca",
+    "anio": 65,
+    "tipo": "recomendado",
+    "nota": "Lo cita como estoico útil para pérdidas, fortuna y dominio de la exposición al daño."
+   },
+   {
+    "n": 3,
+    "titulo": "El mal comportamiento de los mercados",
+    "titulo_original": "The (Mis)Behavior of Markets",
+    "autor": "Benoit Mandelbrot y Richard L. Hudson",
+    "anio": 2004,
+    "tipo": "recomendado",
+    "nota": "Lo usa como base contra la campana gaussiana: mercados con colas gordas y rugosidad fractal."
+   },
+   {
+    "n": 4,
+    "titulo": "La lógica de la investigación científica",
+    "titulo_original": "The Logic of Scientific Discovery",
+    "autor": "Karl Popper",
+    "anio": 1934,
+    "tipo": "citado",
+    "nota": "Taleb vuelve a Popper para atacar certezas inductivas y defender conjeturas vulnerables al error."
+   },
+   {
+    "n": 5,
+    "titulo": "Camino de servidumbre",
+    "titulo_original": "The Road to Serfdom",
+    "autor": "F. A. Hayek",
+    "anio": 1944,
+    "tipo": "citado",
+    "nota": "Lo cita por el problema del conocimiento disperso y el daño de planificar sistemas complejos."
+   },
+   {
+    "n": 6,
+    "titulo": "Pensar rápido, pensar despacio",
+    "titulo_original": "Thinking, Fast and Slow",
+    "autor": "Daniel Kahneman",
+    "anio": 2011,
+    "tipo": "citado",
+    "nota": "Discute sus sesgos cognitivos, aun cuando critica el exceso de psicología de laboratorio."
+   },
+   {
+    "n": 7,
+    "titulo": "Ulises desatado",
+    "titulo_original": "Ulysses Unbound",
+    "autor": "Jon Elster",
+    "anio": 2000,
+    "tipo": "citado",
+    "nota": "Le interesa por precompromiso, racionalidad limitada y trucos institucionales contra uno mismo."
+   },
+   {
+    "n": 8,
+    "titulo": "Las ciencias de lo artificial",
+    "titulo_original": "The Sciences of the Artificial",
+    "autor": "Herbert A. Simon",
+    "anio": 1969,
+    "tipo": "citado",
+    "nota": "Lo usa para hablar de racionalidad acotada, heurísticas y diseño bajo restricciones reales."
+   },
+   {
+    "n": 9,
+    "titulo": "Juicio político experto",
+    "titulo_original": "Expert Political Judgment",
+    "autor": "Philip E. Tetlock",
+    "anio": 2005,
+    "tipo": "recomendado",
+    "nota": "Le sirve como evidencia contra expertos confiados: muchos pronósticos rinden peor que azar disciplinado."
+   },
+   {
+    "n": 10,
+    "titulo": "Decisiones instintivas",
+    "titulo_original": "Gut Feelings",
+    "autor": "Gerd Gigerenzer",
+    "anio": 2007,
+    "tipo": "recomendado",
+    "nota": "Lo valora por heurísticas robustas que ganan cuando el modelo perfecto no existe."
+   },
+   {
+    "n": 11,
+    "titulo": "Pronóstico: métodos y aplicaciones",
+    "titulo_original": "Forecasting: Methods and Applications",
+    "autor": "Spyros Makridakis, Steven C. Wheelwright y Rob J. Hyndman",
+    "anio": 1998,
+    "tipo": "citado",
+    "nota": "Makridakis le aporta datos incómodos sobre lo mal que pronostican los modelos sofisticados."
+   },
+   {
+    "n": 12,
+    "titulo": "Delirios populares extraordinarios y la locura de las masas",
+    "titulo_original": "Extraordinary Popular Delusions and the Madness of Crowds",
+    "autor": "Charles Mackay",
+    "anio": 1841,
+    "tipo": "citado",
+    "nota": "Lo usa para burbujas, contagio social y fragilidad colectiva ante narrativas demasiado prolijas."
+   },
+   {
+    "n": 13,
+    "titulo": "Contra los dioses",
+    "titulo_original": "Against the Gods",
+    "autor": "Peter L. Bernstein",
+    "anio": 1996,
+    "tipo": "citado",
+    "nota": "Aparece en su mapa de la probabilidad moderna, aunque Taleb lo tensiona con colas extremas."
+   },
+   {
+    "n": 14,
+    "titulo": "Pensamientos",
+    "titulo_original": "Pensées",
+    "autor": "Blaise Pascal",
+    "anio": 1670,
+    "tipo": "citado",
+    "nota": "Taleb cita a Pascal por incertidumbre, apuesta, límites de la razón y dignidad del no saber."
+   },
+   {
+    "n": 15,
+    "titulo": "La riqueza de las naciones",
+    "titulo_original": "An Inquiry into the Nature and Causes of the Wealth of Nations",
+    "autor": "Adam Smith",
+    "anio": 1776,
+    "tipo": "citado",
+    "nota": "Lo lee desde órdenes emergentes: coordinación sin diseñador y conocimiento práctico distribuido."
+   },
+   {
+    "n": 16,
+    "titulo": "Sobre los deberes",
+    "titulo_original": "De Officiis",
+    "autor": "Cicerón",
+    "anio": -44,
+    "tipo": "citado",
+    "nota": "Le interesa por virtud pública, honor y normas romanas anteriores a teorías morales abstractas."
+   },
+   {
+    "n": 17,
+    "titulo": "¿La suerte engaña?",
+    "titulo_original": "Fooled by Randomness",
+    "autor": "Nassim Nicholas Taleb",
+    "anio": 2001,
+    "tipo": "propio",
+    "nota": "Primer golpe de Incerto: muestra cómo confundimos ruido, suerte y talento en mercados y carreras."
+   },
+   {
+    "n": 18,
+    "titulo": "El cisne negro",
+    "titulo_original": "The Black Swan",
+    "autor": "Nassim Nicholas Taleb",
+    "anio": 2007,
+    "tipo": "propio",
+    "nota": "Su libro central sobre eventos raros de impacto enorme y narrativas inventadas después."
+   },
+   {
+    "n": 19,
+    "titulo": "Antifrágil",
+    "titulo_original": "Antifragile",
+    "autor": "Nassim Nicholas Taleb",
+    "anio": 2012,
+    "tipo": "propio",
+    "nota": "Formula su idea positiva: algunos sistemas mejoran con volatilidad, estrés y errores pequeños."
+   },
+   {
+    "n": 20,
+    "titulo": "Jugarse la piel",
+    "titulo_original": "Skin in the Game",
+    "autor": "Nassim Nicholas Taleb",
+    "anio": 2018,
+    "tipo": "propio",
+    "nota": "Condensa su regla ética: no aceptes consejos de quien no paga costos si se equivoca."
+   }
+  ]
+ },
+ {
+  "slug": "deutsch",
+  "nombre": "David Deutsch",
+  "num": 4,
+  "libros": [
+   {
+    "n": 1,
+    "titulo": "Conjeturas y refutaciones",
+    "titulo_original": "Conjectures and Refutations",
+    "autor": "Karl Popper",
+    "anio": 1963,
+    "tipo": "recomendado",
+    "nota": "Deutsch lo considera la base epistemológica: conocimiento como conjeturas corregidas por crítica."
+   },
+   {
+    "n": 2,
+    "titulo": "La lógica de la investigación científica",
+    "titulo_original": "The Logic of Scientific Discovery",
+    "autor": "Karl Popper",
+    "anio": 1934,
+    "tipo": "citado",
+    "nota": "Lo usa para separar explicación científica de inducción y justificacionismo."
+   },
+   {
+    "n": 3,
+    "titulo": "La sociedad abierta y sus enemigos",
+    "titulo_original": "The Open Society and Its Enemies",
+    "autor": "Karl Popper",
+    "anio": 1945,
+    "tipo": "citado",
+    "nota": "Le aporta la defensa política de instituciones que permiten error, crítica y mejora."
+   },
+   {
+    "n": 4,
+    "titulo": "The Essential Turing",
+    "titulo_original": "",
+    "autor": "Alan Turing",
+    "anio": 2004,
+    "tipo": "influencia",
+    "nota": "Turing es clave para su idea de computación universal como estructura física, no sólo matemática."
+   },
+   {
+    "n": 5,
+    "titulo": "La interpretación de muchos mundos de la mecánica cuántica",
+    "titulo_original": "The Many-Worlds Interpretation of Quantum Mechanics",
+    "autor": "Hugh Everett III, Bryce DeWitt y Neill Graham",
+    "anio": 1973,
+    "tipo": "influencia",
+    "nota": "Everett sostiene el realismo cuántico que Deutsch convirtió en argumento de computación cuántica."
+   },
+   {
+    "n": 6,
+    "titulo": "El gen egoísta",
+    "titulo_original": "The Selfish Gene",
+    "autor": "Richard Dawkins",
+    "anio": 1976,
+    "tipo": "recomendado",
+    "nota": "Deutsch admira su explicación de replicadores y memes como conocimiento que sobrevive por variación."
+   },
+   {
+    "n": 7,
+    "titulo": "Gravitación",
+    "titulo_original": "Gravitation",
+    "autor": "Charles W. Misner, Kip S. Thorne y John Archibald Wheeler",
+    "anio": 1973,
+    "tipo": "influencia",
+    "nota": "Wheeler marcó su realismo físico y el vínculo entre información, relatividad y mundos posibles."
+   },
+   {
+    "n": 8,
+    "titulo": "Muerte y vida de las grandes ciudades",
+    "titulo_original": "The Death and Life of Great American Cities",
+    "autor": "Jane Jacobs",
+    "anio": 1961,
+    "tipo": "recomendado",
+    "nota": "Lo cita por explicar sistemas urbanos desde conocimiento local, evolución y crítica al plan maestro."
+   },
+   {
+    "n": 9,
+    "titulo": "El optimista racional",
+    "titulo_original": "The Rational Optimist",
+    "autor": "Matt Ridley",
+    "anio": 2010,
+    "tipo": "recomendado",
+    "nota": "Deutsch lo alinea con su tesis de progreso: problemas solubles mediante conocimiento creciente."
+   },
+   {
+    "n": 10,
+    "titulo": "La fábrica de la realidad",
+    "titulo_original": "The Fabric of Reality",
+    "autor": "David Deutsch",
+    "anio": 1997,
+    "tipo": "propio",
+    "nota": "Integra cuatro hilos que él ve inseparables: evolución, computación, epistemología y multiverso."
+   },
+   {
+    "n": 11,
+    "titulo": "El comienzo del infinito",
+    "titulo_original": "The Beginning of Infinity",
+    "autor": "David Deutsch",
+    "anio": 2011,
+    "tipo": "propio",
+    "nota": "Su manifiesto del progreso: buenas explicaciones permiten crecimiento abierto del conocimiento."
+   },
+   {
+    "n": 12,
+    "titulo": "La teoría de la evolución",
+    "titulo_original": "The Genetical Theory of Natural Selection",
+    "autor": "R. A. Fisher",
+    "anio": 1930,
+    "tipo": "influencia",
+    "nota": "Le importa por formalizar adaptación como proceso de creación y filtrado de información."
+   },
+   {
+    "n": 13,
+    "titulo": "¿Qué es la vida?",
+    "titulo_original": "What Is Life?",
+    "autor": "Erwin Schrödinger",
+    "anio": 1944,
+    "tipo": "citado",
+    "nota": "Aporta el puente entre física y replicación que Deutsch extiende hacia conocimiento y computación."
+   },
+   {
+    "n": 14,
+    "titulo": "Gödel, Escher, Bach",
+    "titulo_original": "Gödel, Escher, Bach: An Eternal Golden Braid",
+    "autor": "Douglas Hofstadter",
+    "anio": 1979,
+    "tipo": "influencia",
+    "nota": "Comparte su interés por explicación, niveles, computación y creatividad sin reducirlos a magia."
+   },
+   {
+    "n": 15,
+    "titulo": "La explicación científica",
+    "titulo_original": "Scientific Explanation",
+    "autor": "Carl G. Hempel",
+    "anio": 1965,
+    "tipo": "citado",
+    "nota": "Deutsch discute esa tradición para insistir en explicaciones profundas, no sólo predicciones."
+   },
+   {
+    "n": 16,
+    "titulo": "La estructura de las revoluciones científicas",
+    "titulo_original": "The Structure of Scientific Revolutions",
+    "autor": "Thomas S. Kuhn",
+    "anio": 1962,
+    "tipo": "citado",
+    "nota": "Lo contrasta con Popper: rescata el cambio científico, rechaza el relativismo de paradigmas."
+   },
+   {
+    "n": 17,
+    "titulo": "El relojero ciego",
+    "titulo_original": "The Blind Watchmaker",
+    "autor": "Richard Dawkins",
+    "anio": 1986,
+    "tipo": "recomendado",
+    "nota": "Le sirve como defensa de explicaciones evolutivas sin diseñador y con poder generativo."
+   },
+   {
+    "n": 18,
+    "titulo": "El lenguaje de los genes",
+    "titulo_original": "The Language of the Genes",
+    "autor": "Steve Jones",
+    "anio": 1993,
+    "tipo": "influencia",
+    "nota": "Encaja con su lectura de la biología como información física almacenada, copiada y corregida."
+   },
+   {
+    "n": 19,
+    "titulo": "La Constitución de la libertad",
+    "titulo_original": "The Constitution of Liberty",
+    "autor": "F. A. Hayek",
+    "anio": 1960,
+    "tipo": "influencia",
+    "nota": "Lo acerca a órdenes abiertos donde el conocimiento social supera al diseñador central."
+   },
+   {
+    "n": 20,
+    "titulo": "El origen de las especies",
+    "titulo_original": "On the Origin of Species",
+    "autor": "Charles Darwin",
+    "anio": 1859,
+    "tipo": "influencia",
+    "nota": "Darwin es un pilar de su teoría de explicaciones: variación, selección y creación de conocimiento."
+   }
+  ]
+ },
+ {
+  "slug": "thiel",
+  "nombre": "Peter Thiel",
+  "num": 5,
+  "libros": [
+   {
+    "n": 1,
+    "titulo": "Cosas ocultas desde la fundación del mundo",
+    "titulo_original": "Things Hidden Since the Foundation of the World",
+    "autor": "René Girard",
+    "anio": 1978,
+    "tipo": "influencia",
+    "nota": "Thiel declara que Girard le cambió la cabeza: deseo mimético, rivalidad y chivos expiatorios."
+   },
+   {
+    "n": 2,
+    "titulo": "Mentira romántica y verdad novelesca",
+    "titulo_original": "Mensonge romantique et vérité romanesque",
+    "autor": "René Girard",
+    "anio": 1961,
+    "tipo": "recomendado",
+    "nota": "Lo recomienda para entender que queremos lo que otros quieren, clave de su lectura de startups."
+   },
+   {
+    "n": 3,
+    "titulo": "Persecución y arte de escribir",
+    "titulo_original": "Persecution and the Art of Writing",
+    "autor": "Leo Strauss",
+    "anio": 1952,
+    "tipo": "influencia",
+    "nota": "Strauss informa su gusto por lecturas esotéricas y por ideas políticas dichas entre líneas."
+   },
+   {
+    "n": 4,
+    "titulo": "Derecho constitucional",
+    "titulo_original": "Verfassungslehre",
+    "autor": "Carl Schmitt",
+    "anio": 1928,
+    "tipo": "citado",
+    "nota": "Thiel lo cita al pensar soberanía, excepción y límites del liberalismo procedimental."
+   },
+   {
+    "n": 5,
+    "titulo": "El Señor de los Anillos",
+    "titulo_original": "The Lord of the Rings",
+    "autor": "J. R. R. Tolkien",
+    "anio": 1954,
+    "tipo": "influencia",
+    "nota": "Nombró Palantir por Tolkien; el libro marca su imaginario de poder, visión y tecnología."
+   },
+   {
+    "n": 6,
+    "titulo": "El individuo soberano",
+    "titulo_original": "The Sovereign Individual",
+    "autor": "James Dale Davidson y William Rees-Mogg",
+    "anio": 1997,
+    "tipo": "recomendado",
+    "nota": "Lo recomendó por anticipar criptografía, movilidad del capital y erosión del Estado nación."
+   },
+   {
+    "n": 7,
+    "titulo": "De cero a uno",
+    "titulo_original": "Zero to One",
+    "autor": "Peter Thiel y Blake Masters",
+    "anio": 2014,
+    "tipo": "propio",
+    "nota": "Su tesis de startups: buscá monopolios creativos y verdades importantes que pocos aceptan."
+   },
+   {
+    "n": 8,
+    "titulo": "El mito de la diversidad",
+    "titulo_original": "The Diversity Myth",
+    "autor": "Peter Thiel y David O. Sacks",
+    "anio": 1995,
+    "tipo": "propio",
+    "nota": "Texto temprano de sus batallas culturales en Stanford sobre corrección política y universidad."
+   },
+   {
+    "n": 9,
+    "titulo": "El momento straussiano",
+    "titulo_original": "The Straussian Moment",
+    "autor": "Peter Thiel",
+    "anio": 2007,
+    "tipo": "propio",
+    "nota": "Ensayo-libro donde cruza Strauss, Schmitt y Girard después del 11-S y la crisis liberal."
+   },
+   {
+    "n": 10,
+    "titulo": "Camino de servidumbre",
+    "titulo_original": "The Road to Serfdom",
+    "autor": "F. A. Hayek",
+    "anio": 1944,
+    "tipo": "recomendado",
+    "nota": "Lo recomendó como advertencia liberal clásica contra planificación central y poder burocrático."
+   },
+   {
+    "n": 11,
+    "titulo": "El gran estancamiento",
+    "titulo_original": "The Great Stagnation",
+    "autor": "Tyler Cowen",
+    "anio": 2011,
+    "tipo": "recomendado",
+    "nota": "Encaja con su frase de que queríamos autos voladores y recibimos 140 caracteres."
+   },
+   {
+    "n": 12,
+    "titulo": "El fin de la historia y el último hombre",
+    "titulo_original": "The End of History and the Last Man",
+    "autor": "Francis Fukuyama",
+    "anio": 1992,
+    "tipo": "citado",
+    "nota": "Thiel lo discute para criticar la complacencia liberal posterior a la Guerra Fría."
+   },
+   {
+    "n": 13,
+    "titulo": "La sociedad abierta y sus enemigos",
+    "titulo_original": "The Open Society and Its Enemies",
+    "autor": "Karl Popper",
+    "anio": 1945,
+    "tipo": "citado",
+    "nota": "Aparece en su debate con historicismo y liberalismo, aunque Thiel lo lee con distancia."
+   },
+   {
+    "n": 14,
+    "titulo": "La rebelión de Atlas",
+    "titulo_original": "Atlas Shrugged",
+    "autor": "Ayn Rand",
+    "anio": 1957,
+    "tipo": "influencia",
+    "nota": "Fue parte del clima libertario de Silicon Valley que Thiel absorbió y luego matizó."
+   },
+   {
+    "n": 15,
+    "titulo": "La máquina que cambió el mundo",
+    "titulo_original": "The Machine That Changed the World",
+    "autor": "James P. Womack, Daniel T. Jones y Daniel Roos",
+    "anio": 1990,
+    "tipo": "influencia",
+    "nota": "Ayuda a entender su interés por productividad real y por tecnología que cambia procesos físicos."
+   },
+   {
+    "n": 16,
+    "titulo": "La riqueza y la pobreza de las naciones",
+    "titulo_original": "The Wealth and Poverty of Nations",
+    "autor": "David S. Landes",
+    "anio": 1998,
+    "tipo": "influencia",
+    "nota": "Conecta con su obsesión por por qué algunas sociedades generan tecnología y otras se frenan."
+   },
+   {
+    "n": 17,
+    "titulo": "La ética protestante y el espíritu del capitalismo",
+    "titulo_original": "Die protestantische Ethik und der Geist des Kapitalismus",
+    "autor": "Max Weber",
+    "anio": 1905,
+    "tipo": "citado",
+    "nota": "Le sirve para pensar capitalismo, vocación, desencanto y motivaciones no reducibles a dinero."
+   },
+   {
+    "n": 18,
+    "titulo": "Tecnología y libertad",
+    "titulo_original": "Technics and Civilization",
+    "autor": "Lewis Mumford",
+    "anio": 1934,
+    "tipo": "influencia",
+    "nota": "Marco clásico para su tema de fondo: cuándo la técnica expande libertad y cuándo se burocratiza."
+   },
+   {
+    "n": 19,
+    "titulo": "El mito de la máquina",
+    "titulo_original": "The Myth of the Machine",
+    "autor": "Lewis Mumford",
+    "anio": 1967,
+    "tipo": "influencia",
+    "nota": "Dialoga con su sospecha de grandes sistemas administrativos que absorben creatividad técnica."
+   },
+   {
+    "n": 20,
+    "titulo": "La pregunta por la técnica",
+    "titulo_original": "Die Frage nach der Technik",
+    "autor": "Martin Heidegger",
+    "anio": 1954,
+    "tipo": "influencia",
+    "nota": "Fue parte del canon filosófico que rodea su pregunta por tecnología, modernidad y destino."
+   }
+  ]
+ },
+ {
+  "slug": "popper",
+  "nombre": "Karl Popper",
+  "num": 6,
+  "libros": [
+   {
+    "n": 1,
+    "titulo": "Crítica de la razón pura",
+    "titulo_original": "Kritik der reinen Vernunft",
+    "autor": "Immanuel Kant",
+    "anio": 1781,
+    "tipo": "influencia",
+    "nota": "Popper discutió a Kant toda su vida: condiciones del conocimiento, metafísica y límites de la razón."
+   },
+   {
+    "n": 2,
+    "titulo": "Tratado de la naturaleza humana",
+    "titulo_original": "A Treatise of Human Nature",
+    "autor": "David Hume",
+    "anio": 1739,
+    "tipo": "citado",
+    "nota": "Su problema de la inducción es el punto de partida que Popper intenta resolver sin justificar inducciones."
+   },
+   {
+    "n": 3,
+    "titulo": "Los problemas de la filosofía",
+    "titulo_original": "The Problems of Philosophy",
+    "autor": "Bertrand Russell",
+    "anio": 1912,
+    "tipo": "influencia",
+    "nota": "Russell lo formó en claridad analítica y en la ambición de discutir ciencia con herramientas lógicas."
+   },
+   {
+    "n": 4,
+    "titulo": "Sobre la libertad",
+    "titulo_original": "On Liberty",
+    "autor": "John Stuart Mill",
+    "anio": 1859,
+    "tipo": "citado",
+    "nota": "Popper lo toma como antecedente liberal: crítica pública, tolerancia y daño limitado."
+   },
+   {
+    "n": 5,
+    "titulo": "Camino de servidumbre",
+    "titulo_original": "The Road to Serfdom",
+    "autor": "F. A. Hayek",
+    "anio": 1944,
+    "tipo": "citado",
+    "nota": "Aliado intelectual contra el historicismo y la planificación que prometen saber el futuro social."
+   },
+   {
+    "n": 6,
+    "titulo": "Introducción a la lógica y a la metodología de las ciencias deductivas",
+    "titulo_original": "Introduction to Logic and to the Methodology of Deductive Sciences",
+    "autor": "Alfred Tarski",
+    "anio": 1941,
+    "tipo": "citado",
+    "nota": "Tarski le dio una noción técnica de verdad que Popper usó contra relativismos."
+   },
+   {
+    "n": 7,
+    "titulo": "Arte e ilusión",
+    "titulo_original": "Art and Illusion",
+    "autor": "E. H. Gombrich",
+    "anio": 1960,
+    "tipo": "citado",
+    "nota": "Gombrich, amigo suyo, aplica conjetura y corrección a la percepción y a la historia del arte."
+   },
+   {
+    "n": 8,
+    "titulo": "Tratado sobre los principios del conocimiento humano",
+    "titulo_original": "A Treatise Concerning the Principles of Human Knowledge",
+    "autor": "George Berkeley",
+    "anio": 1710,
+    "tipo": "citado",
+    "nota": "Lo discute para defender realismo crítico frente a idealismos que disuelven el mundo externo."
+   },
+   {
+    "n": 9,
+    "titulo": "El significado de la relatividad",
+    "titulo_original": "The Meaning of Relativity",
+    "autor": "Albert Einstein",
+    "anio": 1922,
+    "tipo": "influencia",
+    "nota": "Einstein fue su ejemplo favorito: teoría audaz que se arriesga a ser refutada por observación."
+   },
+   {
+    "n": 10,
+    "titulo": "Teoría atómica y descripción de la naturaleza",
+    "titulo_original": "Atomic Theory and the Description of Nature",
+    "autor": "Niels Bohr",
+    "anio": 1934,
+    "tipo": "citado",
+    "nota": "Popper debatió a Bohr sobre interpretación cuántica, realismo y límites de la medición."
+   },
+   {
+    "n": 11,
+    "titulo": "La lógica de la investigación científica",
+    "titulo_original": "Logik der Forschung",
+    "autor": "Karl Popper",
+    "anio": 1934,
+    "tipo": "propio",
+    "nota": "Define falsabilidad y reemplaza verificación por pruebas severas y riesgo de error."
+   },
+   {
+    "n": 12,
+    "titulo": "La sociedad abierta y sus enemigos",
+    "titulo_original": "The Open Society and Its Enemies",
+    "autor": "Karl Popper",
+    "anio": 1945,
+    "tipo": "propio",
+    "nota": "Su defensa política central: instituciones que permiten criticar y cambiar gobiernos sin violencia."
+   },
+   {
+    "n": 13,
+    "titulo": "Conjeturas y refutaciones",
+    "titulo_original": "Conjectures and Refutations",
+    "autor": "Karl Popper",
+    "anio": 1963,
+    "tipo": "propio",
+    "nota": "Reúne su fórmula madura: aprendemos proponiendo conjeturas y eliminando errores."
+   },
+   {
+    "n": 14,
+    "titulo": "Conocimiento objetivo",
+    "titulo_original": "Objective Knowledge",
+    "autor": "Karl Popper",
+    "anio": 1972,
+    "tipo": "propio",
+    "nota": "Desarrolla el Mundo 3: teorías y problemas como objetos públicos que nos corrigen."
+   },
+   {
+    "n": 15,
+    "titulo": "El capital",
+    "titulo_original": "Das Kapital",
+    "autor": "Karl Marx",
+    "anio": 1867,
+    "tipo": "citado",
+    "nota": "Lo analiza como gran rival: potencia crítica, pero peligro cuando deriva en profecía histórica."
+   },
+   {
+    "n": 16,
+    "titulo": "La República",
+    "titulo_original": "Politeia",
+    "autor": "Platón",
+    "anio": -375,
+    "tipo": "citado",
+    "nota": "Es blanco central de su crítica al tribalismo político y al gobierno de supuestos sabios."
+   },
+   {
+    "n": 17,
+    "titulo": "La política",
+    "titulo_original": "Politika",
+    "autor": "Aristóteles",
+    "anio": -350,
+    "tipo": "citado",
+    "nota": "Lo discute como origen de esencialismos que, según Popper, traban explicación y reforma."
+   },
+   {
+    "n": 18,
+    "titulo": "Sistema de lógica",
+    "titulo_original": "A System of Logic",
+    "autor": "John Stuart Mill",
+    "anio": 1843,
+    "tipo": "citado",
+    "nota": "Fue el rival inductivista clásico contra el que Popper define su método hipotético-deductivo."
+   },
+   {
+    "n": 19,
+    "titulo": "La evolución creadora",
+    "titulo_original": "L'Évolution créatrice",
+    "autor": "Henri Bergson",
+    "anio": 1907,
+    "tipo": "citado",
+    "nota": "Lo trata como ejemplo de filosofía influyente pero poco controlable por crítica científica."
+   },
+   {
+    "n": 20,
+    "titulo": "El origen de las especies",
+    "titulo_original": "On the Origin of Species",
+    "autor": "Charles Darwin",
+    "anio": 1859,
+    "tipo": "citado",
+    "nota": "Darwin le importaba como teoría explicativa poderosa, no como profecía histórica cerrada."
+   }
+  ]
+ },
+ {
+  "slug": "munger",
+  "nombre": "Charlie Munger",
+  "num": 7,
+  "libros": [
+   {
+    "n": 1,
+    "titulo": "El almanaque del pobre Charlie",
+    "titulo_original": "Poor Charlie's Almanack",
+    "autor": "Charles T. Munger",
+    "anio": 2005,
+    "tipo": "propio",
+    "nota": "Reúne sus charlas y modelos mentales; ahí deja explícita buena parte de su biblioteca recomendada."
+   },
+   {
+    "n": 2,
+    "titulo": "Influencia",
+    "titulo_original": "Influence",
+    "autor": "Robert B. Cialdini",
+    "anio": 1984,
+    "tipo": "recomendado",
+    "nota": "Munger lo recomendaba para entender sesgos de persuasión y defenderte de incentivos mal alineados."
+   },
+   {
+    "n": 3,
+    "titulo": "El gen egoísta",
+    "titulo_original": "The Selfish Gene",
+    "autor": "Richard Dawkins",
+    "anio": 1976,
+    "tipo": "recomendado",
+    "nota": "Figura en sus listas porque aporta el modelo evolutivo que usaba para pensar conducta e incentivos."
+   },
+   {
+    "n": 4,
+    "titulo": "Armas, gérmenes y acero",
+    "titulo_original": "Guns, Germs, and Steel",
+    "autor": "Jared Diamond",
+    "anio": 1997,
+    "tipo": "recomendado",
+    "nota": "Lo elogiaba como historia explicativa: geografía, biología y azar pesando más que relatos heroicos."
+   },
+   {
+    "n": 5,
+    "titulo": "Titan: la vida de John D. Rockefeller",
+    "titulo_original": "Titan: The Life of John D. Rockefeller, Sr.",
+    "autor": "Ron Chernow",
+    "anio": 1998,
+    "tipo": "recomendado",
+    "nota": "Lo incluía por el caso Rockefeller: escala, disciplina de costos y reputación vistas sin romanticismo."
+   },
+   {
+    "n": 6,
+    "titulo": "Los outsiders",
+    "titulo_original": "The Outsiders",
+    "autor": "William N. Thorndike Jr.",
+    "anio": 2012,
+    "tipo": "recomendado",
+    "nota": "Munger lo celebró por mostrar CEOs obsesionados con asignar capital, no con salir en la tapa."
+   },
+   {
+    "n": 7,
+    "titulo": "Modelos de mi vida",
+    "titulo_original": "Models of My Life",
+    "autor": "Herbert A. Simon",
+    "anio": 1991,
+    "tipo": "recomendado",
+    "nota": "Le interesaba Simon por racionalidad limitada: una pieza central de su grilla de modelos mentales."
+   },
+   {
+    "n": 8,
+    "titulo": "Autobiografía",
+    "titulo_original": "The Autobiography of Benjamin Franklin",
+    "autor": "Benjamin Franklin",
+    "anio": 1791,
+    "tipo": "recomendado",
+    "nota": "Munger citaba a Franklin como modelo de prudencia práctica, ahorro, aprendizaje y conducta cívica."
+   },
+   {
+    "n": 9,
+    "titulo": "Memorias",
+    "titulo_original": "Random Reminiscences of Men and Events",
+    "autor": "John D. Rockefeller",
+    "anio": 1909,
+    "tipo": "recomendado",
+    "nota": "Lo recomendaba para leer al propio Rockefeller sobre hábitos, negociación y construcción paciente."
+   },
+   {
+    "n": 10,
+    "titulo": "Acciones ordinarias y beneficios extraordinarios",
+    "titulo_original": "Common Stocks and Uncommon Profits",
+    "autor": "Philip A. Fisher",
+    "anio": 1958,
+    "tipo": "recomendado",
+    "nota": "Encaja con su giro hacia negocios excelentes: calidad, ventaja competitiva y horizonte largo."
+   },
+   {
+    "n": 11,
+    "titulo": "La riqueza de las naciones",
+    "titulo_original": "An Inquiry into the Nature and Causes of the Wealth of Nations",
+    "autor": "Adam Smith",
+    "anio": 1776,
+    "tipo": "recomendado",
+    "nota": "Lo usaba como base para pensar especialización, incentivos y efectos no intencionales en mercados."
+   },
+   {
+    "n": 12,
+    "titulo": "Fiasco",
+    "titulo_original": "Fiasco: The Inside Story of a Wall Street Trader",
+    "autor": "Frank Partnoy",
+    "anio": 1997,
+    "tipo": "recomendado",
+    "nota": "Munger lo recomendó como vacuna contra derivados opacos y culturas financieras con malos incentivos."
+   },
+   {
+    "n": 13,
+    "titulo": "Deep Simplicity",
+    "titulo_original": "",
+    "autor": "John Gribbin",
+    "anio": 2004,
+    "tipo": "recomendado",
+    "nota": "Lo señaló por explicar sistemas complejos sin humo, justo el tipo de herramienta mental que buscaba."
+   },
+   {
+    "n": 14,
+    "titulo": "Cómo se piensa",
+    "titulo_original": "How to Think Straight About Psychology",
+    "autor": "Keith E. Stanovich",
+    "anio": 1992,
+    "tipo": "recomendado",
+    "nota": "Lo valoraba por enseñar a separar evidencia, correlación y cuentos lindos sobre la mente."
+   },
+   {
+    "n": 15,
+    "titulo": "Los últimos días de la noche",
+    "titulo_original": "The Last Days of Night",
+    "autor": "Graham Moore",
+    "anio": 2016,
+    "tipo": "recomendado",
+    "nota": "Recomendado por Munger por el drama Edison-Westinghouse: patentes, poder y competencia tecnológica."
+   },
+   {
+    "n": 16,
+    "titulo": "The Warren Buffett CEO",
+    "titulo_original": "",
+    "autor": "Robert P. Miles",
+    "anio": 2002,
+    "tipo": "recomendado",
+    "nota": "Lo acercaba a Berkshire desde los operadores; útil para entender descentralización y confianza."
+   },
+   {
+    "n": 17,
+    "titulo": "Ice Age",
+    "titulo_original": "",
+    "autor": "John Gribbin y Mary Gribbin",
+    "anio": 2001,
+    "tipo": "recomendado",
+    "nota": "Aparece entre sus sugeridos por enseñar historia natural con causalidad física, no anécdotas sueltas."
+   },
+   {
+    "n": 18,
+    "titulo": "Los ensayos de Warren Buffett",
+    "titulo_original": "The Essays of Warren Buffett",
+    "autor": "Warren E. Buffett y Lawrence A. Cunningham",
+    "anio": 1997,
+    "tipo": "recomendado",
+    "nota": "Munger lo respaldaba como compendio de la lógica Berkshire: dueño, capital y paciencia."
+   },
+   {
+    "n": 19,
+    "titulo": "Obras completas de Gilbert y Sullivan",
+    "titulo_original": "The Complete Plays of Gilbert and Sullivan",
+    "autor": "W. S. Gilbert y Arthur Sullivan",
+    "anio": 1926,
+    "tipo": "recomendado",
+    "nota": "Munger citaba sus operetas por sátira institucional; las usaba para recordar locuras humanas recurrentes."
+   },
+   {
+    "n": 20,
+    "titulo": "Poor Richard's Almanack",
+    "titulo_original": "",
+    "autor": "Benjamin Franklin",
+    "anio": 1732,
+    "tipo": "influencia",
+    "nota": "La máxima mungeriana de invertir problemas dialoga con el Franklin práctico de aforismos y conducta."
+   }
+  ]
+ },
+ {
+  "slug": "kahneman",
+  "nombre": "Daniel Kahneman",
+  "num": 8,
+  "libros": [
+   {
+    "n": 1,
+    "titulo": "Pensar rápido, pensar despacio",
+    "titulo_original": "Thinking, Fast and Slow",
+    "autor": "Daniel Kahneman",
+    "anio": 2011,
+    "tipo": "propio",
+    "nota": "Su síntesis pública: Sistema 1, Sistema 2, heurísticas, ruido y errores predecibles de juicio."
+   },
+   {
+    "n": 2,
+    "titulo": "Juicio bajo incertidumbre",
+    "titulo_original": "Judgment under Uncertainty",
+    "autor": "Daniel Kahneman, Paul Slovic y Amos Tversky",
+    "anio": 1982,
+    "tipo": "propio",
+    "nota": "Volumen editado por él que fijó el programa de heurísticas y sesgos que lo hizo Nobel."
+   },
+   {
+    "n": 3,
+    "titulo": "Nudge",
+    "titulo_original": "",
+    "autor": "Richard H. Thaler y Cass R. Sunstein",
+    "anio": 2008,
+    "tipo": "recomendado",
+    "nota": "Kahneman lo elogió como aplicación institucional de sesgos sin exigir humanos perfectamente racionales."
+   },
+   {
+    "n": 4,
+    "titulo": "Todo lo que he aprendido con la psicología económica",
+    "titulo_original": "Misbehaving",
+    "autor": "Richard H. Thaler",
+    "anio": 2015,
+    "tipo": "recomendado",
+    "nota": "Celebró a Thaler por convertir anomalías de laboratorio en economía conductual usable."
+   },
+   {
+    "n": 5,
+    "titulo": "Deshaciendo errores",
+    "titulo_original": "The Undoing Project",
+    "autor": "Michael Lewis",
+    "anio": 2016,
+    "tipo": "citado",
+    "nota": "Cuenta su sociedad con Tversky; Kahneman lo tomó como retrato legible de una colaboración difícil."
+   },
+   {
+    "n": 6,
+    "titulo": "Las ciencias de lo artificial",
+    "titulo_original": "The Sciences of the Artificial",
+    "autor": "Herbert A. Simon",
+    "anio": 1969,
+    "tipo": "influencia",
+    "nota": "Simon le dio el marco de racionalidad limitada que separó juicio real de agente económico ideal."
+   },
+   {
+    "n": 7,
+    "titulo": "Los restos del día",
+    "titulo_original": "The Remains of the Day",
+    "autor": "Kazuo Ishiguro",
+    "anio": 1989,
+    "tipo": "recomendado",
+    "nota": "La nombró entre sus ficciones favoritas por mostrar autoengaño y memoria selectiva desde adentro."
+   },
+   {
+    "n": 8,
+    "titulo": "Decisiones instintivas",
+    "titulo_original": "Gut Feelings",
+    "autor": "Gerd Gigerenzer",
+    "anio": 2007,
+    "tipo": "citado",
+    "nota": "Lo leía como crítica seria: heurísticas simples pueden funcionar, no sólo sesgar."
+   },
+   {
+    "n": 9,
+    "titulo": "Racionalidad y la mente reflexiva",
+    "titulo_original": "Rationality and the Reflective Mind",
+    "autor": "Keith E. Stanovich",
+    "anio": 2011,
+    "tipo": "citado",
+    "nota": "Stanovich extendió su distinción de dos sistemas hacia pensamiento crítico y disracionalidad."
+   },
+   {
+    "n": 10,
+    "titulo": "Elección, valores y marcos",
+    "titulo_original": "Choices, Values, and Frames",
+    "autor": "Daniel Kahneman y Amos Tversky",
+    "anio": 2000,
+    "tipo": "propio",
+    "nota": "Reúne teoría prospectiva y encuadre, el núcleo técnico que sostiene sus ejemplos más famosos."
+   },
+   {
+    "n": 11,
+    "titulo": "Preference, Belief, and Similarity",
+    "titulo_original": "",
+    "autor": "Amos Tversky",
+    "anio": 2004,
+    "tipo": "citado",
+    "nota": "Compila trabajos de Tversky; Kahneman vuelve a esas ideas para explicar similitud, elección y sesgo."
+   },
+   {
+    "n": 12,
+    "titulo": "El cisne negro",
+    "titulo_original": "The Black Swan",
+    "autor": "Nassim Nicholas Taleb",
+    "anio": 2007,
+    "tipo": "citado",
+    "nota": "Dialoga con su crítica al exceso de confianza cuando narramos azar raro como si fuera previsible."
+   },
+   {
+    "n": 13,
+    "titulo": "Contra los dioses",
+    "titulo_original": "Against the Gods",
+    "autor": "Peter L. Bernstein",
+    "anio": 1996,
+    "tipo": "recomendado",
+    "nota": "Kahneman lo recomendó para ver cómo la historia del riesgo depende de psicología, no sólo cálculo."
+   },
+   {
+    "n": 14,
+    "titulo": "Risk Savvy",
+    "titulo_original": "",
+    "autor": "Gerd Gigerenzer",
+    "anio": 2014,
+    "tipo": "citado",
+    "nota": "Otra contraparte útil: Gigerenzer discute cuándo educar intuiciones supera corregirlas desde afuera."
+   },
+   {
+    "n": 15,
+    "titulo": "Strangers to Ourselves",
+    "titulo_original": "",
+    "autor": "Timothy D. Wilson",
+    "anio": 2002,
+    "tipo": "influencia",
+    "nota": "Encaja con su idea de que inventamos razones después: la introspección no accede a todo el proceso."
+   },
+   {
+    "n": 16,
+    "titulo": "La ilusión de validez",
+    "titulo_original": "Expert Political Judgment",
+    "autor": "Philip E. Tetlock",
+    "anio": 2005,
+    "tipo": "citado",
+    "nota": "Lo cita por pronósticos expertos fallidos, un caso fuerte de exceso de confianza medible."
+   },
+   {
+    "n": 17,
+    "titulo": "Superforecasting",
+    "titulo_original": "",
+    "autor": "Philip E. Tetlock y Dan Gardner",
+    "anio": 2015,
+    "tipo": "recomendado",
+    "nota": "Lo respaldó porque muestra hábitos concretos para bajar ruido y calibrar probabilidades."
+   },
+   {
+    "n": 18,
+    "titulo": "La señal y el ruido",
+    "titulo_original": "The Signal and the Noise",
+    "autor": "Nate Silver",
+    "anio": 2012,
+    "tipo": "recomendado",
+    "nota": "Lo recomendó por tratar predicción como disciplina de calibración, tasas base y humildad."
+   },
+   {
+    "n": 19,
+    "titulo": "El ruido",
+    "titulo_original": "Noise",
+    "autor": "Daniel Kahneman, Olivier Sibony y Cass R. Sunstein",
+    "anio": 2021,
+    "tipo": "propio",
+    "nota": "Su obra tardía: errores entre jueces igualmente informados, no sólo sesgos compartidos."
+   },
+   {
+    "n": 20,
+    "titulo": "Rational Choice in an Uncertain World",
+    "titulo_original": "",
+    "autor": "Robyn M. Dawes",
+    "anio": 1988,
+    "tipo": "citado",
+    "nota": "Kahneman lo cita por reglas simples y predicción clínica: modelos humildes vencen intuiciones expertas."
+   }
+  ]
+ },
+ {
+  "slug": "graham",
+  "nombre": "Paul Graham",
+  "num": 9,
+  "libros": [
+   {
+    "n": 1,
+    "titulo": "Hackers y pintores",
+    "titulo_original": "Hackers & Painters",
+    "autor": "Paul Graham",
+    "anio": 2004,
+    "tipo": "propio",
+    "nota": "Su manifiesto sobre programación, gusto y startups; condensa el marco cultural que predica."
+   },
+   {
+    "n": 2,
+    "titulo": "On Lisp",
+    "titulo_original": "",
+    "autor": "Paul Graham",
+    "anio": 1993,
+    "tipo": "propio",
+    "nota": "Obra técnica clave: macros y abstracción como ventaja real para pensar programas."
+   },
+   {
+    "n": 3,
+    "titulo": "ANSI Common Lisp",
+    "titulo_original": "",
+    "autor": "Paul Graham",
+    "anio": 1995,
+    "tipo": "propio",
+    "nota": "Manual propio que muestra su preferencia por herramientas expresivas antes que por ceremonias."
+   },
+   {
+    "n": 4,
+    "titulo": "La estructura de las revoluciones científicas",
+    "titulo_original": "The Structure of Scientific Revolutions",
+    "autor": "Thomas S. Kuhn",
+    "anio": 1962,
+    "tipo": "recomendado",
+    "nota": "Graham lo cita para explicar cambios de paradigma y por qué las ideas nuevas parecen raras al inicio."
+   },
+   {
+    "n": 5,
+    "titulo": "La riqueza de las naciones",
+    "titulo_original": "An Inquiry into the Nature and Causes of the Wealth of Nations",
+    "autor": "Adam Smith",
+    "anio": 1776,
+    "tipo": "influencia",
+    "nota": "Le sirve para pensar mercados, especialización y riqueza como producto de coordinación descentralizada."
+   },
+   {
+    "n": 6,
+    "titulo": "Autobiografía",
+    "titulo_original": "The Autobiography of Benjamin Franklin",
+    "autor": "Benjamin Franklin",
+    "anio": 1791,
+    "tipo": "recomendado",
+    "nota": "Graham admira a Franklin como hacker cívico: curioso, práctico, empresario y escritor."
+   },
+   {
+    "n": 7,
+    "titulo": "Muerte y vida de las grandes ciudades",
+    "titulo_original": "The Death and Life of Great American Cities",
+    "autor": "Jane Jacobs",
+    "anio": 1961,
+    "tipo": "recomendado",
+    "nota": "La usa como ejemplo de ver sistemas vivos desde abajo, no desde planificación abstracta."
+   },
+   {
+    "n": 8,
+    "titulo": "Gödel, Escher, Bach",
+    "titulo_original": "Gödel, Escher, Bach",
+    "autor": "Douglas R. Hofstadter",
+    "anio": 1979,
+    "tipo": "recomendado",
+    "nota": "Forma parte del canon hacker que mezcla computación, mente, autorreferencia y juego intelectual."
+   },
+   {
+    "n": 9,
+    "titulo": "El mítico hombre-mes",
+    "titulo_original": "The Mythical Man-Month",
+    "autor": "Frederick P. Brooks Jr.",
+    "anio": 1975,
+    "tipo": "recomendado",
+    "nota": "Graham lo cita como vacuna contra administrar software como si sumar gente sumara meses productivos."
+   },
+   {
+    "n": 10,
+    "titulo": "La práctica de la dirección",
+    "titulo_original": "The Practice of Management",
+    "autor": "Peter F. Drucker",
+    "anio": 1954,
+    "tipo": "influencia",
+    "nota": "Drucker está detrás de su mirada sobre organizaciones chicas, foco y trabajo de conocimiento."
+   },
+   {
+    "n": 11,
+    "titulo": "El dilema de los innovadores",
+    "titulo_original": "The Innovator's Dilemma",
+    "autor": "Clayton M. Christensen",
+    "anio": 1997,
+    "tipo": "recomendado",
+    "nota": "Graham lo usa para explicar por qué startups atacan desde abajo y las grandes no pueden copiar rápido."
+   },
+   {
+    "n": 12,
+    "titulo": "Orgullo y prejuicio",
+    "titulo_original": "Pride and Prejudice",
+    "autor": "Jane Austen",
+    "anio": 1813,
+    "tipo": "recomendado",
+    "nota": "Lo menciona entre novelas que enseñan percepción social fina, algo que valora también en ensayos."
+   },
+   {
+    "n": 13,
+    "titulo": "David Copperfield",
+    "titulo_original": "",
+    "autor": "Charles Dickens",
+    "anio": 1850,
+    "tipo": "influencia",
+    "nota": "Dickens aparece en su canon literario por energía narrativa y observación social sin abstracción seca."
+   },
+   {
+    "n": 14,
+    "titulo": "Grandes esperanzas",
+    "titulo_original": "Great Expectations",
+    "autor": "Charles Dickens",
+    "anio": 1861,
+    "tipo": "influencia",
+    "nota": "Otro Dickens afín a su gusto: ambición, clase y autoengaño vistos con detalle concreto."
+   },
+   {
+    "n": 15,
+    "titulo": "El lenguaje de programación C",
+    "titulo_original": "The C Programming Language",
+    "autor": "Brian W. Kernighan y Dennis M. Ritchie",
+    "anio": 1978,
+    "tipo": "influencia",
+    "nota": "Modelo de libro técnico corto y preciso; encaja con su defensa de claridad y poder expresivo."
+   },
+   {
+    "n": 16,
+    "titulo": "Structure and Interpretation of Computer Programs",
+    "titulo_original": "",
+    "autor": "Harold Abelson, Gerald Jay Sussman y Julie Sussman",
+    "anio": 1985,
+    "tipo": "influencia",
+    "nota": "Canon Lisp/MIT que formó su idea de programar como construir lenguajes para pensar."
+   },
+   {
+    "n": 17,
+    "titulo": "El arte de la programación de computadoras",
+    "titulo_original": "The Art of Computer Programming",
+    "autor": "Donald E. Knuth",
+    "anio": 1968,
+    "tipo": "influencia",
+    "nota": "Parte del trasfondo hacker que Graham respeta: rigor técnico con ambición estética."
+   },
+   {
+    "n": 18,
+    "titulo": "The Little Schemer",
+    "titulo_original": "",
+    "autor": "Daniel P. Friedman y Matthias Felleisen",
+    "anio": 1995,
+    "tipo": "influencia",
+    "nota": "Su estilo de preguntas y recursión pertenece al mismo mundo Lisp que Graham defiende."
+   },
+   {
+    "n": 19,
+    "titulo": "The Elements of Style",
+    "titulo_original": "",
+    "autor": "William Strunk Jr. y E. B. White",
+    "anio": 1959,
+    "tipo": "influencia",
+    "nota": "Graham insiste en escribir simple; este manual encaja con su estándar de prosa comprimida."
+   },
+   {
+    "n": 20,
+    "titulo": "Lo pequeño es hermoso",
+    "titulo_original": "Small Is Beautiful",
+    "autor": "E. F. Schumacher",
+    "anio": 1973,
+    "tipo": "influencia",
+    "nota": "Refuerza su sesgo por equipos chicos, herramientas simples y crecimiento que no destruya el oficio."
+   }
+  ]
+ },
+ {
+  "slug": "naval",
+  "nombre": "Naval Ravikant",
+  "num": 10,
+  "libros": [
+   {
+    "n": 1,
+    "titulo": "El comienzo del infinito",
+    "titulo_original": "The Beginning of Infinity",
+    "autor": "David Deutsch",
+    "anio": 2011,
+    "tipo": "recomendado",
+    "nota": "Naval lo cita como libro decisivo: progreso ilimitado cuando aprendemos a crear buenas explicaciones."
+   },
+   {
+    "n": 2,
+    "titulo": "Sapiens",
+    "titulo_original": "Sapiens: A Brief History of Humankind",
+    "autor": "Yuval Noah Harari",
+    "anio": 2011,
+    "tipo": "recomendado",
+    "nota": "Lo recomienda por mostrar cómo relatos compartidos coordinan sociedades enormes."
+   },
+   {
+    "n": 3,
+    "titulo": "El almanaque de Naval Ravikant",
+    "titulo_original": "The Almanack of Naval Ravikant",
+    "autor": "Eric Jorgenson",
+    "anio": 2020,
+    "tipo": "propio",
+    "nota": "Compila sus ideas más repetidas sobre riqueza, juicio, felicidad y libertad personal."
+   },
+   {
+    "n": 4,
+    "titulo": "Meditaciones",
+    "titulo_original": "Meditations",
+    "autor": "Marco Aurelio",
+    "anio": 180,
+    "tipo": "recomendado",
+    "nota": "Naval lo usa como manual estoico: gobernar la mente antes que intentar gobernar el mundo."
+   },
+   {
+    "n": 5,
+    "titulo": "El libro de la vida",
+    "titulo_original": "The Book of Life",
+    "autor": "Jiddu Krishnamurti",
+    "anio": 1995,
+    "tipo": "recomendado",
+    "nota": "Lo recomienda para observar pensamiento y deseo sin convertir la espiritualidad en identidad."
+   },
+   {
+    "n": 6,
+    "titulo": "Pensar rápido, pensar despacio",
+    "titulo_original": "Thinking, Fast and Slow",
+    "autor": "Daniel Kahneman",
+    "anio": 2011,
+    "tipo": "recomendado",
+    "nota": "Le interesa por los sesgos: mejorar decisiones exige conocer los atajos torcidos de la mente."
+   },
+   {
+    "n": 7,
+    "titulo": "El almanaque del pobre Charlie",
+    "titulo_original": "Poor Charlie's Almanack",
+    "autor": "Charles T. Munger",
+    "anio": 2005,
+    "tipo": "recomendado",
+    "nota": "Naval toma de Munger los modelos mentales y la inversión paciente con criterio multidisciplinario."
+   },
+   {
+    "n": 8,
+    "titulo": "El optimista racional",
+    "titulo_original": "The Rational Optimist",
+    "autor": "Matt Ridley",
+    "anio": 2010,
+    "tipo": "recomendado",
+    "nota": "Lo recomienda por defender innovación, intercambio y progreso contra el pesimismo automático."
+   },
+   {
+    "n": 9,
+    "titulo": "Gödel, Escher, Bach",
+    "titulo_original": "Gödel, Escher, Bach",
+    "autor": "Douglas Hofstadter",
+    "anio": 1979,
+    "tipo": "recomendado",
+    "nota": "Le atrae por conectar mente, patrones, recursión e inteligencia con una ambición poco común."
+   },
+   {
+    "n": 10,
+    "titulo": "Lecciones de la historia",
+    "titulo_original": "The Lessons of History",
+    "autor": "Will Durant y Ariel Durant",
+    "anio": 1968,
+    "tipo": "recomendado",
+    "nota": "Naval lo recomienda como destilado breve de ciclos humanos, poder, guerra, economía y cultura."
+   },
+   {
+    "n": 11,
+    "titulo": "El individuo soberano",
+    "titulo_original": "The Sovereign Individual",
+    "autor": "James Dale Davidson y William Rees-Mogg",
+    "anio": 1997,
+    "tipo": "recomendado",
+    "nota": "Lo cita por anticipar internet, criptografía y la autonomía creciente del individuo."
+   },
+   {
+    "n": 12,
+    "titulo": "Jugarse la piel",
+    "titulo_original": "Skin in the Game",
+    "autor": "Nassim Nicholas Taleb",
+    "anio": 2018,
+    "tipo": "recomendado",
+    "nota": "Naval valora la regla moral de Taleb: no confíes en quien no paga costo por equivocarse."
+   },
+   {
+    "n": 13,
+    "titulo": "El lecho de Procusto",
+    "titulo_original": "The Bed of Procrustes",
+    "autor": "Nassim Nicholas Taleb",
+    "anio": 2010,
+    "tipo": "recomendado",
+    "nota": "Sus aforismos calzan con Naval: pensar claro, desconfiar de sistemas y cortar ruido."
+   },
+   {
+    "n": 14,
+    "titulo": "El camino del hombre superior",
+    "titulo_original": "The Way of the Superior Man",
+    "autor": "David Deida",
+    "anio": 1997,
+    "tipo": "recomendado",
+    "nota": "Aparece en sus listas por disciplina, energía masculina y relaciones vividas sin evasión."
+   },
+   {
+    "n": 15,
+    "titulo": "Libertad total",
+    "titulo_original": "Total Freedom",
+    "autor": "Jiddu Krishnamurti",
+    "anio": 1996,
+    "tipo": "recomendado",
+    "nota": "Naval vuelve a Krishnamurti para separar libertad real de ideología espiritual."
+   },
+   {
+    "n": 16,
+    "titulo": "Buscando sabiduría",
+    "titulo_original": "Seeking Wisdom: From Darwin to Munger",
+    "autor": "Peter Bevelin",
+    "anio": 2003,
+    "tipo": "recomendado",
+    "nota": "Lo recomienda por reunir modelos mentales prácticos para decidir mejor y equivocarse menos."
+   },
+   {
+    "n": 17,
+    "titulo": "Juegos finitos e infinitos",
+    "titulo_original": "Finite and Infinite Games",
+    "autor": "James P. Carse",
+    "anio": 1986,
+    "tipo": "recomendado",
+    "nota": "Encaja con su idea de jugar juegos largos: libertad, aprendizaje y reputación compuesta."
+   },
+   {
+    "n": 18,
+    "titulo": "Antifrágil",
+    "titulo_original": "Antifragile",
+    "autor": "Nassim Nicholas Taleb",
+    "anio": 2012,
+    "tipo": "recomendado",
+    "nota": "Naval toma de Taleb la preferencia por sistemas que ganan con volatilidad y estrés."
+   },
+   {
+    "n": 19,
+    "titulo": "Sobre la brevedad de la vida",
+    "titulo_original": "De Brevitate Vitae",
+    "autor": "Séneca",
+    "anio": 49,
+    "tipo": "recomendado",
+    "nota": "Su estoicismo práctico coincide con Naval: cuidar atención y tiempo como activos escasos."
+   },
+   {
+    "n": 20,
+    "titulo": "La verdad directa",
+    "titulo_original": "Direct Truth",
+    "autor": "Kapil Gupta",
+    "anio": 2018,
+    "tipo": "recomendado",
+    "nota": "Naval lo ha recomendado por su enfoque seco: ver deseo, miedo y autoengaño sin adornos."
+   }
+  ]
+ },
+ {
+  "slug": "yudkowsky",
+  "nombre": "Eliezer Yudkowsky",
+  "num": 11,
+  "libros": [
+   {
+    "n": 1,
+    "titulo": "Racionalidad: de la IA a los zombis",
+    "titulo_original": "Rationality: From AI to Zombies",
+    "autor": "Eliezer Yudkowsky",
+    "anio": 2015,
+    "tipo": "propio",
+    "nota": "Compila sus Sequences: Bayes, sesgos, reducción y disciplina mental aplicada a IA."
+   },
+   {
+    "n": 2,
+    "titulo": "Harry Potter y los métodos de la racionalidad",
+    "titulo_original": "Harry Potter and the Methods of Rationality",
+    "autor": "Eliezer Yudkowsky",
+    "anio": 2015,
+    "tipo": "propio",
+    "nota": "Ficción didáctica propia: dramatiza ciencia, sesgos y toma de decisiones bajo presión."
+   },
+   {
+    "n": 3,
+    "titulo": "Three Worlds Collide",
+    "titulo_original": "",
+    "autor": "Eliezer Yudkowsky",
+    "anio": 2008,
+    "tipo": "propio",
+    "nota": "Relato propio usado para explorar dilemas de valor, negociación y choque moral entre civilizaciones."
+   },
+   {
+    "n": 4,
+    "titulo": "Gödel, Escher, Bach",
+    "titulo_original": "Gödel, Escher, Bach",
+    "autor": "Douglas R. Hofstadter",
+    "anio": 1979,
+    "tipo": "influencia",
+    "nota": "Influencia temprana en su mezcla de mente, recursión, símbolos y ambición explicativa."
+   },
+   {
+    "n": 5,
+    "titulo": "Superinteligencia",
+    "titulo_original": "Superintelligence",
+    "autor": "Nick Bostrom",
+    "anio": 2014,
+    "tipo": "citado",
+    "nota": "Lo cita dentro del debate de riesgo de IA; ordena escenarios que él venía advirtiendo antes."
+   },
+   {
+    "n": 6,
+    "titulo": "Compatible con humanos",
+    "titulo_original": "Human Compatible",
+    "autor": "Stuart Russell",
+    "anio": 2019,
+    "tipo": "citado",
+    "nota": "Russell recoge el problema de alineación que Yudkowsky empujó: optimizadores potentes mal especificados."
+   },
+   {
+    "n": 7,
+    "titulo": "Categorization and Naming in Children",
+    "titulo_original": "",
+    "autor": "Ellen M. Markman",
+    "anio": 1989,
+    "tipo": "recomendado",
+    "nota": "Yudkowsky lo recomendó para entender conceptos, categorías y cómo las palabras guían inferencias."
+   },
+   {
+    "n": 8,
+    "titulo": "Pensar rápido, pensar despacio",
+    "titulo_original": "Thinking, Fast and Slow",
+    "autor": "Daniel Kahneman",
+    "anio": 2011,
+    "tipo": "citado",
+    "nota": "Usa a Kahneman para fundamentar sesgos cognitivos y límites de introspección."
+   },
+   {
+    "n": 9,
+    "titulo": "Lecciones de física de Feynman",
+    "titulo_original": "The Feynman Lectures on Physics",
+    "autor": "Richard P. Feynman, Robert B. Leighton y Matthew Sands",
+    "anio": 1964,
+    "tipo": "recomendado",
+    "nota": "Las admira por explicar desde primeros principios, estilo que intenta trasladar a racionalidad."
+   },
+   {
+    "n": 10,
+    "titulo": "Teoría de la probabilidad",
+    "titulo_original": "Probability Theory: The Logic of Science",
+    "autor": "E. T. Jaynes",
+    "anio": 2003,
+    "tipo": "recomendado",
+    "nota": "Texto bayesiano central para LessWrong: probabilidad como lógica extendida de la incertidumbre."
+   },
+   {
+    "n": 11,
+    "titulo": "QED: la extraña teoría de la luz y la materia",
+    "titulo_original": "QED: The Strange Theory of Light and Matter",
+    "autor": "Richard P. Feynman",
+    "anio": 1985,
+    "tipo": "influencia",
+    "nota": "Ejemplo de explicación técnica con intuición visual, una virtud que Yudkowsky persigue."
+   },
+   {
+    "n": 12,
+    "titulo": "The Fabric of Reality",
+    "titulo_original": "",
+    "autor": "David Deutsch",
+    "anio": 1997,
+    "tipo": "influencia",
+    "nota": "Influye en su realismo explicativo: computación, física y epistemología como una sola imagen."
+   },
+   {
+    "n": 13,
+    "titulo": "El comienzo del infinito",
+    "titulo_original": "The Beginning of Infinity",
+    "autor": "David Deutsch",
+    "anio": 2011,
+    "tipo": "citado",
+    "nota": "Lo discute por progreso explicativo y optimismo, aunque no siempre comparte sus conclusiones."
+   },
+   {
+    "n": 14,
+    "titulo": "Good and Real",
+    "titulo_original": "",
+    "autor": "Gary Drescher",
+    "anio": 2006,
+    "tipo": "recomendado",
+    "nota": "LessWrong lo adoptó por decisión, causalidad y reducción de moralidad sin magia."
+   },
+   {
+    "n": 15,
+    "titulo": "Causality",
+    "titulo_original": "",
+    "autor": "Judea Pearl",
+    "anio": 2000,
+    "tipo": "citado",
+    "nota": "Base para hablar de modelos causales, intervención y por qué correlación no alcanza."
+   },
+   {
+    "n": 16,
+    "titulo": "Razones y personas",
+    "titulo_original": "Reasons and Persons",
+    "autor": "Derek Parfit",
+    "anio": 1984,
+    "tipo": "influencia",
+    "nota": "Alimenta sus debates sobre identidad, agregación moral y decisiones que afectan futuros enormes."
+   },
+   {
+    "n": 17,
+    "titulo": "Vehicles",
+    "titulo_original": "",
+    "autor": "Valentino Braitenberg",
+    "anio": 1984,
+    "tipo": "influencia",
+    "nota": "Útil para su idea de conducta compleja emergiendo de mecanismos simples, sin homúnculos."
+   },
+   {
+    "n": 18,
+    "titulo": "The Mind's I",
+    "titulo_original": "",
+    "autor": "Douglas R. Hofstadter y Daniel C. Dennett",
+    "anio": 1981,
+    "tipo": "influencia",
+    "nota": "Antología cercana a su formación: yo, conciencia, símbolos y máquinas pensantes."
+   },
+   {
+    "n": 19,
+    "titulo": "The Society of Mind",
+    "titulo_original": "",
+    "autor": "Marvin Minsky",
+    "anio": 1986,
+    "tipo": "influencia",
+    "nota": "Minsky le dio vocabulario para pensar mente como muchos procesos, no una esencia unificada."
+   },
+   {
+    "n": 20,
+    "titulo": "Engines of Creation",
+    "titulo_original": "",
+    "autor": "K. Eric Drexler",
+    "anio": 1986,
+    "tipo": "influencia",
+    "nota": "Forma su sensibilidad por tecnologías transformadoras y riesgos que llegan antes que las instituciones."
+   }
+  ]
+ },
+ {
+  "slug": "marcoaurelio",
+  "nombre": "Marco Aurelio",
+  "num": 12,
+  "libros": [
+   {
+    "n": 1,
+    "titulo": "Meditaciones",
+    "titulo_original": "Ta eis heauton",
+    "autor": "Marco Aurelio",
+    "anio": 180,
+    "tipo": "propio",
+    "nota": "Cuaderno íntimo donde vuelve una y otra vez a disciplina, muerte, deber y juicio propio."
+   },
+   {
+    "n": 2,
+    "titulo": "Discursos",
+    "titulo_original": "Diatribai",
+    "autor": "Epicteto",
+    "anio": 108,
+    "tipo": "influencia",
+    "nota": "Marco lo recibió por Rústico; Epicteto le dio el eje de distinguir lo que depende de uno."
+   },
+   {
+    "n": 3,
+    "titulo": "Manual",
+    "titulo_original": "Enchiridion",
+    "autor": "Epicteto",
+    "anio": 125,
+    "tipo": "influencia",
+    "nota": "Resume la práctica estoica que atraviesa sus notas: aceptar hechos y gobernar el juicio."
+   },
+   {
+    "n": 4,
+    "titulo": "Cartas a Lucilio",
+    "titulo_original": "Epistulae Morales ad Lucilium",
+    "autor": "Séneca",
+    "anio": 65,
+    "tipo": "influencia",
+    "nota": "Séneca comparte el tono de ejercicio diario: riqueza, muerte y carácter bajo examen."
+   },
+   {
+    "n": 5,
+    "titulo": "Fragmentos",
+    "titulo_original": "Fragmenta",
+    "autor": "Zenón de Citio",
+    "anio": -300,
+    "tipo": "influencia",
+    "nota": "Fundador del estoicismo; Marco hereda su ideal de vivir de acuerdo con la naturaleza."
+   },
+   {
+    "n": 6,
+    "titulo": "Fragmentos",
+    "titulo_original": "Fragmenta",
+    "autor": "Crisipo de Solos",
+    "anio": -230,
+    "tipo": "influencia",
+    "nota": "Crisipo sistematizó lógica y ética estoica, el andamiaje doctrinal detrás de Marco."
+   },
+   {
+    "n": 7,
+    "titulo": "Himno a Zeus",
+    "titulo_original": "Hymn to Zeus",
+    "autor": "Cleantes",
+    "anio": -260,
+    "tipo": "influencia",
+    "nota": "Su providencialismo resuena en Marco cuando piensa cosmos, orden y aceptación del destino."
+   },
+   {
+    "n": 8,
+    "titulo": "Disertaciones",
+    "titulo_original": "Lectures and Sayings",
+    "autor": "Musonio Rufo",
+    "anio": 100,
+    "tipo": "influencia",
+    "nota": "Maestro de la línea de Epicteto; une filosofía y conducta cotidiana, justo el registro de Marco."
+   },
+   {
+    "n": 9,
+    "titulo": "Vidas y opiniones de los filósofos ilustres",
+    "titulo_original": "Lives and Opinions of Eminent Philosophers",
+    "autor": "Diógenes Laercio",
+    "anio": 230,
+    "tipo": "citado",
+    "nota": "Fuente antigua para reconstruir la tradición griega que Marco toma como linaje filosófico."
+   },
+   {
+    "n": 10,
+    "titulo": "Cartas",
+    "titulo_original": "Ad M. Caesarem et invicem",
+    "autor": "Marco Cornelio Frontón",
+    "anio": 165,
+    "tipo": "influencia",
+    "nota": "Su maestro de retórica; las cartas muestran la educación literaria y afectiva de Marco."
+   },
+   {
+    "n": 11,
+    "titulo": "La ciudadela interior",
+    "titulo_original": "The Inner Citadel",
+    "autor": "Pierre Hadot",
+    "anio": 1992,
+    "tipo": "citado",
+    "nota": "Lectura moderna canónica: entiende Meditaciones como ejercicios espirituales, no tratado sistemático."
+   },
+   {
+    "n": 12,
+    "titulo": "La filosofía como forma de vida",
+    "titulo_original": "Philosophy as a Way of Life",
+    "autor": "Pierre Hadot",
+    "anio": 1995,
+    "tipo": "citado",
+    "nota": "Hadot explica la práctica diaria que hace inteligible el tono repetitivo y operativo de Marco."
+   },
+   {
+    "n": 13,
+    "titulo": "Epicteto",
+    "titulo_original": "Epictetus: A Stoic and Socratic Guide to Life",
+    "autor": "A. A. Long",
+    "anio": 2002,
+    "tipo": "citado",
+    "nota": "Ayuda a leer la deuda socrática y estoica que Marco reconoce al tomar a Epicteto como guía."
+   },
+   {
+    "n": 14,
+    "titulo": "Cómo pensar como un emperador romano",
+    "titulo_original": "How to Think Like a Roman Emperor",
+    "autor": "Donald Robertson",
+    "anio": 2019,
+    "tipo": "citado",
+    "nota": "Conecta biografía de Marco con prácticas cognitivas estoicas aplicables, sin separar vida y doctrina."
+   },
+   {
+    "n": 15,
+    "titulo": "Recuerdos de Sócrates",
+    "titulo_original": "Memorabilia",
+    "autor": "Jenofonte",
+    "anio": -371,
+    "tipo": "influencia",
+    "nota": "La figura de Sócrates pesa en la tradición que Marco admira: examen, templanza y deber público."
+   },
+   {
+    "n": 16,
+    "titulo": "Apología de Sócrates",
+    "titulo_original": "Apologia Sokratous",
+    "autor": "Platón",
+    "anio": -399,
+    "tipo": "influencia",
+    "nota": "Modelo de integridad ante muerte y opinión pública, temas que Marco repite en sus notas."
+   },
+   {
+    "n": 17,
+    "titulo": "Vidas paralelas",
+    "titulo_original": "Bioi paralleloi",
+    "autor": "Plutarco",
+    "anio": 120,
+    "tipo": "influencia",
+    "nota": "La educación romana de élites usaba vidas ejemplares; Marco escribe con ese hábito moral."
+   },
+   {
+    "n": 18,
+    "titulo": "Manual de estoicismo",
+    "titulo_original": "Stoicism",
+    "autor": "John Sellars",
+    "anio": 2006,
+    "tipo": "citado",
+    "nota": "Síntesis moderna que ubica a Marco dentro de física, lógica y ética estoicas."
+   },
+   {
+    "n": 19,
+    "titulo": "The Roman Stoics",
+    "titulo_original": "",
+    "autor": "Gretchen Reydams-Schils",
+    "anio": 2005,
+    "tipo": "citado",
+    "nota": "Aclara cómo los estoicos romanos adaptan teoría griega a familia, política y responsabilidad."
+   },
+   {
+    "n": 20,
+    "titulo": "Marco Aurelio",
+    "titulo_original": "Marcus Aurelius",
+    "autor": "Anthony Birley",
+    "anio": 1966,
+    "tipo": "citado",
+    "nota": "Biografía estándar para cruzar las Meditaciones con guerra, corte, sucesión y administración imperial."
+   }
+  ]
+ },
+ {
+  "slug": "epicteto",
+  "nombre": "Epicteto (y Séneca)",
+  "num": 13,
+  "libros": [
+   {
+    "n": 1,
+    "titulo": "Manual",
+    "titulo_original": "Enchiridion",
+    "autor": "Epicteto",
+    "anio": 125,
+    "tipo": "propio",
+    "nota": "Compendio de Arriano con su regla central: distinguir lo que depende de vos de lo que no."
+   },
+   {
+    "n": 2,
+    "titulo": "Discursos",
+    "titulo_original": "Diatribai",
+    "autor": "Epicteto",
+    "anio": 108,
+    "tipo": "propio",
+    "nota": "Arriano registra sus clases; ahí aparece su método de interrogar juicios, deseos y aversiones."
+   },
+   {
+    "n": 3,
+    "titulo": "Fragmentos",
+    "titulo_original": "Fragmenta",
+    "autor": "Zenón de Citio",
+    "anio": -300,
+    "tipo": "influencia",
+    "nota": "Epicteto hereda del fundador estoico la idea de vivir conforme a naturaleza y razón."
+   },
+   {
+    "n": 4,
+    "titulo": "Fragmentos lógicos y éticos",
+    "titulo_original": "Fragmenta logica et ethica",
+    "autor": "Crisipo de Solos",
+    "anio": -230,
+    "tipo": "influencia",
+    "nota": "Crisipo da la arquitectura doctrinal que Epicteto baja a entrenamiento moral cotidiano."
+   },
+   {
+    "n": 5,
+    "titulo": "Himno a Zeus",
+    "titulo_original": "Hymn to Zeus",
+    "autor": "Cleantes",
+    "anio": -260,
+    "tipo": "influencia",
+    "nota": "La obediencia al orden cósmico de Cleantes está detrás de su aceptación radical del destino."
+   },
+   {
+    "n": 6,
+    "titulo": "Disertaciones",
+    "titulo_original": "Lectures and Sayings",
+    "autor": "Musonio Rufo",
+    "anio": 100,
+    "tipo": "influencia",
+    "nota": "Fue su maestro; de él toma la filosofía como entrenamiento, no como charla elegante."
+   },
+   {
+    "n": 7,
+    "titulo": "Apología de Sócrates",
+    "titulo_original": "Apologia Sokratous",
+    "autor": "Platón",
+    "anio": -399,
+    "tipo": "influencia",
+    "nota": "Epicteto trata a Sócrates como modelo de libertad interior frente a poder, muerte y reputación."
+   },
+   {
+    "n": 8,
+    "titulo": "Recuerdos de Sócrates",
+    "titulo_original": "Memorabilia",
+    "autor": "Jenofonte",
+    "anio": -371,
+    "tipo": "influencia",
+    "nota": "El Sócrates práctico de Jenofonte encaja con el estilo docente directo de Epicteto."
+   },
+   {
+    "n": 9,
+    "titulo": "Vidas y opiniones de los filósofos ilustres",
+    "titulo_original": "Lives and Opinions of Eminent Philosophers",
+    "autor": "Diógenes Laercio",
+    "anio": 230,
+    "tipo": "citado",
+    "nota": "Fuente antigua para su linaje: cínicos, socráticos y estoicos como tradición de vida austera."
+   },
+   {
+    "n": 10,
+    "titulo": "Cartas a Lucilio",
+    "titulo_original": "Epistulae Morales ad Lucilium",
+    "autor": "Séneca",
+    "anio": 65,
+    "tipo": "influencia",
+    "nota": "Comparte el mismo estoicismo romano: ejercicios sobre miedo, deseo, riqueza y muerte."
+   },
+   {
+    "n": 11,
+    "titulo": "Meditaciones",
+    "titulo_original": "Ta eis heauton",
+    "autor": "Marco Aurelio",
+    "anio": 180,
+    "tipo": "citado",
+    "nota": "Marco muestra la recepción más famosa de Epicteto: gobernar el juicio desde el poder imperial."
+   },
+   {
+    "n": 12,
+    "titulo": "La filosofía como forma de vida",
+    "titulo_original": "Philosophy as a Way of Life",
+    "autor": "Pierre Hadot",
+    "anio": 1995,
+    "tipo": "citado",
+    "nota": "Hadot permite leer a Epicteto como maestro de ejercicios espirituales, no como teórico abstracto."
+   },
+   {
+    "n": 13,
+    "titulo": "Una guía para la buena vida",
+    "titulo_original": "A Guide to the Good Life",
+    "autor": "William B. Irvine",
+    "anio": 2009,
+    "tipo": "citado",
+    "nota": "Populariza ejercicios epicteteanos como visualización negativa y control de deseos."
+   },
+   {
+    "n": 14,
+    "titulo": "El obstáculo es el camino",
+    "titulo_original": "The Obstacle Is the Way",
+    "autor": "Ryan Holiday",
+    "anio": 2014,
+    "tipo": "citado",
+    "nota": "Versión moderna de su tesis: no controlás el hecho, sí el uso que hacés de él."
+   },
+   {
+    "n": 15,
+    "titulo": "Epicteto",
+    "titulo_original": "Epictetus: A Stoic and Socratic Guide to Life",
+    "autor": "A. A. Long",
+    "anio": 2002,
+    "tipo": "citado",
+    "nota": "Estudio clave sobre cómo une estoicismo y método socrático en una pedagogía exigente."
+   },
+   {
+    "n": 16,
+    "titulo": "The Art of Living",
+    "titulo_original": "",
+    "autor": "Sharon Lebell",
+    "anio": 1994,
+    "tipo": "citado",
+    "nota": "Adaptación popular del Manual; muestra la supervivencia moderna de su pedagogía práctica."
+   },
+   {
+    "n": 17,
+    "titulo": "The Philosophy of Epictetus",
+    "titulo_original": "",
+    "autor": "Theodore Scaltsas y Andrew S. Mason",
+    "anio": 2007,
+    "tipo": "citado",
+    "nota": "Desarma técnicamente sus nociones de prohairesis, libertad y responsabilidad moral."
+   },
+   {
+    "n": 18,
+    "titulo": "Epictetus: Discourses, Book 1",
+    "titulo_original": "",
+    "autor": "Robert F. Dobbin",
+    "anio": 1998,
+    "tipo": "citado",
+    "nota": "Comentario filológico útil para ver el aula real detrás de las fórmulas famosas."
+   },
+   {
+    "n": 19,
+    "titulo": "Diógenes el cínico: dichos y anécdotas",
+    "titulo_original": "Sayings and Anecdotes",
+    "autor": "Diógenes de Sinope",
+    "anio": -320,
+    "tipo": "influencia",
+    "nota": "Epicteto admiraba al cínico ideal: libertad extrema, pobreza voluntaria y desprecio de la opinión."
+   },
+   {
+    "n": 20,
+    "titulo": "Manual de estoicismo",
+    "titulo_original": "Stoicism",
+    "autor": "John Sellars",
+    "anio": 2006,
+    "tipo": "citado",
+    "nota": "Síntesis moderna que sitúa a Epicteto en la escuela completa, no como libro de autoayuda aislado."
+   }
+  ]
+ },
+ {
+  "slug": "watts",
+  "nombre": "Alan Watts",
+  "num": 14,
+  "libros": [
+   {
+    "n": 1,
+    "titulo": "El camino del Zen",
+    "titulo_original": "The Way of Zen",
+    "autor": "Alan Watts",
+    "anio": 1957,
+    "tipo": "propio",
+    "nota": "Su síntesis clásica: explica el Zen como práctica viva, no como doctrina para creer."
+   },
+   {
+    "n": 2,
+    "titulo": "El libro del tabú contra saber quién eres",
+    "titulo_original": "The Book: On the Taboo Against Knowing Who You Are",
+    "autor": "Alan Watts",
+    "anio": 1966,
+    "tipo": "propio",
+    "nota": "Ahí formula su idea central: el yo separado es una convención útil, pero no la realidad."
+   },
+   {
+    "n": 3,
+    "titulo": "La sabiduría de la inseguridad",
+    "titulo_original": "The Wisdom of Insecurity",
+    "autor": "Alan Watts",
+    "anio": 1951,
+    "tipo": "propio",
+    "nota": "Watts lo usa para atacar la ansiedad moderna: querer seguridad total mata la vida presente."
+   },
+   {
+    "n": 4,
+    "titulo": "Tao: el camino del curso del agua",
+    "titulo_original": "Tao: The Watercourse Way",
+    "autor": "Alan Watts",
+    "anio": 1975,
+    "tipo": "propio",
+    "nota": "Su despedida taoísta: el wu wei aparece como inteligencia flexible, no como pasividad."
+   },
+   {
+    "n": 5,
+    "titulo": "Tao Te Ching",
+    "titulo_original": "",
+    "autor": "Lao Tsé",
+    "anio": -400,
+    "tipo": "citado",
+    "nota": "Watts vuelve a Lao Tsé para explicar el Tao como orden espontáneo, anterior a todo control."
+   },
+   {
+    "n": 6,
+    "titulo": "Zhuangzi",
+    "titulo_original": "",
+    "autor": "Zhuangzi",
+    "anio": -300,
+    "tipo": "citado",
+    "nota": "Le servía para mostrar humor, paradoja y libertad frente a las rigideces morales."
+   },
+   {
+    "n": 7,
+    "titulo": "Ensayos sobre budismo zen",
+    "titulo_original": "Essays in Zen Buddhism",
+    "autor": "D. T. Suzuki",
+    "anio": 1927,
+    "tipo": "influencia",
+    "nota": "Suzuki fue una puerta occidental clave al Zen; Watts dialoga con esa lectura toda su vida."
+   },
+   {
+    "n": 8,
+    "titulo": "Haiku",
+    "titulo_original": "",
+    "autor": "R. H. Blyth",
+    "anio": 1949,
+    "tipo": "influencia",
+    "nota": "Blyth le dio a Watts una estética Zen concreta: naturaleza, humor y percepción instantánea."
+   },
+   {
+    "n": 9,
+    "titulo": "El héroe de las mil caras",
+    "titulo_original": "The Hero with a Thousand Faces",
+    "autor": "Joseph Campbell",
+    "anio": 1949,
+    "tipo": "influencia",
+    "nota": "Compartía con Campbell la lectura simbólica de mito y religión como mapas de transformación."
+   },
+   {
+    "n": 10,
+    "titulo": "El hombre moderno en busca de un alma",
+    "titulo_original": "Modern Man in Search of a Soul",
+    "autor": "Carl Gustav Jung",
+    "anio": 1933,
+    "tipo": "influencia",
+    "nota": "Jung le aportó lenguaje psicológico para leer símbolos religiosos sin reducirlos a dogma."
+   },
+   {
+    "n": 11,
+    "titulo": "Las puertas de la percepción",
+    "titulo_original": "The Doors of Perception",
+    "autor": "Aldous Huxley",
+    "anio": 1954,
+    "tipo": "influencia",
+    "nota": "Watts coincidía con Huxley en explorar conciencia, percepción y mística fuera del molde clerical."
+   },
+   {
+    "n": 12,
+    "titulo": "Mente Zen, mente de principiante",
+    "titulo_original": "Zen Mind, Beginner's Mind",
+    "autor": "Shunryu Suzuki",
+    "anio": 1970,
+    "tipo": "influencia",
+    "nota": "Expresa el Zen directo que Watts difundía: práctica sencilla antes que explicación metafísica."
+   },
+   {
+    "n": 13,
+    "titulo": "El sutra de la plataforma",
+    "titulo_original": "Platform Sutra",
+    "autor": "Huineng",
+    "anio": 780,
+    "tipo": "citado",
+    "nota": "La iluminación súbita de Huineng encaja con la crítica de Watts al esfuerzo espiritual forzado."
+   },
+   {
+    "n": 14,
+    "titulo": "Bhagavad Gita",
+    "titulo_original": "",
+    "autor": "Anónimo",
+    "anio": -200,
+    "tipo": "citado",
+    "nota": "Watts la cita al hablar de actuar sin apego al fruto, una idea hermana del wu wei."
+   },
+   {
+    "n": 15,
+    "titulo": "Upanishads",
+    "titulo_original": "",
+    "autor": "Anónimo",
+    "anio": -700,
+    "tipo": "influencia",
+    "nota": "Su intuición de Atman y Brahman alimenta la tesis wattsiana de que el yo no está aislado."
+   },
+   {
+    "n": 16,
+    "titulo": "La puerta sin puerta",
+    "titulo_original": "Mumonkan",
+    "autor": "Wumen Huikai",
+    "anio": 1228,
+    "tipo": "citado",
+    "nota": "Los koan del Mumonkan sostienen su idea de que el Zen desarma la mente que quiere agarrarlo todo."
+   },
+   {
+    "n": 17,
+    "titulo": "Budismo Zen",
+    "titulo_original": "Zen Buddhism",
+    "autor": "Christmas Humphreys",
+    "anio": 1949,
+    "tipo": "influencia",
+    "nota": "Fue parte del puente británico que acercó Zen y budismo a Watts antes de su etapa californiana."
+   },
+   {
+    "n": 18,
+    "titulo": "I Ching",
+    "titulo_original": "",
+    "autor": "Anónimo",
+    "anio": -800,
+    "tipo": "citado",
+    "nota": "Watts lo usa como ejemplo de sabiduría procesual: leer cambios, no imponer esquemas fijos."
+   },
+   {
+    "n": 19,
+    "titulo": "El libro tibetano de los muertos",
+    "titulo_original": "Bardo Thodol",
+    "autor": "Anónimo",
+    "anio": 1326,
+    "tipo": "influencia",
+    "nota": "Le interesaba como mapa simbólico de conciencia, muerte y tránsito, no como superstición exótica."
+   },
+   {
+    "n": 20,
+    "titulo": "La filosofía perenne",
+    "titulo_original": "The Perennial Philosophy",
+    "autor": "Aldous Huxley",
+    "anio": 1945,
+    "tipo": "influencia",
+    "nota": "Comparte con Watts la búsqueda de un fondo común entre tradiciones místicas de Oriente y Occidente."
+   }
+  ]
+ },
+ {
+  "slug": "krishnamurti",
+  "nombre": "Jiddu Krishnamurti",
+  "num": 15,
+  "libros": [
+   {
+    "n": 1,
+    "titulo": "Libertad de lo conocido",
+    "titulo_original": "Freedom from the Known",
+    "autor": "Jiddu Krishnamurti",
+    "anio": 1969,
+    "tipo": "propio",
+    "nota": "Resume su núcleo: mirar sin autoridad, tradición ni imagen psicológica acumulada."
+   },
+   {
+    "n": 2,
+    "titulo": "El despertar de la inteligencia",
+    "titulo_original": "The Awakening of Intelligence",
+    "autor": "Jiddu Krishnamurti",
+    "anio": 1973,
+    "tipo": "propio",
+    "nota": "Libro clave de diálogos donde insiste en observar pensamiento y miedo mientras ocurren."
+   },
+   {
+    "n": 3,
+    "titulo": "Piense en estas cosas",
+    "titulo_original": "Think on These Things",
+    "autor": "Jiddu Krishnamurti",
+    "anio": 1964,
+    "tipo": "propio",
+    "nota": "Sus charlas educativas: aprender no es obedecer, sino investigar la mente propia."
+   },
+   {
+    "n": 4,
+    "titulo": "El fin del tiempo",
+    "titulo_original": "The Ending of Time",
+    "autor": "Jiddu Krishnamurti y David Bohm",
+    "anio": 1985,
+    "tipo": "propio",
+    "nota": "Con Bohm explora si el tiempo psicológico sostiene el conflicto humano."
+   },
+   {
+    "n": 5,
+    "titulo": "La totalidad y el orden implicado",
+    "titulo_original": "Wholeness and the Implicate Order",
+    "autor": "David Bohm",
+    "anio": 1980,
+    "tipo": "influencia",
+    "nota": "Bohm fue su interlocutor central; la totalidad dialoga con su crítica a la mente fragmentada."
+   },
+   {
+    "n": 6,
+    "titulo": "La filosofía perenne",
+    "titulo_original": "The Perennial Philosophy",
+    "autor": "Aldous Huxley",
+    "anio": 1945,
+    "tipo": "influencia",
+    "nota": "Huxley editó y prologó textos suyos; compartían interés por mística sin autoridad religiosa."
+   },
+   {
+    "n": 7,
+    "titulo": "Tao Te Ching",
+    "titulo_original": "",
+    "autor": "Lao Tsé",
+    "anio": -400,
+    "tipo": "influencia",
+    "nota": "Su rechazo del control interior dialoga con el Tao: una acción que nace sin compulsión del yo."
+   },
+   {
+    "n": 8,
+    "titulo": "Versos fundamentales del camino medio",
+    "titulo_original": "Mūlamadhyamakakārikā",
+    "autor": "Nāgārjuna",
+    "anio": 150,
+    "tipo": "influencia",
+    "nota": "La crítica de Nāgārjuna a las fijaciones conceptuales resuena con su desconfianza del pensamiento."
+   },
+   {
+    "n": 9,
+    "titulo": "Vivekachudamani",
+    "titulo_original": "",
+    "autor": "Adi Shankara",
+    "anio": 800,
+    "tipo": "influencia",
+    "nota": "Shankara es trasfondo vedántico: discernir lo real sin convertirlo en sistema para seguir."
+   },
+   {
+    "n": 10,
+    "titulo": "La primera y última libertad",
+    "titulo_original": "The First and Last Freedom",
+    "autor": "Jiddu Krishnamurti",
+    "anio": 1954,
+    "tipo": "citado",
+    "nota": "Huxley lo presentó al gran público; fija su llamado a liberarse de toda autoridad psicológica."
+   },
+   {
+    "n": 11,
+    "titulo": "Libertad total",
+    "titulo_original": "Total Freedom",
+    "autor": "Jiddu Krishnamurti",
+    "anio": 1996,
+    "tipo": "citado",
+    "nota": "Compila charlas donde vuelve sobre miedo, deseo y observación sin elección."
+   },
+   {
+    "n": 12,
+    "titulo": "Comentarios sobre el vivir",
+    "titulo_original": "Commentaries on Living",
+    "autor": "Jiddu Krishnamurti",
+    "anio": 1956,
+    "tipo": "citado",
+    "nota": "Muestra su método en escenas concretas: no teoría, sino mirar celos, ambición y soledad."
+   },
+   {
+    "n": 13,
+    "titulo": "La voz del silencio",
+    "titulo_original": "The Voice of the Silence",
+    "autor": "Helena P. Blavatsky",
+    "anio": 1889,
+    "tipo": "influencia",
+    "nota": "Pertenece al mundo teosófico que lo formó, aun cuando después rompió con esa autoridad."
+   },
+   {
+    "n": 14,
+    "titulo": "A los pies del maestro",
+    "titulo_original": "At the Feet of the Master",
+    "autor": "Jiddu Krishnamurti",
+    "anio": 1910,
+    "tipo": "influencia",
+    "nota": "Texto de su etapa teosófica temprana; sirve para ver exactamente de qué molde quiso salir."
+   },
+   {
+    "n": 15,
+    "titulo": "El Dhammapada",
+    "titulo_original": "Dhammapada",
+    "autor": "Anónimo",
+    "anio": -200,
+    "tipo": "influencia",
+    "nota": "Su atención a deseo, sufrimiento y vigilancia mental tiene un claro trasfondo budista temprano."
+   },
+   {
+    "n": 16,
+    "titulo": "Upanishads",
+    "titulo_original": "",
+    "autor": "Anónimo",
+    "anio": -700,
+    "tipo": "influencia",
+    "nota": "Aunque rechazó pertenencias, nació dentro de una matriz india marcada por estas preguntas últimas."
+   },
+   {
+    "n": 17,
+    "titulo": "Bhagavad Gita",
+    "titulo_original": "",
+    "autor": "Anónimo",
+    "anio": -200,
+    "tipo": "influencia",
+    "nota": "Es parte del trasfondo hindú que él cuestiona: deber, acción y desapego sin obediencia ciega."
+   },
+   {
+    "n": 18,
+    "titulo": "El arte de ver",
+    "titulo_original": "The Art of Seeing",
+    "autor": "Aldous Huxley",
+    "anio": 1942,
+    "tipo": "influencia",
+    "nota": "Huxley fue amigo cercano; la metáfora de ver bien calza con la observación krishnamurtiana."
+   },
+   {
+    "n": 19,
+    "titulo": "Ciencia, orden y creatividad",
+    "titulo_original": "Science, Order, and Creativity",
+    "autor": "David Bohm y F. David Peat",
+    "anio": 1987,
+    "tipo": "influencia",
+    "nota": "Bohm desarrolla allí una crítica de la fragmentación afín a sus diálogos con Krishnamurti."
+   },
+   {
+    "n": 20,
+    "titulo": "El futuro de la humanidad",
+    "titulo_original": "The Future of Humanity",
+    "autor": "Jiddu Krishnamurti y David Bohm",
+    "anio": 1986,
+    "tipo": "citado",
+    "nota": "Otra conversación con Bohm: preguntan si la conciencia humana puede cambiar de raíz."
+   }
+  ]
+ },
+ {
+  "slug": "cabral",
+  "nombre": "Facundo Cabral",
+  "num": 16,
+  "libros": [
+   {
+    "n": 1,
+    "titulo": "Hojas de hierba",
+    "titulo_original": "Leaves of Grass",
+    "autor": "Walt Whitman",
+    "anio": 1855,
+    "tipo": "influencia",
+    "nota": "Cabral comparte con Whitman el canto al camino, al cuerpo y a la fraternidad sin solemnidad."
+   },
+   {
+    "n": 2,
+    "titulo": "Ficciones",
+    "titulo_original": "",
+    "autor": "Jorge Luis Borges",
+    "anio": 1944,
+    "tipo": "influencia",
+    "nota": "Borges le aporta paradoja y concisión: decir una verdad enorme con una imagen mínima."
+   },
+   {
+    "n": 3,
+    "titulo": "El payador perseguido",
+    "titulo_original": "",
+    "autor": "Atahualpa Yupanqui",
+    "anio": 1965,
+    "tipo": "influencia",
+    "nota": "Yupanqui es raíz directa: sabiduría criolla, guitarra austera y dignidad del caminante."
+   },
+   {
+    "n": 4,
+    "titulo": "Martín Fierro",
+    "titulo_original": "",
+    "autor": "José Hernández",
+    "anio": 1872,
+    "tipo": "influencia",
+    "nota": "Cabral toma de Fierro la voz popular que piensa la libertad desde la intemperie."
+   },
+   {
+    "n": 5,
+    "titulo": "El profeta",
+    "titulo_original": "The Prophet",
+    "autor": "Kahlil Gibran",
+    "anio": 1923,
+    "tipo": "influencia",
+    "nota": "Su tono de parábola espiritual está muy cerca del Cabral que convierte canciones en máximas."
+   },
+   {
+    "n": 6,
+    "titulo": "El principito",
+    "titulo_original": "Le Petit Prince",
+    "autor": "Antoine de Saint-Exupéry",
+    "anio": 1943,
+    "tipo": "influencia",
+    "nota": "La mirada simple y despierta del niño dialoga con su prédica contra la distracción adulta."
+   },
+   {
+    "n": 7,
+    "titulo": "Así habló Zaratustra",
+    "titulo_original": "Also sprach Zarathustra",
+    "autor": "Friedrich Nietzsche",
+    "anio": 1883,
+    "tipo": "influencia",
+    "nota": "Cabral toma el impulso de vivir sin rebaño, con una espiritualidad más vital que obediente."
+   },
+   {
+    "n": 8,
+    "titulo": "Libertad de lo conocido",
+    "titulo_original": "Freedom from the Known",
+    "autor": "Jiddu Krishnamurti",
+    "anio": 1969,
+    "tipo": "influencia",
+    "nota": "Su crítica al condicionamiento aparece en Cabral como llamado a despertarte de hábitos heredados."
+   },
+   {
+    "n": 9,
+    "titulo": "La Biblia",
+    "titulo_original": "",
+    "autor": "Varios autores",
+    "anio": 100,
+    "tipo": "citado",
+    "nota": "Cabral vuelve a Jesús como figura de libertad interior, pobreza elegida y amor sin cálculo."
+   },
+   {
+    "n": 10,
+    "titulo": "Gitanjali",
+    "titulo_original": "",
+    "autor": "Rabindranath Tagore",
+    "anio": 1910,
+    "tipo": "influencia",
+    "nota": "Tagore le aporta una mística luminosa: gratitud, canto y comunión con lo cotidiano."
+   },
+   {
+    "n": 11,
+    "titulo": "No estás deprimido, estás distraído",
+    "titulo_original": "",
+    "autor": "Facundo Cabral",
+    "anio": 2005,
+    "tipo": "propio",
+    "nota": "La charla condensa su mensaje más citado: volver a la vida concreta antes que al lamento."
+   },
+   {
+    "n": 12,
+    "titulo": "Conversaciones con Facundo Cabral",
+    "titulo_original": "",
+    "autor": "Facundo Cabral",
+    "anio": 2008,
+    "tipo": "propio",
+    "nota": "Recoge su pensamiento oral: viaje, pobreza, humor y una fe fuera de instituciones rígidas."
+   },
+   {
+    "n": 13,
+    "titulo": "Paraíso a la deriva",
+    "titulo_original": "",
+    "autor": "Facundo Cabral",
+    "anio": 1994,
+    "tipo": "propio",
+    "nota": "Muestra al Cabral narrador: memoria errante, escenas populares y filosofía de caminante."
+   },
+   {
+    "n": 14,
+    "titulo": "Rubaiyat",
+    "titulo_original": "Rubáiyát",
+    "autor": "Omar Khayyam",
+    "anio": 1120,
+    "tipo": "influencia",
+    "nota": "Su celebración del instante y su ironía ante la muerte encajan con el hedonismo sobrio de Cabral."
+   },
+   {
+    "n": 15,
+    "titulo": "Platero y yo",
+    "titulo_original": "",
+    "autor": "Juan Ramón Jiménez",
+    "anio": 1914,
+    "tipo": "influencia",
+    "nota": "La prosa poética de lo humilde conversa con su ternura por lo pequeño y lo popular."
+   },
+   {
+    "n": 16,
+    "titulo": "Don Quijote de la Mancha",
+    "titulo_original": "",
+    "autor": "Miguel de Cervantes",
+    "anio": 1605,
+    "tipo": "influencia",
+    "nota": "Cabral admira al loco lúcido que prefiere sentido y aventura antes que prudencia domesticada."
+   },
+   {
+    "n": 17,
+    "titulo": "El libro del desasosiego",
+    "titulo_original": "Livro do Desassossego",
+    "autor": "Fernando Pessoa",
+    "anio": 1982,
+    "tipo": "influencia",
+    "nota": "Pessoa le sirve como reverso íntimo: fragmentos para pensar identidad, soledad y máscara."
+   },
+   {
+    "n": 18,
+    "titulo": "Canto general",
+    "titulo_original": "",
+    "autor": "Pablo Neruda",
+    "anio": 1950,
+    "tipo": "influencia",
+    "nota": "Le ofrece una América cantada en tono mayor, mezcla de paisaje, pueblo y destino común."
+   },
+   {
+    "n": 19,
+    "titulo": "El hombre mediocre",
+    "titulo_original": "",
+    "autor": "José Ingenieros",
+    "anio": 1913,
+    "tipo": "influencia",
+    "nota": "La crítica a la mediocridad moral coincide con su rechazo de vidas repetidas por miedo."
+   },
+   {
+    "n": 20,
+    "titulo": "Siddhartha",
+    "titulo_original": "",
+    "autor": "Hermann Hesse",
+    "anio": 1922,
+    "tipo": "influencia",
+    "nota": "La búsqueda espiritual sin intermediarios calza con el Cabral que desconfiaba de recetas cerradas."
+   }
+  ]
+ },
+ {
+  "slug": "francisco",
+  "nombre": "Papa Francisco",
+  "num": 17,
+  "libros": [
+   {
+    "n": 1,
+    "titulo": "Tarde te he amado",
+    "titulo_original": "Tardi ti ho amato",
+    "autor": "Ethel Mannin",
+    "anio": 1948,
+    "tipo": "influencia",
+    "nota": "Abre la biblioteca de Spadaro: a Bergoglio le interesa la conversión como historia concreta."
+   },
+   {
+    "n": 2,
+    "titulo": "El señor del mundo",
+    "titulo_original": "Il padrone del mondo",
+    "autor": "Robert Hugh Benson",
+    "anio": 1907,
+    "tipo": "recomendado",
+    "nota": "Francisco lo recomienda seguido por su alarma ante el secularismo uniforme y tecnocrático."
+   },
+   {
+    "n": 3,
+    "titulo": "Memorias del subsuelo",
+    "titulo_original": "Memorie del sottosuolo",
+    "autor": "Fiódor Dostoievski",
+    "anio": 1864,
+    "tipo": "recomendado",
+    "nota": "Corrigió a Spadaro: no Karamázov, sino esta obra, por su descenso al corazón contradictorio."
+   },
+   {
+    "n": 4,
+    "titulo": "Los novios",
+    "titulo_original": "I Promessi Sposi",
+    "autor": "Alessandro Manzoni",
+    "anio": 1827,
+    "tipo": "influencia",
+    "nota": "Lo ama como clásico popular: fe, historia y pueblo sin elitismo literario."
+   },
+   {
+    "n": 5,
+    "titulo": "El Megáfono",
+    "titulo_original": "Il Megafón",
+    "autor": "Leopoldo Marechal",
+    "anio": 1970,
+    "tipo": "influencia",
+    "nota": "Marechal le da épica porteña y católica, una imaginación popular afín a su sensibilidad."
+   },
+   {
+    "n": 6,
+    "titulo": "Martín Fierro",
+    "titulo_original": "",
+    "autor": "José Hernández",
+    "anio": 1872,
+    "tipo": "influencia",
+    "nota": "Bergoglio lo lee como voz del pueblo, sufrimiento social y sabiduría criolla."
+   },
+   {
+    "n": 7,
+    "titulo": "El otro, el mismo",
+    "titulo_original": "",
+    "autor": "Jorge Luis Borges",
+    "anio": 1964,
+    "tipo": "influencia",
+    "nota": "Su vínculo con Borges nace en el aula; valora esa poesía de identidad, memoria y destino."
+   },
+   {
+    "n": 8,
+    "titulo": "Odas",
+    "titulo_original": "Odi",
+    "autor": "Friedrich Hölderlin",
+    "anio": 1804,
+    "tipo": "influencia",
+    "nota": "Le atrae el artista trágico: belleza, herida y búsqueda de lo divino en tensión."
+   },
+   {
+    "n": 9,
+    "titulo": "Poesías piamontesas",
+    "titulo_original": "Poesie piemontesi",
+    "autor": "Nino Costa",
+    "anio": 1927,
+    "tipo": "influencia",
+    "nota": "Toca su raíz familiar piamontesa: lengua, memoria migrante y afecto por lo popular."
+   },
+   {
+    "n": 10,
+    "titulo": "Poesías",
+    "titulo_original": "Poesie",
+    "autor": "Gerard Manley Hopkins",
+    "anio": 1918,
+    "tipo": "influencia",
+    "nota": "Hopkins une rigor jesuita y fulgor poético; esa tensión espiritual le resulta cercana."
+   },
+   {
+    "n": 11,
+    "titulo": "La Eneida",
+    "titulo_original": "L'Eneide",
+    "autor": "Virgilio",
+    "anio": -19,
+    "tipo": "influencia",
+    "nota": "Le ofrece una épica de destino, piedad y fundación, temas que Bergoglio lee pastoralmente."
+   },
+   {
+    "n": 12,
+    "titulo": "Ejercicios espirituales",
+    "titulo_original": "Esercizi spirituali",
+    "autor": "San Ignacio de Loyola",
+    "anio": 1548,
+    "tipo": "influencia",
+    "nota": "Es su gramática espiritual: discernimiento, examen y elección bajo la mirada de Dios."
+   },
+   {
+    "n": 13,
+    "titulo": "Autobiografía",
+    "titulo_original": "Il racconto del pellegrino",
+    "autor": "San Ignacio de Loyola",
+    "anio": 1555,
+    "tipo": "influencia",
+    "nota": "El Ignacio peregrino modela su idea de fe en camino, no instalada en seguridades."
+   },
+   {
+    "n": 14,
+    "titulo": "Memorial",
+    "titulo_original": "Memoriale",
+    "autor": "San Pedro Fabro",
+    "anio": 1542,
+    "tipo": "influencia",
+    "nota": "Fabro es su jesuita predilecto: mansedumbre, diálogo y discernimiento en movimiento."
+   },
+   {
+    "n": 15,
+    "titulo": "Sermones escogidos",
+    "titulo_original": "Sermoni scelti",
+    "autor": "San Agustín",
+    "anio": 430,
+    "tipo": "influencia",
+    "nota": "Agustín le da predicación viva: corazón inquieto, gracia y contacto directo con el pueblo."
+   },
+   {
+    "n": 16,
+    "titulo": "Sobre el sacerdocio",
+    "titulo_original": "Sul Sacerdozio",
+    "autor": "San Agustín",
+    "anio": 430,
+    "tipo": "influencia",
+    "nota": "Le importa por la responsabilidad pastoral: sacerdote como servicio, no como rango."
+   },
+   {
+    "n": 17,
+    "titulo": "Meditación sobre la Iglesia",
+    "titulo_original": "Meditazioni sulla Chiesa",
+    "autor": "Henri de Lubac",
+    "anio": 1953,
+    "tipo": "influencia",
+    "nota": "De Lubac alimenta su visión de Iglesia como misterio y pueblo, no aparato autorreferencial."
+   },
+   {
+    "n": 18,
+    "titulo": "El Señor",
+    "titulo_original": "Il Signore",
+    "autor": "Romano Guardini",
+    "anio": 1937,
+    "tipo": "influencia",
+    "nota": "Spadaro lo vincula a sus oposiciones polares: tensiones vivas que no se resuelven aplastando."
+   },
+   {
+    "n": 19,
+    "titulo": "El divino impaciente",
+    "titulo_original": "Il divino impaziente",
+    "autor": "José María Pemán",
+    "anio": 1933,
+    "tipo": "influencia",
+    "nota": "El teatro de misión y entrega dialoga con su gusto por el drama religioso popular."
+   },
+   {
+    "n": 20,
+    "titulo": "Cuentos originales",
+    "titulo_original": "Racconti originali",
+    "autor": "Alumnos del Colegio de la Inmaculada Concepción",
+    "anio": 1965,
+    "tipo": "influencia",
+    "nota": "Recuerda al joven Bergoglio docente: llevó cuentos de alumnos a Borges, que aceptó prologarlos."
+   }
+  ]
+ }
+]

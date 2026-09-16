@@ -358,6 +358,7 @@
       footer .container { flex-direction: column; text-align: center; }
     }
   </style>
+  <script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments)};</script><script defer src="/_vercel/insights/script.js"></script>
 </head>
 <body>
 
@@ -621,6 +622,275 @@
           </p>
         </div>
 
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Nanopi HQ Architecture ─── -->
+  <section>
+    <div class="container">
+      <p class="section-label">Nanopi HQ</p>
+      <h2>Cómo está organizado el sistema</h2>
+      <p style="max-width: 680px;">
+        Esto no es un asistente al que le hacés preguntas. Es una <strong>central de operaciones</strong>
+        donde el agente vive en mi servidor, ejecuta tareas autónomas, se comunica por múltiples canales,
+        y orquesta un ecosistema completo de proyectos, automatizaciones y agentes.
+      </p>
+
+      <h3 style="margin-top: 48px;">🧩 Arquitectura de Canales</h3>
+      <p style="max-width: 680px;">
+        La clave organizativa no está en el código — está en cómo estructuré los canales de Telegram.
+        En vez de tener una sola conversación donde todo se mezcla, cada tipo de interacción tiene su
+        propio canal con un agente dedicado. Esto permite:
+      </p>
+      <div class="features-grid" style="margin-top: 20px;">
+        <div class="feature-card">
+          <span class="icon">💬</span>
+          <h3>Canal Principal (DM)</h3>
+          <p>Donde pido cosas. Desde "deployame este sitio" hasta "analizame este PDF" o "qué clima hace mañana". Una sola conversación con contexto continuo. Todo lo que produzco o decido arranca acá.</p>
+        </div>
+        <div class="feature-card">
+          <span class="icon">🤖</span>
+          <h3>Home Channel (Grupo Técnico)</h3>
+          <p>Un grupo de Telegram donde está solo Hermes. Acá llegan los reportes automáticos: briefings matutinos, monitoreo de servidores, alertas de trading, estado de engines, resúmenes semanales de costos. Separa el ruido de las conversaciones donde interactúo.</p>
+        </div>
+        <div class="feature-card">
+          <span class="icon">📋</span>
+          <h3>Mission Control (Kanban)</h3>
+          <p>Un tablero donde Hermes descompone tareas complejas en pasos, asigna work items a sus subagentes, y trackea el progreso. Cuando un proyecto requiere 20+ pasos, no satura mi chat — lo gestiona en su propio espacio.</p>
+        </div>
+        <div class="feature-card">
+          <span class="icon">📢</span>
+          <h3>Canales por Proyecto</h3>
+          <p>Proyectos específicos tienen sus propios espacios de comunicación. El bot de X (ahora cerrado) tenía un canal de monitoreo. Los reportes de Kalei Ventures van a un thread específico. Cada proyecto puede tener su propio canal o topic en Telegram.</p>
+        </div>
+      </div>
+
+      <h3 style="margin-top: 48px;">📦 Portfolio de Proyectos</h3>
+      <p style="max-width: 680px;">
+        Hermes construyó, deployó y mantiene cada uno de estos proyectos. Algunos son herramientas públicas,
+        otros son motores internos, todos corren en mi infraestructura:
+      </p>
+      <div class="examples-list" style="margin-top: 20px;">
+
+        <div class="example-item">
+          <div class="meta">
+            <span class="tag deployment">Público</span>
+            <span class="tag analysis">Data</span>
+          </div>
+          <h3>RIGI Tracker</h3>
+          <p>
+            <a href="https://rigi-tracker.vercel.app" style="color: var(--accent);" target="_blank">rigi-tracker.vercel.app</a> —
+            Tablero de seguimiento de los 16 proyectos aprobados bajo el Régimen de Incentivo a las Grandes Inversiones (RIGI) en Argentina.
+            Muestra montos, empresas, sectores, provincias, y estado de cada proyecto. Datos curados y actualizados. Incluye vista "Súper RIGI".
+            Diseño claro, tema claro, responsive.
+          </p>
+        </div>
+
+        <div class="example-item">
+          <div class="meta">
+            <span class="tag deployment">Público</span>
+            <span class="tag analysis">Data</span>
+          </div>
+          <h3>Punto de Partida</h3>
+          <p>
+            <a href="https://punto-de-partida-three.vercel.app" style="color: var(--accent);" target="_blank">punto-de-partida-three.vercel.app</a> —
+            Comparador de 21 indicadores de Argentina vs. 6 países benchmark (Banco Mundial, UNDP, WHO).
+            Radar chart, scatter plot, tabla de gaps, selector de países con presets. Data curada de +50 indicadores. Ideal para debates basados en datos.
+          </p>
+        </div>
+
+        <div class="example-item">
+          <div class="meta">
+            <span class="tag deployment">Público</span>
+            <span class="tag creative">Editorial</span>
+          </div>
+          <h3>¿A Quién Criticás?</h3>
+          <p>
+            <a href="https://a-quien-criticas.vercel.app" style="color: var(--accent);" target="_blank">a-quien-criticas.vercel.app</a> —
+            Archivo交互ivo de crítica política argentina. 25 personajes públicos con biografía, contradicciones, promesas cumplidas/incumplidas,
+            críticas estructuradas con evidencia, vulnerabilidades, y fotos de perfil desde Wikipedia. Generado con agentes paralelos
+            que investigaron, escribieron y validaron cada perfil.
+          </p>
+        </div>
+
+        <div class="example-item">
+          <div class="meta">
+            <span class="tag deployment">Público</span>
+            <span class="tag creative">Editorial</span>
+          </div>
+          <h3>Panteón Personal (Libro + Audiobook)</h3>
+          <p>
+            Un libro sobre 16 pensadores de referencia — Borges, Feynman, Taleb, Nietzsche, Naval, etc. —
+            generado, maquetado y publicado por Hermes. Incluye versión EPUB, audiolibro completo narrado
+            con voz sintética (17 capítulos, ~195 MB), y feed RSS. Todo en <a href="https://nanopisaroni.vercel.app/panteon.html" style="color: var(--accent);">nanopisaroni.vercel.app</a>.
+            Cada capítulo tiene artwork generado por IA.
+          </p>
+        </div>
+
+        <div class="example-item">
+          <div class="meta">
+            <span class="tag deployment">Público</span>
+            <span class="tag creative">Comunidad</span>
+          </div>
+          <h3>Nuestra PBP — Biblioteca Popular</h3>
+          <p>
+            <a href="https://nuestra-pbp.vercel.app" style="color: var(--accent);" target="_blank">nuestra-pbp.vercel.app</a> —
+            Catálogo digital de una biblioteca popular física. 15+ libros con estado (disponible / prestado),
+            dueño, género. Vista de estante 3D isométrica + grilla de tapas. Formulario de agregar libro.
+            Backend Airtable + serverless function en Vercel para escritura. Comunidad de 3 miembros.
+          </p>
+        </div>
+
+        <div class="example-item">
+          <div class="meta">
+            <span class="tag deployment">Público</span>
+            <span class="tag analysis">Investigación</span>
+          </div>
+          <h3>Ausencia del Estado</h3>
+          <p>
+            <a href="https://ausencia-estado.vercel.app" style="color: var(--accent);" target="_blank">ausencia-estado.vercel.app</a> —
+            Investigación sobre el costo de la ausencia del Estado argentino. 7 consultas de acceso a la
+            información pública redactadas bajo la Ley 27.275, con datos duros (1.200+ obras paralizadas,
+            USD 6.000M en sobrecostos de Yacyretá). Dashboard de seguimiento con estado de cada consulta.
+          </p>
+        </div>
+
+        <div class="example-item">
+          <div class="meta">
+            <span class="tag deployment">Privado</span>
+            <span class="tag automation">Automation</span>
+          </div>
+          <h3>Kalei Ventures — Portfolio Tracker</h3>
+          <p>
+            Google Sheet sincronizado con KPIs trimestrales de +20 portcos desde Q4 2019. Hermes lo consulta,
+            actualiza y analiza automáticamente. Reportes de tendencias, detección de anomalías, resúmenes
+            ejecutivos. Sin abrir una planilla nunca.
+          </p>
+        </div>
+
+        <div class="example-item">
+          <div class="meta">
+            <span class="tag deployment">Privado</span>
+            <span class="tag automation">Automation</span>
+          </div>
+          <h3>La Oveja Industrial — Sitio + Lead Gen</h3>
+          <p>
+            <a href="https://laovejaindustrial.com.ar" style="color: var(--accent);" target="_blank">laovejaindustrial.com.ar</a> —
+            Sitio web para una PyME de pintura industrial, más campaña de lead generation sobre 195
+            inmobiliarios de Córdoba cargados en Airtable con data de contacto y pitch personalizado.
+            Plan de negocios completo generado y deployado.
+          </p>
+        </div>
+
+      </div>
+
+      <h3 style="margin-top: 48px;">⚙️ Ecosistema de Automatización</h3>
+      <p style="max-width: 680px;">
+        No todo es interacción directa. La mayor parte del trabajo de Hermes ocurre en background,
+        orquestado por un sistema de cron jobs y monitores que cubren 14 tareas recurrentes.
+      </p>
+      <div class="features-grid" style="margin-top: 20px;">
+        <div class="feature-card">
+          <span class="icon">🌅</span>
+          <h3>Briefing Matutino</h3>
+          <p>7 AM todos los días: clima, calendario, estado de proyectos, recordatorios. Si algo está mal, me entero antes de preguntar. DeepSeek Flash: ~$0.0014/día.</p>
+        </div>
+        <div class="feature-card">
+          <span class="icon">📊</span>
+          <h3>Costos Semanales</h3>
+          <p>Lunes 9 AM: reporte de consumo de tokens y costos estimados por modelo. Comparación vs. semana anterior. ~$3.03/semana total operativo.</p>
+        </div>
+        <div class="feature-card">
+          <span class="icon">🔍</span>
+          <h3>Predictive Market Monitor</h3>
+          <p>Cada 4 horas escanea Polymarket en busca de spreads >5pp. Detecta oportunidades de arbitraje en mercados de Argentina, crypto, startups.</p>
+        </div>
+        <div class="feature-card">
+          <span class="icon">📈</span>
+          <h3>Portfolio Tracker Sync</h3>
+          <p>Mantiene actualizado el Google Sheet de Kalei Ventures con los últimos KPIs. Detecta empresas que no reportaron y pide updates.</p>
+        </div>
+        <div class="feature-card">
+          <span class="icon">🛡️</span>
+          <h3>Health Checks</h3>
+          <p>Monitor de todos los sitios deployados. Si alguno devuelve 404 o 5xx, alerta automática. También verifica que los engines estén running.</p>
+        </div>
+        <div class="feature-card">
+          <span class="icon">📚</span>
+          <h3>Scrapers + Monitoreo</h3>
+          <p>Scraper semanal de datos.gob.ar, monitor de ventas del Panteón, chequeo periódico de servidores y túneles. Todo corre sin intervención.</p>
+        </div>
+      </div>
+
+      <h3 style="margin-top: 48px;">🧠 Sistema de Skills</h3>
+      <p style="max-width: 680px;">
+        Cada cosa que Hermes sabe hacer está encapsulada en un <strong>skill</strong> — un archivo Markdown
+        con frontmatter YAML que define triggers, instrucciones paso a paso, pitfalls conocidos, y referencias
+        a scripts o templates. Es su memoria procedural.
+      </p>
+      <div class="code-block">
+        <span class="comment"># Skills disponibles (categorizados)</span><br><br>
+        <span class="keyword">creative/</span><br>
+        &nbsp;&nbsp;claude-design &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment"># Diseño de HTML artifacts (landings, decks)</span><br>
+        &nbsp;&nbsp;popular-web-designs &nbsp;<span class="comment"># 54 design systems (Linear, Stripe, Vercel)</span><br>
+        &nbsp;&nbsp;excalidraw &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment"># Diagramas hand-drawn</span><br>
+        &nbsp;&nbsp;pixel-art &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment"># Arte pixelado con paletas retro</span><br>
+        &nbsp;&nbsp;ascii-art &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment"># Arte ASCII</span><br><br>
+        <span class="keyword">productivity/</span><br>
+        &nbsp;&nbsp;website-builder &nbsp;&nbsp;&nbsp;&nbsp;<span class="comment"># Pipeline idea → deploy en Vercel</span><br>
+        &nbsp;&nbsp;book-publishing &nbsp;&nbsp;&nbsp;&nbsp;<span class="comment"># Pipeline completo de libros digitales</span><br>
+        &nbsp;&nbsp;google-workspace &nbsp;&nbsp;<span class="comment"># Gmail, Calendar, Drive, Sheets</span><br>
+        &nbsp;&nbsp;airtable &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment"># CRUD via REST API</span><br>
+        &nbsp;&nbsp;linear &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment"># Issue tracking via GraphQL</span><br><br>
+        <span class="keyword">software-development/</span><br>
+        &nbsp;&nbsp;test-driven-development <br>
+        &nbsp;&nbsp;systematic-debugging<br>
+        &nbsp;&nbsp;github-pr-workflow<br>
+        &nbsp;&nbsp;codebase-inspection<br><br>
+        <span class="keyword">data-science/</span><br>
+        &nbsp;&nbsp;jupyter-live-kernel<br>
+        &nbsp;&nbsp;gbrain-search &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment"># Búsqueda en 20K+ páginas de conocimiento</span><br><br>
+        <span class="keyword">research/</span><br>
+        &nbsp;&nbsp;arxiv &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment"># Búsqueda de papers académicos</span><br>
+        &nbsp;&nbsp;polymarket &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment"># Query de prediction markets</span><br>
+        &nbsp;&nbsp;blogwatcher &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment"># Monitoreo de feeds RSS</span><br>
+        &nbsp;&nbsp;youtube-content &nbsp;&nbsp;&nbsp;<span class="comment"># Transcripts → resúmenes</span><br><br>
+        <span class="keyword">mlops/</span><br>
+        &nbsp;&nbsp;llama-cpp &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment"># Inferencia local con GGUF</span><br>
+        &nbsp;&nbsp;serving-llms-vllm &nbsp;<span class="comment"># High-throughput serving</span><br>
+        &nbsp;&nbsp;weights-and-biases &nbsp;<span class="comment"># Experiment tracking</span><br><br>
+        <span class="comment"># ... y 70+ skills más entre creative, devops, mcp, media, email, social, red-teaming, etc.</span>
+      </div>
+
+      <h3 style="margin-top: 48px;">🔄 Aprendizaje Continuo</h3>
+      <p style="max-width: 680px;">
+        Hermes no es estático. Cada vez que hace algo nuevo — descubre un bug, aprende un workflow,
+        corrige un error — registra lo aprendido. Si descubre un approach que vale la pena repetir,
+        lo guarda como un skill nuevo. Si un skill existente está desactualizado, lo parchea solo.
+        Con cada interacción, el sistema se vuelve más preciso y necesita menos correcciones.
+      </p>
+      <div class="features-grid" style="margin-top: 20px;">
+        <div class="feature-card">
+          <span class="icon">💾</span>
+          <h3>Memoria Persistente</h3>
+          <p>Preferencias, configuraciones, correcciones del usuario. Cruza sesiones — si le dijiste algo una vez, no necesita que se lo repitas.</p>
+        </div>
+        <div class="feature-card">
+          <span class="icon">📜</span>
+          <h3>Búsqueda de Sesiones</h3>
+          <p>Cuando no recuerda algo, busca en el historial completo de conversaciones pasadas con FTS5. No depende solo de la memoria explícita.</p>
+        </div>
+        <div class="feature-card">
+          <span class="icon">📘</span>
+          <h3>Creación de Skills</h3>
+          <p>Si hace algo complejo con éxito, ofrece guardarlo como skill para no tener que resolverlo desde cero la próxima vez.</p>
+        </div>
+        <div class="feature-card">
+          <span class="icon">🔧</span>
+          <h3>Mantenimiento de Skills</h3>
+          <p>Si un skill tiene pasos desactualizados o comandos que fallan, lo parchea inmediatamente. Skills que no se mantienen son deuda técnica.</p>
+        </div>
       </div>
     </div>
   </section>

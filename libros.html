@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Los libros del panteón — Leandro Pisaroni</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .lib-wrap { max-width: 960px; margin: 0 auto; }
+    .lib-intro { font-size: 16px; color: var(--text-muted); line-height: 1.7; margin-bottom: 28px; }
+    .lib-intro p { margin-bottom: 18px; }
+
+    .controls { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: 18px; }
+    .search-box {
+      flex: 1 1 240px; min-width: 200px;
+      padding: 10px 14px; font-size: 15px; font-family: var(--font-body);
+      border: 1px solid var(--rule); border-radius: 7px; background: var(--surface);
+      transition: border-color .15s ease;
+    }
+    .search-box:focus { outline: none; border-color: var(--accent); }
+    .chips { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 16px; }
+    .chip {
+      font-family: var(--font-body); font-size: 13px;
+      padding: 6px 13px; border: 1px solid var(--rule); border-radius: 999px;
+      background: var(--surface); color: var(--text-muted); cursor: pointer;
+      transition: all .15s ease; white-space: nowrap;
+    }
+    .chip:hover { border-color: var(--accent); color: var(--accent); }
+    .chip.on { background: var(--accent); border-color: var(--accent); color: #fff; }
+    .chip .cnt { opacity: .6; font-size: 11px; margin-left: 4px; }
+
+    .count-bar {
+      display: flex; justify-content: space-between; align-items: center;
+      font-family: var(--font-body); font-size: 13px;
+      color: var(--text-muted); padding: 10px 0; border-top: 1px solid var(--rule);
+      border-bottom: 1px solid var(--rule); margin-bottom: 22px;
+    }
+    .reset { color: var(--accent); cursor: pointer; background: none; border: none;
+             font-family: inherit; font-size: 13px; padding: 0; text-decoration: underline; }
+
+    .thinker-block { margin-bottom: 40px; }
+    .thinker-head {
+      display: flex; align-items: baseline; gap: 10px; margin-bottom: 14px;
+      padding-bottom: 8px; border-bottom: 2px solid var(--text);
+    }
+    .thinker-head h2 { margin: 0; font-size: 21px; }
+    .thinker-head .num {
+      font-family: var(--font-body); font-size: 13px; font-weight: 700;
+      color: var(--accent);
+    }
+    .thinker-head .nbooks {
+      margin-left: auto; font-family: var(--font-body);
+      font-size: 12px; color: var(--text-muted);
+    }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; }
+
+    .bcard {
+      border: 1px solid var(--rule); border-radius: 10px; padding: 14px 16px;
+      background: var(--surface); cursor: pointer; transition: all .16s ease;
+    }
+    .bcard:hover { border-color: var(--accent); transform: translateY(-2px);
+                   box-shadow: 0 2px 12px rgba(0,0,0,.05); }
+    .bcard.open { border-color: var(--accent); background: #fffdf9; }
+    .b-top { display: flex; justify-content: space-between; gap: 8px; align-items: flex-start; }
+    .b-title { font-family: var(--font-display); font-size: 16px; font-weight: 600; line-height: 1.35; margin: 0 0 3px; }
+    .b-author { font-size: 13px; color: var(--text-muted); font-style: italic; }
+    .b-year { font-family: var(--font-body); font-size: 12px;
+              color: var(--text-faint); white-space: nowrap; padding-top: 2px; }
+    .badge {
+      display: inline-block; font-family: var(--font-body);
+      font-size: 10.5px; font-weight: 600; text-transform: uppercase; letter-spacing: .4px;
+      padding: 2px 8px; border-radius: 999px; margin-top: 8px;
+    }
+    .badge.recomendado { background: #e8f0e4; color: #4a6b3a; }
+    .badge.citado      { background: #e6ebf2; color: #4a5c78; }
+    .badge.propio      { background: var(--accent-soft); color: #8a4a0c; }
+    .badge.influencia  { background: #efedea; color: #78716c; }
+    .b-note {
+      font-size: 14px; line-height: 1.6; color: var(--text-muted); margin-top: 10px;
+      padding-top: 10px; border-top: 1px dashed var(--rule); display: none;
+    }
+    .bcard.open .b-note { display: block; }
+    .b-orig { font-size: 12px; color: var(--text-faint); font-style: italic; margin-top: 2px; }
+
+    .empty { text-align: center; padding: 60px 20px; color: var(--text-muted);
+             font-size: 15px; font-family: var(--font-body); }
+    .loading { text-align: center; padding: 60px 20px; color: var(--text-muted); }
+    @media (max-width: 600px) {
+      .grid { grid-template-columns: 1fr; }
+      .count-bar { flex-direction: column; gap: 6px; align-items: flex-start; }
+    }
+  </style>
+  <script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments)};</script><script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body>
+  <div class="site">
+    <header>
+      <a href="index.html" class="site-title">Leandro Pisaroni</a>
+      <nav>
+        <a href="essays.html">Essays</a>
+        <a href="ideas.html">Ideas</a>
+        <a href="panteon.html">Panteón</a>
+        <a href="libros.html" class="active">Libros</a>
+        <a href="panteon-en.html">Pantheon</a>
+        <a href="buy.html">Buy</a>
+        <a href="audiolibro.html">Audio</a>
+        <a href="about.html">About</a>
+      </nav>
+    </header>
+
+    <main class="lib-wrap">
+      <h1>Los libros del panteón</h1>
+      <p class="subtitle">Qué lee, cita y recomienda cada uno de los 17 pensadores</p>
+
+      <div class="lib-intro">
+        <p>Si el panteón es el mapa de quiénes me formaron, esto es la biblioteca de cada uno:
+        los libros que recomiendan, que citan hasta el cansancio, o que los formaron antes de
+        ser quienes son. <strong>340 títulos</strong>, ordenables y filtrables.</p>
+        <p>La distinción importa: <strong>recomendado</strong> es lo que el pensador aconsejó
+        explícitamente; <strong>citado</strong> es lo que aparece una y otra vez en su obra;
+        <strong>influencia</strong> es lo que se sabe que lo formó; <strong>propio</strong> es
+        su propia obra canónica. Un mismo libro puede ser dos cosas según quién lo mire —
+        Borges y el Papa Francisco comparten a Virgilio, y los dos por razones distintas.</p>
+      </div>
+
+      <div class="controls">
+        <input type="search" id="q" class="search-box" placeholder="Buscar por título o autor…" aria-label="Buscar libros">
+      </div>
+
+      <div class="chips" id="thinkerChips" role="group" aria-label="Filtrar por pensador"></div>
+      <div class="chips" id="typeChips" role="group" aria-label="Filtrar por tipo"></div>
+
+      <div class="count-bar">
+        <span id="count">Cargando…</span>
+        <button class="reset" id="reset" hidden>Limpiar filtros</button>
+      </div>
+
+      <div id="results" aria-live="polite">
+        <div class="loading">Cargando la biblioteca…</div>
+      </div>
+    </main>
+
+    <footer>
+      Leandro Pisaroni &middot; <a href="https://nanopisaroni.vercel.app">nanopisaroni.vercel.app</a>
+    </footer>
+  </div>
+
+  <script src="libros.js"></script>
+</body>
+</html>

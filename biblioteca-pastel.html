@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Biblioteca Pastel</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #1a1a1a;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Georgia', 'Times New Roman', serif;
+  }
+  canvas { display: block; }
+  .watermark {
+    position: fixed;
+    bottom: 28px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(255,255,255,0.25);
+    font-size: 12px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-family: 'Georgia', serif;
+    pointer-events: none;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.4);
+    user-select: none;
+  }
+</style>
+  <script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments)};</script><script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body>
+<canvas id="c"></canvas>
+<div class="watermark">✦ Biblioteca Infinita ✦</div>
+<script>
+const canvas = document.getElementById('c');
+const ctx = canvas.getContext('2d');
+
+// ─── Color palette (from reference image) ───
+const ARCH_COLORS = [
+  { arch: '#F2DDB8', pillar: '#F5E6CC', dark: '#E0CCA0' },  // warm cream/yellow
+  { arch: '#A8D0CC', pillar: '#B8DDD8', dark: '#88B8B2' },  // teal/mint
+  { arch: '#E8B8B8', pillar: '#F0C8C8', dark: '#D09898' },  // coral/pink
+  { arch: '#F0C898', pillar: '#F5D4A8', dark: '#D8B078' },  // peach/orange
+  { arch: '#C8B0D8', pillar: '#D4C0E0', dark: '#A890B8' },  // lavender
+  { arch: '#A8C0E0', pillar: '#BCCFE8', dark: '#88A8C8' },  // light blue
+];
+
+const BOOK_COLORS = [
+  '#E8A0A0', '#D4A8D8', '#A8C8E0', '#A0D0B8', '#E0C888', '#E8B090',
+  '#C0A8D8', '#88B8D0', '#B0D0A8', '#E0A880', '#D0B0C8', '#98C8C8',
+  '#E0C0A0', '#C8A8B8', '#A8C0A0', '#D8A8A0', '#B0B8D0', '#D0C0A0',
+];
+
+const BG_COLOR       = '#F2EDE4';
+const WALL_COLOR     = '#EDE8DE';
+const FLOOR_COLOR    = '#E8E2D4';
+const FLOOR_DARK     = '#DCD4C2';
+const CEILING_COLOR  = '#EFEBE2';
+const END_WALL_COLOR = '#EED4D4';
+const WINDOW_FRAME   = '#D0C8B4';
+
+// ─── Perspective config ───
+// 1-point perspective with vanishing point at (cx, cy)
+// 3D corridor: half-width W, ceiling height H_a above eye, floor depth H_b below eye
+
+let W   = 1.3;   // corridor half-width (3D)
+let H_a = 1.3;   // ceiling above eye level
+let H_b = 1.6;   // floor below eye level
+
+let zMin = 1.8;  // closest arch distance
+let zMax = 16;   // farthest arch distance
+let NUM_ARCHES = 16;
+
+let cx, cy, f;   // vanishing point and focal length
+let sceneW, sceneH;
+
+function setup() {
+  const dpr = window.devicePixelRatio || 1;
+  sceneW = window.innerWidth;
+  sceneH = window.innerHeight;
+  canvas.width = sceneW * dpr;
+  canvas.height = sceneH * dpr;
+  canvas.style.width = sceneW + 'px';
+  canvas.style.height = sceneH + 'px';
+  ctx.scale(dpr, dpr);
+
+  cx = sceneW * 0.50;
+  cy = sceneH * 0.44;
+  f = Math.min(sceneW, sceneH) * 0.55;
+}
+
+// ─── Projection helpers ───
+function sX(x, z) { return cx + x * f / z; }
+function sY(y, z) { return cy + y * f / z; }
+function sW(w, z) { return w * f / z; }
+
+// ─── Draw a perfect circular arch ───
+function drawArchAt(ctx, z, colorSet) {
+  const leftX  = sX(-W, z);
+  const rightX = sX(W, z);
+  const archW  = rightX - leftX;
+  const archH  = H_a * f / z;
+  const baseY  = cy;  // arch base at eye level
+
+  if (archW < 2) return;
+
+  const midX = (leftX + rightX) / 2;
+
+  // ── Arch fill ──
+  ctx.save();
+  ctx.beginPath();
+
+  // Circular arc: compute circle that passes through left/top/right
+  const R = (archW * archW + 4 * archH * archH) / (8 * archH);
+  const cirY = baseY - archH + R;  // center of the circle
+  
+  if (R > archW / 2) {
+    // Normal case: arch is flatter than a semi-circle
+    const theta = Math.asin(archW / (2 * R));
+    ctx.arc(midX, cirY, R, Math.PI + theta, 2 * Math.PI - theta, false);
+  } else {
+    // Wide flat arch: draw straight line
+    ctx.moveTo(leftX, baseY);
+    const steps = 20;
+    for (let i = 0; i <= steps; i++) {
+      const t = i / steps;
+      const x = leftX + t * archW;
+      const y = baseY - archH * Math.sin(t * Math.PI);
+      ctx.lineTo(x, y);
+    }
+  }
+  ctx.lineTo(rightX, baseY);
+  ctx.closePath();
+
+  ctx.fillStyle = colorSet.arch;
+  ctx.fill();
+  ctx.strokeStyle = colorSet.dark;
+  ctx.lineWidth = 1.5;
+  ctx.stroke();
+  ctx.restore();
+
+  // Subtle inner shadow
+  ctx.save();
+  ctx.beginPath();
+  if (R > archW / 2) {
+    const theta = Math.asin(archW / (2 * R));
+    ctx.arc(midX, cirY, R * 0.95, Math.PI + theta, 2 * Math.PI - theta, false);
+  } else {
+    ctx.moveTo(leftX + 2, baseY - 1);
+    for (let i = 0; i <= 20; i++) {
+      const t = i / 20;
+      const x = leftX + 2 + t * (archW - 4);
+      const y = baseY - 1 - (archH - 2) * Math.sin(t * Math.PI);
+      ctx.lineTo(x, y);
+    }
+  }
+  ctx.lineTo(rightX - 2, baseY - 1);
+  ctx.strokeStyle = 'rgba(255,255,255,0.3)';
+  ctx.lineWidth = 1;
+  ctx.stroke();
+  ctx.restore();
+
+  // ── Pillars ──
+  const pillarW = sW(0.10, z);
+  const pillarTop = baseY;
+  const floorY = sY(H_b, z);
+
+  function drawPillar(x, side) {
+    const px = side < 0 ? x - pillarW * 0.4 : x - pillarW * 0.6;
+    ctx.fillStyle = colorSet.pillar;
+    ctx.fillRect(px, pillarTop, pillarW, floorY - pillarTop);
+    ctx.strokeStyle = colorSet.dark;
+    ctx.lineWidth = 1;
+    ctx.strokeRect(px, pillarTop, pillarW, floorY - pillarTop);
+
+    // Vertical panel groove
+    ctx.strokeStyle = 'rgba(0,0,0,0.06)';
+    ctx.lineWidth = 0.5;
+    const grooveX = px + pillarW * 0.5;
+    ctx.beginPath();
+    ctx.moveTo(grooveX, pillarTop + 4);
+    ctx.lineTo(grooveX, floorY - 4);
+    ctx.stroke();
+
+    // Pillar base (white plinth)
+    const plinthH = sW(0.04, z);
+    ctx.fillStyle = '#F5F0E8';
+    ctx.fillRect(px - 2, floorY - plinthH, pillarW + 4, plinthH);
+    ctx.strokeStyle = colorSet.dark;
+    ctx.strokeRect(px - 2, floorY - plinthH, pillarW + 4, plinthH);
+
+    // Pillar capital (white top)
+    const capH = sW(0.035, z);
+    ctx.fillStyle = '#F5F0E8';
+    ctx.fillRect(px - 2, pillarTop, pillarW + 4, capH);
+    ctx.strokeStyle = colorSet.dark;
+    ctx.strokeRect(px - 2, pillarTop, pillarW + 4, capH);
+  }
+
+  drawPillar(leftX, -1);
+  drawPillar(rightX, 1);
+}
+
+// ─── Bookshelf section ───
+function drawBookshelf(ctx, zFar, zNear, side) {
+  if (zNear >= zFar) return;
+
+  const midZ = (zFar + zNear) / 2;
+
+  // Bookshelf boundaries on the wall
+  const innerX  = sX(side * 0.65, midZ);   // inner edge (near center)
+  const outerX  = sX(side * (W - 0.05), midZ); // outer edge (near pillar)
+  const shelfTop = sY(0.02, midZ);           // just below eye level
+  const shelfBot = sY(H_b - 0.12, midZ);     // above floor
+
+  if (Math.abs(outerX - innerX) < 6 || shelfTop >= shelfBot) return;
+
+  // Wall background
+  ctx.fillStyle = WALL_COLOR;
+  ctx.fillRect(innerX, shelfTop, outerX - innerX, shelfBot - shelfTop);
+
+  // ── Shelf lines ──
+  const depthT = 1 - midZ / zMax; // 0 at far, 1 at near
+  const shelfCount = 4 + Math.floor(6 * depthT);
+  const shelfGap = (shelfBot - shelfTop) / shelfCount;
+
+  ctx.strokeStyle = '#D8D0C0';
+  ctx.lineWidth = 0.8;
+  for (let r = 0; r <= shelfCount; r++) {
+    const sy = shelfTop + r * shelfGap;
+    ctx.beginPath();
+    ctx.moveTo(innerX + 1, sy);
+    ctx.lineTo(outerX - 1, sy);
+    ctx.stroke();
+  }
+
+  // ── Books on shelves ──
+  // Deterministic "random" based on position for stable rendering
+  function bookSeed(i, j) {
+    const n = i * 9973 + j * 7919;
+    return (n * 16807 + 1) & 0x7fffffff;
+  }
+
+  for (let r = 0; r < shelfCount; r++) {
+    const shelfY = shelfTop + r * shelfGap + 2;
+    const shelfH = shelfGap - 3;
+    const bookH = shelfH * 0.78;
+
+    let xPos = innerX + 2;
+    const shelfW = outerX - innerX - 4;
+    const minBW = 3;
+    const maxBW = Math.min(shelfH * 0.7 + 4, shelfW * 0.12);
+    if (maxBW < minBW) continue;
+
+    let failSafe = 0;
+    while (xPos < innerX + shelfW - minBW && failSafe < 60) {
+      failSafe++;
+      const seed = bookSeed(Math.floor(xPos), r);
+      const bw = minBW + (seed % 100) / 100 * (maxBW - minBW);
+      if (xPos + bw > innerX + shelfW) break;
+
+      const colIdx = (seed % 100) + r * 7 + Math.floor(xPos);
+      const col = BOOK_COLORS[colIdx % BOOK_COLORS.length];
+      ctx.fillStyle = col;
+      
+      const offY = (seed % 20) / 100 * (shelfH - bookH);
+      const bh = bookH * (0.55 + (seed % 30) / 100 * 0.35);
+      
+      ctx.fillRect(xPos, shelfY + offY, bw, bh);
+      ctx.strokeStyle = 'rgba(0,0,0,0.06)';
+      ctx.lineWidth = 0.4;
+      ctx.strokeRect(xPos, shelfY + offY, bw, bh);
+
+      xPos += bw + 1 + (seed % 5) / 10;
+    }
+  }
+}
+
+// ─── Arched window ───
+function drawWindow(z, side) {
+  const x3D = side * (W + 0.08);
+  const winZ = z;
+  const winCX = sX(x3D, winZ);
+  const winTop = sY(-H_a + 0.4, winZ);
+  const winBot = sY(-0.2, winZ);
+  const winW = sW(0.15, winZ);
+
+  if (winW < 10) return;
+
+  // Arched window shape
+  ctx.save();
+  ctx.beginPath();
+  ctx.moveTo(winCX - winW/2, winBot);
+  ctx.lineTo(winCX - winW/2, winTop + winW/2);
+  ctx.arc(winCX, winTop + winW/2, winW/2, Math.PI, 0, false);
+  ctx.lineTo(winCX + winW/2, winBot);
+  ctx.closePath();
+
+  // Window glass (warm tinted)
+  const glassGrd = ctx.createLinearGradient(winCX - winW/2, winTop, winCX + winW/2, winBot);
+  glassGrd.addColorStop(0, '#E8E0D0');
+  glassGrd.addColorStop(0.5, '#F0E8D8');
+  glassGrd.addColorStop(1, '#E8E0D0');
+  ctx.fillStyle = glassGrd;
+  ctx.fill();
+  ctx.strokeStyle = WINDOW_FRAME;
+  ctx.lineWidth = 2;
+  ctx.stroke();
+
+  // Window panes (cross grid)
+  ctx.strokeStyle = '#CCC4B0';
+  ctx.lineWidth = 1;
+  // Vertical center
+  ctx.beginPath();
+  ctx.moveTo(winCX, winTop + winW/2);
+  ctx.lineTo(winCX, winBot);
+  ctx.stroke();
+  // Horizontal center
+  const midH = (winTop + winW/2 + winBot) / 2;
+  ctx.beginPath();
+  ctx.moveTo(winCX - winW/2, midH);
+  ctx.lineTo(winCX + winW/2, midH);
+  ctx.stroke();
+
+  // Warm glow from window
+  const glow = ctx.createRadialGradient(winCX, (winTop + winBot)/2, 0, winCX, (winTop + winBot)/2, winW * 1.5);
+  glow.addColorStop(0, 'rgba(255,248,230,0.12)');
+  glow.addColorStop(1, 'rgba(255,248,230,0)');
+  ctx.fillStyle = glow;
+  ctx.fillRect(winCX - winW*2, winTop - winW, winW*4, winBot - winTop + winW*2);
+
+  ctx.restore();
+}
+
+// ─── Floor book stacks ───
+function drawFloorBooks(ctx, z, side) {
+  const x3D = side * 0.85;
+  const fz = z;
+  const bx = sX(x3D, fz);
+  const bW = sW(0.15, fz);
+  const bTop = sY(H_b - 0.2, fz);
+  const bBot = sY(H_b - 0.05, fz);
+
+  if (bW < 4 || bBot - bTop < 3) return;
+
+  const seed = Math.floor(z * 100 + side * 100);
+  const count = 2 + (seed % 5);
+  const layerH = (bBot - bTop) / count;
+
+  for (let i = 0; i < count; i++) {
+    const col = BOOK_COLORS[(seed + i * 13) % BOOK_COLORS.length];
+    ctx.fillStyle = col;
+    const bw = bW * (0.6 + (seed * (i+1) % 100) / 200);
+    const ox = (seed * (i+1) % 50) / 100 * (bW - bw);
+    ctx.fillRect(bx + ox, bTop + i * layerH, bw, layerH - 0.5);
+    ctx.strokeStyle = 'rgba(0,0,0,0.05)';
+    ctx.lineWidth = 0.4;
+    ctx.strokeRect(bx + ox, bTop + i * layerH, bw, layerH - 0.5);
+  }
+}
+
+// ─── Ceiling detail: coffered panels ───
+function drawCeiling() {
+  // Draw coffered ceiling panels
+  for (let z = zMin; z < zMax; z += 0.9) {
+    const lx = sX(-W - 0.1, z);
+    const rx = sX(W + 0.1, z);
+    const ty = sY(-H_a - 0.08, z);
+    const by = sY(-H_a + 0.08, z);
+    if (lx < 0 || rx > sceneW || ty < 0) continue;
+    if (rx - lx < 4) continue;
+
+    ctx.fillStyle = 'rgba(235,231,224,0.5)';
+    ctx.fillRect(lx, ty, rx - lx, by - ty);
+    ctx.strokeStyle = '#E0DCD2';
+    ctx.lineWidth = 0.5;
+    ctx.strokeRect(lx, ty, rx - lx, by - ty);
+  }
+}
+
+// ─── Main render ───
+function render() {
+  setup();
+
+  // ── Background ──
+  ctx.fillStyle = BG_COLOR;
+  ctx.fillRect(0, 0, sceneW, sceneH);
+
+  // ── Ceiling ──
+  const ceilTopY = 0;
+  const ceilBotY = sY(-H_a, zMin);
+  ctx.fillStyle = CEILING_COLOR;
+  ctx.fillRect(0, ceilTopY, sceneW, ceilBotY - ceilTopY);
+  drawCeiling();
+
+  // ── Floor ──
+  const flTopY = sY(H_b, zMin);
+  const flGrd = ctx.createLinearGradient(0, flTopY, 0, sceneH);
+  flGrd.addColorStop(0, FLOOR_COLOR);
+  flGrd.addColorStop(0.25, FLOOR_COLOR);
+  flGrd.addColorStop(0.6, '#E0DACA');
+  flGrd.addColorStop(1, '#D4CCBA');
+  ctx.fillStyle = flGrd;
+  ctx.fillRect(0, flTopY, sceneW, sceneH - flTopY);
+
+  // Floor reflection lines (perspective)
+  ctx.strokeStyle = 'rgba(200,196,184,0.25)';
+  ctx.lineWidth = 0.5;
+  for (let z = zMin; z < zMax; z += 1.0) {
+    const fy = sY(H_b, z);
+    if (fy <= flTopY || fy >= sceneH) continue;
+    const fl = sX(-W - 0.2, z);
+    const fr = sX(W + 0.2, z);
+    ctx.beginPath();
+    ctx.moveTo(fl, fy);
+    ctx.lineTo(fr, fy);
+    ctx.stroke();
+  }
+
+  // ── End wall ──
+  const ez = zMax;
+  const ew = sW(W * 2, ez);
+  const eh = sY(H_b, ez) - sY(-H_a, ez);
+  const ex = sX(-W, ez);
+  const ey = sY(-H_a, ez);
+  if (ew > 2 && eh > 2) {
+    ctx.fillStyle = END_WALL_COLOR;
+    ctx.fillRect(ex, ey, ew, eh);
+    ctx.strokeStyle = '#E0C8C8';
+    ctx.lineWidth = 0.5;
+    ctx.strokeRect(ex, ey, ew, eh);
+
+    // End wall glow
+    const eglow = ctx.createRadialGradient(cx, cy, 0, cx, cy, ew * 2);
+    eglow.addColorStop(0, 'rgba(255,242,238,0.3)');
+    eglow.addColorStop(1, 'rgba(255,242,238,0)');
+    ctx.fillStyle = eglow;
+    ctx.fillRect(0, 0, sceneW, sceneH);
+  }
+
+  // ── Arched windows ──
+  drawWindow(4.0, -1);
+  drawWindow(4.0, 1);
+  drawWindow(7.0, -1);
+  drawWindow(7.0, 1);
+
+  // ── Arch Z positions ──
+  const zValues = [];
+  for (let i = 0; i < NUM_ARCHES; i++) {
+    const t = i / (NUM_ARCHES - 1);
+    // Exponential spacing: more detail near viewer
+    const z = zMin + Math.pow(t, 1.4) * (zMax - zMin);
+    zValues.push(z);
+  }
+
+  // ── Bookshelf walls (back to front, between arches) ──
+  for (let i = zValues.length - 1; i > 0; i--) {
+    drawBookshelf(ctx, zValues[i], zValues[i - 1], -1);
+    drawBookshelf(ctx, zValues[i], zValues[i - 1], 1);
+  }
+
+  // ── Floor book stacks (between arches) ──
+  for (let i = zValues.length - 1; i > 0; i--) {
+    drawFloorBooks(ctx, zValues[i], -1);
+    drawFloorBooks(ctx, zValues[i], 1);
+  }
+
+  // ── Arches & pillars (back to front) ──
+  for (let i = zValues.length - 1; i >= 0; i--) {
+    const z = zValues[i];
+    const colIdx = i % ARCH_COLORS.length;
+
+    const archW = sW(W * 2, z);
+    if (archW < 3) continue;
+
+    drawArchAt(ctx, z, ARCH_COLORS[colIdx]);
+  }
+
+  // ── Final lighting ──
+  // Warm ambient glow from vanishing point
+  const ambGlow = ctx.createRadialGradient(cx, cy, 0, cx, cy, Math.max(sceneW, sceneH) * 0.5);
+  ambGlow.addColorStop(0, 'rgba(255,248,240,0.07)');
+  ambGlow.addColorStop(0.5, 'rgba(255,248,240,0.02)');
+  ambGlow.addColorStop(1, 'rgba(0,0,0,0)');
+  ctx.fillStyle = ambGlow;
+  ctx.fillRect(0, 0, sceneW, sceneH);
+
+  // Soft vignette
+  const vig = ctx.createRadialGradient(cx, cy, Math.min(sceneW, sceneH) * 0.2, cx, cy, Math.max(sceneW, sceneH) * 0.65);
+  vig.addColorStop(0, 'rgba(0,0,0,0)');
+  vig.addColorStop(1, 'rgba(0,0,0,0.035)');
+  ctx.fillStyle = vig;
+  ctx.fillRect(0, 0, sceneW, sceneH);
+}
+
+// ─── Init ───
+render();
+window.addEventListener('resize', render);
+
+// ─── Mouse parallax ───
+let mx = 0.5, my = 0.5;
+canvas.addEventListener('mousemove', (e) => {
+  mx = e.clientX / sceneW;
+  my = e.clientY / sceneH;
+  cx = sceneW * (0.50 + 0.08 * (mx - 0.5));
+  cy = sceneH * (0.44 + 0.04 * (my - 0.5));
+  render();
+});
+canvas.addEventListener('mouseleave', () => {
+  setup();
+  render();
+});
+</script>
+</body>
+</html>

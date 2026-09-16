@@ -1,9 +1,13 @@
 /* Los libros del panteón — filtros interactivos + red de vínculos, vanilla JS */
 
+import { TRACK, ESTADO_LABEL, loadTracking, saveBook } from './libros-track.js';
+
 let DATA = [];
-let state = { thinker: 'all', type: 'all', q: '', sharedOnly: false, view: 'lista' };
+let state = { thinker: 'all', type: 'all', q: '', sharedOnly: false, view: 'lista', est: 'all' };
 let LINKS = new Map();   // key normalizada -> [{thinker, nombre, slug, tipo, nota, lib}]
 let PAIRS = [];          // pares de pensadores con lecturas compartidas
+let TRACK_OK = false;
+let GID = '';            // slug -> id de fila en la planilla
 
 const $ = (id) => document.getElementById(id);
 
@@ -51,8 +55,32 @@ async function load() {
     return;
   }
   DATA.sort((a, b) => (a.num || 0) - (b.num || 0));
+
+  // índices de id de fila: slug-01, slug-02... (mismo orden que la planilla)
+  const counters = {};
+  for (const t of DATA) {
+    let i = 0;
+    for (const b of (t.libros || [])) {
+      i++;
+      b.__id = `${t.slug}-${String(i).padStart(2, '0')}`;
+    }
+  }
+
   buildIndex();
   buildChips();
+
+  // tracking (no bloquea el render si falla)
+  try {
+    await loadTracking();
+    TRACK_OK = true;
+  } catch (e) {
+    TRACK_OK = false;
+    console.warn('Seguimiento no disponible:', e.message);
+  }
+  buildTrackChips();
+  const sl = $('sheetLink');
+  if (sl) sl.href = `https://docs.google.com/spreadsheets/d/1OQDNlQ5_yAXCfTOxjuyi9XDogPuR4T__diRigTC_iUE/edit`;
+
   render();
 }
 
@@ -125,6 +153,73 @@ function sharedWith(slug) {
   return [...out.values()].sort((a, b) => b.libros.length - a.libros.length);
 }
 
+/* ---------- chips de seguimiento ---------- */
+function buildTrackChips() {
+  const el = $('trackChips');
+  if (!el) return;
+
+  const counts = { quiero: 0, tengo: 0, leyendo: 0, 'leído': 0 };
+  if (TRACK_OK) {
+    for (const v of TRACK.values()) {
+      if (v.estado && counts[v.estado] !== undefined) counts[v.estado]++;
+    }
+  }
+
+  const items = [
+    ['all',     'Todos',     ''],
+    ['quiero',  'Quiero',    'quiero'],
+    ['tengo',   'Lo tengo',  'tengo'],
+    ['leyendo', 'Leyendo',   'leyendo'],
+    ['leído',   'Leído',     'leído'],
+  ];
+
+  el.innerHTML = items.map(([val, label, cls]) => {
+    const n = val === 'all' ? '' : `<span class="num">${counts[val] || 0}</span>`;
+    return `<button class="tchip ${cls ? 'q-' + cls : ''} ${state.est === val ? 'on' : ''}" data-est="${val}">
+      ${cls ? '<span class="dot"></span>' : ''}${label}${n}
+    </button>`;
+  }).join('');
+
+  el.onclick = (e) => {
+    const b = e.target.closest('[data-est]');
+    if (!b) return;
+    state.est = b.dataset.est;
+    syncChips();
+    render();
+  };
+}
+
+/* ---------- toast ---------- */
+let toastTimer = null;
+function toast(msg, isErr) {
+  let t = document.querySelector('.save-toast');
+  if (!t) { t = document.createElement('div'); t.className = 'save-toast'; document.body.appendChild(t); }
+  t.textContent = msg;
+  t.classList.toggle('err', !!isErr);
+  t.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => t.classList.remove('show'), 2200);
+}
+
+/* ---------- controles de una tarjeta ---------- */
+function trackControls(b) {
+  if (!TRACK_OK) return '';
+  const cur = TRACK.get(b.__id) || { estado: '', lista: '' };
+  const E = [['quiero','Quiero'],['tengo','Lo tengo'],['leyendo','Leyendo'],['leído','Leído']];
+  const L = [['comprar','🛒 Comprar'],['regalo','🎁 Regalar']];
+
+  return `<div class="b-track" data-track>
+    <span class="b-title2">Estado</span>
+    ${E.map(([v, l]) =>
+      `<button class="tbtn st-${v} ${cur.estado === v ? 'on' : ''}" data-set="estado" data-val="${cur.estado === v ? '' : v}">${l}</button>`
+    ).join('')}
+    <span class="b-title2" style="margin-left:6px">Lista</span>
+    ${L.map(([v, l]) =>
+      `<button class="tbtn st-${v} ${cur.lista === v ? 'on' : ''}" data-set="lista" data-val="${cur.lista === v ? '' : v}">${l}</button>`
+    ).join('')}
+  </div>`;
+}
+
 /* ---------- chips ---------- */
 function buildChips() {
   const tc = $('thinkerChips');
@@ -174,6 +269,8 @@ function syncChips() {
   if (v) v.querySelectorAll('.chip').forEach(c => c.classList.toggle('on', c.dataset.vw === state.view));
   const so = $('sharedOnly');
   if (so) so.checked = state.sharedOnly;
+  const te = $('trackChips');
+  if (te) te.querySelectorAll('.tchip').forEach(c => c.classList.toggle('on', c.dataset.est === state.est));
 }
 
 /* ---------- vista VÍNCULOS ---------- */
@@ -306,6 +403,10 @@ function render() {
         const arr = LINKS.get(bookKey(b)) || [];
         if (new Set(arr.map(x => x.thinker)).size < 2) return false;
       }
+      if (state.est !== 'all') {
+        const cur = TRACK.get(b.__id) || {};
+        if ((cur.estado || '') !== state.est) return false;
+      }
       if (!nq) return true;
       return norm(b.titulo).includes(nq) ||
              norm(b.titulo_original).includes(nq) ||
@@ -334,8 +435,9 @@ function render() {
            </div>`
         : '';
 
+      const cur = TRACK.get(b.__id) || {};
       cards += `
-        <article class="bcard${uniq.length ? ' has-links' : ''}" tabindex="0" role="button" aria-expanded="false">
+        <article class="bcard${uniq.length ? ' has-links' : ''}${cur.estado === 'leído' ? ' done' : ''}" data-bid="${esc(b.__id)}" tabindex="0" role="button" aria-expanded="false">
           <div class="b-top">
             <div>
               <h3 class="b-title">${esc(b.titulo)}</h3>
@@ -346,6 +448,7 @@ function render() {
           </div>
           <span class="badge ${esc(b.tipo)}">${esc(TYPE_LABEL[b.tipo] || b.tipo)}</span>
           ${linkHtml}
+          ${trackControls(b)}
           <div class="b-note">${esc(b.nota)}</div>
         </article>`;
     }
@@ -379,6 +482,49 @@ function render() {
     card.addEventListener('keydown', (e) => {
       if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); }
     });
+
+    // botones de estado / lista: no deben colapsar la tarjeta
+    card.querySelectorAll('[data-set]').forEach(btn => {
+      btn.addEventListener('click', async (e) => {
+        e.stopPropagation();
+        const id = card.dataset.bid;
+        const field = btn.dataset.set;   // 'estado' | 'lista'
+        const val = btn.dataset.val;     // '' = desmarcar
+        if (!id) return;
+
+        btn.disabled = true;
+        try {
+          await saveBook(id, { [field]: val });
+          const cur = TRACK.get(id) || {};
+          toast(
+            val ? (field === 'estado' ? `Marcado: ${ESTADO_LABEL[val] || val}` : `Lista: ${val}`)
+                : 'Marca quitada',
+            false
+          );
+          // actualizar contadores y estado visual sin re-render completo
+          buildTrackChips();
+          const body = $('results');
+          // si hay filtro por estado activo, re-render para no mostrar lo que ya no corresponde
+          if (state.est !== 'all') render();
+          else {
+            // actualizo solo los botones de esta tarjeta
+            card.querySelectorAll('[data-set]').forEach(b2 => {
+              const f = b2.dataset.set;
+              const v = (TRACK.get(id) || {})[f] || '';
+              const own = b2.dataset.val;
+              const active = own !== '' && own === v;
+              b2.classList.toggle('on', active);
+              b2.dataset.val = active ? '' : own;
+            });
+            card.classList.toggle('done', (TRACK.get(id) || {}).estado === 'leído');
+          }
+        } catch (err) {
+          toast('No se pudo guardar: ' + err.message, true);
+        } finally {
+          btn.disabled = false;
+        }
+      });
+    });
   });
 
   // saltar al pensador vinculado
@@ -397,7 +543,7 @@ function render() {
 /* ---------- wiring ---------- */
 $('q').addEventListener('input', (e) => { state.q = e.target.value; render(); });
 $('reset').addEventListener('click', () => {
-  state = { thinker: 'all', type: 'all', q: '', sharedOnly: false, view: state.view };
+  state = { thinker: 'all', type: 'all', q: '', sharedOnly: false, view: state.view, est: 'all' };
   $('q').value = '';
   syncChips();
   render();

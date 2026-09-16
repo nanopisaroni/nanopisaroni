@@ -180,6 +180,73 @@
       .pair-count { font-size: 10.5px; }
     }
 
+    /* ---------- seguimiento de lectura ---------- */
+    .track-bar {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 10px;
+      margin-bottom: 16px; padding: 10px 12px;
+      border: 1px solid var(--rule); border-radius: 9px; background: var(--surface);
+    }
+    .track-chips { display: flex; flex-wrap: wrap; gap: 6px; flex: 1 1 auto; }
+    .tchip {
+      font-family: var(--font-body); font-size: 12.5px;
+      padding: 4px 11px; border: 1px solid var(--rule); border-radius: 999px;
+      background: #fff; color: var(--text-muted); cursor: pointer;
+      transition: all .15s ease; white-space: nowrap;
+      display: inline-flex; align-items: center; gap: 5px;
+    }
+    .tchip:hover { border-color: var(--accent); color: var(--accent); }
+    .tchip.on { background: var(--accent); border-color: var(--accent); color: #fff; }
+    .tchip .dot {
+      width: 7px; height: 7px; border-radius: 50%; background: var(--text-faint);
+    }
+    .tchip.on .dot { background: #fff; }
+    .tchip.q-quiero  .dot { background: #c9a227; }
+    .tchip.q-tengo   .dot { background: #4a5c78; }
+    .tchip.q-leyendo .dot { background: #F48630; }
+    .tchip.q-leido   .dot { background: #4a6b3a; }
+    .tchip .num { opacity: .65; font-size: 11px; }
+    .tchip.on .num { opacity: .85; }
+
+    .sheet-link {
+      font-family: var(--font-body); font-size: 12px; color: var(--accent);
+      text-decoration: none; white-space: nowrap; border-bottom: 1px solid transparent;
+    }
+    .sheet-link:hover { border-bottom-color: var(--accent); }
+
+    /* controles dentro de cada tarjeta */
+    .b-track {
+      display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+      margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--rule);
+    }
+    .b-title2 { font-family: var(--font-body); font-size: 10.5px; text-transform: uppercase;
+                letter-spacing: .4px; color: var(--text-faint); font-weight: 600; }
+    .tbtn {
+      font-family: var(--font-body); font-size: 11.5px;
+      padding: 3px 9px; border: 1px solid var(--rule); border-radius: 6px;
+      background: #fff; color: var(--text-muted); cursor: pointer;
+      transition: all .13s ease; white-space: nowrap;
+    }
+    .tbtn:hover { border-color: var(--accent); color: var(--accent); }
+    .tbtn.on { font-weight: 700; }
+    .tbtn.on.st-quiero  { background: #fdf6e0; border-color: #c9a227; color: #8a6d10; }
+    .tbtn.on.st-tengo   { background: #e6ebf2; border-color: #4a5c78; color: #33445c; }
+    .tbtn.on.st-leyendo { background: var(--accent-soft); border-color: #F48630; color: #8a4a0c; }
+    .tbtn.on.st-leido   { background: #e8f0e4; border-color: #4a6b3a; color: #3a5530; }
+    .tbtn.on.st-comprar { background: #e8f0e4; border-color: #4a6b3a; color: #3a5530; }
+    .tbtn.on.st-regalo  { background: #fdeee9; border-color: #c2371f; color: #9a2c17; }
+
+    .bcard.done .b-title { color: var(--text-muted); }
+    .bcard.done .b-title::after { content: " ✓"; color: #4a6b3a; font-size: 13px; }
+
+    .save-toast {
+      position: fixed; bottom: 22px; left: 50%; transform: translateX(-50%) translateY(80px);
+      background: #16181d; color: #fff; font-family: var(--font-body); font-size: 13px;
+      padding: 10px 18px; border-radius: 999px; opacity: 0; pointer-events: none;
+      transition: all .25s ease; z-index: 200;
+    }
+    .save-toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+    .save-toast.err { background: #9a2c17; }
+
     .empty { text-align: center; padding: 60px 20px; color: var(--text-muted);
              font-size: 15px; font-family: var(--font-body); }
     .loading { text-align: center; padding: 60px 20px; color: var(--text-muted); }
@@ -240,6 +307,14 @@
         <span>Solo libros compartidos con otro pensador</span>
       </label>
 
+      <div class="track-bar">
+        <div class="track-chips" id="trackChips" role="group" aria-label="Filtrar por estado de lectura">
+        </div>
+        <a class="sheet-link" id="sheetLink" href="#" target="_blank" rel="noopener">
+          Abrir la planilla ↗
+        </a>
+      </div>
+
       <div class="chips" id="thinkerChips" role="group" aria-label="Filtrar por pensador"></div>
       <div class="chips" id="typeChips" role="group" aria-label="Filtrar por tipo"></div>
 
@@ -258,6 +333,6 @@
     </footer>
   </div>
 
-  <script src="libros.js"></script>
+  <script type="module" src="libros.js"></script>
 </body>
 </html>

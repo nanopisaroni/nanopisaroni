@@ -1,0 +1,552 @@
+{
+ "actualizado": "octubre 2026",
+ "intro": "Estos son los libros que quiero. Salen de la bibliografía de <em>The Beginning of Infinity</em>, de David Deutsch: la lista que él marca como «todo el mundo debería leer», más la lectura de apoyo. Cualquiera de esta página es un acierto.",
+ "libros": [
+  {
+   "id": "selfish-gene",
+   "titulo": "The Selfish Gene",
+   "titulo_es": "El gen egoísta",
+   "autor": "Richard Dawkins",
+   "anio": 1976,
+   "portada": "https://covers.openlibrary.org/b/isbn/9788469620434-L.jpg?default=false",
+   "brief": "El libro que cambió la manera de pensar la evolución: los genes como protagonistas, los cuerpos como vehículos. Deutsch lo pone entre los que «todo el mundo debería leer».",
+   "nota": "La edición en español está bien disponible en AR y suele salir más barata que importar; el original inglés también se consigue localmente (Kel Ediciones). Precios AR verificados en Buscalibre y Cúspide.",
+   "opciones": [
+    {
+     "mercado": "AR",
+     "tienda": "Cúspide",
+     "link": "https://www.buscalibre.com.ar/libro-el-gen-egoista-extendido/9788469620434/p/48256545",
+     "precio": "ARS 40.140 (Buscalibre AR, nuevo, dcto. 10%) / ARS 44.600 (Cúspide, nuevo). Usado Salvat 1994: ARS 90.480 (Buscalibre, usado/anticuario)",
+     "idioma": "español",
+     "nota": "Español — Ed. Bruño 2017 'El gen egoísta extendido' (tapa blanda, nuevo); también Salvat Ciencia"
+    },
+    {
+     "mercado": "AMZ",
+     "tienda": "Amazon",
+     "link": "https://www.amazon.com/Selfish-Gene-40th-Anniversary-Landmark/dp/0198788606",
+     "precio": "USD 13.94 (nuevo, list. 19.99); Kindle USD 9.46; usado desde USD 4.99; ed. 50 aniversario USD 18.98",
+     "idioma": "inglés",
+     "nota": "Paperback (40th Anniversary Ed., Oxford Landmark Science); Kindle y tapa dura"
+    }
+   ],
+   "ar": "sí",
+   "amz": "sí"
+  },
+  {
+   "id": "fabric-reality",
+   "titulo": "The Fabric of Reality",
+   "titulo_es": "El tejido de la realidad",
+   "autor": "David Deutsch",
+   "anio": 1997,
+   "portada": "https://covers.openlibrary.org/b/isbn/9780140146905-L.jpg?default=false",
+   "brief": "Deutsch antes de Deutsch: universos paralelos, teoría de la computación y epistemología en un solo argumento. Es el libro anterior al que estoy leyendo y comparte su bibliografía.",
+   "nota": "La traducción española estándar se titula 'La estructura de la realidad' (Anagrama); 'El tejido de la realidad' es un título/subtítulo descriptivo usado por algunos vendedores. Hay fichas duplicadas en ML y una sin dispo",
+   "opciones": [
+    {
+     "mercado": "AR",
+     "tienda": "MercadoLibre AR",
+     "link": "https://www.mercadolibre.com.ar/la-estructura-de-la-realidad--david-deutsch--libro/up/MLAU3451608955",
+     "precio": "ARS 49.999 ('La estructura de la realidad', 6 cuotas de $11.248, envío gratis); otra ficha 'El tejido de la realidad' ARS 90.395",
+     "idioma": "español",
+     "nota": "Español — Anagrama 'La estructura de la realidad' (ISBN 9788433905840). Otra ficha ML usa el título descriptivo 'El Tejido de la Realidad: La ciencia "
+    },
+    {
+     "mercado": "AMZ",
+     "tienda": "Amazon",
+     "link": "https://www.amazon.com/Fabric-Reality-Science-Parallel-Universes/dp/0140146903",
+     "precio": "USD 16.40 (nuevo, 3rd-party 'Wise Worldwide Books', envía en 5-6 días); usado desde USD 8.53; Kindle USD 9.99",
+     "idioma": "inglés",
+     "nota": "Paperback (Penguin); Kindle; tapa dura"
+    }
+   ],
+   "ar": "sí",
+   "amz": "sí"
+  },
+  {
+   "id": "words-things",
+   "titulo": "Words and Things",
+   "titulo_es": "Palabras y cosas",
+   "autor": "Ernest Gellner",
+   "anio": 1959,
+   "portada": "https://covers.openlibrary.org/b/isbn/9780415345484-L.jpg?default=false",
+   "brief": "La demolición de Gellner a la filosofía del lenguaje de Oxford, con Popper de fondo. Polémico, corto y prácticamente inhallable en español.",
+   "nota": "El original en inglés (con reedición moderna Routledge Classics) es más fácil de conseguir que la traducción Tecnos, que solo aparece usado. En AR solo se ven ejemplares usados.",
+   "opciones": [
+    {
+     "mercado": "AR",
+     "tienda": "MercadoLibre AR",
+     "link": "https://www.mercadolibre.com.ar/palabras-y-cosas--ernest-gellner/up/MLAU3391331175",
+     "precio": "ARS 49.606 (usado, 6 cuotas de $11.160, envío gratis) — precio de USADO",
+     "idioma": "español",
+     "nota": "Español — Tecnos, Madrid 1962, col. 'Estructura y Función' nº10 (trad. Mónica Acheroff). Descatalogado: solo usado/anticuario"
+    },
+    {
+     "mercado": "AMZ",
+     "tienda": "Amazon",
+     "link": "https://www.amazon.com/Words-Things-Examination-Linguistic-Philosophy/dp/0710002602",
+     "precio": "Usado: tapa dura USD 55.03 / rústica USD 45.84 (aprox.); ed. Routledge Classics 2005 nueva ~USD 26-33",
+     "idioma": "inglés",
+     "nota": "Hardcover y Paperback (Routledge & Kegan Paul 1979), usado; reedición Routledge Classics 2005 (nueva) disponible"
+    }
+   ],
+   "ar": "sí",
+   "amz": "sí"
+  },
+  {
+   "id": "political-justice",
+   "titulo": "Enquiry Concerning Political Justice",
+   "titulo_es": "Investigación acerca de la justicia política",
+   "autor": "William Godwin",
+   "anio": 1793,
+   "portada": "https://covers.openlibrary.org/b/isbn/9780198710196-L.jpg?default=false",
+   "brief": "El tratado anarquista de 1793 escrito por el padre de Mary Shelley. Sigue incomodando, que es la mejor señal de que vale la pena.",
+   "nota": "En Argentina solo hay ejemplares usados/antiguos (sin precio publicado). El texto en inglés es de dominio público y se reedita barato (Oxford); suele ser más fácil que la edición española. Los precios AR son de usados.",
+   "opciones": [
+    {
+     "mercado": "AR",
+     "tienda": "MercadoLibre AR",
+     "link": "https://www.mercadolibre.com.ar/investigacion-acerca-de-justicia-politica--william-godwin/up/MLAU4236405329",
+     "precio": "No publicado en las fichas (usados de anticuario, precio variable)",
+     "idioma": "español",
+     "nota": "Español — ediciones antiguas: Americalee (Buenos Aires, 1945) y Júcar (1985). La ed. de Virus Editorial (España) figura AGOTADA en su web"
+    },
+    {
+     "mercado": "AMZ",
+     "tienda": "Amazon",
+     "link": "https://www.amazon.com/Enquiry-Concerning-Political-Justice-William/dp/0198710194",
+     "precio": "USD 16.27 (paperback, USADO 'Good', seller BOOK_DEPOT); tapa dura USD 28.99; reimpresiones nuevas desde ~USD 20",
+     "idioma": "inglés",
+     "nota": "Paperback (Oxford World's Classics, ISBN 9780198710196); tapa dura; varias reimpresiones"
+    }
+   ],
+   "ar": "sí",
+   "amz": "sí"
+  },
+  {
+   "id": "strange-loop",
+   "titulo": "I Am a Strange Loop",
+   "titulo_es": "Yo soy un extraño bucle",
+   "autor": "Douglas Hofstadter",
+   "anio": 2007,
+   "portada": "https://covers.openlibrary.org/b/isbn/9780465030798-L.jpg?default=false",
+   "brief": "Hofstadter treinta años después de Gödel, Escher, Bach: cómo emerge un «yo» de un sistema de símbolos que se apunta a sí mismo.",
+   "nota": "La edición española está agotada en librerías (Buscalibre sin stock) y solo quedan usados dispersos en ML. El original inglés en Amazon es barato y con stock: conviene más el importado.",
+   "opciones": [
+    {
+     "mercado": "AR",
+     "tienda": "MercadoLibre AR",
+     "link": "https://www.mercadolibre.com.ar/yo-soy-un-extrano-bucle--douglas-r-hofstadter/up/MLAU3636604030",
+     "precio": "No confirmado (usado); edición nueva: sin stock",
+     "idioma": "español",
+     "nota": "Español — Tusquets / Metatemas (2008 y 2013), ISBN 9788483830871 (y 9786074210293 / 9786074214314)"
+    },
+    {
+     "mercado": "AMZ",
+     "tienda": "Amazon",
+     "link": "https://www.amazon.com/Am-Strange-Loop-Douglas-Hofstadter/dp/0465030793",
+     "precio": "USD 9.58 (oferta Prime) / USD 10.09 (normal), list. 21.99, EN STOCK y vendido por Amazon.com; usado desde USD 3.05; Kindle USD 15.99",
+     "idioma": "inglés",
+     "nota": "Paperback (Basic Books); Kindle; tapa dura"
+    }
+   ],
+   "ar": "dudoso",
+   "amz": "sí"
+  },
+  {
+   "id": "magee-popper",
+   "titulo": "Popper",
+   "titulo_es": "Popper",
+   "autor": "Bryan Magee",
+   "anio": 1973,
+   "portada": "https://covers.openlibrary.org/b/isbn/9780006860082-L.jpg?default=false",
+   "brief": "La mejor puerta de entrada a Popper: corta, clara y escrita por alguien que sabía explicar. La edición española está descatalogada, así que toca importarla.",
+   "nota": "El original inglés (Fontana Modern Masters) se consigue en Amazon; la traducción española (Grijalbo 1974) está descatalogada y no aparece en retail AR. Existe edición de bolsillo en inglés (Modern Masters, ISBN 067001967",
+   "opciones": [
+    {
+     "mercado": "AMZ",
+     "tienda": "Amazon",
+     "link": "https://www.amazon.com/dp/0006860087",
+     "precio": "USD 19.16 (nuevo, Amazon.com; puede ser importación UK, ISBN 9780006860082); usado desde ~USD 2.41",
+     "idioma": "inglés",
+     "nota": "Paperback (Fontana Press / Modern Masters); también Kindle"
+    }
+   ],
+   "ar": "dudoso",
+   "amz": "sí"
+  },
+  {
+   "id": "ascent-man",
+   "titulo": "The Ascent of Man",
+   "titulo_es": "El ascenso del hombre",
+   "autor": "Jacob Bronowski",
+   "anio": 1973,
+   "portada": "https://covers.openlibrary.org/b/id/6901081-L.jpg",
+   "brief": "La serie de la BBC que hizo que una generación entera se metiera en ciencia, ahora en libro. Edición nueva de Capitán Swing con prólogo de Dawkins.",
+   "nota": "En español la edición de Capitán Swing (2016) está disponible nueva en Buscalibre Argentina. La edición listada en MercadoLibre no mostró precio/stock en el snippet. En Amazon hay múltiples formatos nuevos y usado barato",
+   "opciones": [
+    {
+     "mercado": "AR",
+     "tienda": "buscalibre.com.ar",
+     "link": "https://www.buscalibre.com.ar/libro-el-ascenso-del-hombre/9788494504334/p/47311331",
+     "precio": "$53.512 (dto. 55% sobre $118.915)",
+     "idioma": "inglés",
+     "nota": "Capitán Swing, 2016, 1ª ed., tapa blanda, nuevo (trad. Pedro Pacheco, prólogo de Richard Dawkins). Otra edición ISBN 978-84-945043-3-4 figura Sin Stoc"
+    },
+    {
+     "mercado": "AMZ",
+     "tienda": "Amazon",
+     "link": "https://www.amazon.com/Ascent-Man-Jacob-Bronowski/dp/0316109304",
+     "precio": "USD 19.05 (paperback); 12.99 Kindle; 37.76 hardcover; usado desde 1.99",
+     "idioma": "inglés",
+     "nota": "Kindle / Hardcover / Paperback"
+    }
+   ],
+   "ar": "sí",
+   "amz": "sí"
+  },
+  {
+   "id": "science-values",
+   "titulo": "Science and Human Values",
+   "titulo_es": "Ciencia y valores humanos",
+   "autor": "Jacob Bronowski",
+   "anio": 1956,
+   "portada": "https://covers.openlibrary.org/b/isbn/9780060972813-L.jpg?default=false",
+   "brief": "Cuatro ensayos sobre por qué la ciencia es un hecho cultural y no un deporte de laboratorio. Solo se consigue en inglés.",
+   "nota": "No se encontró edición en español ('Ciencia y valores humanos') en AR ni Amazon; solo se consigue el original en inglés. En Amazon: 'Only 7 left in stock', USD 11.99. En Buscalibre AR figura el listado en inglés pero el ",
+   "opciones": [
+    {
+     "mercado": "AR",
+     "tienda": "buscalibre.com.ar",
+     "link": "https://www.buscalibre.com.ar/libro-science-and-human-values/9780060972813/p/1536088",
+     "precio": "",
+     "idioma": "inglés",
+     "nota": "Varias ediciones en inglés: HarperCollins/Harper Perennial tapa blanda (ISBN 978-0-06-097281-3) y Literary Licensing."
+    },
+    {
+     "mercado": "AMZ",
+     "tienda": "Amazon",
+     "link": "https://www.amazon.com/Science-Human-Values-Jacob-Bronowski/dp/0060972815",
+     "precio": "USD 11.99",
+     "idioma": "inglés",
+     "nota": "Paperback (también Kindle/otras)"
+    }
+   ],
+   "ar": "sí (solo en inglés)",
+   "amz": "sí"
+  },
+  {
+   "id": "anthropic",
+   "titulo": "The Anthropic Cosmological Principle",
+   "titulo_es": "El principio antrópico cosmológico",
+   "autor": "John Barrow & Frank Tipler",
+   "anio": 1986,
+   "portada": "https://covers.openlibrary.org/b/isbn/9780192821478-L.jpg?default=false",
+   "brief": "El libro que formalizó el principio antrópico: casi 700 páginas de Barrow y Tipler. Se lee por ambición, no por placer.",
+   "nota": "En Buscalibre AR figura 'In stock' (Oxford Paperbacks, tapa blanda, nuevo) pero el snippet no expone precio. No se halló edición en español ('El principio antrópico') en AR; solo inglés. En Amazon disponible nuevo en pap",
+   "opciones": [
+    {
+     "mercado": "AR",
+     "tienda": "buscalibre.com.ar",
+     "link": "https://www.buscalibre.com.ar/libro-the-anthropic-cosmological-principle-oxford-paperbacks/9780192821478/p/2543063",
+     "precio": "",
+     "idioma": "inglés",
+     "nota": "Oxford University Press / Oxford Paperbacks, 1988, tapa blanda, nuevo, en inglés (ISBN 978-0-19-282147-8)."
+    },
+    {
+     "mercado": "AMZ",
+     "tienda": "Amazon",
+     "link": "https://www.amazon.com/Anthropic-Cosmological-Principle-Oxford-Paperbacks/dp/0192821474",
+     "precio": "USD 25.23 (paperback, dto. 30% sobre lista USD 35.99)",
+     "idioma": "inglés",
+     "nota": "Paperback (Oxford Paperbacks); también Hardcover (ISBN 0198519494)"
+    }
+   ],
+   "ar": "sí",
+   "amz": "sí"
+  },
+  {
+   "id": "meme-machine",
+   "titulo": "The Meme Machine",
+   "titulo_es": "La máquina de los memes",
+   "autor": "Susan Blackmore",
+   "anio": 1999,
+   "portada": "https://covers.openlibrary.org/b/isbn/9780192862129-L.jpg?default=false",
+   "brief": "La obra que tomó la idea de «meme» de Dawkins y la convirtió en una teoría completa de la cultura.",
+   "nota": "La edición en español 'La máquina de los memes' (Paidós, 2000) existe y figura en el sitio de la editorial, pero no se halló listado con stock/precio en MercadoLibre ni en Buscalibre AR: probablemente descatalogada o sol",
+   "opciones": [
+    {
+     "mercado": "AR",
+     "tienda": "planetadelibros.com.ar",
+     "link": "https://www.planetadelibros.com.ar/libro-maquina-de-los-memes-al/122076",
+     "precio": "",
+     "idioma": "español",
+     "nota": "Español: Paidós, 2000 (trad. de 'La máquina de los memes'). Original: Oxford University Press."
+    },
+    {
+     "mercado": "AMZ",
+     "tienda": "Amazon",
+     "link": "https://www.amazon.com/Meme-Machine-Susan-Blackmore/dp/0198503652",
+     "precio": "USD 22.97",
+     "idioma": "inglés",
+     "nota": "Paperback (Oxford University Press) y Kindle"
+    }
+   ],
+   "ar": "dudoso",
+   "amz": "sí"
+  },
+  {
+   "id": "character-law",
+   "titulo": "The Character of Physical Law",
+   "titulo_es": "El carácter de la ley física",
+   "autor": "Richard Feynman",
+   "anio": 1965,
+   "portada": "https://covers.openlibrary.org/b/isbn/9780262560030-L.jpg?default=false",
+   "brief": "Las Messenger Lectures de Feynman en Cornell, transcriptas: la ley física explicada sin una sola ecuación fea.",
+   "nota": "Buena disponibilidad en español (Tusquets) vía Buscalibre AR ($106.240) y Zivals. También está el original en inglés nuevo en Buscalibre y varias ediciones en Amazon desde USD 10.78.",
+   "opciones": [
+    {
+     "mercado": "AR",
+     "tienda": "buscalibre.com.ar y zivals.com.ar",
+     "link": "https://www.zivals.com.ar/LIBRO/9788490661673/EL+CARACTER+DE+LA+LEY+FISICA+(ED+ESPA%C3%91OLA)",
+     "precio": "$106.240 (español, Tusquets, 50% dto.)",
+     "idioma": "español",
+     "nota": "Español: Tusquets Editores, 2015, 1ª ed., tapa blanda, nuevo (ISBN 978-84-9066-167-3). Inglés: Penguin 2006 (nuevo, 60% dto.) y MIT Press."
+    },
+    {
+     "mercado": "AMZ",
+     "tienda": "Amazon",
+     "link": "https://www.amazon.com/Character-Physical-Law-MIT-Press/dp/0262560038",
+     "precio": "USD 10.78 (MIT Press); 15.56 (Penguin)",
+     "idioma": "inglés",
+     "nota": "Paperback (múltiples ediciones: MIT Press, Penguin, Modern Library)"
+    }
+   ],
+   "ar": "sí",
+   "amz": "sí"
+  },
+  {
+   "id": "meaning-it-all",
+   "titulo": "The Meaning of It All",
+   "titulo_es": "¿Qué significa todo eso?",
+   "autor": "Richard Feynman",
+   "anio": 1998,
+   "portada": "https://covers.openlibrary.org/b/isbn/9780465023943-L.jpg?default=false",
+   "brief": "Tres charlas de Feynman sobre ciencia, religión y política. Feynman siendo Feynman, sin edición de por medio.",
+   "nota": "Solo se confirmó la edición en inglés en AR (Buscalibre, sin precio/stock explícito en el snippet). No se halló la edición en español ('¿Qué significa todo eso?', Crítica) en AR; solo PDFs no oficiales. En Amazon está 'I",
+   "opciones": [
+    {
+     "mercado": "AR",
+     "tienda": "buscalibre.com.ar",
+     "link": "https://www.buscalibre.com.ar/libro-the-meaning-of-it-all-thoughts-of-a-citizen-scientist/9780465023943/p/1742069",
+     "precio": "",
+     "idioma": "inglés",
+     "nota": "Inglés: Basic Books, tapa blanda, nuevo ('Thoughts of a Citizen-Scientist', ISBN 978-0-465-02394-3). Envío 15-21 días háb."
+    },
+    {
+     "mercado": "AMZ",
+     "tienda": "Amazon",
+     "link": "https://www.amazon.com/Meaning-All-Thoughts-Citizen-Scientist/dp/0465023940",
+     "precio": "USD 10.34 (nuevo, dto. 43% sobre lista 17.99); usado desde USD 6.49",
+     "idioma": "inglés",
+     "nota": "Paperback (Basic Books); también ebook"
+    }
+   ],
+   "ar": "sí (solo en inglés)",
+   "amz": "sí"
+  },
+  {
+   "id": "conjectures",
+   "titulo": "Conjectures and Refutations",
+   "titulo_es": "Conjeturas y refutaciones",
+   "autor": "Karl Popper",
+   "anio": 1963,
+   "portada": "https://covers.openlibrary.org/b/isbn/9780415285940-L.jpg?default=false",
+   "brief": "El corazón de Popper: el conocimiento no se justifica, se conjetura y se refuta. Es el libro del que toda la obra de Deutsch es heredera directa.",
+   "nota": "Buscalibre: 'Stock Disponible - Nuevo'. MercadoLibre: varias publicaciones 'In stock' (ed. 2013 Básica Paidós). Amazon.com: In Stock, -36% sobre precio de lista USD 35.99.",
+   "opciones": [
+    {
+     "mercado": "AR",
+     "tienda": "Buscalibre AR y MercadoLibre",
+     "link": "https://www.buscalibre.com.ar/libro-conjeturas-y-refutaciones/9788475091464/p/1028847",
+     "precio": "ARS 64.454 (nuevo, Buscalibre)",
+     "idioma": "inglés",
+     "nota": "Paidós, tapa blanda (Buscalibre: 1967, 1a ed.; ML: Básica Paidós México 2013)"
+    },
+    {
+     "mercado": "AMZ",
+     "tienda": "Amazon",
+     "link": "https://amazon.com/Conjectures-Refutations-Scientific-Knowledge-Routledge/dp/0415285941",
+     "precio": "USD 23.02",
+     "idioma": "inglés",
+     "nota": "Routledge Classics, paperback"
+    }
+   ],
+   "ar": "sí",
+   "amz": "sí"
+  },
+  {
+   "id": "open-society",
+   "titulo": "The Open Society and Its Enemies",
+   "titulo_es": "La sociedad abierta y sus enemigos",
+   "autor": "Karl Popper",
+   "anio": 1945,
+   "portada": "https://covers.openlibrary.org/b/isbn/9780691158136-L.jpg?default=false",
+   "brief": "Popper contra Platón, Hegel y Marx. Explica por qué Popper es referencia compartida de Deutsch, Thiel y Yudkowsky.",
+   "nota": "ML: publicación Paidós 'Llega gratis hoy' (disponible) y listados de ed. 2023. Buscalibre: ejemplar USADO Paidos tapa blanda ARS 122.840 (40% off de 204.734); la ed. 2 tomos aparece agotada ('avisarme cuando vuelva'). Am",
+   "opciones": [
+    {
+     "mercado": "AR",
+     "tienda": "MercadoLibre y Buscalibre AR",
+     "link": "https://www.mercadolibre.com.ar/la-sociedad-abierta-y-sus-enemigos-karl-popper-ed-paidos/up/MLAU131955015",
+     "precio": "usado ARS 122.840 (Buscalibre); ML nueva ed. 2023 sin precio en snippet",
+     "idioma": "inglés",
+     "nota": "Paidós, tapa blanda; ML ofrece ed. 2023 'con una adenda del autor' (EL BAZAR DIGITAL); Buscalibre también ed. nueva ISBN 9788449333194"
+    },
+    {
+     "mercado": "AMZ",
+     "tienda": "Amazon",
+     "link": "https://www.amazon.com/Open-Society-Enemies-Princeton-Classics/dp/0691210845",
+     "precio": "USD 19.62",
+     "idioma": "inglés",
+     "nota": "Princeton Classics, paperback"
+    }
+   ],
+   "ar": "sí",
+   "amz": "sí"
+  },
+  {
+   "id": "better-world",
+   "titulo": "In Search of a Better World",
+   "titulo_es": "En busca de un mundo mejor",
+   "autor": "Karl Popper",
+   "anio": 1995,
+   "portada": "https://covers.openlibrary.org/b/isbn/9780415135481-L.jpg?default=false",
+   "brief": "Conferencias y ensayos tardíos: racionalidad, libertad y la responsabilidad del intelectual.",
+   "nota": "AR: en ML hay publicaciones 'In stock' pero TODAS figuran (Usado) y sin precio en el snippet (Paidós tapa blanda); Buscalibre no devolvió ficha propia con stock. Amazon.com: existe la página del paperback Routledge 1995 ",
+   "opciones": [
+    {
+     "mercado": "AR",
+     "tienda": "MercadoLibre",
+     "link": "https://www.mercadolibre.com.ar/en-busca-de-un-mundo-mejor--karl-popper--mb-estado/up/MLAU3656171270",
+     "precio": "",
+     "idioma": "inglés",
+     "nota": "Paidós, tapa blanda (ejemplares USADOS en ML)"
+    },
+    {
+     "mercado": "AMZ",
+     "tienda": "Amazon",
+     "link": "https://www.amazon.com/Search-Better-World-Lectures-Essays/dp/0415135486",
+     "precio": "",
+     "idioma": "inglés",
+     "nota": "Routledge, paperback (ISBN 9780415135481)"
+    }
+   ],
+   "ar": "sí",
+   "amz": "sí"
+  },
+  {
+   "id": "parmenides",
+   "titulo": "The World of Parmenides",
+   "titulo_es": "El mundo de Parménides",
+   "autor": "Karl Popper",
+   "anio": 1998,
+   "portada": "https://covers.openlibrary.org/b/isbn/9788449307461-L.jpg?default=false",
+   "brief": "El último Popper: los presocráticos leídos como el nacimiento de la ciencia. Difícil de conseguir en cualquier idioma.",
+   "nota": "AR: Buscalibre AR marca 'Sin Stock' para la ed. Paidós (ISBN 9788449307461); hay publicaciones en ML (ed. Básica Paidós México) pero el snippet no confirma stock -> por eso 'dudoso'. Amazon.com: existe página Routledge (",
+   "opciones": [
+    {
+     "mercado": "AR",
+     "tienda": "MercadoLibre",
+     "link": "https://www.mercadolibre.com.ar/el-mundo-de-parmenides--karl-r-popper/up/MLAU323925191",
+     "precio": "",
+     "idioma": "inglés",
+     "nota": "Paidós/Básica México, tapa blanda (ISBN 9788449307461)"
+    },
+    {
+     "mercado": "AMZ",
+     "tienda": "Amazon",
+     "link": "https://www.amazon.com/World-Parmenides-Essays-Presocratic-Enlightenment/dp/0415237300",
+     "precio": "",
+     "idioma": "inglés",
+     "nota": "Routledge Classics, paperback (ISBN 9780415518796); también Kindle"
+    }
+   ],
+   "ar": "dudoso",
+   "amz": "sí"
+  },
+  {
+   "id": "enlightenment",
+   "titulo": "Enlightenment",
+   "titulo_es": "Ilustración",
+   "autor": "Roy Porter",
+   "anio": 2000,
+   "portada": "https://covers.openlibrary.org/b/isbn/9780140250282-L.jpg?default=false",
+   "brief": "Roy Porter sobre cómo Gran Bretaña inventó la modernidad. Historia de las ideas escrita con oficio de narrador.",
+   "nota": "Existe ficha en Mercado Libre AR (catálogo) y en Amazon US (Penguin paperback + edición US 'The Creation of the Modern World', Norton 2000, ISBN 0393048721). Buscalibre AR no devolvió resultados. Los snippets no trajeron",
+   "opciones": [
+    {
+     "mercado": "AR",
+     "tienda": "Mercado Libre",
+     "link": "https://www.mercadolibre.com.ar/the-enlightenment--roy-porter/up/MLAU198309660",
+     "precio": "",
+     "idioma": "inglés",
+     "nota": ""
+    },
+    {
+     "mercado": "AMZ",
+     "tienda": "Amazon",
+     "link": "https://www.amazon.com/Enlightenment-Britain-Creation-Modern-World/dp/014025028X",
+     "precio": "",
+     "idioma": "inglés",
+     "nota": "Paperback (Penguin, ISBN 9780140250282)"
+    }
+   ],
+   "ar": "dudoso",
+   "amz": "sí"
+  },
+  {
+   "id": "six-numbers",
+   "titulo": "Just Six Numbers",
+   "titulo_es": "Seis números nada más",
+   "autor": "Martin Rees",
+   "anio": 2001,
+   "portada": "https://covers.openlibrary.org/b/isbn/9780465036738-L.jpg?default=false",
+   "brief": "Rees: seis constantes y, con ellas, todo el universo. Divulgación científica de primera línea.",
+   "nota": "Disponible en Buscalibre AR como importado (Tapa Blanda), idioma inglés; año 2001/208 págs. La búsqueda en ML con el nombre en español 'Seis números nada más' no devolvió ninguna edición (probablemente no hay edición en ",
+   "opciones": [
+    {
+     "mercado": "AR",
+     "tienda": "Buscalibre Argentina",
+     "link": "https://www.buscalibre.com.ar/libro-just-six-numbers-science-masters/9781780226903/p/49236791",
+     "precio": "",
+     "idioma": "inglés",
+     "nota": "W&N 'Science Masters', Tapa Blanda, ISBN 9781780226903; también ed. 2001 ISBN 9780465036738"
+    }
+   ],
+   "ar": "sí",
+   "amz": ""
+  },
+  {
+   "id": "lunar-men",
+   "titulo": "The Lunar Men",
+   "titulo_es": "Los hombres de la Luna",
+   "autor": "Jenny Uglow",
+   "anio": 2002,
+   "portada": "https://covers.openlibrary.org/b/isbn/9780571216109-L.jpg?default=false",
+   "brief": "Los industriales y científicos de Birmingham que inventaron la revolución industrial, contados como una novela. No se consigue en Argentina: hay que importarlo.",
+   "nota": "No apareció en ML AR ni en Buscalibre AR (searches sin resultados relevantes). En Amazon US hay Hardcover a USD 22.64 (¡solo 1 en stock!) y Trade Paperback FSG (ISBN 9780374528881) a USD 40.99. Edición Faber UK paperback",
+   "opciones": [
+    {
+     "mercado": "AMZ",
+     "tienda": "Amazon",
+     "link": "https://www.amazon.com/Lunar-Men-Science-Invention-Passion/dp/0571216102",
+     "precio": "USD 22.64 (lista USD 30.00, -25%)",
+     "idioma": "inglés",
+     "nota": "Hardcover (Faber, ISBN 9780571216109)"
+    }
+   ],
+   "ar": "no",
+   "amz": "sí"
+  }
+ ]
+}

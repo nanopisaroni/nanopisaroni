@@ -1,0 +1,162 @@
+[
+ {
+  "titulo": "The Selfish Gene",
+  "autor": "Richard Dawkins",
+  "cover": "https://covers.openlibrary.org/b/isbn/9788469620434-L.jpg?default=false",
+  "fuente": "isbn",
+  "bytes": 54049,
+  "isbn_usado": "9788469620434"
+ },
+ {
+  "titulo": "The Fabric of Reality",
+  "autor": "David Deutsch",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780140146905-L.jpg?default=false",
+  "fuente": "isbn",
+  "bytes": 28155,
+  "isbn_usado": "9780140146905"
+ },
+ {
+  "titulo": "Words and Things",
+  "autor": "Ernest Gellner",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780415345484-L.jpg?default=false",
+  "fuente": "isbn",
+  "bytes": 20334,
+  "isbn_usado": "9780415345484"
+ },
+ {
+  "titulo": "Enquiry Concerning Political Justice",
+  "autor": "William Godwin",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780198710196-L.jpg?default=false",
+  "fuente": "isbn",
+  "bytes": 21342,
+  "isbn_usado": "9780198710196"
+ },
+ {
+  "titulo": "I Am a Strange Loop",
+  "autor": "Douglas Hofstadter",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780465030798-L.jpg?default=false",
+  "fuente": "isbn",
+  "bytes": 46500,
+  "isbn_usado": "9780465030798"
+ },
+ {
+  "titulo": "Popper",
+  "autor": "Bryan Magee",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780006860082-L.jpg?default=false",
+  "fuente": "isbn",
+  "bytes": 30118,
+  "isbn_usado": "9780006860082"
+ },
+ {
+  "titulo": "The Ascent of Man",
+  "autor": "Jacob Bronowski",
+  "cover": "https://covers.openlibrary.org/b/id/6901081-L.jpg",
+  "fuente": "cover_id",
+  "bytes": 28592,
+  "isbn_usado": ""
+ },
+ {
+  "titulo": "Science and Human Values",
+  "autor": "Jacob Bronowski",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780060972813-L.jpg?default=false",
+  "fuente": "isbn",
+  "bytes": 36967,
+  "isbn_usado": "9780060972813"
+ },
+ {
+  "titulo": "The Anthropic Cosmological Principle",
+  "autor": "John Barrow Frank Tipler",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780192821478-L.jpg?default=false",
+  "fuente": "isbn",
+  "bytes": 30467,
+  "isbn_usado": "9780192821478"
+ },
+ {
+  "titulo": "The Meme Machine",
+  "autor": "Susan Blackmore",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780192862129-L.jpg?default=false",
+  "fuente": "isbn",
+  "bytes": 30289,
+  "isbn_usado": "9780192862129"
+ },
+ {
+  "titulo": "The Character of Physical Law",
+  "autor": "Richard Feynman",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780262560030-L.jpg?default=false",
+  "fuente": "isbn",
+  "bytes": 15934,
+  "isbn_usado": "9780262560030"
+ },
+ {
+  "titulo": "The Meaning of It All",
+  "autor": "Richard Feynman",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780465023943-L.jpg?default=false",
+  "fuente": "isbn",
+  "bytes": 20153,
+  "isbn_usado": "9780465023943"
+ },
+ {
+  "titulo": "Conjectures and Refutations",
+  "autor": "Karl Popper",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780415285940-L.jpg?default=false",
+  "fuente": "isbn",
+  "bytes": 27213,
+  "isbn_usado": "9780415285940"
+ },
+ {
+  "titulo": "The Open Society and Its Enemies",
+  "autor": "Karl Popper",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780691158136-L.jpg?default=false",
+  "fuente": "isbn",
+  "bytes": 32830,
+  "isbn_usado": "9780691158136"
+ },
+ {
+  "titulo": "In Search of a Better World",
+  "autor": "Karl Popper",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780415135481-L.jpg?default=false",
+  "fuente": "isbn",
+  "bytes": 29574,
+  "isbn_usado": "9780415135481"
+ },
+ {
+  "titulo": "The World of Parmenides",
+  "autor": "Karl Popper",
+  "cover": "https://covers.openlibrary.org/b/isbn/9788449307461-L.jpg?default=false",
+  "fuente": "isbn",
+  "bytes": 29672,
+  "isbn_usado": "9788449307461"
+ },
+ {
+  "titulo": "Enlightenment",
+  "autor": "Roy Porter",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780140250282-L.jpg?default=false",
+  "fuente": "isbn",
+  "bytes": 20305,
+  "isbn_usado": "9780140250282"
+ },
+ {
+  "titulo": "Just Six Numbers",
+  "autor": "Martin Rees",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780465036738-L.jpg?default=false",
+  "fuente": "isbn",
+  "bytes": 33346,
+  "isbn_usado": "9780465036738"
+ },
+ {
+  "titulo": "The Lunar Men",
+  "autor": "Jenny Uglow",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780571216109-L.jpg?default=false",
+  "fuente": "isbn",
+  "bytes": 20111,
+  "isbn_usado": "9780571216109"
+ },
+ {
+  "titulo": "Euthyphro",
+  "autor": "Plato",
+  "cover": "https://covers.openlibrary.org/b/isbn/9788424938901-L.jpg?default=false",
+  "fuente": "isbn",
+  "bytes": 4125,
+  "isbn_usado": "9788424938901"
+ }
+]

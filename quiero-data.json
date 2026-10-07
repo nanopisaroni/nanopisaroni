@@ -8,7 +8,7 @@
    "titulo_es": "El gen egoísta",
    "autor": "Richard Dawkins",
    "anio": 1976,
-   "portada": "https://covers.openlibrary.org/b/isbn/9788469620434-L.jpg?default=false",
+   "portada": "quiero-covers/selfish-gene.jpg",
    "brief": "El libro que cambió la manera de pensar la evolución: los genes como protagonistas, los cuerpos como vehículos. Deutsch lo pone entre los que «todo el mundo debería leer».",
    "nota": "La edición en español está bien disponible en AR y suele salir más barata que importar; el original inglés también se consigue localmente (Kel Ediciones). Precios AR verificados en Buscalibre y Cúspide.",
    "opciones": [
@@ -30,7 +30,8 @@
     }
    ],
    "ar": "sí",
-   "amz": "sí"
+   "amz": "sí",
+   "portada_original": "https://covers.openlibrary.org/b/isbn/9788469620434-L.jpg?default=false"
   },
   {
    "id": "fabric-reality",
@@ -38,7 +39,7 @@
    "titulo_es": "El tejido de la realidad",
    "autor": "David Deutsch",
    "anio": 1997,
-   "portada": "https://covers.openlibrary.org/b/isbn/9780140146905-L.jpg?default=false",
+   "portada": "quiero-covers/fabric-reality.jpg",
    "brief": "Deutsch antes de Deutsch: universos paralelos, teoría de la computación y epistemología en un solo argumento. Es el libro anterior al que estoy leyendo y comparte su bibliografía.",
    "nota": "La traducción española estándar se titula 'La estructura de la realidad' (Anagrama); 'El tejido de la realidad' es un título/subtítulo descriptivo usado por algunos vendedores. Hay fichas duplicadas en ML y una sin dispo",
    "opciones": [
@@ -60,7 +61,8 @@
     }
    ],
    "ar": "sí",
-   "amz": "sí"
+   "amz": "sí",
+   "portada_original": "https://covers.openlibrary.org/b/isbn/9780140146905-L.jpg?default=false"
   },
   {
    "id": "words-things",
@@ -68,7 +70,7 @@
    "titulo_es": "Palabras y cosas",
    "autor": "Ernest Gellner",
    "anio": 1959,
-   "portada": "https://covers.openlibrary.org/b/isbn/9780415345484-L.jpg?default=false",
+   "portada": "quiero-covers/words-things.jpg",
    "brief": "La demolición de Gellner a la filosofía del lenguaje de Oxford, con Popper de fondo. Polémico, corto y prácticamente inhallable en español.",
    "nota": "El original en inglés (con reedición moderna Routledge Classics) es más fácil de conseguir que la traducción Tecnos, que solo aparece usado. En AR solo se ven ejemplares usados.",
    "opciones": [
@@ -90,7 +92,8 @@
     }
    ],
    "ar": "sí",
-   "amz": "sí"
+   "amz": "sí",
+   "portada_original": "https://covers.openlibrary.org/b/isbn/9780415345484-L.jpg?default=false"
   },
   {
    "id": "political-justice",
@@ -98,7 +101,7 @@
    "titulo_es": "Investigación acerca de la justicia política",
    "autor": "William Godwin",
    "anio": 1793,
-   "portada": "https://covers.openlibrary.org/b/isbn/9780198710196-L.jpg?default=false",
+   "portada": "quiero-covers/political-justice.jpg",
    "brief": "El tratado anarquista de 1793 escrito por el padre de Mary Shelley. Sigue incomodando, que es la mejor señal de que vale la pena.",
    "nota": "En Argentina solo hay ejemplares usados/antiguos (sin precio publicado). El texto en inglés es de dominio público y se reedita barato (Oxford); suele ser más fácil que la edición española. Los precios AR son de usados.",
    "opciones": [
@@ -120,7 +123,8 @@
     }
    ],
    "ar": "sí",
-   "amz": "sí"
+   "amz": "sí",
+   "portada_original": "https://covers.openlibrary.org/b/isbn/9780198710196-L.jpg?default=false"
   },
   {
    "id": "strange-loop",
@@ -128,7 +132,7 @@
    "titulo_es": "Yo soy un extraño bucle",
    "autor": "Douglas Hofstadter",
    "anio": 2007,
-   "portada": "https://covers.openlibrary.org/b/isbn/9780465030798-L.jpg?default=false",
+   "portada": "quiero-covers/strange-loop.jpg",
    "brief": "Hofstadter treinta años después de Gödel, Escher, Bach: cómo emerge un «yo» de un sistema de símbolos que se apunta a sí mismo.",
    "nota": "La edición española está agotada en librerías (Buscalibre sin stock) y solo quedan usados dispersos en ML. El original inglés en Amazon es barato y con stock: conviene más el importado.",
    "opciones": [
@@ -150,7 +154,8 @@
     }
    ],
    "ar": "dudoso",
-   "amz": "sí"
+   "amz": "sí",
+   "portada_original": "https://covers.openlibrary.org/b/isbn/9780465030798-L.jpg?default=false"
   },
   {
    "id": "magee-popper",
@@ -158,7 +163,7 @@
    "titulo_es": "Popper",
    "autor": "Bryan Magee",
    "anio": 1973,
-   "portada": "https://covers.openlibrary.org/b/isbn/9780006860082-L.jpg?default=false",
+   "portada": "quiero-covers/magee-popper.jpg",
    "brief": "La mejor puerta de entrada a Popper: corta, clara y escrita por alguien que sabía explicar. La edición española está descatalogada, así que toca importarla.",
    "nota": "El original inglés (Fontana Modern Masters) se consigue en Amazon; la traducción española (Grijalbo 1974) está descatalogada y no aparece en retail AR. Existe edición de bolsillo en inglés (Modern Masters, ISBN 067001967",
    "opciones": [
@@ -172,7 +177,8 @@
     }
    ],
    "ar": "dudoso",
-   "amz": "sí"
+   "amz": "sí",
+   "portada_original": "https://covers.openlibrary.org/b/isbn/9780006860082-L.jpg?default=false"
   },
   {
    "id": "ascent-man",
@@ -180,7 +186,7 @@
    "titulo_es": "El ascenso del hombre",
    "autor": "Jacob Bronowski",
    "anio": 1973,
-   "portada": "https://covers.openlibrary.org/b/id/6901081-L.jpg",
+   "portada": "quiero-covers/ascent-man.jpg",
    "brief": "La serie de la BBC que hizo que una generación entera se metiera en ciencia, ahora en libro. Edición nueva de Capitán Swing con prólogo de Dawkins.",
    "nota": "En español la edición de Capitán Swing (2016) está disponible nueva en Buscalibre Argentina. La edición listada en MercadoLibre no mostró precio/stock en el snippet. En Amazon hay múltiples formatos nuevos y usado barato",
    "opciones": [
@@ -202,7 +208,8 @@
     }
    ],
    "ar": "sí",
-   "amz": "sí"
+   "amz": "sí",
+   "portada_original": "https://covers.openlibrary.org/b/id/6901081-L.jpg"
   },
   {
    "id": "science-values",
@@ -210,7 +217,7 @@
    "titulo_es": "Ciencia y valores humanos",
    "autor": "Jacob Bronowski",
    "anio": 1956,
-   "portada": "https://covers.openlibrary.org/b/isbn/9780060972813-L.jpg?default=false",
+   "portada": "quiero-covers/science-values.jpg",
    "brief": "Cuatro ensayos sobre por qué la ciencia es un hecho cultural y no un deporte de laboratorio. Solo se consigue en inglés.",
    "nota": "No se encontró edición en español ('Ciencia y valores humanos') en AR ni Amazon; solo se consigue el original en inglés. En Amazon: 'Only 7 left in stock', USD 11.99. En Buscalibre AR figura el listado en inglés pero el ",
    "opciones": [
@@ -232,7 +239,8 @@
     }
    ],
    "ar": "sí (solo en inglés)",
-   "amz": "sí"
+   "amz": "sí",
+   "portada_original": "https://covers.openlibrary.org/b/isbn/9780060972813-L.jpg?default=false"
   },
   {
    "id": "anthropic",
@@ -240,7 +248,7 @@
    "titulo_es": "El principio antrópico cosmológico",
    "autor": "John Barrow & Frank Tipler",
    "anio": 1986,
-   "portada": "https://covers.openlibrary.org/b/isbn/9780192821478-L.jpg?default=false",
+   "portada": "quiero-covers/anthropic.jpg",
    "brief": "El libro que formalizó el principio antrópico: casi 700 páginas de Barrow y Tipler. Se lee por ambición, no por placer.",
    "nota": "En Buscalibre AR figura 'In stock' (Oxford Paperbacks, tapa blanda, nuevo) pero el snippet no expone precio. No se halló edición en español ('El principio antrópico') en AR; solo inglés. En Amazon disponible nuevo en pap",
    "opciones": [
@@ -262,7 +270,8 @@
     }
    ],
    "ar": "sí",
-   "amz": "sí"
+   "amz": "sí",
+   "portada_original": "https://covers.openlibrary.org/b/isbn/9780192821478-L.jpg?default=false"
   },
   {
    "id": "meme-machine",
@@ -270,7 +279,7 @@
    "titulo_es": "La máquina de los memes",
    "autor": "Susan Blackmore",
    "anio": 1999,
-   "portada": "https://covers.openlibrary.org/b/isbn/9780192862129-L.jpg?default=false",
+   "portada": "quiero-covers/meme-machine.jpg",
    "brief": "La obra que tomó la idea de «meme» de Dawkins y la convirtió en una teoría completa de la cultura.",
    "nota": "La edición en español 'La máquina de los memes' (Paidós, 2000) existe y figura en el sitio de la editorial, pero no se halló listado con stock/precio en MercadoLibre ni en Buscalibre AR: probablemente descatalogada o sol",
    "opciones": [
@@ -292,7 +301,8 @@
     }
    ],
    "ar": "dudoso",
-   "amz": "sí"
+   "amz": "sí",
+   "portada_original": "https://covers.openlibrary.org/b/isbn/9780192862129-L.jpg?default=false"
   },
   {
    "id": "character-law",
@@ -300,7 +310,7 @@
    "titulo_es": "El carácter de la ley física",
    "autor": "Richard Feynman",
    "anio": 1965,
-   "portada": "https://covers.openlibrary.org/b/isbn/9780262560030-L.jpg?default=false",
+   "portada": "quiero-covers/character-law.jpg",
    "brief": "Las Messenger Lectures de Feynman en Cornell, transcriptas: la ley física explicada sin una sola ecuación fea.",
    "nota": "Buena disponibilidad en español (Tusquets) vía Buscalibre AR ($106.240) y Zivals. También está el original en inglés nuevo en Buscalibre y varias ediciones en Amazon desde USD 10.78.",
    "opciones": [
@@ -322,7 +332,8 @@
     }
    ],
    "ar": "sí",
-   "amz": "sí"
+   "amz": "sí",
+   "portada_original": "https://covers.openlibrary.org/b/isbn/9780262560030-L.jpg?default=false"
   },
   {
    "id": "meaning-it-all",
@@ -330,7 +341,7 @@
    "titulo_es": "¿Qué significa todo eso?",
    "autor": "Richard Feynman",
    "anio": 1998,
-   "portada": "https://covers.openlibrary.org/b/isbn/9780465023943-L.jpg?default=false",
+   "portada": "quiero-covers/meaning-it-all.jpg",
    "brief": "Tres charlas de Feynman sobre ciencia, religión y política. Feynman siendo Feynman, sin edición de por medio.",
    "nota": "Solo se confirmó la edición en inglés en AR (Buscalibre, sin precio/stock explícito en el snippet). No se halló la edición en español ('¿Qué significa todo eso?', Crítica) en AR; solo PDFs no oficiales. En Amazon está 'I",
    "opciones": [
@@ -352,7 +363,8 @@
     }
    ],
    "ar": "sí (solo en inglés)",
-   "amz": "sí"
+   "amz": "sí",
+   "portada_original": "https://covers.openlibrary.org/b/isbn/9780465023943-L.jpg?default=false"
   },
   {
    "id": "conjectures",
@@ -360,7 +372,7 @@
    "titulo_es": "Conjeturas y refutaciones",
    "autor": "Karl Popper",
    "anio": 1963,
-   "portada": "https://covers.openlibrary.org/b/isbn/9780415285940-L.jpg?default=false",
+   "portada": "quiero-covers/conjectures.jpg",
    "brief": "El corazón de Popper: el conocimiento no se justifica, se conjetura y se refuta. Es el libro del que toda la obra de Deutsch es heredera directa.",
    "nota": "Buscalibre: 'Stock Disponible - Nuevo'. MercadoLibre: varias publicaciones 'In stock' (ed. 2013 Básica Paidós). Amazon.com: In Stock, -36% sobre precio de lista USD 35.99.",
    "opciones": [
@@ -382,7 +394,8 @@
     }
    ],
    "ar": "sí",
-   "amz": "sí"
+   "amz": "sí",
+   "portada_original": "https://covers.openlibrary.org/b/isbn/9780415285940-L.jpg?default=false"
   },
   {
    "id": "open-society",
@@ -390,7 +403,7 @@
    "titulo_es": "La sociedad abierta y sus enemigos",
    "autor": "Karl Popper",
    "anio": 1945,
-   "portada": "https://covers.openlibrary.org/b/isbn/9780691158136-L.jpg?default=false",
+   "portada": "quiero-covers/open-society.jpg",
    "brief": "Popper contra Platón, Hegel y Marx. Explica por qué Popper es referencia compartida de Deutsch, Thiel y Yudkowsky.",
    "nota": "ML: publicación Paidós 'Llega gratis hoy' (disponible) y listados de ed. 2023. Buscalibre: ejemplar USADO Paidos tapa blanda ARS 122.840 (40% off de 204.734); la ed. 2 tomos aparece agotada ('avisarme cuando vuelva'). Am",
    "opciones": [
@@ -412,7 +425,8 @@
     }
    ],
    "ar": "sí",
-   "amz": "sí"
+   "amz": "sí",
+   "portada_original": "https://covers.openlibrary.org/b/isbn/9780691158136-L.jpg?default=false"
   },
   {
    "id": "better-world",
@@ -420,7 +434,7 @@
    "titulo_es": "En busca de un mundo mejor",
    "autor": "Karl Popper",
    "anio": 1995,
-   "portada": "https://covers.openlibrary.org/b/isbn/9780415135481-L.jpg?default=false",
+   "portada": "quiero-covers/better-world.jpg",
    "brief": "Conferencias y ensayos tardíos: racionalidad, libertad y la responsabilidad del intelectual.",
    "nota": "AR: en ML hay publicaciones 'In stock' pero TODAS figuran (Usado) y sin precio en el snippet (Paidós tapa blanda); Buscalibre no devolvió ficha propia con stock. Amazon.com: existe la página del paperback Routledge 1995 ",
    "opciones": [
@@ -442,7 +456,8 @@
     }
    ],
    "ar": "sí",
-   "amz": "sí"
+   "amz": "sí",
+   "portada_original": "https://covers.openlibrary.org/b/isbn/9780415135481-L.jpg?default=false"
   },
   {
    "id": "parmenides",
@@ -450,7 +465,7 @@
    "titulo_es": "El mundo de Parménides",
    "autor": "Karl Popper",
    "anio": 1998,
-   "portada": "https://covers.openlibrary.org/b/isbn/9788449307461-L.jpg?default=false",
+   "portada": "quiero-covers/parmenides.jpg",
    "brief": "El último Popper: los presocráticos leídos como el nacimiento de la ciencia. Difícil de conseguir en cualquier idioma.",
    "nota": "AR: Buscalibre AR marca 'Sin Stock' para la ed. Paidós (ISBN 9788449307461); hay publicaciones en ML (ed. Básica Paidós México) pero el snippet no confirma stock -> por eso 'dudoso'. Amazon.com: existe página Routledge (",
    "opciones": [
@@ -472,7 +487,8 @@
     }
    ],
    "ar": "dudoso",
-   "amz": "sí"
+   "amz": "sí",
+   "portada_original": "https://covers.openlibrary.org/b/isbn/9788449307461-L.jpg?default=false"
   },
   {
    "id": "enlightenment",
@@ -480,7 +496,7 @@
    "titulo_es": "Ilustración",
    "autor": "Roy Porter",
    "anio": 2000,
-   "portada": "https://covers.openlibrary.org/b/isbn/9780140250282-L.jpg?default=false",
+   "portada": "quiero-covers/enlightenment.jpg",
    "brief": "Roy Porter sobre cómo Gran Bretaña inventó la modernidad. Historia de las ideas escrita con oficio de narrador.",
    "nota": "Existe ficha en Mercado Libre AR (catálogo) y en Amazon US (Penguin paperback + edición US 'The Creation of the Modern World', Norton 2000, ISBN 0393048721). Buscalibre AR no devolvió resultados. Los snippets no trajeron",
    "opciones": [
@@ -502,7 +518,8 @@
     }
    ],
    "ar": "dudoso",
-   "amz": "sí"
+   "amz": "sí",
+   "portada_original": "https://covers.openlibrary.org/b/isbn/9780140250282-L.jpg?default=false"
   },
   {
    "id": "six-numbers",
@@ -510,7 +527,7 @@
    "titulo_es": "Seis números nada más",
    "autor": "Martin Rees",
    "anio": 2001,
-   "portada": "https://covers.openlibrary.org/b/isbn/9780465036738-L.jpg?default=false",
+   "portada": "quiero-covers/six-numbers.jpg",
    "brief": "Rees: seis constantes y, con ellas, todo el universo. Divulgación científica de primera línea.",
    "nota": "Disponible en Buscalibre AR como importado (Tapa Blanda), idioma inglés; año 2001/208 págs. La búsqueda en ML con el nombre en español 'Seis números nada más' no devolvió ninguna edición (probablemente no hay edición en ",
    "opciones": [
@@ -524,7 +541,8 @@
     }
    ],
    "ar": "sí",
-   "amz": ""
+   "amz": "",
+   "portada_original": "https://covers.openlibrary.org/b/isbn/9780465036738-L.jpg?default=false"
   },
   {
    "id": "lunar-men",
@@ -532,7 +550,7 @@
    "titulo_es": "Los hombres de la Luna",
    "autor": "Jenny Uglow",
    "anio": 2002,
-   "portada": "https://covers.openlibrary.org/b/isbn/9780571216109-L.jpg?default=false",
+   "portada": "quiero-covers/lunar-men.jpg",
    "brief": "Los industriales y científicos de Birmingham que inventaron la revolución industrial, contados como una novela. No se consigue en Argentina: hay que importarlo.",
    "nota": "No apareció en ML AR ni en Buscalibre AR (searches sin resultados relevantes). En Amazon US hay Hardcover a USD 22.64 (¡solo 1 en stock!) y Trade Paperback FSG (ISBN 9780374528881) a USD 40.99. Edición Faber UK paperback",
    "opciones": [
@@ -546,7 +564,8 @@
     }
    ],
    "ar": "no",
-   "amz": "sí"
+   "amz": "sí",
+   "portada_original": "https://covers.openlibrary.org/b/isbn/9780571216109-L.jpg?default=false"
   }
  ]
 }

@@ -232,9 +232,10 @@
      "mercado": "AR",
      "tienda": "Buscalibre",
      "link": "https://www.buscalibre.com.ar/libro-science-and-human-values/9780060972813/p/1536088",
-     "precio": "",
+     "precio": "ARS 43.560",
      "idioma": "inglés",
-     "nota": "Varias ediciones en inglés: HarperCollins/Harper Perennial tapa blanda (ISBN 978-0-06-097281-3) y Literary Licensing."
+     "nota": "Varias ediciones en inglés: HarperCollins/Harper Perennial tapa blanda (ISBN 978-0-06-097281-3) y Literary Licensing.",
+     "precio_fuente": "Buscalibre - listado de autor Jacob Bronowski (buscalibre.com.ar/libros/autor/jacob-bronowski), ed. HarperCollins tapa b"
     },
     {
      "mercado": "AMZ",
@@ -464,9 +465,10 @@
      "mercado": "AMZ",
      "tienda": "Amazon",
      "link": "https://www.amazon.com/Search-Better-World-Lectures-Essays/dp/0415135486",
-     "precio": "",
+     "precio": "USD 54.99",
      "idioma": "inglés",
-     "nota": "Routledge, paperback (ISBN 9780415135481)"
+     "nota": "Routledge, paperback (ISBN 9780415135481)",
+     "precio_fuente": "amazon.com, página del ASIN 0415135486 (snippet: 'Price: 54.99 USD')"
     }
    ],
    "ar": "sí",
@@ -710,9 +712,10 @@
      "mercado": "AMZ",
      "tienda": "Amazon",
      "link": "https://www.amazon.com/Constitution-Liberty-Definitive-Collected-Works/dp/0226315398",
-     "precio": "",
+     "precio": "USD 21.15",
      "idioma": "inglés",
-     "nota": "The Definitive Edition (The Collected Works of F.A. Hayek, Vol. 17), University of Chicago Press"
+     "nota": "The Definitive Edition (The Collected Works of F.A. Hayek, Vol. 17), University of Chicago Press",
+     "precio_fuente": "amazon.com, página del ASIN 0226315398 (snippet: 'Price: 21.15 USD')"
     }
    ],
    "nota": "OJO con el título: en español circula como 'Los fundamentos de la libertad' (Unión Editorial), NO confundir con 'La Constitución de la libertad en Adam Smith' de Ujaldón. Amazon: precio exacto de la edición definitiva no",

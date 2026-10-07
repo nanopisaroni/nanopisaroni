@@ -86,24 +86,6 @@
       overflow: hidden;
     }
 
-    .bk .tag {
-      align-self: flex-start;
-      font-size: 9px;
-      font-weight: 600;
-      letter-spacing: .06em;
-      text-transform: uppercase;
-      padding: 2px 6px;
-      border-radius: 3px;
-      margin-bottom: 8px;
-      background: #efe9f7;
-      color: #5b3f86;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      max-width: 100%;
-    }
-    .bk .tag.ar { background: #e6f2ef; color: #1d6b5a; }
-
     .comprar { display: flex; flex-direction: column; gap: 6px; margin-top: auto; }
     .comprar a {
       display: block;
@@ -199,13 +181,6 @@
     var info = document.createElement('div');
     info.className = 'info';
 
-    var etiqueta = l.origen === 'panteon'
-      ? 'Panteón · ' + (l.pensador || '')
-      : 'Bibliografía de Deutsch';
-    var tag = document.createElement('span');
-    tag.className = 'tag' + (l.origen === 'panteon' ? '' : ' ar');
-    tag.textContent = etiqueta;
-
     var h = document.createElement('h3');
     h.textContent = l.titulo_es && l.titulo_es !== l.titulo ? l.titulo_es : l.titulo;
     if (l.titulo_es && l.titulo_es !== l.titulo) {
@@ -236,7 +211,6 @@
       comprar.appendChild(a);
     });
 
-    info.appendChild(tag);
     info.appendChild(h);
     info.appendChild(p1);
     info.appendChild(p2);

@@ -626,7 +626,7 @@
    "autor": "Benjamin Franklin",
    "anio": "1791",
    "pensador": "Charlie Munger",
-   "brief": "Munger citaba a Franklin como modelo de prudencia práctica, ahorro, aprendizaje y conducta cívica. Lo recomiendan dos de mis pensadores: Charlie y Papa.",
+   "brief": "Munger citaba a Franklin como modelo de prudencia práctica: ahorro, aprendizaje y conducta cívica.",
    "portada": "quiero-covers/munger-08.jpg",
    "portada_original": "https://covers.openlibrary.org/b/id/5647361-L.jpg",
    "origen": "panteon",
@@ -826,7 +826,7 @@
    "autor": "Erwin Schrödinger",
    "anio": "1944",
    "pensador": "David Deutsch",
-   "brief": "Aporta el puente entre física y replicación que Deutsch extiende hacia conocimiento y computación. Lo recomiendan dos de mis pensadores: David y Richard.",
+   "brief": "El libro que abrió la pregunta de la vida como problema físico: el puente entre física y replicación, y la frontera entre física y biología.",
    "portada": "quiero-covers/deutsch-13.jpg",
    "portada_original": "https://covers.openlibrary.org/b/id/11024786-L.jpg",
    "origen": "panteon",
@@ -1024,7 +1024,7 @@
    "autor": "F. A. Hayek",
    "anio": "1944",
    "pensador": "Nassim Nicholas Taleb",
-   "brief": "Lo cita por el problema del conocimiento disperso y el daño de planificar sistemas complejos. Lo recomiendan dos de mis pensadores: Nassim y Peter.",
+   "brief": "La advertencia liberal clásica contra la planificación central: el problema del conocimiento disperso y el daño de planificar sistemas complejos.",
    "portada": "quiero-covers/taleb-05.jpg",
    "portada_original": "https://covers.openlibrary.org/b/id/6991871-L.jpg",
    "portada_fuente_titulo": "The Road to Serfdom",
@@ -1182,7 +1182,7 @@
    "autor": "San Ignacio de Loyola",
    "anio": "1555",
    "pensador": "Papa Francisco",
-   "brief": "El Ignacio peregrino modela su idea de fe en camino, no instalada en seguridades. Lo recomiendan dos de mis pensadores: Papa y Charlie.",
+   "brief": "El Ignacio peregrino modela una idea de fe en camino, no instalada en seguridades.",
    "portada": "quiero-covers/francisco-13.jpg",
    "portada_original": "https://covers.openlibrary.org/b/id/698422-L.jpg",
    "origen": "panteon",
@@ -1262,40 +1262,6 @@
     }
    ],
    "nota": "Clásico de DOMINIO PÚBLICO (latín, s. I a.C.): el texto en latín está gratis online (Perseus/Latin Library) y hay traducciones libres. Conviene edición local bilingüe/barata (Losada, Colihue, Gredos, Alianza) si se quier",
-   "ar": "sí",
-   "amz": "sí"
-  },
-  {
-   "id": "thiel-10",
-   "titulo": "Camino de servidumbre",
-   "titulo_original": "The Road to Serfdom",
-   "autor": "F. A. Hayek",
-   "anio": "1944",
-   "pensador": "Peter Thiel",
-   "brief": "Lo recomendó como advertencia liberal clásica contra planificación central y poder burocrático. Lo recomiendan dos de mis pensadores: Peter y Nassim.",
-   "portada": "quiero-covers/thiel-10.jpg",
-   "portada_original": "https://covers.openlibrary.org/b/id/6991871-L.jpg",
-   "portada_fuente_titulo": "The Road to Serfdom",
-   "origen": "panteon",
-   "opciones": [
-    {
-     "mercado": "AR",
-     "tienda": "Buscalibre",
-     "link": "https://www.buscalibre.com.ar/libro-camino-de-servidumbre/9788420616766/p/55080282",
-     "precio": "",
-     "idioma": "español",
-     "nota": "Alianza Editorial, tapa blanda; también ed. Unión Editorial (vol. II 9788472097049)"
-    },
-    {
-     "mercado": "AMZ",
-     "tienda": "Amazon",
-     "link": "https://amazon.com/The-Road-Serfdom-Documents-The-Definitive/dp/0226320553",
-     "precio": "USD 13.47",
-     "idioma": "inglés",
-     "nota": "Paperback, Definitive Edition (Collected Works Vol. 2, Univ. of Chicago Press); también ed. condensada (Reader's Digest/IEA)"
-    }
-   ],
-   "nota": "AR: muy disponible en español (Alianza). Amazon: usar la Definitive Edition (Chicago, con documentos), la ed. condensada es un resumen.",
    "ar": "sí",
    "amz": "sí"
   },
@@ -1429,39 +1395,6 @@
     }
    ],
    "nota": "Buscalibre AR no mostró ejemplares de esta obra en la búsqueda. En español puede aparecer como 'Los sonámbulos' (varias ediciones/volúmenes históricos).",
-   "ar": "sí",
-   "amz": "sí"
-  },
-  {
-   "id": "feynman-13",
-   "titulo": "¿Qué es la vida?",
-   "titulo_original": "What Is Life?",
-   "autor": "Erwin Schrödinger",
-   "anio": "1944",
-   "pensador": "Richard Feynman",
-   "brief": "Feynman cruzaba física y biología; este libro marcó esa frontera como problema físico serio. Lo recomiendan dos de mis pensadores: Richard y David.",
-   "portada": "quiero-covers/feynman-13.jpg",
-   "portada_original": "https://covers.openlibrary.org/b/id/11024786-L.jpg",
-   "origen": "panteon",
-   "opciones": [
-    {
-     "mercado": "AR",
-     "tienda": "Buscalibre",
-     "link": "https://www.buscalibre.com.ar/libro-que-es-la-vida/9788472236073/p/1026424",
-     "precio": "",
-     "idioma": "español",
-     "nota": "Tusquets / Metatemas 9788472236073 (rústica con solapas, ed. clásica en español)"
-    },
-    {
-     "mercado": "AMZ",
-     "tienda": "Amazon",
-     "link": "https://amazon.com/What-Life-Erwin-Schrodinger/dp/B00133U9LI",
-     "precio": "",
-     "idioma": "inglés",
-     "nota": "Paperback/Hardcover/Kindle (incluye 'Mind and Matter'; ed. con prefacio de Roger Penrose)"
-    }
-   ],
-   "nota": "DUPLICADO respecto de la obra #14 del lote (mismo libro): se relevó una sola vez. Edición local recomendada: Metatemas/Tusquets. Precio Amazon no se pudo fijar con claridad en los snippets (múltiples ediciones).",
    "ar": "sí",
    "amz": "sí"
   }

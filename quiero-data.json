@@ -21,6 +21,14 @@
      "nota": "En stock en la web"
     },
     {
+     "mercado": "AR",
+     "tienda": "Cúspide",
+     "link": "https://cuspide.com/producto/el-gen-egoista-extendido/",
+     "precio": "ARS 47.500",
+     "idioma": "español",
+     "nota": "Verificado en la ficha (precio leído de la página)"
+    },
+    {
      "mercado": "AMZ",
      "tienda": "Amazon",
      "link": "https://www.amazon.com/Selfish-Gene-40th-Anniversary-Landmark/dp/0198788606",
@@ -208,7 +216,7 @@
      "mercado": "AMZ",
      "tienda": "Amazon",
      "link": "https://www.amazon.com/Ascent-Man-Jacob-Bronowski/dp/0316109304",
-     "precio": "USD 19.05",
+     "precio": "USD 19.05 (Kindle)",
      "idioma": "inglés",
      "nota": "Kindle / Hardcover / Paperback"
     }
@@ -327,6 +335,14 @@
    "opciones": [
     {
      "mercado": "AR",
+     "tienda": "Cúspide",
+     "link": "https://cuspide.com/producto/el-caracter-de-la-ley-fisica/",
+     "precio": "ARS 67.058",
+     "idioma": "español",
+     "nota": "Verificado en la ficha (precio leído de la página)"
+    },
+    {
+     "mercado": "AR",
      "tienda": "Zivals",
      "link": "https://www.zivals.com.ar/LIBRO/9788490661673/EL+CARACTER+DE+LA+LEY+FISICA+(ED+ESPA%C3%91OLA)",
      "precio": "ARS 106.240",
@@ -421,6 +437,14 @@
    "brief": "Popper contra Platón, Hegel y Marx. Explica por qué Popper es referencia compartida de Deutsch, Thiel y Yudkowsky.",
    "nota": "ML: publicación Paidós 'Llega gratis hoy' (disponible) y listados de ed. 2023. Buscalibre: ejemplar USADO Paidos tapa blanda ARS 122.840 (40% off de 204.734); la ed. 2 tomos aparece agotada ('avisarme cuando vuelva'). Am",
    "opciones": [
+    {
+     "mercado": "AR",
+     "tienda": "Cúspide",
+     "link": "https://cuspide.com/producto/la-sociedad-abierta-y-sus-enemigos/",
+     "precio": "ARS 79.490",
+     "idioma": "español",
+     "nota": "Verificado en la ficha (precio leído de la página)"
+    },
     {
      "mercado": "AR",
      "tienda": "MercadoLibre",
@@ -702,6 +726,14 @@
    "opciones": [
     {
      "mercado": "AR",
+     "tienda": "Cúspide",
+     "link": "https://cuspide.com/producto/los-fundamentos-de-la-libertad/",
+     "precio": "ARS 84.000",
+     "idioma": "español",
+     "nota": "Verificado en la ficha (precio leído de la página)"
+    },
+    {
+     "mercado": "AR",
      "tienda": "MercadoLibre",
      "link": "https://listado.mercadolibre.com.ar/libros-de-hayek",
      "precio": "ARS 46.100",
@@ -836,6 +868,14 @@
    "opciones": [
     {
      "mercado": "AR",
+     "tienda": "Cúspide",
+     "link": "https://cuspide.com/producto/%C2%A8que-es-la-vida-2/",
+     "precio": "ARS 64.016",
+     "idioma": "español",
+     "nota": "Verificado en la ficha (precio leído de la página)"
+    },
+    {
+     "mercado": "AR",
      "tienda": "Buscalibre",
      "link": "https://www.buscalibre.com.ar/libro-que-es-la-vida/9788472236073/p/1026424",
      "precio": "",
@@ -900,6 +940,14 @@
    "portada_original": "https://covers.openlibrary.org/b/id/12307847-L.jpg",
    "origen": "panteon",
    "opciones": [
+    {
+     "mercado": "AR",
+     "tienda": "Cúspide",
+     "link": "https://cuspide.com/producto/el-corazon-de-las-tinieblas-4/",
+     "precio": "ARS 24.000",
+     "idioma": "español",
+     "nota": "Verificado en la ficha (precio leído de la página)"
+    },
     {
      "mercado": "AR",
      "tienda": "Yenny / El Ateneo",
@@ -975,10 +1023,18 @@
      "nota": "En stock en la web"
     },
     {
+     "mercado": "AR",
+     "tienda": "Cúspide",
+     "link": "https://cuspide.com/producto/hojas-de-hierba/",
+     "precio": "ARS 65.000",
+     "idioma": "español",
+     "nota": "Verificado en la ficha (precio leído de la página)"
+    },
+    {
      "mercado": "AMZ",
      "tienda": "Amazon",
      "link": "https://www.amazon.com/Leaves-Grass-Walt-Whitman/dp/8194619084",
-     "precio": "USD 0.55",
+     "precio": "USD 0.55 (Kindle)",
      "idioma": "inglés",
      "nota": "Kindle, Paperback, Mass Market (Signet 9780451419170), Penguin Classics 1855 ed. 9780143039273"
     }
@@ -999,6 +1055,14 @@
    "portada_original": "https://covers.openlibrary.org/b/id/9009316-L.jpg",
    "origen": "panteon",
    "opciones": [
+    {
+     "mercado": "AR",
+     "tienda": "Cúspide",
+     "link": "https://cuspide.com/producto/la-maquina-del-tiempo-3/",
+     "precio": "ARS 10.600",
+     "idioma": "español",
+     "nota": "Verificado en la ficha (precio leído de la página)"
+    },
     {
      "mercado": "AR",
      "tienda": "Yenny / El Ateneo",
@@ -1040,6 +1104,14 @@
      "precio": "ARS 33.572",
      "idioma": "español",
      "nota": "En stock en la web"
+    },
+    {
+     "mercado": "AR",
+     "tienda": "Cúspide",
+     "link": "https://cuspide.com/producto/camino-de-servidumbre/",
+     "precio": "ARS 35.000",
+     "idioma": "español",
+     "nota": "Verificado en la ficha (precio leído de la página)"
     },
     {
      "mercado": "AMZ",
@@ -1247,6 +1319,14 @@
    "portada_original": "https://covers.openlibrary.org/b/id/7200796-L.jpg",
    "origen": "panteon",
    "opciones": [
+    {
+     "mercado": "AR",
+     "tienda": "Cúspide",
+     "link": "https://cuspide.com/producto/la-eneida/",
+     "precio": "ARS 22.290",
+     "idioma": "español",
+     "nota": "Verificado en la ficha (precio leído de la página)"
+    },
     {
      "mercado": "AR",
      "tienda": "Yenny / El Ateneo",

@@ -6,169 +6,129 @@
   <title>Libros que quiero — Leandro Pisaroni</title>
   <meta name="description" content="Los libros que quiero, con portada, breve reseña y link para comprarlos. Si me querés regalar algo, cualquiera de esta lista es un acierto.">
   <meta property="og:title" content="Libros que quiero — Leandro Pisaroni">
-  <meta property="og:description" content="19 libros, con portada y link para comprar. Cualquiera de esta lista es un acierto.">
+  <meta property="og:description" content="Los libros que quiero, con portada y link para comprar. Cualquiera de esta lista es un acierto.">
   <meta property="og:type" content="website">
   <link rel="stylesheet" href="style.css">
   <script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments)};</script><script defer src="/_vercel/insights/script.js"></script>
   <style>
-    /* ── Página: libros que quiero (vitrina de regalos) ── */
-    .site.ancho { max-width: 960px; }
+    /* ── Libros que quiero: vitrina ancha, densa, pensada para el celular ── */
+    .site.ancho { width: min(100% - 48px, 1320px); }
 
-    .qh { margin: 8px 0 6px; }
-    .qh h1 {
+    h1.qh {
       font-family: var(--font-display);
-      font-size: clamp(30px, 6vw, 44px);
+      font-size: clamp(28px, 5vw, 40px);
       font-weight: 600;
       font-variation-settings: 'opsz' 72;
       letter-spacing: -0.02em;
       line-height: 1.08;
-      margin: 0 0 10px;
+      margin: 6px 0 26px;
     }
-    .qh .sub {
-      font-family: var(--font-display);
-      font-style: italic;
-      font-weight: 350;
-      font-size: 17px;
-      color: var(--text-muted);
-      margin: 0 0 18px;
-    }
-    .intro {
-      font-size: 16px;
-      color: var(--text-muted);
-      line-height: 1.6;
-      max-width: 620px;
-      margin: 0 0 22px;
-    }
-    .intro em { color: var(--text); font-style: italic; }
-
-    .filtros {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin: 0 0 26px;
-      padding-bottom: 18px;
-      border-bottom: 1px solid var(--rule);
-    }
-    .filtros button {
-      font-family: var(--font-body);
-      font-size: 13px;
-      font-weight: 500;
-      color: var(--text-muted);
-      background: transparent;
-      border: 1px solid var(--rule);
-      border-radius: 999px;
-      padding: 6px 13px;
-      cursor: pointer;
-      transition: all .15s ease;
-    }
-    .filtros button:hover { background: var(--hover-bg); color: var(--text); }
-    .filtros button.on { background: var(--text); border-color: var(--text); color: #faf7f2; }
 
     .grid {
       display: grid;
-      grid-template-columns: 1fr;
-      gap: 18px;
+      gap: 30px 18px;
+      grid-template-columns: repeat(auto-fill, minmax(146px, 1fr));
+      align-items: stretch;
     }
-    @media (min-width: 700px) {
-      .grid { grid-template-columns: 1fr 1fr; gap: 20px 24px; }
-    }
+    @media (min-width: 560px)  { .grid { grid-template-columns: repeat(auto-fill, minmax(176px, 1fr)); gap: 32px 20px; } }
+    @media (min-width: 1000px) { .grid { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 36px 24px; } }
 
-    .bk {
-      display: flex;
-      gap: 16px;
-      padding: 16px;
-      background: var(--surface);
-      border: 1px solid var(--rule);
-      border-radius: 10px;
-      transition: box-shadow .18s ease, transform .18s ease;
-    }
-    .bk:hover { box-shadow: 0 6px 22px rgba(28,25,23,.07); transform: translateY(-1px); }
+    .bk { display: flex; flex-direction: column; min-width: 0; }
 
     .bk .cover {
-      flex: 0 0 92px;
-      width: 92px;
-      height: 138px;
-      border-radius: 4px;
+      display: block;
+      width: 100%;
+      aspect-ratio: 2 / 3;
+      border-radius: 3px;
       overflow: hidden;
       background: var(--rule-light);
-      box-shadow: 0 2px 8px rgba(28,25,23,.16);
-      position: relative;
+      box-shadow: 0 2px 10px rgba(28,25,23,.18);
+      transition: transform .18s ease, box-shadow .18s ease;
     }
+    .bk .cover:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(28,25,23,.22); }
     .bk .cover img { width: 100%; height: 100%; object-fit: cover; display: block; }
-    .bk .cover.vacia { display: flex; align-items: center; justify-content: center; }
+    .bk .cover.vacia { display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 10px rgba(28,25,23,.12); border: 1px solid var(--rule); }
     .bk .cover.vacia span {
       font-family: var(--font-display);
-      font-size: 11px;
-      line-height: 1.25;
-      color: var(--text-faint);
-      padding: 6px;
+      font-size: 13px;
+      line-height: 1.3;
+      color: var(--text-muted);
+      padding: 14px;
       text-align: center;
     }
 
-    .bk .info { flex: 1 1 auto; min-width: 0; }
+    .bk .info { display: flex; flex-direction: column; flex: 1 1 auto; padding-top: 10px; }
+
     .bk h3 {
       font-family: var(--font-display);
-      font-size: 17.5px;
+      font-size: 15px;
       font-weight: 600;
-      font-variation-settings: 'opsz' 36;
+      font-variation-settings: 'opsz' 30;
       letter-spacing: -0.01em;
-      line-height: 1.25;
-      margin: 0 0 2px;
+      line-height: 1.24;
+      margin: 0 0 3px;
     }
-    .bk .autor { font-size: 13px; color: var(--text-muted); margin: 0 0 8px; }
-    .bk .brief { font-size: 14px; line-height: 1.5; color: var(--text); margin: 0 0 12px; }
+    .bk h3 .orig { font-weight: 400; font-size: 12px; color: var(--text-faint); }
+    .bk .autor {
+      font-size: 11.5px;
+      color: var(--text-muted);
+      line-height: 1.35;
+      margin: 0 0 7px;
+    }
+    .bk .brief {
+      font-size: 12px;
+      line-height: 1.45;
+      color: #57534e;
+      margin: 0 0 10px;
+      display: -webkit-box;
+      -webkit-line-clamp: 5;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
 
-    .tag {
-      display: inline-block;
-      font-size: 10.5px;
+    .bk .tag {
+      align-self: flex-start;
+      font-size: 9px;
       font-weight: 600;
-      letter-spacing: .05em;
+      letter-spacing: .06em;
       text-transform: uppercase;
-      padding: 2px 7px;
-      border-radius: 4px;
+      padding: 2px 6px;
+      border-radius: 3px;
       margin-bottom: 8px;
+      background: #efe9f7;
+      color: #5b3f86;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 100%;
     }
-    .tag.ar { background: #e6f2ef; color: #1d6b5a; }
-    .tag.imp { background: #fdf0e3; color: #9a4b0a; }
-    .tag.pant { background: #efe9f7; color: #5b3f86; }
+    .bk .tag.ar { background: #e6f2ef; color: #1d6b5a; }
 
-    .comprar { display: flex; flex-wrap: wrap; gap: 8px; }
+    .comprar { display: flex; flex-direction: column; gap: 6px; margin-top: auto; }
     .comprar a {
-      display: inline-flex;
-      flex-direction: column;
-      gap: 1px;
+      display: block;
       text-decoration: none;
-      font-size: 13px;
+      font-size: 11.5px;
       font-weight: 500;
-      padding: 7px 12px;
-      border-radius: 7px;
+      padding: 7px 9px;
+      border-radius: 6px;
       border: 1px solid var(--rule);
       color: var(--text);
-      background: var(--bg);
+      background: var(--surface);
+      line-height: 1.3;
       transition: all .15s ease;
-      line-height: 1.25;
     }
     .comprar a:hover { border-color: var(--accent); color: var(--accent); }
     .comprar a.primario { background: var(--text); border-color: var(--text); color: #faf7f2; }
     .comprar a.primario:hover { background: var(--accent); border-color: var(--accent); color: #fff; }
-    .comprar a .precio { font-size: 11px; opacity: .72; font-weight: 400; }
+    .comprar a .precio { display: block; font-size: 10px; opacity: .7; font-weight: 400; margin-top: 1px; }
 
-    .bk .nota {
+    .nota-precios {
+      margin: 40px 0 0;
       font-size: 12px;
       color: var(--text-faint);
-      line-height: 1.45;
-      margin: 10px 0 0;
+      text-align: center;
     }
-
-    .pie {
-      margin: 34px 0 0;
-      padding-top: 20px;
-      border-top: 1px solid var(--rule);
-      font-size: 13.5px;
-      color: var(--text-muted);
-      line-height: 1.6;
-    }
-    .pie strong { color: var(--text); font-weight: 600; }
     #fallback { font-size: 14px; color: var(--text-muted); }
   </style>
 </head>
@@ -181,40 +141,18 @@
         <a href="ideas.html">Ideas</a>
         <a href="panteon.html">Panteón</a>
         <a href="libros.html">Libros</a>
-        <a href="quiero.html">Quiero</a>
+        <a href="quiero.html" class="active">Quiero</a>
         <a href="buy.html">Buy</a>
         <a href="about.html">About</a>
       </nav>
     </header>
 
     <main>
-      <div class="qh">
-        <h1>Libros que quiero</h1>
-        <p class="sub">La lista de regalos, en formato librería.</p>
-      </div>
-
-      <p class="intro" id="intro"></p>
-
-      <div class="filtros" id="filtros">
-        <button data-f="todos" class="on">Todos <span id="n-todos"></span></button>
-        <button data-f="deutsch">Bibliografía de Deutsch <span id="n-deutsch"></span></button>
-        <button data-f="panteon">Del Panteón <span id="n-panteon"></span></button>
-        <button data-f="ar">Se consiguen en Argentina <span id="n-ar"></span></button>
-        <button data-f="imp">Solo importados <span id="n-imp"></span></button>
-      </div>
-
+      <h1 class="qh">Libros que quiero</h1>
       <div class="grid" id="grid">
-        <p id="fallback">Cargando la lista…</p>
+        <p id="fallback">Cargando…</p>
       </div>
-
-      <p class="pie">
-        <strong>Cómo leer esta página.</strong> Cada libro tiene la portada, una línea de por qué lo quiero
-        y un botón que te lleva directo a la librería. Los primeros botones son de tiendas argentinas
-        (se paga en pesos y llega en días); el botón de Amazon es para los títulos que acá no se consiguen
-        o salen mucho más caros. Los precios son de referencia —<span id="act"></span>— y cambian: vale la
-        pena mirar el listado antes de pagar. Cualquiera de estos libros es un acierto, así que si dudás,
-        elegí por la portada que más te guste.
-      </p>
+      <p class="nota-precios">Precios de referencia (octubre 2026) — conviene verificar el listado antes de pagar.</p>
     </main>
 
     <footer>
@@ -225,41 +163,22 @@
 <script>
 (async function () {
   var grid = document.getElementById('grid');
-  var intro = document.getElementById('intro');
-  var filtros = document.getElementById('filtros');
-  var actual = 'todos';
-  var libros = [];
-
-  function sinTildes(s) {
-    return (s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
-  }
-
-  function tieneAR(l) {
-    return (l.opciones || []).some(function (o) { return o.mercado === 'AR'; });
-  }
-
-  function esPanteon(l) { return l.origen === 'panteon'; }
-
-  function boton(o) {
-    var esAR = o.mercado === 'AR';
-    var label = esAR ? (o.tienda || 'Librería argentina') : 'Amazon';
-    var precio = (o.precio || '').trim();
-    var a = document.createElement('a');
-    a.href = o.link;
-    a.target = '_blank';
-    a.rel = 'noopener';
-    if (esAR) a.className = 'primario';
-    a.innerHTML = '<span>' + (esAR ? 'Comprar acá · ' : 'Importar · ') + label + '</span>' +
-                  (precio ? '<span class="precio">' + precio + '</span>' : '');
-    return a;
-  }
 
   function tarjeta(l) {
     var art = document.createElement('article');
     art.className = 'bk';
 
-    var cover = document.createElement('div');
+    var ops = (l.opciones || []).filter(function (o) { return (o.link || '').indexOf('http') === 0; });
+    var principal = ops.filter(function (o) { return o.mercado === 'AR'; })[0] || ops[0] || null;
+
+    var cover = document.createElement(principal ? 'a' : 'div');
     cover.className = 'cover';
+    if (principal) {
+      cover.href = principal.link;
+      cover.target = '_blank';
+      cover.rel = 'noopener';
+      cover.title = 'Comprar';
+    }
     if (l.portada) {
       var img = document.createElement('img');
       img.src = l.portada;
@@ -267,99 +186,79 @@
       img.loading = 'lazy';
       img.onerror = function () {
         cover.className = 'cover vacia';
+        cover.removeAttribute('href');
         cover.innerHTML = '<span>' + l.titulo + '</span>';
       };
       cover.appendChild(img);
     } else {
       cover.className = 'cover vacia';
+      cover.removeAttribute('href');
       cover.innerHTML = '<span>' + l.titulo + '</span>';
     }
 
     var info = document.createElement('div');
     info.className = 'info';
 
-    var tag;
-    if (esPanteon(l)) {
-      tag = '<span class="tag pant">Panteón · ' + (l.pensador || '') + '</span>' +
-            (tieneAR(l) ? ' <span class="tag ar">En Argentina</span>' : '');
-    } else if (tieneAR(l)) {
-      tag = '<span class="tag ar">En Argentina</span>';
-    } else {
-      tag = '<span class="tag imp">Solo importado</span>';
-    }
+    var etiqueta = l.origen === 'panteon'
+      ? 'Panteón · ' + (l.pensador || '')
+      : 'Bibliografía de Deutsch';
+    var tag = document.createElement('span');
+    tag.className = 'tag' + (l.origen === 'panteon' ? '' : ' ar');
+    tag.textContent = etiqueta;
 
     var h = document.createElement('h3');
-    h.textContent = l.titulo_es && l.titulo_es !== l.titulo
-      ? l.titulo + ' · ' + l.titulo_es
-      : l.titulo;
-    info.appendChild(h);
+    h.textContent = l.titulo_es && l.titulo_es !== l.titulo ? l.titulo_es : l.titulo;
+    if (l.titulo_es && l.titulo_es !== l.titulo) {
+      var orig = document.createElement('span');
+      orig.className = 'orig';
+      orig.textContent = ' (' + l.titulo + ')';
+      h.appendChild(orig);
+    }
 
     var p1 = document.createElement('p');
     p1.className = 'autor';
     p1.textContent = l.autor + (l.anio ? ' · ' + l.anio : '');
-    info.appendChild(p1);
 
     var p2 = document.createElement('p');
     p2.className = 'brief';
     p2.textContent = l.brief;
-    info.appendChild(p2);
-
-    info.insertAdjacentHTML('beforeend', tag);
 
     var comprar = document.createElement('div');
     comprar.className = 'comprar';
-    (l.opciones || []).slice(0, 2).forEach(function (o) {
-      if (o.link && o.link.indexOf('http') === 0) comprar.appendChild(boton(o));
+    ops.slice(0, 2).forEach(function (o) {
+      var a = document.createElement('a');
+      a.href = o.link;
+      a.target = '_blank';
+      a.rel = 'noopener';
+      if (o.mercado === 'AR') a.className = 'primario';
+      a.innerHTML = '<span>' + (o.tienda || (o.mercado === 'AR' ? 'Librería argentina' : 'Amazon')) + '</span>' +
+                    (o.precio ? '<span class="precio">' + o.precio + '</span>' : '');
+      comprar.appendChild(a);
     });
-    info.appendChild(comprar);
 
+    info.appendChild(tag);
+    info.appendChild(h);
+    info.appendChild(p1);
+    info.appendChild(p2);
+    info.appendChild(comprar);
     art.appendChild(cover);
     art.appendChild(info);
     return art;
   }
 
-  function pintar() {
-    grid.innerHTML = '';
-    var lista = libros.filter(function (l) {
-      if (actual === 'deutsch') return !esPanteon(l);
-      if (actual === 'panteon') return esPanteon(l);
-      if (actual === 'ar') return tieneAR(l);
-      if (actual === 'imp') return !esPanteon(l) && !tieneAR(l);
-      return true;
-    });
-    if (!lista.length) {
-      grid.innerHTML = '<p id="fallback">No hay libros en este filtro.</p>';
-      return;
-    }
-    lista.forEach(function (l) { grid.appendChild(tarjeta(l)); });
-  }
-
   try {
     var r = await fetch('quiero-data.json', { cache: 'no-store' });
     var data = await r.json();
-    libros = data.libros || [];
-    if (data.intro) intro.innerHTML = data.intro;
-    var act = document.getElementById('act');
-    if (act && data.actualizado) act.textContent = data.actualizado;
-    document.getElementById('n-todos').textContent = '(' + libros.length + ')';
-    document.getElementById('n-deutsch').textContent = '(' + libros.filter(function (l) { return !esPanteon(l); }).length + ')';
-    document.getElementById('n-panteon').textContent = '(' + libros.filter(esPanteon).length + ')';
-    document.getElementById('n-ar').textContent = '(' + libros.filter(tieneAR).length + ')';
-    document.getElementById('n-imp').textContent = '(' + libros.filter(function (l) { return !esPanteon(l) && !tieneAR(l); }).length + ')';
-    pintar();
+    var libros = data.libros || [];
+    grid.innerHTML = '';
+    libros.forEach(function (l) { grid.appendChild(tarjeta(l)); });
+    if (data.actualizado) {
+      document.querySelector('.nota-precios').textContent =
+        'Precios de referencia (' + data.actualizado + ') — conviene verificar el listado antes de pagar.';
+    }
   } catch (e) {
     grid.innerHTML = '<p id="fallback">No se pudo cargar la lista. Escribime y te paso los títulos a mano.</p>';
   }
-
-  filtros.addEventListener('click', function (ev) {
-    var b = ev.target.closest('button');
-    if (!b) return;
-    actual = b.getAttribute('data-f');
-    Array.prototype.forEach.call(filtros.querySelectorAll('button'), function (x) {
-      x.classList.toggle('on', x === b);
-    });
-    pintar();
-  });
 })();
 </script>
 </body>

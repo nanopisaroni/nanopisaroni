@@ -1,6 +1,6 @@
 {
  "actualizado": "octubre 2026",
- "intro": "Estos son los libros que quiero. Salen de la bibliografía de <em>The Beginning of Infinity</em>, de David Deutsch: la lista que él marca como «todo el mundo debería leer», más la lectura de apoyo. Cualquiera de esta página es un acierto.",
+ "intro": "Estos son los libros que quiero, en dos listas. La primera es la bibliografía de <em>The Beginning of Infinity</em>, de David Deutsch: lo que él marca como «todo el mundo debería leer». La segunda son los que quiero comprar de mi <a href=\"libros.html\">Panteón Personal</a> — los diecisiete pensadores con los que pienso, y lo que cada uno recomienda. Cualquiera de esta página es un acierto.",
  "libros": [
   {
    "id": "selfish-gene",
@@ -31,7 +31,8 @@
    ],
    "ar": "sí",
    "amz": "sí",
-   "portada_original": "https://covers.openlibrary.org/b/isbn/9788469620434-L.jpg?default=false"
+   "portada_original": "https://covers.openlibrary.org/b/isbn/9788469620434-L.jpg?default=false",
+   "origen": "deutsch"
   },
   {
    "id": "fabric-reality",
@@ -62,7 +63,8 @@
    ],
    "ar": "sí",
    "amz": "sí",
-   "portada_original": "https://covers.openlibrary.org/b/isbn/9780140146905-L.jpg?default=false"
+   "portada_original": "https://covers.openlibrary.org/b/isbn/9780140146905-L.jpg?default=false",
+   "origen": "deutsch"
   },
   {
    "id": "words-things",
@@ -93,7 +95,8 @@
    ],
    "ar": "sí",
    "amz": "sí",
-   "portada_original": "https://covers.openlibrary.org/b/isbn/9780415345484-L.jpg?default=false"
+   "portada_original": "https://covers.openlibrary.org/b/isbn/9780415345484-L.jpg?default=false",
+   "origen": "deutsch"
   },
   {
    "id": "political-justice",
@@ -124,7 +127,8 @@
    ],
    "ar": "sí",
    "amz": "sí",
-   "portada_original": "https://covers.openlibrary.org/b/isbn/9780198710196-L.jpg?default=false"
+   "portada_original": "https://covers.openlibrary.org/b/isbn/9780198710196-L.jpg?default=false",
+   "origen": "deutsch"
   },
   {
    "id": "strange-loop",
@@ -155,7 +159,8 @@
    ],
    "ar": "dudoso",
    "amz": "sí",
-   "portada_original": "https://covers.openlibrary.org/b/isbn/9780465030798-L.jpg?default=false"
+   "portada_original": "https://covers.openlibrary.org/b/isbn/9780465030798-L.jpg?default=false",
+   "origen": "deutsch"
   },
   {
    "id": "magee-popper",
@@ -178,7 +183,8 @@
    ],
    "ar": "dudoso",
    "amz": "sí",
-   "portada_original": "https://covers.openlibrary.org/b/isbn/9780006860082-L.jpg?default=false"
+   "portada_original": "https://covers.openlibrary.org/b/isbn/9780006860082-L.jpg?default=false",
+   "origen": "deutsch"
   },
   {
    "id": "ascent-man",
@@ -209,7 +215,8 @@
    ],
    "ar": "sí",
    "amz": "sí",
-   "portada_original": "https://covers.openlibrary.org/b/id/6901081-L.jpg"
+   "portada_original": "https://covers.openlibrary.org/b/id/6901081-L.jpg",
+   "origen": "deutsch"
   },
   {
    "id": "science-values",
@@ -240,7 +247,8 @@
    ],
    "ar": "sí (solo en inglés)",
    "amz": "sí",
-   "portada_original": "https://covers.openlibrary.org/b/isbn/9780060972813-L.jpg?default=false"
+   "portada_original": "https://covers.openlibrary.org/b/isbn/9780060972813-L.jpg?default=false",
+   "origen": "deutsch"
   },
   {
    "id": "anthropic",
@@ -271,7 +279,8 @@
    ],
    "ar": "sí",
    "amz": "sí",
-   "portada_original": "https://covers.openlibrary.org/b/isbn/9780192821478-L.jpg?default=false"
+   "portada_original": "https://covers.openlibrary.org/b/isbn/9780192821478-L.jpg?default=false",
+   "origen": "deutsch"
   },
   {
    "id": "meme-machine",
@@ -302,7 +311,8 @@
    ],
    "ar": "dudoso",
    "amz": "sí",
-   "portada_original": "https://covers.openlibrary.org/b/isbn/9780192862129-L.jpg?default=false"
+   "portada_original": "https://covers.openlibrary.org/b/isbn/9780192862129-L.jpg?default=false",
+   "origen": "deutsch"
   },
   {
    "id": "character-law",
@@ -333,7 +343,8 @@
    ],
    "ar": "sí",
    "amz": "sí",
-   "portada_original": "https://covers.openlibrary.org/b/isbn/9780262560030-L.jpg?default=false"
+   "portada_original": "https://covers.openlibrary.org/b/isbn/9780262560030-L.jpg?default=false",
+   "origen": "deutsch"
   },
   {
    "id": "meaning-it-all",
@@ -364,7 +375,8 @@
    ],
    "ar": "sí (solo en inglés)",
    "amz": "sí",
-   "portada_original": "https://covers.openlibrary.org/b/isbn/9780465023943-L.jpg?default=false"
+   "portada_original": "https://covers.openlibrary.org/b/isbn/9780465023943-L.jpg?default=false",
+   "origen": "deutsch"
   },
   {
    "id": "conjectures",
@@ -395,7 +407,8 @@
    ],
    "ar": "sí",
    "amz": "sí",
-   "portada_original": "https://covers.openlibrary.org/b/isbn/9780415285940-L.jpg?default=false"
+   "portada_original": "https://covers.openlibrary.org/b/isbn/9780415285940-L.jpg?default=false",
+   "origen": "deutsch"
   },
   {
    "id": "open-society",
@@ -426,7 +439,8 @@
    ],
    "ar": "sí",
    "amz": "sí",
-   "portada_original": "https://covers.openlibrary.org/b/isbn/9780691158136-L.jpg?default=false"
+   "portada_original": "https://covers.openlibrary.org/b/isbn/9780691158136-L.jpg?default=false",
+   "origen": "deutsch"
   },
   {
    "id": "better-world",
@@ -457,7 +471,8 @@
    ],
    "ar": "sí",
    "amz": "sí",
-   "portada_original": "https://covers.openlibrary.org/b/isbn/9780415135481-L.jpg?default=false"
+   "portada_original": "https://covers.openlibrary.org/b/isbn/9780415135481-L.jpg?default=false",
+   "origen": "deutsch"
   },
   {
    "id": "parmenides",
@@ -488,7 +503,8 @@
    ],
    "ar": "dudoso",
    "amz": "sí",
-   "portada_original": "https://covers.openlibrary.org/b/isbn/9788449307461-L.jpg?default=false"
+   "portada_original": "https://covers.openlibrary.org/b/isbn/9788449307461-L.jpg?default=false",
+   "origen": "deutsch"
   },
   {
    "id": "enlightenment",
@@ -519,7 +535,8 @@
    ],
    "ar": "dudoso",
    "amz": "sí",
-   "portada_original": "https://covers.openlibrary.org/b/isbn/9780140250282-L.jpg?default=false"
+   "portada_original": "https://covers.openlibrary.org/b/isbn/9780140250282-L.jpg?default=false",
+   "origen": "deutsch"
   },
   {
    "id": "six-numbers",
@@ -542,7 +559,8 @@
    ],
    "ar": "sí",
    "amz": "",
-   "portada_original": "https://covers.openlibrary.org/b/isbn/9780465036738-L.jpg?default=false"
+   "portada_original": "https://covers.openlibrary.org/b/isbn/9780465036738-L.jpg?default=false",
+   "origen": "deutsch"
   },
   {
    "id": "lunar-men",
@@ -565,7 +583,887 @@
    ],
    "ar": "no",
    "amz": "sí",
-   "portada_original": "https://covers.openlibrary.org/b/isbn/9780571216109-L.jpg?default=false"
+   "portada_original": "https://covers.openlibrary.org/b/isbn/9780571216109-L.jpg?default=false",
+   "origen": "deutsch"
+  },
+  {
+   "id": "munger-04",
+   "titulo": "Armas, gérmenes y acero",
+   "titulo_original": "Guns, Germs, and Steel",
+   "autor": "Jared Diamond",
+   "anio": "1997",
+   "pensador": "Charlie Munger",
+   "brief": "Lo elogiaba como historia explicativa: geografía, biología y azar pesando más que relatos heroicos.",
+   "portada": "quiero-covers/munger-04.jpg",
+   "portada_original": "https://covers.openlibrary.org/b/id/7884018-L.jpg",
+   "origen": "panteon",
+   "opciones": [
+    {
+     "mercado": "AR",
+     "tienda": "MercadoLibre",
+     "link": "https://www.mercadolibre.com.ar/libro-armas-germenes-y-acero--jared-diamond--debolsillo/up/MLAU212965479",
+     "precio": "",
+     "idioma": "español",
+     "nota": "Debolsillo (español), tapa blanda"
+    },
+    {
+     "mercado": "AMZ",
+     "tienda": "Amazon",
+     "link": "https://amazon.com/Guns-Germs-Steel-Fates-Societies/dp/0393354326",
+     "precio": "USD 11.42 nuevo (9780393354324, In Stock, sold by Amazon.com); USD 20.09 (9780393061310); USD 10.99 (tercero, only 1 left); ebook USD 2.99 en promo",
+     "idioma": "inglés",
+     "nota": "Paperback (W.W. Norton, 9780393354324; también 9780393317558); hardcover; ebook Kindle"
+    }
+   ],
+   "nota": "AR: edición Debolsillo muy común pero no confirmé stock/precio; reintentar búsqueda. Amazon: paperback ~USD 11-20.",
+   "ar": "dudoso",
+   "amz": "sí"
+  },
+  {
+   "id": "munger-08",
+   "titulo": "Autobiografía",
+   "titulo_original": "The Autobiography of Benjamin Franklin",
+   "autor": "Benjamin Franklin",
+   "anio": "1791",
+   "pensador": "Charlie Munger",
+   "brief": "Munger citaba a Franklin como modelo de prudencia práctica, ahorro, aprendizaje y conducta cívica. Lo recomiendan dos de mis pensadores: Charlie y Papa.",
+   "portada": "quiero-covers/munger-08.jpg",
+   "portada_original": "https://covers.openlibrary.org/b/id/5647361-L.jpg",
+   "origen": "panteon",
+   "opciones": [
+    {
+     "mercado": "AR",
+     "tienda": "Buscalibre",
+     "link": "https://www.buscalibre.com.ar/libro-autobiografia/9788413372198/p/52800013",
+     "precio": "",
+     "idioma": "español",
+     "nota": "Cátedra (Autobiografía y otros escritos), Editorial Verbum, y varias eds. económicas"
+    },
+    {
+     "mercado": "AMZ",
+     "tienda": "Amazon",
+     "link": "https://www.amazon.com/Autobiography-Benjamin-Franklin-Thrift-Editions/dp/0486290735",
+     "precio": "USD 9.00 nuevo (Dover Thrift, In Stock, sold by Amazon.com); usado USD 5.88; Touchstone USD 9.37; Kindle USD 2.99",
+     "idioma": "inglés",
+     "nota": "Paperback (Dover Thrift 9780486290737; Touchstone 9780743255066); hardcover; Kindle"
+    }
+   ],
+   "nota": "Clásico de DOMINIO PÚBLICO (1791): el texto completo está GRATIS online (Project Gutenberg, etc.). Conviene edición local barata; Verbum/Cátedra en AR, o Dover Thrift en inglés. NO confundir con la Autobiografía de San I",
+   "ar": "sí",
+   "amz": "sí"
+  },
+  {
+   "id": "deutsch-17",
+   "titulo": "El relojero ciego",
+   "titulo_original": "The Blind Watchmaker",
+   "autor": "Richard Dawkins",
+   "anio": "1986",
+   "pensador": "David Deutsch",
+   "brief": "Le sirve como defensa de explicaciones evolutivas sin diseñador y con poder generativo.",
+   "portada": "quiero-covers/deutsch-17.jpg",
+   "portada_original": "https://covers.openlibrary.org/b/id/95763-L.jpg",
+   "origen": "panteon",
+   "opciones": [
+    {
+     "mercado": "AR",
+     "tienda": "Buscalibre",
+     "link": "https://www.buscalibre.com.ar/libro-el-relojero-ciego/9788490661086/p/46509031",
+     "precio": "",
+     "idioma": "español",
+     "nota": "Varias eds. en español (Labor 'Sin Stock'; eds. 9788447302468 y 9788490661086)"
+    },
+    {
+     "mercado": "AMZ",
+     "tienda": "Amazon",
+     "link": "https://amazon.com/Blind-Watchmaker-Evidence-Evolution-Universe/dp/0393351491",
+     "precio": "USD 15.23 (9780393351491); USD 14.99; USD 7.00 tapa blanda 9780393315707 (list $18.95, 63% off) y hay copias usadas de SIZLIFE LLC",
+     "idioma": "inglés",
+     "nota": "Paperback (W.W. Norton)"
+    }
+   ],
+   "nota": "AR: no pude confirmar stock explícito; verificar. Amazon: el de $7.00/unos~$15 son paperbacks de terceros (posible usado).",
+   "ar": "dudoso",
+   "amz": "sí"
+  },
+  {
+   "id": "deutsch-19",
+   "titulo": "La Constitución de la libertad",
+   "titulo_original": "The Constitution of Liberty",
+   "autor": "F. A. Hayek",
+   "anio": "1960",
+   "pensador": "David Deutsch",
+   "brief": "Lo acerca a órdenes abiertos donde el conocimiento social supera al diseñador central.",
+   "portada": "quiero-covers/deutsch-19.jpg",
+   "portada_original": "https://covers.openlibrary.org/b/id/8151148-L.jpg",
+   "portada_fuente_titulo": "The Constitution of Liberty",
+   "origen": "panteon",
+   "opciones": [
+    {
+     "mercado": "AR",
+     "tienda": "MercadoLibre",
+     "link": "https://listado.mercadolibre.com.ar/libros-de-hayek",
+     "precio": "ARS 46.100–113.000 según edición",
+     "idioma": "español",
+     "nota": "Unión Editorial (UE Internacional 2023, tapa blanda) y Alianza Editorial (incl. antología)"
+    },
+    {
+     "mercado": "AMZ",
+     "tienda": "Amazon",
+     "link": "https://www.amazon.com/Constitution-Liberty-Definitive-Collected-Works/dp/0226315398",
+     "precio": "",
+     "idioma": "inglés",
+     "nota": "The Definitive Edition (The Collected Works of F.A. Hayek, Vol. 17), University of Chicago Press"
+    }
+   ],
+   "nota": "OJO con el título: en español circula como 'Los fundamentos de la libertad' (Unión Editorial), NO confundir con 'La Constitución de la libertad en Adam Smith' de Ujaldón. Amazon: precio exacto de la edición definitiva no",
+   "ar": "sí",
+   "amz": "sí"
+  },
+  {
+   "id": "deutsch-16",
+   "titulo": "La estructura de las revoluciones científicas",
+   "titulo_original": "The Structure of Scientific Revolutions",
+   "autor": "Thomas S. Kuhn",
+   "anio": "1962",
+   "pensador": "David Deutsch",
+   "brief": "Lo contrasta con Popper: rescata el cambio científico, rechaza el relativismo de paradigmas.",
+   "portada": "quiero-covers/deutsch-16.jpg",
+   "portada_original": "https://covers.openlibrary.org/b/id/6566386-L.jpg",
+   "origen": "panteon",
+   "opciones": [
+    {
+     "mercado": "AR",
+     "tienda": "Buscalibre",
+     "link": "https://www.buscalibre.com.ar/libro-la-estructura-de-las-revoluciones-cientificas/9786071614223/p/33596156",
+     "precio": "",
+     "idioma": "español",
+     "nota": "Fondo de Cultura Económica (Breviarios 213) y ed. FCE 9786071614223"
+    },
+    {
+     "mercado": "AMZ",
+     "tienda": "Amazon",
+     "link": "http://amazon.com/The-Structure-Scientific-Revolutions-Edition/dp/0226458083",
+     "precio": "USD 17.29 (paperback 9780226458083); USD 37.44 (50th Ann. 9780226458113); USD 10.81 (ed. -40%)",
+     "idioma": "inglés",
+     "nota": "Paperback / 50th Anniversary Edition"
+    }
+   ],
+   "nota": "Precio AR no visible en snippet. ML mostró solo páginas de listado sin stock/precio legible. Amazon paperback con 'Only 1 left in stock'.",
+   "ar": "sí",
+   "amz": "sí"
+  },
+  {
+   "id": "deutsch-02",
+   "titulo": "La lógica de la investigación científica",
+   "titulo_original": "The Logic of Scientific Discovery",
+   "autor": "Karl Popper",
+   "anio": "1934",
+   "pensador": "David Deutsch",
+   "brief": "Lo usa para separar explicación científica de inducción y justificacionismo.",
+   "portada": "quiero-covers/deutsch-02.jpg",
+   "portada_original": "https://covers.openlibrary.org/b/id/15260907-L.jpg",
+   "portada_fuente_titulo": "Logik der Forschung",
+   "origen": "panteon",
+   "opciones": [
+    {
+     "mercado": "AR",
+     "tienda": "Buscalibre",
+     "link": "https://www.buscalibre.com.ar/libro-la-logica-de-la-investigacion-cientifica/9788430946075/p/2714544",
+     "precio": "",
+     "idioma": "español",
+     "nota": "Tecnos 9788430946075 (2008, 576 pág, tapa blanda); Tecnos 9788430907113; ed. inglesa Routledge 9780415278447"
+    },
+    {
+     "mercado": "AMZ",
+     "tienda": "Amazon",
+     "link": "https://www.amazon.com/Logic-Scientific-Discovery-Routledge-Classics/dp/0415278449",
+     "precio": "USD 29.59 (Routledge Classics, 'Only 7 left in stock')",
+     "idioma": "inglés",
+     "nota": "Paperback (Routledge Classics 9780415278447; Routledge 9780415078924)"
+    }
+   ],
+   "nota": "Original alemán 1934 (Logik der Forschung). Edición estándar en español es Tecnos (Buscalibre). No apareció listado claro de este título exacto en MercadoLibre AR (sí hay otros Popper de Tecnos).",
+   "ar": "sí",
+   "amz": "sí"
+  },
+  {
+   "id": "deutsch-08",
+   "titulo": "Muerte y vida de las grandes ciudades",
+   "titulo_original": "The Death and Life of Great American Cities",
+   "autor": "Jane Jacobs",
+   "anio": "1961",
+   "pensador": "David Deutsch",
+   "brief": "Lo cita por explicar sistemas urbanos desde conocimiento local, evolución y crítica al plan maestro.",
+   "portada": "quiero-covers/deutsch-08.jpg",
+   "portada_original": "https://covers.openlibrary.org/b/id/5540237-L.jpg",
+   "origen": "panteon",
+   "opciones": [
+    {
+     "mercado": "AR",
+     "tienda": "MercadoLibre",
+     "link": "https://www.mercadolibre.com.ar/libro-muerte-y-vida-de-las-grandes-ciudades-original-/p/MLA20063487",
+     "precio": "",
+     "idioma": "español",
+     "nota": "Buscalibre: Capitán Swing 9788493898502; ML listado 'Muerte y vida de las grandes ciudades (original)'"
+    },
+    {
+     "mercado": "AMZ",
+     "tienda": "Amazon",
+     "link": "https://amazon.com/Death-Life-Great-American-Cities/dp/067974195X",
+     "precio": "USD 9.91 (Vintage, 53% off de list 21.00) / USD 23.75 (Modern Library) / USD 15.99 (50th Anniv., list 30.00)",
+     "idioma": "inglés",
+     "nota": "Paperback (Vintage 9780679741954; Modern Library 9780679600473; 50th Anniversary Modern Library 9780679644330)"
+    }
+   ],
+   "nota": "Clásico de 1961. Edición local en español: Capitán Swing (Buscalibre AR). En EE.UU. hay múltiples ediciones; la Vintage es la más barata.",
+   "ar": "sí",
+   "amz": "sí"
+  },
+  {
+   "id": "deutsch-13",
+   "titulo": "¿Qué es la vida?",
+   "titulo_original": "What Is Life?",
+   "autor": "Erwin Schrödinger",
+   "anio": "1944",
+   "pensador": "David Deutsch",
+   "brief": "Aporta el puente entre física y replicación que Deutsch extiende hacia conocimiento y computación. Lo recomiendan dos de mis pensadores: David y Richard.",
+   "portada": "quiero-covers/deutsch-13.jpg",
+   "portada_original": "https://covers.openlibrary.org/b/id/11024786-L.jpg",
+   "origen": "panteon",
+   "opciones": [
+    {
+     "mercado": "AR",
+     "tienda": "Buscalibre",
+     "link": "https://www.buscalibre.com.ar/libro-que-es-la-vida/9788472236073/p/1026424",
+     "precio": "",
+     "idioma": "español",
+     "nota": "Tusquets / Metatemas 9788472236073 (rústica con solapas, ed. clásica en español)"
+    },
+    {
+     "mercado": "AMZ",
+     "tienda": "Amazon",
+     "link": "https://amazon.com/What-Life-Erwin-Schrodinger/dp/B00133U9LI",
+     "precio": "",
+     "idioma": "inglés",
+     "nota": "Paperback/Hardcover/Kindle (incluye 'Mind and Matter'; ed. con prefacio de Roger Penrose)"
+    }
+   ],
+   "nota": "DUPLICADO respecto de la obra #14 del lote (mismo libro): se relevó una sola vez. Edición local recomendada: Metatemas/Tusquets. Precio Amazon no se pudo fijar con claridad en los snippets (múltiples ediciones).",
+   "ar": "sí",
+   "amz": "sí"
+  },
+  {
+   "id": "borges-15",
+   "titulo": "Cielo e infierno",
+   "titulo_original": "Heaven and Hell",
+   "autor": "Emanuel Swedenborg",
+   "anio": "1758",
+   "pensador": "Jorge Luis Borges",
+   "brief": "Lo citó por su visión minuciosa del más allá, donde cielo e infierno nacen de elecciones íntimas.",
+   "portada": "quiero-covers/borges-15.jpg",
+   "portada_original": "https://covers.openlibrary.org/b/id/5817896-L.jpg",
+   "origen": "panteon",
+   "opciones": [
+    {
+     "mercado": "AR",
+     "tienda": "Buscalibre",
+     "link": "https://www.buscalibre.com.ar/libro-del-cielo-y-del-infierno/9788494675577/p/48484082",
+     "precio": "",
+     "idioma": "español",
+     "nota": "Biblok 2017 (9788494675577, 'Del Cielo y del Infierno'); Ed. 9788478446087; 'El Cielo y sus Maravillas y el Infierno de Cosas Vistas y Oídas' 97884995"
+    },
+    {
+     "mercado": "AMZ",
+     "tienda": "Amazon",
+     "link": "https://www.amazon.com.au/Heaven-Hell-Emanuel-Swedenborg/dp/1604590823",
+     "precio": "USD 12.49 (usado, '9 offers from') / Kindle disponible",
+     "idioma": "inglés",
+     "nota": "Hardcover/Paperback/Kindle (Swedenborg Foundation New Century Ed.; 9781604590821)"
+    }
+   ],
+   "nota": "Título genérico, se desambiguó por autor (Swedenborg, 1758). En español suele figurar como 'Del Cielo y del Infierno'. Dominio público en inglés: texto gratis en Gutenberg (eBook 17368). No apareció listado claro en Merc",
+   "ar": "sí",
+   "amz": "sí"
+  },
+  {
+   "id": "borges-19",
+   "titulo": "El corazón de las tinieblas",
+   "titulo_original": "Heart of Darkness",
+   "autor": "Joseph Conrad",
+   "anio": "1899",
+   "pensador": "Jorge Luis Borges",
+   "brief": "Lo incorporó a su canon de narradores de aventura moral, donde el viaje externo revela una culpa.",
+   "portada": "quiero-covers/borges-19.jpg",
+   "portada_original": "https://covers.openlibrary.org/b/id/12307847-L.jpg",
+   "origen": "panteon",
+   "opciones": [
+    {
+     "mercado": "AR",
+     "tienda": "MercadoLibre",
+     "link": "https://www.mercadolibre.com.ar/libro-el-corazon-de-las-tinieblas-joseph-conrad/p/MLA22070607",
+     "precio": "",
+     "idioma": "español",
+     "nota": "Buscalibre: Castalia 9788497409483 (tapa blanda); Reino de Cordelia 9788419124814 (tapa dura, 208 pág)"
+    },
+    {
+     "mercado": "AMZ",
+     "tienda": "Amazon",
+     "link": "https://www.amazon.com/Heart-Darkness-Penguin-Classics-Deluxe/dp/0143106589",
+     "precio": "USD 7.95 (paperback) / USD 11.38 (Penguin Deluxe, list 16.00) / USD 12.08 (hardcover)",
+     "idioma": "inglés",
+     "nota": "Paperback (Penguin Classics Deluxe 9780143106586); Oxford World's Classics; Dover 9781580495752"
+    }
+   ],
+   "nota": "Dominio público (1899): texto gratis en Gutenberg. Ediciones locales de Castalia y Reino de Cordelia disponibles en Buscalibre AR.",
+   "ar": "sí",
+   "amz": "sí"
+  },
+  {
+   "id": "borges-11",
+   "titulo": "Ensayos",
+   "titulo_original": "Essays",
+   "autor": "Ralph Waldo Emerson",
+   "anio": "1841",
+   "pensador": "Jorge Luis Borges",
+   "brief": "Lo leyó toda la vida y lo elogió por una prosa de pensamiento directo, sin sistema cerrado.",
+   "portada": "quiero-covers/borges-11.jpg",
+   "portada_original": "https://covers.openlibrary.org/b/id/8235340-L.jpg",
+   "origen": "panteon",
+   "opciones": [
+    {
+     "mercado": "AR",
+     "tienda": "MercadoLibre",
+     "link": "https://listado.mercadolibre.com.ar/libros-de-ralph-waldo-emerson",
+     "precio": "ARS 18525 (ML, 5% off de 19500, nuevo)",
+     "idioma": "español",
+     "nota": "R. W. Emerson — Ensayos Completos (español); Buscalibre: 'El Poeta & Otros Ensayos' (9789874623355)"
+    },
+    {
+     "mercado": "AMZ",
+     "tienda": "Amazon",
+     "link": "https://amazon.com/Essays-Second-Ralph-Waldo-Emerson/dp/B0GVKHX36T",
+     "precio": "USD 12.95 (Library of America list) / USD 22.99 (Bantam RRP) / Kindle desde USD 0.99",
+     "idioma": "inglés",
+     "nota": "Paperback/Kindle (Library of America 9781598530841; ed. Bantam 9780553213881)"
+    }
+   ],
+   "nota": "Título genérico: se desambiguó por autor. Dominio público: texto completo gratis (Gutenberg, PDF Ministerio de Educación RD). En español conviene edición local; disponibles hay de bolsillo baratas.",
+   "ar": "sí",
+   "amz": "sí"
+  },
+  {
+   "id": "borges-12",
+   "titulo": "Hojas de hierba",
+   "titulo_original": "Leaves of Grass",
+   "autor": "Walt Whitman",
+   "anio": "1855",
+   "pensador": "Jorge Luis Borges",
+   "brief": "Le escribió ensayos y poemas; le interesaba el yo plural que intenta contener a todos los hombres.",
+   "portada": "quiero-covers/borges-12.jpg",
+   "portada_original": "https://covers.openlibrary.org/b/id/9000447-L.jpg",
+   "origen": "panteon",
+   "opciones": [
+    {
+     "mercado": "AR",
+     "tienda": "Buscalibre",
+     "link": "https://www.buscalibre.com.ar/libro-hojas-de-hierba/9788475221069/p/2517965",
+     "precio": "",
+     "idioma": "español",
+     "nota": "Buscalibre: Visor bilingüe 9788475221069 (2009); Alma tapa dura 9788417430856 (2019, español); Andrómeda 9789507222603 (2007); Fontamara selección 978"
+    },
+    {
+     "mercado": "AMZ",
+     "tienda": "Amazon",
+     "link": "https://www.amazon.com/Leaves-Grass-Walt-Whitman/dp/8194619084",
+     "precio": "USD 0.55 (Kindle) / USD 6.95 (Signet mass market) / USD 15.99 (Union Square 2026)",
+     "idioma": "inglés",
+     "nota": "Kindle, Paperback, Mass Market (Signet 9780451419170), Penguin Classics 1855 ed. 9780143039273"
+    }
+   ],
+   "nota": "Dominio público: texto gratis (Gutenberg/Walt Whitman Archive). Versión bilingüe Visor es la más recomendada para leer en inglés con traducción. Muchas ediciones locales en Buscalibre.",
+   "ar": "sí",
+   "amz": "sí"
+  },
+  {
+   "id": "borges-03",
+   "titulo": "La máquina del tiempo",
+   "titulo_original": "The Time Machine",
+   "autor": "H. G. Wells",
+   "anio": "1895",
+   "pensador": "Jorge Luis Borges",
+   "brief": "Lo incluyó entre sus lecturas decisivas por convertir una idea metafísica en aventura precisa.",
+   "portada": "quiero-covers/borges-03.jpg",
+   "portada_original": "https://covers.openlibrary.org/b/id/9009316-L.jpg",
+   "origen": "panteon",
+   "opciones": [
+    {
+     "mercado": "AR",
+     "tienda": "MercadoLibre",
+     "link": "https://www.mercadolibre.com.ar/la-maquina-del-tiempo--herbert-g-wells/up/MLAU2977826913",
+     "precio": "ARS 6000 (ML, ejemplar en excelentes condiciones)",
+     "idioma": "español",
+     "nota": "Centro Editor de Cultura (2005, tapa blanda, 125 pág, ISBN 9580495696); varias ediciones en Buscalibre (Gradifco, Del Fondo, etc.)"
+    },
+    {
+     "mercado": "AMZ",
+     "tienda": "Amazon",
+     "link": "https://amazon.com/Time-Machine-Penguin-Classics/dp/0141439971",
+     "precio": "USD 6.71 (usado) / USD 7.90 (Penguin Classics) / USD 9.99 (nuevo In Stock)",
+     "idioma": "inglés",
+     "nota": "Paperback (Penguin Classics 9780141439976; ed. 9781545232231)"
+    }
+   ],
+   "nota": "Clásico de dominio público (1895): texto gratis en Gutenberg/Wikisource. Edición local barata recomendada: Salim/Andrés Bello/Centro Editor o Penguin por la traducción. Precio ML corresponde a un usado.",
+   "ar": "sí",
+   "amz": "sí"
+  },
+  {
+   "id": "taleb-05",
+   "titulo": "Camino de servidumbre",
+   "titulo_original": "The Road to Serfdom",
+   "autor": "F. A. Hayek",
+   "anio": "1944",
+   "pensador": "Nassim Nicholas Taleb",
+   "brief": "Lo cita por el problema del conocimiento disperso y el daño de planificar sistemas complejos. Lo recomiendan dos de mis pensadores: Nassim y Peter.",
+   "portada": "quiero-covers/taleb-05.jpg",
+   "portada_original": "https://covers.openlibrary.org/b/id/6991871-L.jpg",
+   "portada_fuente_titulo": "The Road to Serfdom",
+   "origen": "panteon",
+   "opciones": [
+    {
+     "mercado": "AR",
+     "tienda": "Buscalibre",
+     "link": "https://www.buscalibre.com.ar/libro-camino-de-servidumbre/9788420616766/p/55080282",
+     "precio": "ARS ~42.300 (Alianza, precio rebajado)",
+     "idioma": "español",
+     "nota": "Alianza Editorial, tapa blanda; también ed. Unión Editorial (vol. II 9788472097049)"
+    },
+    {
+     "mercado": "AMZ",
+     "tienda": "Amazon",
+     "link": "https://amazon.com/The-Road-Serfdom-Documents-The-Definitive/dp/0226320553",
+     "precio": "USD 13.47 (Definitive Edition 9780226320557, In Stock, sold by Amazon.com); ed. condensada IEA 9780255365307",
+     "idioma": "inglés",
+     "nota": "Paperback, Definitive Edition (Collected Works Vol. 2, Univ. of Chicago Press); también ed. condensada (Reader's Digest/IEA)"
+    }
+   ],
+   "nota": "AR: muy disponible en español (Alianza). Amazon: usar la Definitive Edition (Chicago, con documentos), la ed. condensada es un resumen.",
+   "ar": "sí",
+   "amz": "sí"
+  },
+  {
+   "id": "taleb-12",
+   "titulo": "Delirios populares extraordinarios y la locura de las masas",
+   "titulo_original": "Extraordinary Popular Delusions and the Madness of Crowds",
+   "autor": "Charles Mackay",
+   "anio": "1841",
+   "pensador": "Nassim Nicholas Taleb",
+   "brief": "Lo usa para burbujas, contagio social y fragilidad colectiva ante narrativas demasiado prolijas.",
+   "portada": "quiero-covers/taleb-12.jpg",
+   "portada_original": "https://covers.openlibrary.org/b/id/8804986-L.jpg",
+   "origen": "panteon",
+   "opciones": [
+    {
+     "mercado": "AR",
+     "tienda": "MercadoLibre",
+     "link": "https://www.mercadolibre.com.ar/libro-delirios-populares-extraordinarios-y-la-locura-de-las-masas-de-mackay-charles-tapa-blanda/p/MLA25282105",
+     "precio": "",
+     "idioma": "español",
+     "nota": "ML tapa blanda (MLA25282105); Buscalibre español 9781607963547 (BN Publishing, 2011); inglés 9780517884331 (Sin Stock), Harriman hardcover"
+    },
+    {
+     "mercado": "AMZ",
+     "tienda": "Amazon",
+     "link": "https://www.amazon.com/Extraordinary-Popular-Delusions-Madness-Crowds/dp/1604594411",
+     "precio": "USD 5.09 (selección) / USD 12.22 (paperback) / USD 13.47 / USD 30.55 (Harriman hardcover)",
+     "idioma": "inglés",
+     "nota": "Paperback (9781604594416; selección 9780486...), Harriman Definitive Hardcover, Kindle"
+    }
+   ],
+   "nota": "Dominio público (1841): texto gratis en Gutenberg/Archive.org. Buena opción local en español; edición Harriman inglesa es la más valorada.",
+   "ar": "sí",
+   "amz": "sí"
+  },
+  {
+   "id": "taleb-16",
+   "titulo": "Sobre los deberes",
+   "titulo_original": "De Officiis",
+   "autor": "Cicerón",
+   "anio": "-44",
+   "pensador": "Nassim Nicholas Taleb",
+   "brief": "Le interesa por virtud pública, honor y normas romanas anteriores a teorías morales abstractas.",
+   "portada": "quiero-covers/taleb-16.jpg",
+   "portada_original": "https://covers.openlibrary.org/b/id/6487218-L.jpg",
+   "origen": "panteon",
+   "opciones": [
+    {
+     "mercado": "AR",
+     "tienda": "MercadoLibre",
+     "link": "https://www.mercadolibre.com.ar/libro-sobre-los-deberes--ciceron-marco-tulio/up/MLAU143935454",
+     "precio": "",
+     "idioma": "español",
+     "nota": "Buscalibre: Alianza 9788420639338 (Sin Stock), Rialp 9788432161582 (nuevo, importado), Gredos/9788411483711"
+    },
+    {
+     "mercado": "AMZ",
+     "tienda": "Amazon",
+     "link": "https://amazon.com/Obligations-Officiis-Oxford-Worlds-Classics/dp/0199540713",
+     "precio": "USD 12.01 (Oxford World's Classics, In Stock)",
+     "idioma": "inglés",
+     "nota": "Paperback (Oxford World's Classics 'On Obligations' 9780199540716; Loeb Classical Library hardcover)"
+    }
+   ],
+   "nota": "Título genérico: se desambiguó por autor. Clásico latino (44 a.C.), dominio público: texto gratis (Perseus/Loeb). Edición local recomendada: Alianza o Gredos; en Buscalibre Alianza figura Sin Stock, Rialp importado dispo",
+   "ar": "sí",
+   "amz": "sí"
+  },
+  {
+   "id": "taleb-07",
+   "titulo": "Ulises desatado",
+   "titulo_original": "Ulysses Unbound",
+   "autor": "Jon Elster",
+   "anio": "2000",
+   "pensador": "Nassim Nicholas Taleb",
+   "brief": "Le interesa por precompromiso, racionalidad limitada y trucos institucionales contra uno mismo.",
+   "portada": "quiero-covers/taleb-07.jpg",
+   "portada_original": "https://covers.openlibrary.org/b/id/352634-L.jpg",
+   "origen": "panteon",
+   "opciones": [
+    {
+     "mercado": "AR",
+     "tienda": "Buscalibre",
+     "link": "https://www.buscalibre.com.ar/libros/autor/jon-elster",
+     "precio": "EUR 31.90 (referencia Gedisa, no AR)",
+     "idioma": "español",
+     "nota": "Gedisa, colección Cla-de-ma, 2002 (9788474329056), trad. Jordi Mundó, 349 pág"
+    },
+    {
+     "mercado": "AMZ",
+     "tienda": "Amazon",
+     "link": "https://amazon.com/Ulysses-Unbound-Rationality-Precommitment-Constraints/dp/B01JXNU2F2",
+     "precio": "USD 85.90 (hardcover usado, list 100.00) / USD 39.00 (eBook, VitalSource)",
+     "idioma": "inglés",
+     "nota": "Paperback (9780521662130), Hardcover (0521662133), Kindle"
+    }
+   ],
+   "nota": "No se halló disponibilidad en AR en las búsquedas; edición en español es Gedisa (España), importable vía Buscalibre. En Amazon el paperback académico está disponible.",
+   "ar": "dudoso",
+   "amz": "sí"
+  },
+  {
+   "id": "naval-20",
+   "titulo": "La verdad directa",
+   "titulo_original": "Direct Truth",
+   "autor": "Kapil Gupta",
+   "anio": "2018",
+   "pensador": "Naval Ravikant",
+   "brief": "Naval lo ha recomendado por su enfoque seco: ver deseo, miedo y autoengaño sin adornos.",
+   "portada": "quiero-covers/naval-20.jpg",
+   "portada_original": "https://covers.openlibrary.org/b/id/10524769-L.jpg",
+   "origen": "panteon",
+   "opciones": [
+    {
+     "mercado": "AMZ",
+     "tienda": "Amazon",
+     "link": "https://www.amazon.com/Direct-Truth-Uncompromising-non-prescriptive-questions/dp/1724334417",
+     "precio": "Copia usada ~USD 192.54 (AbeBooks, HPB-Red); nueva ~USD 497.03 (GoldBooks). Autor tiene otros títulos disponibles (p.ej. 'A Master's Secret Whispers' USD 13.38 pb / 9.99 Kindle)",
+     "idioma": "inglés",
+     "nota": "Paperback (CreateSpace, 9781724334411) — 'Out of Print – Limited Availability'"
+    }
+   ],
+   "nota": "El título está DESCATAOGADO/FUERA DE IMPRENTA tanto en AR como en Amazon nuevo; solo quedan copias usadas muy caras. No hay edición en español detectada.",
+   "ar": "no",
+   "amz": "no"
+  },
+  {
+   "id": "francisco-13",
+   "titulo": "Autobiografía",
+   "titulo_original": "Il racconto del pellegrino",
+   "autor": "San Ignacio de Loyola",
+   "anio": "1555",
+   "pensador": "Papa Francisco",
+   "brief": "El Ignacio peregrino modela su idea de fe en camino, no instalada en seguridades. Lo recomiendan dos de mis pensadores: Papa y Charlie.",
+   "portada": "quiero-covers/francisco-13.jpg",
+   "portada_original": "https://covers.openlibrary.org/b/id/698422-L.jpg",
+   "origen": "panteon",
+   "opciones": [
+    {
+     "mercado": "AR",
+     "tienda": "Buscalibre",
+     "link": "https://www.buscalibre.com.ar/libro-autobiografia-de-s-ignacio-de-loyola/9788472398924/p/3313499",
+     "precio": "",
+     "idioma": "español",
+     "nota": "Varias (Mensajero, BAC, Sal Terrae, Manresa); tapa blanda"
+    },
+    {
+     "mercado": "AMZ",
+     "tienda": "Amazon",
+     "link": "https://www.amazon.com/Autobiography-St-Ignatius-Loyola/dp/1497599407",
+     "precio": "USD 9.99 (CreateSpace); ed. usadas desde ~USD 6.19; Fordham/Olin ed. (Amazon.co.uk £23.99)",
+     "idioma": "inglés",
+     "nota": "Paperback (CreateSpace 9781497599407; Fordham Univ. Press ed. Olin 9780823214808; ed. gratuitas de dominio público)"
+    }
+   ],
+   "nota": "NO confundir con la Autobiografía de Benjamin Franklin (ítem 9). Texto de DOMINIO PÚBLICO (publicado 1731): hay versiones gratis online. En AR conviene ed. editorial (Mensajero/BAC) o edición barata de Dominio Público.",
+   "ar": "sí",
+   "amz": "sí"
+  },
+  {
+   "id": "francisco-05",
+   "titulo": "El Megáfono",
+   "titulo_original": "Il Megafón",
+   "autor": "Leopoldo Marechal",
+   "anio": "1970",
+   "pensador": "Papa Francisco",
+   "brief": "Marechal le da épica porteña y católica, una imaginación popular afín a su sensibilidad.",
+   "portada": "",
+   "origen": "panteon",
+   "opciones": [
+    {
+     "mercado": "AR",
+     "tienda": "MercadoLibre",
+     "link": "https://www.mercadolibre.com.ar/megafon-o-la-guerra-de-marechal-leopoldo--seix-barral/up/MLAU165866664",
+     "precio": "",
+     "idioma": "español",
+     "nota": "Seix Barral, tapa blanda, 2018 (ISBN 9789507319518) — sin stock"
+    }
+   ],
+   "nota": "Ojo con el título: la novela de Marechal se publicó como 'Megafón, o la guerra' (1970), no siempre como 'El Megáfono'. Edición Seix Barral agotada; buscar en librerías de usados/Libros del Zorzal. Amazon: no relevado (no",
+   "ar": "dudoso",
+   "amz": "no"
+  },
+  {
+   "id": "francisco-11",
+   "titulo": "La Eneida",
+   "titulo_original": "L'Eneide",
+   "autor": "Virgilio",
+   "anio": "-19",
+   "pensador": "Papa Francisco",
+   "brief": "Le ofrece una épica de destino, piedad y fundación, temas que Bergoglio lee pastoralmente.",
+   "portada": "quiero-covers/francisco-11.jpg",
+   "portada_original": "https://covers.openlibrary.org/b/id/7200796-L.jpg",
+   "origen": "panteon",
+   "opciones": [
+    {
+     "mercado": "AR",
+     "tienda": "Buscalibre",
+     "link": "https://www.buscalibre.com.ar/libro-la-eneida-cultura-clasica/9788496977082/p/4616108",
+     "precio": "",
+     "idioma": "español",
+     "nota": "Varias (Cultura Clásica, eds. económicas y digital); en AR conviene ed. Losada/Colihue/Alianza/Gredos"
+    },
+    {
+     "mercado": "AMZ",
+     "tienda": "Amazon",
+     "link": "https://www.amazon.com/Aeneid-Oxford-Worlds-Classics-Virgil/dp/0199231958",
+     "precio": "USD 7.43–8.25 (paperback básicos); USD 9.01–11.00 (Penguin Classics Deluxe); Oxford Ahl USD 14.70; Bartsch USD 14.99; Fagles hardcover USD 38.69 (only 1 left)",
+     "idioma": "inglés",
+     "nota": "Múltiples traducciones: Penguin Classics Deluxe, Oxford World's Classics (Ahl), Bartsch (2022), Fagles (hardcover)"
+    }
+   ],
+   "nota": "Clásico de DOMINIO PÚBLICO (latín, s. I a.C.): el texto en latín está gratis online (Perseus/Latin Library) y hay traducciones libres. Conviene edición local bilingüe/barata (Losada, Colihue, Gredos, Alianza) si se quier",
+   "ar": "sí",
+   "amz": "sí"
+  },
+  {
+   "id": "thiel-10",
+   "titulo": "Camino de servidumbre",
+   "titulo_original": "The Road to Serfdom",
+   "autor": "F. A. Hayek",
+   "anio": "1944",
+   "pensador": "Peter Thiel",
+   "brief": "Lo recomendó como advertencia liberal clásica contra planificación central y poder burocrático. Lo recomiendan dos de mis pensadores: Peter y Nassim.",
+   "portada": "quiero-covers/thiel-10.jpg",
+   "portada_original": "https://covers.openlibrary.org/b/id/6991871-L.jpg",
+   "portada_fuente_titulo": "The Road to Serfdom",
+   "origen": "panteon",
+   "opciones": [
+    {
+     "mercado": "AR",
+     "tienda": "Buscalibre",
+     "link": "https://www.buscalibre.com.ar/libro-camino-de-servidumbre/9788420616766/p/55080282",
+     "precio": "ARS ~42.300 (Alianza, precio rebajado)",
+     "idioma": "español",
+     "nota": "Alianza Editorial, tapa blanda; también ed. Unión Editorial (vol. II 9788472097049)"
+    },
+    {
+     "mercado": "AMZ",
+     "tienda": "Amazon",
+     "link": "https://amazon.com/The-Road-Serfdom-Documents-The-Definitive/dp/0226320553",
+     "precio": "USD 13.47 (Definitive Edition 9780226320557, In Stock, sold by Amazon.com); ed. condensada IEA 9780255365307",
+     "idioma": "inglés",
+     "nota": "Paperback, Definitive Edition (Collected Works Vol. 2, Univ. of Chicago Press); también ed. condensada (Reader's Digest/IEA)"
+    }
+   ],
+   "nota": "AR: muy disponible en español (Alianza). Amazon: usar la Definitive Edition (Chicago, con documentos), la ed. condensada es un resumen.",
+   "ar": "sí",
+   "amz": "sí"
+  },
+  {
+   "id": "thiel-01",
+   "titulo": "Cosas ocultas desde la fundación del mundo",
+   "titulo_original": "Things Hidden Since the Foundation of the World",
+   "autor": "René Girard",
+   "anio": "1978",
+   "pensador": "Peter Thiel",
+   "brief": "Thiel declara que Girard le cambió la cabeza: deseo mimético, rivalidad y chivos expiatorios.",
+   "portada": "quiero-covers/thiel-01.jpg",
+   "portada_original": "https://covers.openlibrary.org/b/id/11036224-L.jpg",
+   "origen": "panteon",
+   "opciones": [
+    {
+     "mercado": "AR",
+     "tienda": "Buscalibre",
+     "link": "https://www.buscalibre.com.ar/libro-cosas-ocultas-desde-la-fundacion-del-mundo-19-hermeneia/9788430120918/p/53449262",
+     "precio": "ARS ~63.676–64.843",
+     "idioma": "español",
+     "nota": "Ediciones Sígueme (España), tapa blanda, ed. Hermeneia 19 / ed. 2025"
+    },
+    {
+     "mercado": "AMZ",
+     "tienda": "Amazon",
+     "link": "https://www.amazon.com/Books-Rene-Girard/s?rh=n%3A283155%2Cp_27%3ARene%2BGirard",
+     "precio": "USD 51.00 (paperback 0804722153); tapa dura usada muy cara (amazon.ca USD 1.476); usado desde ~USD 8.94 (booksrun)",
+     "idioma": "inglés",
+     "nota": "Paperback (Stanford University Press / Bloomsbury); ebook también"
+    }
+   ],
+   "nota": "AR bien disponible vía Sígueme (importado, ~AR$64k). Amazon: hardcover solo usado y muy caro; el paperback ~USD 51 es la opción.",
+   "ar": "sí",
+   "amz": "sí"
+  },
+  {
+   "id": "thiel-12",
+   "titulo": "El fin de la historia y el último hombre",
+   "titulo_original": "The End of History and the Last Man",
+   "autor": "Francis Fukuyama",
+   "anio": "1992",
+   "pensador": "Peter Thiel",
+   "brief": "Thiel lo discute para criticar la complacencia liberal posterior a la Guerra Fría.",
+   "portada": "quiero-covers/thiel-12.jpg",
+   "portada_original": "https://covers.openlibrary.org/b/id/18768-L.jpg",
+   "origen": "panteon",
+   "opciones": [
+    {
+     "mercado": "AR",
+     "tienda": "MercadoLibre",
+     "link": "https://listado.mercadolibre.com.ar/el-fin-de-la-historia-y-el-ultimo-hombre-francis-fukuyama",
+     "precio": "",
+     "idioma": "español",
+     "nota": "Edición en español (Planeta / otras) — no confirmada en el relevamiento"
+    },
+    {
+     "mercado": "AMZ",
+     "tienda": "Amazon",
+     "link": "https://www.amazon.com/dp/0743284550",
+     "precio": "USD 13.99 nuevo (In Stock, sold by Amazon.com) / USD 12.59 usado; 16.16 (otra oferta)",
+     "idioma": "inglés",
+     "nota": "Paperback, Free Press (9780743284554), con afterword nuevo; también hardcover"
+    }
+   ],
+   "nota": "AR: no pude confirmar stock/precio del libro completo; verificar en MercadoLibre. Ojo: '¿El fin de la Historia? y otros ensayos' es otro volumen más corto.",
+   "ar": "dudoso",
+   "amz": "sí"
+  },
+  {
+   "id": "thiel-06",
+   "titulo": "El individuo soberano",
+   "titulo_original": "The Sovereign Individual",
+   "autor": "James Dale Davidson y William Rees-Mogg",
+   "anio": "1997",
+   "pensador": "Peter Thiel",
+   "brief": "Lo recomendó por anticipar criptografía, movilidad del capital y erosión del Estado nación.",
+   "portada": "quiero-covers/thiel-06.jpg",
+   "portada_original": "https://covers.openlibrary.org/b/id/425227-L.jpg",
+   "portada_fuente_titulo": "The Sovereign Individual",
+   "origen": "panteon",
+   "opciones": [
+    {
+     "mercado": "AR",
+     "tienda": "MercadoLibre",
+     "link": "https://www.mercadolibre.com.ar/libro-el-individuo-soberano-davison-james-dalereesmogg/up/MLAU223465203",
+     "precio": "",
+     "idioma": "español",
+     "nota": "Bubok Publishing, tapa blanda/rústica, español"
+    },
+    {
+     "mercado": "AMZ",
+     "tienda": "Amazon",
+     "link": "https://amazon.com/Sovereign-Individual-Mastering-Transition-Information/dp/0684832720",
+     "precio": "USD 14.10 (In Stock, sold by Amazon.com) / USD 15.00",
+     "idioma": "inglés",
+     "nota": "Paperback, Touchstone/Simon & Schuster (9780684832722); también ebook Kindle"
+    }
+   ],
+   "nota": "AR: disponible en ed. Bubok (español), precio no capturado. En Amazon hay OTRO libro homónimo (Balchunas, $25) que NO es este.",
+   "ar": "sí",
+   "amz": "sí"
+  },
+  {
+   "id": "feynman-10",
+   "titulo": "Los sonámbulos",
+   "titulo_original": "The Sleepwalkers",
+   "autor": "Arthur Koestler",
+   "anio": "1959",
+   "pensador": "Richard Feynman",
+   "brief": "Le servía para pensar la historia de la astronomía como avance torcido, no como marcha limpia.",
+   "portada": "quiero-covers/feynman-10.jpg",
+   "portada_original": "https://covers.openlibrary.org/b/id/6918632-L.jpg",
+   "origen": "panteon",
+   "opciones": [
+    {
+     "mercado": "AR",
+     "tienda": "MercadoLibre",
+     "link": "https://www.mercadolibre.com.ar/los-sonambulos-i--arthur-koestler/up/MLAU245671851",
+     "precio": "",
+     "idioma": "español",
+     "nota": "'Los sonámbulos I' (Koestler); edición en español"
+    },
+    {
+     "mercado": "AMZ",
+     "tienda": "Amazon",
+     "link": "https://amazon.com/Sleepwalkers-History-Changing-Universe-Arkana/dp/0140192468",
+     "precio": "USD 18.89 (Compass, vendido por tercero) / USD 21.00 (Penguin Random House list) / RRP AUD 29.99",
+     "idioma": "inglés",
+     "nota": "Paperback (Compass 9780140192469; Penguin Modern Classics 9780141394534)"
+    }
+   ],
+   "nota": "Buscalibre AR no mostró ejemplares de esta obra en la búsqueda. En español puede aparecer como 'Los sonámbulos' (varias ediciones/volúmenes históricos).",
+   "ar": "sí",
+   "amz": "sí"
+  },
+  {
+   "id": "feynman-13",
+   "titulo": "¿Qué es la vida?",
+   "titulo_original": "What Is Life?",
+   "autor": "Erwin Schrödinger",
+   "anio": "1944",
+   "pensador": "Richard Feynman",
+   "brief": "Feynman cruzaba física y biología; este libro marcó esa frontera como problema físico serio. Lo recomiendan dos de mis pensadores: Richard y David.",
+   "portada": "quiero-covers/feynman-13.jpg",
+   "portada_original": "https://covers.openlibrary.org/b/id/11024786-L.jpg",
+   "origen": "panteon",
+   "opciones": [
+    {
+     "mercado": "AR",
+     "tienda": "Buscalibre",
+     "link": "https://www.buscalibre.com.ar/libro-que-es-la-vida/9788472236073/p/1026424",
+     "precio": "",
+     "idioma": "español",
+     "nota": "Tusquets / Metatemas 9788472236073 (rústica con solapas, ed. clásica en español)"
+    },
+    {
+     "mercado": "AMZ",
+     "tienda": "Amazon",
+     "link": "https://amazon.com/What-Life-Erwin-Schrodinger/dp/B00133U9LI",
+     "precio": "",
+     "idioma": "inglés",
+     "nota": "Paperback/Hardcover/Kindle (incluye 'Mind and Matter'; ed. con prefacio de Roger Penrose)"
+    }
+   ],
+   "nota": "DUPLICADO respecto de la obra #14 del lote (mismo libro): se relevó una sola vez. Edición local recomendada: Metatemas/Tusquets. Precio Amazon no se pudo fijar con claridad en los snippets (múltiples ediciones).",
+   "ar": "sí",
+   "amz": "sí"
   }
  ]
 }

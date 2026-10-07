@@ -130,6 +130,7 @@
     }
     .tag.ar { background: #e6f2ef; color: #1d6b5a; }
     .tag.imp { background: #fdf0e3; color: #9a4b0a; }
+    .tag.pant { background: #efe9f7; color: #5b3f86; }
 
     .comprar { display: flex; flex-wrap: wrap; gap: 8px; }
     .comprar a {
@@ -196,6 +197,8 @@
 
       <div class="filtros" id="filtros">
         <button data-f="todos" class="on">Todos <span id="n-todos"></span></button>
+        <button data-f="deutsch">Bibliografía de Deutsch <span id="n-deutsch"></span></button>
+        <button data-f="panteon">Del Panteón <span id="n-panteon"></span></button>
         <button data-f="ar">Se consiguen en Argentina <span id="n-ar"></span></button>
         <button data-f="imp">Solo importados <span id="n-imp"></span></button>
       </div>
@@ -235,6 +238,8 @@
     return (l.opciones || []).some(function (o) { return o.mercado === 'AR'; });
   }
 
+  function esPanteon(l) { return l.origen === 'panteon'; }
+
   function boton(o) {
     var esAR = o.mercado === 'AR';
     var label = esAR ? (o.tienda || 'Librería argentina') : 'Amazon';
@@ -273,9 +278,15 @@
     var info = document.createElement('div');
     info.className = 'info';
 
-    var tag = tieneAR(l)
-      ? '<span class="tag ar">En Argentina</span>'
-      : '<span class="tag imp">Solo importado</span>';
+    var tag;
+    if (esPanteon(l)) {
+      tag = '<span class="tag pant">Panteón · ' + (l.pensador || '') + '</span>' +
+            (tieneAR(l) ? ' <span class="tag ar">En Argentina</span>' : '');
+    } else if (tieneAR(l)) {
+      tag = '<span class="tag ar">En Argentina</span>';
+    } else {
+      tag = '<span class="tag imp">Solo importado</span>';
+    }
 
     var h = document.createElement('h3');
     h.textContent = l.titulo_es && l.titulo_es !== l.titulo
@@ -310,8 +321,10 @@
   function pintar() {
     grid.innerHTML = '';
     var lista = libros.filter(function (l) {
+      if (actual === 'deutsch') return !esPanteon(l);
+      if (actual === 'panteon') return esPanteon(l);
       if (actual === 'ar') return tieneAR(l);
-      if (actual === 'imp') return !tieneAR(l);
+      if (actual === 'imp') return !esPanteon(l) && !tieneAR(l);
       return true;
     });
     if (!lista.length) {
@@ -329,8 +342,10 @@
     var act = document.getElementById('act');
     if (act && data.actualizado) act.textContent = data.actualizado;
     document.getElementById('n-todos').textContent = '(' + libros.length + ')';
+    document.getElementById('n-deutsch').textContent = '(' + libros.filter(function (l) { return !esPanteon(l); }).length + ')';
+    document.getElementById('n-panteon').textContent = '(' + libros.filter(esPanteon).length + ')';
     document.getElementById('n-ar').textContent = '(' + libros.filter(tieneAR).length + ')';
-    document.getElementById('n-imp').textContent = '(' + libros.filter(function (l) { return !tieneAR(l); }).length + ')';
+    document.getElementById('n-imp').textContent = '(' + libros.filter(function (l) { return !esPanteon(l) && !tieneAR(l); }).length + ')';
     pintar();
   } catch (e) {
     grid.innerHTML = '<p id="fallback">No se pudo cargar la lista. Escribime y te paso los títulos a mano.</p>';

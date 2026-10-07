@@ -207,7 +207,7 @@
       a.rel = 'noopener';
       if (o.mercado === 'AR') a.className = 'primario';
       a.innerHTML = '<span>' + (o.tienda || (o.mercado === 'AR' ? 'Librería argentina' : 'Amazon')) + '</span>' +
-                    (o.precio ? '<span class="precio">' + o.precio + '</span>' : '');
+                    '<span class="precio">' + (o.precio || 'Ver precio') + '</span>';
       comprar.appendChild(a);
     });
 
